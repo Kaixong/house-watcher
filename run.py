@@ -58,13 +58,16 @@ def describe(search: dict) -> dict:
         tags.append("平面車位" if f["parking"] == "平面" else "有車位")
     if f.get("transit_keywords"):
         tags.append("附近有" + "/".join(f["transit_keywords"][:3]) + "等站")
-    if f.get("near"):
-        n = f["near"]
-        tags.append(f"距 {n.get('name', '中心點')} {n.get('radius_km', 2)} 公里內")
+    cs = geo.centers(f.get("near"))
+    if len(cs) == 1:
+        tags.append(f"距 {cs[0].get('name', '中心點')} {cs[0].get('radius_km', 2)} 公里內")
+    elif cs:
+        tags.append("在任一範圍內：" + "、".join(f"{c.get('name', '中心點')} {c.get('radius_km', 2)} km" for c in cs))
     if f.get("exclude_keywords"):
         tags.append("排除：" + "、".join(f["exclude_keywords"]))
     return {"name": search["name"], "type": "新建案" if search.get("type") == "newhouse" else "中古屋",
-            "tags": tags, "url": search.get("url", ""), "near": f.get("near")}
+            "tags": tags, "url": search.get("url", ""), "near": geo.centers(f.get("near")),
+            "near_logic": "符合任一範圍即可" if len(geo.centers(f.get("near"))) > 1 else ""}
 
 
 def _county_of(search: dict) -> str:
@@ -118,7 +121,7 @@ def main():
         if near:
             geo.apply_distance(matched, near)
             matched = [it for it in matched if geo.within(it, near)]
-            print(f"  距離 {near.get('name', '中心')} {near.get('radius_km', 2)} 公里內 {len(matched)} 筆")
+            print(f"  在 {'、'.join(c.get('name', '中心') for c in geo.centers(near))} 任一範圍內 {len(matched)} 筆")
         if typ == "sale" and needs_detail(s.get("filters")) and matched:
             dcache = state.setdefault("details", {})
             for it in matched:  # 沿用之前讀過的詳情（含沒通過條件的），避免重複開網頁

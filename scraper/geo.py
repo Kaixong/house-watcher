@@ -69,14 +69,28 @@ def locate(items: list[dict], cache: GeoCache) -> None:
             it["lat"], it["lng"] = round(ll[0], 6), round(ll[1], 6)
 
 
-def apply_distance(items: list[dict], near: dict) -> None:
+def centers(near) -> list[dict]:
+    """near 可以是單一圓心（dict）或多個圓心（list）。"""
+    if not near:
+        return []
+    return [near] if isinstance(near, dict) else list(near)
+
+
+def apply_distance(items: list[dict], near) -> None:
+    """算出到每個圓心的距離，記下「在範圍內、最近的那個圓心」（都不在範圍內就記最近的）。"""
+    cs = centers(near)
     for it in items:
-        if it.get("lat") and it.get("lng"):
-            it["distance_km"] = round(haversine_km(near["lat"], near["lng"], it["lat"], it["lng"]), 2)
+        if not (it.get("lat") and it.get("lng")) or not cs:
+            continue
+        ds = [(round(haversine_km(c["lat"], c["lng"], it["lat"], it["lng"]), 2), c) for c in cs]
+        inside = [x for x in ds if x[0] <= float(x[1].get("radius_km", 2))]
+        d, c = min(inside or ds, key=lambda x: x[0])
+        it["distance_km"], it["near_name"] = d, c.get("name", "中心點")
+        it["in_range"] = bool(inside)
 
 
-def within(item: dict, near: dict | None) -> bool:
-    """沒有座標的物件先保留（之後讀詳情頁再判斷）。"""
-    if not near or item.get("distance_km") is None:
+def within(item: dict, near) -> bool:
+    """在任一圓心的範圍內就保留；沒有座標的物件先保留（之後讀詳情頁再判斷）。"""
+    if not centers(near) or item.get("distance_km") is None:
         return True
-    return item["distance_km"] <= float(near.get("radius_km", 2))
+    return bool(item.get("in_range"))

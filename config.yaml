@@ -18,38 +18,54 @@
 # county（可省略）：物件所在縣市，用來查實價登錄。沒填會從 591 網址自動判斷。
 
 searches:
-  - name: 中壢區 3-4房 1500萬內 平面車位
+  - name: 中壢桃園 3-4房 1500萬內 平面車位
     type: sale
-    # 591 條件：桃園市中壢區、3-4房、屋齡 0-20 年、總價 1500 萬以下、含車位
-    url: "https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$"
-    max_pages: 8
+    # 591 條件：桃園市中壢區＋桃園區＋八德區（section=67,73,75）、3-4房、屋齡 0-20 年、總價 1500 萬以下、含車位
+    url: "https://sale.591.com.tw/?shType=list&regionid=6&section=67,73,75&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$"
+    max_pages: 30
     max_details: 120        # 每次最多讀幾筆詳情頁（讀過的會記住，不會重讀）
     filters:
-      districts: ["中壢區"]  # 只保留這些行政區
+      districts: ["中壢區", "桃園區", "八德區"]  # 只保留這些行政區
       max_price: 1500       # 總價上限（萬）
       max_age: 20           # 屋齡上限（年）
       min_main_ping: 20     # 主建物坪數下限
       parking: 平面          # 車位要求：平面 / 有（任何車位）；不限就刪掉這行
       transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]   # 「附近交通」需有其中之一；591 沒寫交通資訊的會保留並標示「請自行確認」
       exclude_keywords: ["法拍", "持分", "頂加"]
-      near:                 # 地理範圍：只保留離中心點 radius_km 公里內的物件；不限就刪掉這整段
-        name: 美麗歐洲社區
-        lat: 24.965501      # 中心點座標（Google 地圖上按右鍵可以複製）
-        lng: 121.237385
-        radius_km: 2
+      near:                 # 地理範圍：落在「任一個」圓心的範圍內就保留；不限就刪掉這整段
+        - name: 美麗歐洲社區
+          lat: 24.965501    # 座標可在 Google 地圖上按右鍵複製
+          lng: 121.237385
+          radius_km: 2
+        - name: 部桃
+          lat: 24.977890
+          lng: 121.268102
+          radius_km: 2
+        - name: 武陵高中
+          lat: 24.987424
+          lng: 121.285497
+          radius_km: 2
 
-  - name: 中壢區新建案
+  - name: 中壢桃園新建案
     type: newhouse
-    url: "https://newhouse.591.com.tw/list?regionid=6&sectionid=67"
-    max_pages: 3
+    url: "https://newhouse.591.com.tw/list?regionid=6&sectionid=67,73,75"
+    max_pages: 10
     filters:
-      districts: ["中壢區"]  # 只保留這些行政區
+      districts: ["中壢區", "桃園區", "八德區"]
       exclude_keywords: []
-      near:
-        name: 美麗歐洲社區
-        lat: 24.965501
-        lng: 121.237385
-        radius_km: 2
+      near:                 # 地理範圍：落在「任一個」圓心的範圍內就保留；不限就刪掉這整段
+        - name: 美麗歐洲社區
+          lat: 24.965501    # 座標可在 Google 地圖上按右鍵複製
+          lng: 121.237385
+          radius_km: 2
+        - name: 部桃
+          lat: 24.977890
+          lng: 121.268102
+          radius_km: 2
+        - name: 武陵高中
+          lat: 24.987424
+          lng: 121.285497
+          radius_km: 2
 
 # ---------------------------------------------------------
 # 實價登錄行情

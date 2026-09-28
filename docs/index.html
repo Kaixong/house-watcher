@@ -156,7 +156,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
     <select id="fSource" aria-label="來源"><option value="">全部來源</option><option>591中古屋</option><option>591新建案</option></select>
     <select id="fSort" aria-label="排序">
       <option value="new">最新上架</option><option value="price">總價低→高</option>
-      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="dist">離中心近→遠</option><option value="prem">低於行情優先</option>
+      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="dist">離圓心近→遠</option><option value="prem">低於行情優先</option>
     </select>
     <input type="search" id="fText" placeholder="搜尋標題、社區、地址">
     <label class="chk"><input type="checkbox" id="fNew"> 只看新物件</label>
@@ -169,7 +169,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
       <span><span class="pin" style="display:inline-block;background:#4a5bc4;vertical-align:middle;margin-right:5px"></span>接近行情</span>
       <span><span class="pin" style="display:inline-block;background:#c77700;vertical-align:middle;margin-right:5px"></span>比行情貴</span>
       <span><span class="pin" style="display:inline-block;background:#7a8580;vertical-align:middle;margin-right:5px"></span>無行情資料</span>
-      <span>★ 中心點，圓圈為設定的範圍；點物件可看詳情</span>
+      <span>★ 圓心，圓圈為範圍（落在任一圈內即符合）；點物件可看詳情</span>
     </div></div>
   <div class="grid" id="grid"></div>
 </div>
@@ -224,7 +224,7 @@ function card(it){
       <a class="title" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
       <div class="price">${fmtPrice(it)}</div>
       <div class="meta">${meta}</div>
-      <div class="addr">${esc(it.address)}${it.distance_km != null ? ` <span class="dist">・距中心 ${it.distance_km} km</span>` : ""}</div>
+      <div class="addr">${esc(it.address)}${it.distance_km != null ? ` <span class="dist">・距${esc(it.near_name || "中心")} ${it.distance_km} km</span>` : ""}</div>
       ${detailRow(it)}
       ${(it.tags||[]).length ? `<div class="tags">${it.tags.slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
       ${marketRow(it)}
@@ -399,7 +399,7 @@ function drawMap(list){
   LAYER = L.layerGroup().addTo(MAP);
   const pts = [];
   const centers = {};
-  for (const c of DATA.criteria || []) if (c.near) centers[c.near.name + c.near.lat] = c.near;
+  for (const c of DATA.criteria || []) for (const n of [].concat(c.near || [])) centers[n.name + n.lat] = n;
   for (const n of Object.values(centers)) {
     L.circle([n.lat, n.lng], {radius: (n.radius_km || 2) * 1000, color: "#2f3e8f", weight: 1.5, fillOpacity: .06}).addTo(LAYER);
     L.marker([n.lat, n.lng], {icon: L.divIcon({className: "", html: '<div style="font-size:22px;line-height:1">★</div>', iconSize: [22, 22], iconAnchor: [11, 11]})})
@@ -412,7 +412,7 @@ function drawMap(list){
     const price = it.price ? `${Math.round(it.price).toLocaleString()} 萬` : (it.price_text || "");
     m.bindPopup(`<b>${esc(it.title)}</b><br>${esc(price)}${it.unit_price ? `（${it.unit_price} 萬/坪）` : ""}<br>
       ${esc([it.layout?.slice(0, 20), it.main_ping ? "主建 " + it.main_ping + " 坪" : "", it.age != null ? "屋齡 " + it.age + " 年" : ""].filter(Boolean).join(" · "))}<br>
-      ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距中心 " + it.distance_km + " km<br>" : ""}
+      ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距" + esc(it.near_name || "中心") + " " + it.distance_km + " km<br>" : ""}
       <a href="${esc(it.url)}" target="_blank" rel="noopener">591 原網頁 ↗</a>　${it.market ? `<a href="#" data-mk="${esc(it.id)}">行情走勢</a>` : ""}`);
     m.addTo(LAYER); pts.push([it.lat, it.lng]);
   }

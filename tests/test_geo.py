@@ -26,4 +26,12 @@ class R:
 with mock.patch.object(geo.requests, "get", return_value=R()), mock.patch.object(geo.time, "sleep"):
     assert c.community(7546) == (24.965501, 121.237385)
 c.save(); assert (tmp / "g.json").exists()
+# 多圓心：任一範圍內即可
+multi = [near, {"name": "部桃", "lat": 24.977890, "lng": 121.268102, "radius_km": 2}]
+x = {"id": "x", "lat": 24.9621721, "lng": 121.2655383}   # 離美麗歐洲 2.86km、離部桃 ~1.75km
+y = {"id": "y", "lat": 24.9300, "lng": 121.2000}         # 都不在範圍內
+geo.apply_distance([x, y], multi)
+assert x["near_name"] == "部桃" and x["in_range"] and geo.within(x, multi), x
+assert not y["in_range"] and not geo.within(y, multi), y
+assert geo.centers(near) == [near] and geo.centers(None) == []
 print("GEO OK")
