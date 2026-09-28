@@ -20,7 +20,9 @@ f = {"max_price": 3000, "min_ping": 20, "max_age": 30, "exclude_keywords": ["頂
 assert not passes(a, f)  # 坪數太小
 assert not passes(c, f)  # 屋齡太大 + 頂加
 assert passes(c, {"max_price": 3000})
-print(sale591.page_url("https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$", 3))
+b="https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$"
+assert sale591.page_url(b,1)==b
+assert sale591.page_url(b,3)=="https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&firstRow=60", sale591.page_url(b,3)
 
 nh = {"hid":138145,"build_name":"春風大院","section":"中山區","address":"台北市中山區遼寧街","cover":"x.jpg","tag":["近捷運"],"purpose_str":"住家用","area":"16~59坪","room":"二房(16~23坪)","price":"價格待定","price_unit":"","shop_name":"南京復興","ad_type":2}
 n = newhouse591.normalize(nh); print(n)

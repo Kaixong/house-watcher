@@ -38,13 +38,15 @@ EXTRACT_JS = r"""
 """
 
 
-def page_url(base_url: str, page: int) -> str:
-    """把使用者貼的搜尋網址轉成第 N 頁的網址（/list?...&page=N）。"""
+def page_url(base_url: str, page: int, page_size: int = 30) -> str:
+    """第 1 頁用使用者貼的原始網址；之後用 firstRow 參數換頁（591 的原生分頁方式）。"""
+    if page == 1:
+        return base_url
     p = urlparse(base_url)
     qs = parse_qs(p.query, keep_blank_values=True)
-    qs.pop("firstRow", None)
-    qs["page"] = [str(page)]
-    return urlunparse(p._replace(path="/list", query=urlencode(qs, doseq=True, safe=",$_")))
+    qs.pop("page", None)
+    qs["firstRow"] = [str((page - 1) * page_size)]
+    return urlunparse(p._replace(query=urlencode(qs, doseq=True, safe=",$_")))
 
 
 def _num(s: str) -> float | None:
