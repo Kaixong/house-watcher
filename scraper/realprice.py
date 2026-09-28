@@ -94,6 +94,8 @@ def summarize(deals: list[dict], today: date | None = None) -> dict:
     deals = sorted([d for d in deals if d.get("unit")], key=lambda d: d["date"], reverse=True)
     cut12 = (today - timedelta(days=365)).isoformat()
     last12 = [d["unit"] for d in deals if d["date"] >= cut12]
+    cut24 = (today - timedelta(days=730)).isoformat()
+    last24 = [d["unit"] for d in deals if d["date"] >= cut24]
     byq = defaultdict(list)
     for d in deals:
         byq[quarter(date.fromisoformat(d["date"]))].append(d["unit"])
@@ -102,6 +104,8 @@ def summarize(deals: list[dict], today: date | None = None) -> dict:
         "n": len(deals),
         "n_12m": len(last12),
         "median_12m": _median(last12),
+        "n_24m": len(last24),
+        "median_24m": _median(last24),
         "median_all": _median([d["unit"] for d in deals]),
         "trend": trend[-16:],
         "deals": deals[:12],
@@ -353,16 +357,18 @@ def enrich(items: list[dict], cfg: dict, cache_dir: Path, log=print) -> None:
                     m["nearby"] = s
         # --- 開價 vs 行情 ---
         ref = None
-        for k in ("community", "nearby"):
-            x = m.get(k) or {}
-            if x.get("n_12m", 0) >= 3 and x.get("median_12m"):
-                ref = (k, x["median_12m"]); break
-            if x.get("n", 0) >= 3 and x.get("median_all") and ref is None:
-                ref = (k, x["median_all"])
+        c, n = m.get("community") or {}, m.get("nearby") or {}
+        for src, x, key, label in (("community", c, "12m", "同社區近一年"), ("community", c, "24m", "同社區近兩年"),
+                                   ("nearby", n, "12m", "附近近一年"), ("nearby", n, "all", "附近歷年"),
+                                   ("community", c, "all", "同社區歷年")):
+            if x.get(f"n_{key}" if key != "all" else "n", 0) >= 3 and x.get(f"median_{key}"):
+                ref = (src, x[f"median_{key}"], label)
+                break
         if ref and it.get("unit_price"):
             m["premium"] = round((it["unit_price"] / ref[1] - 1) * 100, 1)
             m["premium_ref"] = ref[0]
             m["ref_price"] = ref[1]
+            m["ref_label"] = ref[2]
         if m:
             m["updated"] = today.isoformat()
             it["market"] = m

@@ -37,6 +37,13 @@ def _card(it: dict, badge: str) -> str:
     drop = ""
     if it.get("prev_price"):
         drop = (f'<span style="color:#0a7d3b">　↓ 原 {it["prev_price"]:,.0f} 萬</span>')
+    mk = ""
+    m = it.get("market") or {}
+    if m.get("premium") is not None:
+        p = m["premium"]
+        color, word = ("#9a5b00", f"比行情貴 {p}%") if p > 3 else (("#1d7a45", f"比行情便宜 {abs(p)}%") if p < -3 else ("#2f3e8f", f"接近行情（{p:+}%）"))
+        mk = (f'<br><span style="font-size:13px;color:{color};font-weight:600">{e(word)}</span>'
+              f'<span style="font-size:12px;color:#888">　{e(m.get("ref_label", ""))}中位數 {m.get("ref_price")} 萬/坪</span>')
     img = (f'<img src="{e(it["image"])}" width="120" height="90" '
            f'style="object-fit:cover;border-radius:6px;display:block">' if it.get("image") else "")
     return f"""
@@ -45,7 +52,7 @@ def _card(it: dict, badge: str) -> str:
   <span style="background:#d9480f;color:#fff;font-size:11px;padding:2px 6px;border-radius:4px">{badge}</span>
   <span style="font-size:12px;color:#888">　{e(it.get('source',''))}</span><br>
   <a href="{e(it['url'])}" style="font-size:15px;font-weight:600;color:#1a1a1a;text-decoration:none">{e(it.get('title',''))}</a><br>
-  <span style="font-size:15px;color:#d9480f;font-weight:600">{e(_fmt_price(it))}</span>{drop}<br>
+  <span style="font-size:15px;color:#d9480f;font-weight:600">{e(_fmt_price(it))}</span>{drop}{mk}<br>
   <span style="font-size:13px;color:#555">{e(meta)}</span><br>
   <span style="font-size:12px;color:#888">{e(it.get('address',''))}</span>
 </td></tr>"""

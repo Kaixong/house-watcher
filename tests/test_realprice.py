@@ -61,5 +61,5 @@ with mock.patch.object(rp.requests, "get", return_value=R()), mock.patch.object(
     rp.enrich([it2], {"seasons": 1}, tmp, log=print)
 m = it2["market"]
 print("社區:", m["community"]["median_all"], "附近:", m["nearby"]["median_12m"], "溢價:", m.get("premium"), m.get("premium_ref"))
-assert m["community"]["n"] == 2 and m["premium_ref"] == "nearby" and m["premium"] > 0
+assert m["community"]["n"] == 2 and m["premium_ref"] == "nearby" and m["premium"] > 0 and m["ref_label"] == "附近近一年"
 print("REALPRICE OK")

@@ -13,6 +13,7 @@
   --accent:#2f3e8f; --accent-soft:#e6e9f7; --good:#1d7a45; --good-soft:#e3f3e8;
   --warn:#9a5b00; --warn-soft:#fbf0dc; --off:#9aa39e;
   --price:#b3261e;
+  --s1:#4a5bc4; --s2:#0f8a7a; --grid:#e9ece7;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -20,6 +21,7 @@
     --bg:#141816; --surface:#1d2320; --line:#2e3632; --ink:#e7ebe8; --muted:#9aa6a0;
     --accent:#9aa8f0; --accent-soft:#262d52; --good:#6fcf97; --good-soft:#18331f;
     --warn:#f0b75a; --warn-soft:#3a2c12; --off:#5f6a65; --price:#ff8a80;
+    --s1:#7d8ce6; --s2:#23a390; --grid:#28302c;
   }
 }
 :root[data-theme="dark"]{
@@ -27,8 +29,10 @@
   --bg:#141816; --surface:#1d2320; --line:#2e3632; --ink:#e7ebe8; --muted:#9aa6a0;
   --accent:#9aa8f0; --accent-soft:#262d52; --good:#6fcf97; --good-soft:#18331f;
   --warn:#f0b75a; --warn-soft:#3a2c12; --off:#5f6a65; --price:#ff8a80;
+  --s1:#7d8ce6; --s2:#23a390; --grid:#28302c;
 }
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 "Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif}
 .wrap{max-width:1180px;margin:0 auto;padding:24px 16px 48px}
 header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;margin-bottom:20px}
@@ -71,7 +75,36 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .foot{font-size:11px;color:var(--muted);margin-top:auto;padding-top:6px}
 .empty{padding:40px;text-align:center;color:var(--muted);grid-column:1/-1}
 .demo{background:var(--accent-soft);color:var(--accent);font-size:13px;padding:8px 12px;border-radius:8px;margin-bottom:16px}
-@media (max-width:640px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.count{margin-left:0;width:100%}}
+
+.mk{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px;font-size:12.5px;color:var(--muted)}
+.prem{font-weight:700;padding:2px 8px;border-radius:6px;font-variant-numeric:tabular-nums}
+.prem.up{background:var(--warn-soft);color:var(--warn)} .prem.down{background:var(--good-soft);color:var(--good)} .prem.eq{background:var(--accent-soft);color:var(--accent)}
+.links{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.lk{font-size:12px;border:1px solid var(--line);color:var(--ink);background:transparent;border-radius:6px;padding:3px 9px;text-decoration:none;cursor:pointer;font-family:inherit}
+.lk:hover{border-color:var(--accent);color:var(--accent)} .lk.primary{border-color:var(--accent);color:var(--accent);font-weight:500}
+.ov{position:fixed;inset:0;background:rgba(10,14,12,.55);display:flex;align-items:flex-start;justify-content:center;padding:calc(24px + env(safe-area-inset-top,0px)) 16px 24px;overflow-y:auto;z-index:50}
+.dlg{background:var(--surface);color:var(--ink);border-radius:12px;max-width:760px;width:100%;padding:20px;display:flex;flex-direction:column;gap:14px}
+.dlg h2{font:700 19px/1.35 "Noto Serif TC",serif;margin:0;text-wrap:balance}
+.dlg .x{margin-left:auto;background:none;border:0;font-size:22px;color:var(--muted);cursor:pointer;line-height:1}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.kpi{background:var(--surface);padding:10px 12px}
+.kpi b{display:block;font:500 19px/1.25 "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+.kpi span{font-size:12px;color:var(--muted)}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto}
+.chart .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12px;padding:6px 8px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-110%)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:5px}
+.tabs{display:flex;gap:6px}
+.tab{font:inherit;font-size:13px;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:6px;padding:4px 10px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.tbl table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}
+.tbl th,.tbl td{padding:6px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl th{font-weight:500;color:var(--muted);font-size:12px;background:var(--bg)}
+.tbl td.n{text-align:right;font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--muted)}
+@media (max-width:640px){.kpis{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.count{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
@@ -101,7 +134,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
     <select id="fSource" aria-label="來源"><option value="">全部來源</option><option>591中古屋</option><option>591新建案</option></select>
     <select id="fSort" aria-label="排序">
       <option value="new">最新上架</option><option value="price">總價低→高</option>
-      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option>
+      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="prem">低於行情優先</option>
     </select>
     <input type="search" id="fText" placeholder="搜尋標題、社區、地址">
     <label class="chk"><input type="checkbox" id="fNew"> 只看新物件</label>
@@ -110,12 +143,13 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
   </div>
   <div class="grid" id="grid"></div>
 </div>
+<div class="ov" id="ov" hidden></div>
 
 <script>
 const DEMO = {updated:"2026-09-28 08:00",searches:["台北內湖中山 2-3房 3000萬內","台北市新建案"],
  runs:[{time:"2026-09-28 08:00",new:2,drops:1,active:4,warnings:[]}],
  items:[
-  {source:"591中古屋",id:"d1",title:"內湖捷運三房 採光好 含平面車位",url:"https://sale.591.com.tw/",image:"",price:2680,unit_price:88.2,ping:30.4,layout:"3房2廳2衛",age:18,floor:"7F/12F",district:"內湖區",address:"成功路四段",community:"範例社區",tags:["近捷運","有車位"],search:"台北內湖中山 2-3房 3000萬內",first_seen:"2026-09-28 08:00",last_seen:"2026-09-28 08:00",active:true,is_new:true},
+  {source:"591中古屋",id:"d1",title:"內湖捷運三房 採光好 含平面車位",url:"https://sale.591.com.tw/",image:"",price:2680,unit_price:88.2,ping:30.4,layout:"3房2廳2衛",age:18,floor:"7F/12F",district:"內湖區",address:"成功路四段",community:"範例社區",community_id:1,county:"臺北市",kind:"電梯大樓",tags:["近捷運","有車位"],market:{premium:-3.1,premium_ref:"nearby",ref_price:91,community:{name:"範例社區",url:"https://market.591.com.tw/",n:6,n_12m:3,median_12m:89.5,median_all:86.2,trend:[["2024Q4",80.1,1],["2025Q2",83.4,2],["2025Q4",87.9,1],["2026Q2",90.2,2]],deals:[{date:"2026-05-02",unit:90.8,total:2860,ping:31.5,layout:"3房2廳2衛",floor:"8樓/12樓",address:"成功路四段"},{date:"2026-04-11",unit:89.5,total:2790,ping:31.2,layout:"3房2廳2衛",floor:"5樓/12樓",address:"成功路四段"}]},nearby:{scope:"內湖區成功路四段",n:24,n_12m:11,median_12m:91,trend:[["2024Q4",82,3],["2025Q1",83.5,2],["2025Q2",85.1,4],["2025Q3",86,3],["2025Q4",88.2,3],["2026Q1",89.9,4],["2026Q2",91.4,5]],deals:[{date:"2026-06-12",unit:92.3,total:2950,ping:32,layout:"3房2廳2衛",floor:"九層/十四層",address:"內湖區成功路四段1~30號"}]}},search:"台北內湖中山 2-3房 3000萬內",first_seen:"2026-09-28 08:00",last_seen:"2026-09-28 08:00",active:true,is_new:true},
   {source:"591中古屋",id:"d2",title:"中山國小站 電梯兩房 屋況佳",url:"https://sale.591.com.tw/",image:"",price:2150,prev_price:2280,unit_price:96.8,ping:22.2,layout:"2房1廳1衛",age:25,floor:"5F/9F",district:"中山區",address:"民生東路一段",tags:["有陽台"],search:"台北內湖中山 2-3房 3000萬內",first_seen:"2026-09-14 08:00",last_seen:"2026-09-28 08:00",active:true},
   {source:"591新建案",id:"d3",title:"範例建案",url:"https://newhouse.591.com.tw/",image:"",price:null,price_text:"85~95萬/坪",unit_price:85,ping_text:"22~45坪",layout:"二房(22~28坪),三房(35~45坪)",district:"中山區",address:"台北市中山區松江路",tags:["近捷運","低公設"],search:"台北市新建案",first_seen:"2026-09-28 08:00",last_seen:"2026-09-28 08:00",active:true,is_new:true},
   {source:"591中古屋",id:"d4",title:"內湖科技園區旁 三房 已下架範例",url:"https://sale.591.com.tw/",image:"",price:2890,unit_price:92.1,ping:31.4,layout:"3房2廳2衛",age:12,floor:"3F/14F",district:"內湖區",address:"瑞光路",tags:[],search:"台北內湖中山 2-3房 3000萬內",first_seen:"2026-09-07 08:00",last_seen:"2026-09-21 08:00",active:false}
@@ -160,9 +194,134 @@ function card(it){
       <div class="meta">${meta}</div>
       <div class="addr">${esc(it.address)}</div>
       ${(it.tags||[]).length ? `<div class="tags">${it.tags.slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
+      ${marketRow(it)}
+      <div class="links">${links(it)}</div>
       <div class="foot">首次發現 ${esc(it.first_seen)}　·　${esc(it.search || "")}</div>
     </div></article>`;
 }
+
+
+function premChip(m){
+  if (m.premium == null) return "";
+  const p = m.premium, cls = p > 3 ? "up" : p < -3 ? "down" : "eq";
+  const txt = p > 3 ? `比行情貴 ${p}%` : p < -3 ? `比行情便宜 ${Math.abs(p)}%` : `接近行情（${p > 0 ? "+" : ""}${p}%）`;
+  return `<span class="prem ${cls}">${txt}</span>`;
+}
+function marketRow(it){
+  const m = it.market;
+  if (!m) return "";
+  const ref = m.ref_price ? `${m.ref_label || (m.premium_ref === "community" ? "同社區" : "附近")}成交中位數 ${m.ref_price} 萬/坪` :
+    (m.community ? `同社區 ${m.community.n} 筆成交` : m.nearby ? `附近 ${m.nearby.n} 筆成交` : "");
+  return `<div class="mk">${premChip(m)}<span>${esc(ref)}</span></div>`;
+}
+function links(it){
+  const q = encodeURIComponent;
+  const place = [it.county, it.district, it.address].filter(Boolean).join("");
+  const kw = it.community && it.community !== it.title ? it.community : place;
+  const out = [`<a class="lk primary" href="${esc(it.url)}" target="_blank" rel="noopener">${it.source.startsWith("591") ? "591 原網頁" : "原網頁"} ↗</a>`];
+  if (it.market) out.push(`<button class="lk" type="button" data-mk="${esc(it.id)}">行情走勢</button>`);
+  if (it.community_id) out.push(`<a class="lk" href="https://market.591.com.tw/${it.community_id}" target="_blank" rel="noopener">社區實價 ↗</a>`);
+  out.push(`<a class="lk" href="https://www.google.com/search?q=${q("site:leju.com.tw " + kw)}" target="_blank" rel="noopener">樂居 ↗</a>`);
+  if (place) out.push(`<a class="lk" href="https://www.google.com/maps/search/?api=1&query=${q(place)}" target="_blank" rel="noopener">地圖 ↗</a>`);
+  return out.join("");
+}
+
+// ---------- 行情詳情 ----------
+function lineChart(series, refPrice){
+  // series: [{name, color, marker, pts:[[label, value, n]]}]
+  const labels = [...new Set(series.flatMap(s => s.pts.map(p => p[0])))].sort();
+  if (!labels.length) return '<p class="note">成交筆數不足，無法畫出走勢。</p>';
+  const vals = series.flatMap(s => s.pts.map(p => p[1])).concat(refPrice ? [refPrice] : []);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  const pad = Math.max((hi - lo) * 0.15, 2); lo = Math.floor((lo - pad) / 5) * 5; hi = Math.ceil((hi + pad) / 5) * 5;
+  const W = 700, H = 260, L = 48, R = 28, T = 14, B = 34;
+  const x = i => labels.length === 1 ? (L + W - R) / 2 : L + i * (W - L - R) / (labels.length - 1);
+  const y = v => T + (hi - v) * (H - T - B) / (hi - lo);
+  const step = (hi - lo) / 4;
+  let g = "";
+  for (let k = 0; k <= 4; k++) {
+    const v = lo + step * k;
+    g += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)" stroke-width="1"/>` +
+         `<text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${Math.round(v)}</text>`;
+  }
+  const every = Math.ceil(labels.length / 8);
+  labels.forEach((lb, i) => { if (i % every === 0 || i === labels.length - 1)
+    g += `<text x="${x(i)}" y="${H - 12}" text-anchor="${i === labels.length - 1 && labels.length > 1 ? "end" : i === 0 && labels.length > 1 ? "start" : "middle"}" font-size="11" fill="var(--muted)">${lb.replace("Q", " Q")}</text>`; });
+  if (refPrice) g += `<line x1="${L}" x2="${W - R}" y1="${y(refPrice)}" y2="${y(refPrice)}" stroke="var(--price)" stroke-width="1.5" stroke-dasharray="5 4"/>` +
+    `<text x="${L + 6}" y="${y(refPrice) - 6}" text-anchor="start" font-size="11" fill="var(--price)">此物件開價 ${refPrice}</text>`;
+  const pts = [];
+  for (const s of series) {
+    const P = s.pts.map(p => ({x: x(labels.indexOf(p[0])), y: y(p[1]), lb: p[0], v: p[1], n: p[2], s: s.name, c: s.color}));
+    if (!P.length) continue;
+    g += `<polyline fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" points="${P.map(p => p.x + "," + p.y).join(" ")}"/>`;
+    for (const p of P) g += s.marker === "sq"
+      ? `<rect x="${p.x - 4}" y="${p.y - 4}" width="8" height="8" rx="1.5" fill="${s.color}" stroke="var(--surface)" stroke-width="2"/>`
+      : `<circle cx="${p.x}" cy="${p.y}" r="4.5" fill="${s.color}" stroke="var(--surface)" stroke-width="2"/>`;
+    const e = P[P.length - 1];
+    g += `<text x="${Math.min(e.x + 8, W - R - 4)}" y="${e.y - 8}" font-size="11" fill="var(--ink)" text-anchor="${e.x > W - 80 ? "end" : "start"}">${e.v}</text>`;
+    pts.push(...P);
+  }
+  window.__pts = pts;
+  return `<div class="chart" id="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="每季成交單價中位數走勢">${g}
+    <rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="hit"/></svg><div class="tip" id="tip" hidden></div></div>`;
+}
+function bindChart(){
+  const svg = document.querySelector("#chart svg"), tip = $("tip"), hit = $("hit");
+  if (!svg || !hit) return;
+  const move = ev => {
+    const r = svg.getBoundingClientRect(), sx = 700 / r.width;
+    const mx = (ev.clientX - r.left) * sx, my = (ev.clientY - r.top) * sx;
+    let best = null, bd = 1e9;
+    for (const p of window.__pts) { const d = Math.hypot(p.x - mx, (p.y - my) * .6); if (d < bd) { bd = d; best = p; } }
+    if (!best || bd > 60) { tip.hidden = true; return; }
+    tip.hidden = false; tip.style.left = best.x / sx + "px"; tip.style.top = best.y / sx + "px";
+    tip.textContent = `${best.s}｜${best.lb.replace("Q", " Q")}｜${best.v} 萬/坪（${best.n} 筆）`;
+  };
+  hit.addEventListener("pointermove", move); hit.addEventListener("pointerleave", () => tip.hidden = true);
+}
+function dealTable(deals){
+  if (!deals || !deals.length) return '<p class="note">沒有成交紀錄。</p>';
+  return `<div class="tbl"><table><thead><tr><th>成交日期</th><th>地址</th><th>樓層</th><th>格局</th><th class="n">坪數</th><th class="n">單價（萬/坪）</th><th class="n">總價（萬）</th></tr></thead><tbody>${
+    deals.map(d => `<tr><td>${esc(d.date)}${d.presale ? "（預售）" : ""}</td><td>${esc(d.address)}</td><td>${esc(d.floor)}</td><td>${esc(d.layout)}</td>
+      <td class="n">${d.ping ?? "–"}</td><td class="n">${d.unit}</td><td class="n">${d.total != null ? Math.round(d.total).toLocaleString() : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function openMarket(id){
+  const it = DATA.items.find(i => i.id === id); if (!it || !it.market) return;
+  const m = it.market, c = m.community, n = m.nearby;
+  const series = [];
+  if (c && c.trend.length) series.push({name: `同社區（${c.name}）`, color: "var(--s2)", marker: "sq", pts: c.trend});
+  if (n && n.trend.length) series.push({name: `附近類似：${n.scope}`, color: "var(--s1)", marker: "dot", pts: n.trend});
+  const kpi = (v, lbl) => `<div class="kpi"><b>${v ?? "–"}</b><span>${lbl}</span></div>`;
+  const tabs = [c ? ["c", `同社區成交（${c.n}）`] : null, n ? ["n", `附近類似成交（${n.n}）`] : null].filter(Boolean);
+  $("ov").innerHTML = `<div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgT">
+    <div style="display:flex;align-items:flex-start;gap:10px"><div><div class="src">${esc(it.source)}　${esc(it.district)}${esc(it.address)}</div>
+      <h2 id="dlgT">${esc(it.title)}</h2></div><button class="x" type="button" aria-label="關閉" id="dlgX">×</button></div>
+    <div class="mk" style="margin:0">${premChip(m)}<span>${m.ref_price ? `比較基準：${esc(m.ref_label || "")}成交單價中位數 ${m.ref_price} 萬/坪` : "成交筆數不足，暫不比較開價"}</span></div>
+    <div class="kpis">
+      ${kpi(it.unit_price ? it.unit_price + " 萬/坪" : (it.price_text || "–"), "此物件開價單價")}
+      ${kpi(c && (c.median_12m ?? c.median_all) ? (c.median_12m ?? c.median_all) + " 萬/坪" : null, c ? `同社區${c.median_12m ? "近一年" : "歷年"}中位數（${c.median_12m ? c.n_12m : c.n} 筆）` : "同社區：無成交資料")}
+      ${kpi(n && (n.median_12m ?? n.median_all) ? (n.median_12m ?? n.median_all) + " 萬/坪" : null, n ? `附近${n.median_12m ? "近一年" : ""}中位數（${n.median_12m ? n.n_12m : n.n} 筆）` : "附近：無成交資料")}
+    </div>
+    <div><div class="legend">${series.map(s => `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join("")}${it.unit_price ? '<span><i style="background:var(--price)"></i>此物件開價</span>' : ""}</div>
+      ${lineChart(series, it.unit_price)}<div class="note">每季成交單價中位數（萬/坪，已扣除車位）。游標移到點上可看筆數。</div></div>
+    ${tabs.length ? `<div class="tabs" role="tablist">${tabs.map((t, i) => `<button class="tab" role="tab" data-tab="${t[0]}" aria-selected="${i === 0}">${t[1]}</button>`).join("")}</div><div id="dealBox"></div>` : ""}
+    <div class="links">${links(it).replace(/<button[^>]*data-mk[^>]*>.*?<\/button>/, "")}</div>
+    <div class="note">資料來源：591 實價登錄（同社區）、內政部不動產成交案件實際資訊（附近類似，${esc(n ? n.scope : "")}，同型態、坪數 ±35%）。行情僅供參考，實際價格請以現場與專業估價為準。</div>
+  </div>`;
+  $("ov").hidden = false;
+  const show = k => { $("dealBox").innerHTML = dealTable(k === "c" ? c.deals : n.deals);
+    document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === k)); };
+  if (tabs.length) { show(tabs[0][0]); document.querySelectorAll(".tab").forEach(b => b.onclick = () => show(b.dataset.tab)); }
+  bindChart();
+  $("dlgX").focus();
+  $("dlgX").onclick = closeMarket;
+}
+function closeMarket(){ $("ov").hidden = true; $("ov").innerHTML = ""; }
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-mk]"); if (b) openMarket(b.dataset.mk);
+  if (e.target === $("ov")) closeMarket();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("ov").hidden) closeMarket(); });
 
 function render(){
   const q = $("fText").value.trim(), s = $("fSearch").value, src = $("fSource").value;
@@ -171,7 +330,7 @@ function render(){
     (!$("fNew").checked || it.is_new) && (!$("fActive").checked || it.active) &&
     (!q || [it.title,it.community,it.address,it.district].join(" ").includes(q)));
   const by = $("fSort").value, big = 1e9;
-  const key = {new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
+  const key = {prem: it => it.market?.premium ?? big, new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
   list.sort((a,b) => { const x = key(a), y = key(b); return by === "new" ? (x < y ? 1 : x > y ? -1 : 0) : x - y; });
   $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">沒有符合的物件</div>';
   $("count").textContent = `顯示 ${list.length} 筆`;
