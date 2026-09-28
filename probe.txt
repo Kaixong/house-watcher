@@ -1,0 +1,12 @@
+rakuya count (base) 6189
+rakuya count &age=~20 977
+rakuya count &age=0~20 823
+rakuya count &type=2 6189
+rakuya count &usecode=1 6118
+rakuya count &parking=1 6189
+rakuya count &feature=parking 6189
+rakuya count &size=20~ 6045
+rakuya filters: ["login_ident=user ", "login_type=tel ", "el-id-2148-15=3 車位", "el-id-2148-18=~20 20坪以下", "el-id-2148-18=20~30 20~30坪", "el-id-2148-18=30~40 30~40坪", "el-id-2148-18=40~50 40~50坪", "el-id-2148-18=50~ 50坪以上"]
+hb url: https://www.hbhousing.com.tw/buyhouse/%E6%A1%83%E5%9C%92%E5%B8%82/320/1500-down-price 桃園市中壢區總價1,500萬以下 - 住商不動產
+hb links: [["買屋  區域找屋", "/buyhouse/桃園市/320/1500-down-price"], ["學校  學校找屋", "/buyhouse/school/桃園市/320/1500-down-price"], ["土地  土地買賣", "/buyhouse/land/桃園市/320/1500-down-price"], ["商用  廠辦店面", "/buyhouse/business/桃園市/320/1500-down-price/shop-office-factory-houseoffice-type"], ["所有物件", "/buyhouse/桃園市/320/1500-down-price"], ["VR實境看屋", "/buyhouse/桃園市/320/1500-down-price/vr-tab"], ["A級案件", "/buyhouse/桃園市/320/1500-down-price/A-tab"], ["影片賞屋", "/buyhouse/桃園市/320/1500-down-price/video-tab"], ["店長推薦", "/buyhouse/桃園市/320/1500-down-price/recommend-tab"], ["列表找屋", "/buyhouse/桃園市/320/1500-down-price"], ["地圖找屋", "/buyhouse/map/桃園市/320/1500-down-price"]]
+hb count: 共找到 2,257
