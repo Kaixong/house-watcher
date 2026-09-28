@@ -78,14 +78,19 @@ def main():
         matched = [it for it in items if passes(it, s.get("filters"))]
         print(f"  共 {len(items)} 筆，列表條件符合 {len(matched)} 筆")
         if typ == "sale" and needs_detail(s.get("filters")) and matched:
-            for it in matched:  # 沿用之前讀過的詳情，避免重複開網頁
+            dcache = state.setdefault("details", {})
+            for it in matched:  # 沿用之前讀過的詳情（含沒通過條件的），避免重複開網頁
                 old = state["items"].get(it["id"]) or {}
-                if old.get("detail"):
-                    it["detail"] = old["detail"]
+                if old.get("detail") or it["id"] in dcache:
+                    it["detail"] = old.get("detail") or dcache[it["id"]]
             try:
-                sale591.scrape_details(matched, headless=not args.show)
+                sale591.scrape_details(matched, headless=not args.show,
+                                       max_pages=int(s.get("max_details", 60)))
             except Exception as e:  # noqa: BLE001
                 warnings.append(f"{name}：詳情頁讀取失敗（{e.__class__.__name__}）")
+            for it in matched:
+                if it.get("detail"):
+                    dcache[it["id"]] = it["detail"]
             kept = []
             for it in matched:
                 ok, why = passes_detail(it, s.get("filters"))

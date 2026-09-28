@@ -71239,5 +71239,594 @@
    "active": 152,
    "warnings": []
   }
- ]
+ ],
+ "details": {
+  "sale-20897320": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.79,
+   "public_ratio": "32%",
+   "mgmt_fee": "2797元/月",
+   "traffic": [
+    "群益幼稚園公車站",
+    "篤行五村公車站",
+    "內壢火車站"
+   ]
+  },
+  "sale-20945964": {
+   "parking": "10.59坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.74,
+   "public_ratio": "30%",
+   "mgmt_fee": "2965元/月",
+   "traffic": [
+    "中興莊公車站"
+   ]
+  },
+  "sale-20873743": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.153,
+   "public_ratio": "43%",
+   "mgmt_fee": "2303元/月",
+   "traffic": [
+    "A19捷運站"
+   ]
+  },
+  "sale-20945994": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 30.18,
+   "public_ratio": "43%",
+   "mgmt_fee": "18000元/年",
+   "traffic": [
+    "月眉公車站 周邊交通如何？"
+   ]
+  },
+  "sale-20804765": {
+   "parking": "10.6坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.75,
+   "public_ratio": "30%",
+   "mgmt_fee": "3360元/月",
+   "traffic": [
+    "中壢客運公車站",
+    "中壢火車站"
+   ]
+  },
+  "sale-20834254": {
+   "parking": "6.83坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 26.3,
+   "public_ratio": "33%",
+   "mgmt_fee": "2620元/月",
+   "traffic": [
+    "A19捷運站",
+    "桃園高鐵火車站"
+   ]
+  },
+  "sale-20916441": {
+   "parking": "7.17坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.24,
+   "public_ratio": "33%",
+   "mgmt_fee": "2928元/月",
+   "traffic": [
+    "A19捷運站"
+   ]
+  },
+  "sale-20921626": {
+   "parking": "9.04坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 20.67,
+   "public_ratio": "33%",
+   "mgmt_fee": "無",
+   "traffic": [
+    "中壢火車站"
+   ]
+  },
+  "sale-20817319": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 28.76,
+   "public_ratio": "32%",
+   "mgmt_fee": "",
+   "traffic": [
+    "大稻埕公車站",
+    "草席厝公車站",
+    "紅土墩公車站",
+    "A19 桃園體育園區捷運站",
+    "內壢火車站",
+    "中壢火車站"
+   ]
+  },
+  "sale-20693978": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 41.427,
+   "public_ratio": "33%",
+   "mgmt_fee": "1450元/月",
+   "traffic": [
+    "親溪公園路",
+    "位於中豐北路與民權路路",
+    "近青埔A20、A19捷運站",
+    "青埔高鐵火車站"
+   ]
+  },
+  "sale-20826213": {
+   "parking": "9.32坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 20.49,
+   "public_ratio": "31%",
+   "mgmt_fee": "",
+   "traffic": [
+    "桃園客運公車站 周邊交通如何？",
+    "A21捷運站",
+    "桃園高鐵火車站"
+   ]
+  },
+  "sale-20971850": {
+   "parking": "6.48坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 21.52,
+   "public_ratio": "27%",
+   "mgmt_fee": "1812元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20969536": {
+   "parking": "12.48坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 24.66,
+   "public_ratio": "29%",
+   "mgmt_fee": "3219元/月",
+   "traffic": [
+    "下月眉公車站"
+   ]
+  },
+  "sale-20652624": {
+   "parking": "10坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 24.45,
+   "public_ratio": "31%",
+   "mgmt_fee": "2450元/月",
+   "traffic": [
+    "中壢火車站"
+   ]
+  },
+  "sale-20831083": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.88,
+   "public_ratio": "",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "群益幼稚園公車站"
+   ]
+  },
+  "sale-20647467": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.67,
+   "public_ratio": "",
+   "mgmt_fee": "",
+   "traffic": [
+    "A19體育園區捷運站",
+    "A18桃園高鐵捷運站"
+   ]
+  },
+  "sale-20722891": {
+   "parking": "11.36坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.76,
+   "public_ratio": "31%",
+   "mgmt_fee": "2150元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20687596": {
+   "parking": "10.09坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.88,
+   "public_ratio": "32%",
+   "mgmt_fee": "無",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20737897": {
+   "parking": "10.6坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.75,
+   "public_ratio": "30%",
+   "mgmt_fee": "3360元/月",
+   "traffic": [
+    "中壢火車站"
+   ]
+  },
+  "sale-20818369": {
+   "parking": "10.72坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.02,
+   "public_ratio": "31%",
+   "mgmt_fee": "2100元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20748027": {
+   "parking": "10.901坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.878,
+   "public_ratio": "",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20544201": {
+   "parking": "7.4坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.07,
+   "public_ratio": "41%",
+   "mgmt_fee": "24766元/年",
+   "traffic": [
+    "中園育樂街口公車站",
+    "中壢簡易庭公車站",
+    "A22 老街溪捷運站",
+    "中壢火車站"
+   ]
+  },
+  "sale-20809308": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.88,
+   "public_ratio": "32%",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "群益幼稚園公車站",
+    "中正國小公車站",
+    "內壢火車站"
+   ]
+  },
+  "sale-20809147": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 21.52,
+   "public_ratio": "",
+   "mgmt_fee": "1812元/月",
+   "traffic": [
+    "普騰街口公車站",
+    "環中愛樂公車站",
+    "未來a23捷運站",
+    "內壢火車站"
+   ]
+  },
+  "sale-20721313": {
+   "parking": "6.48坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 21.52,
+   "public_ratio": "27%",
+   "mgmt_fee": "1812元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20822392": {
+   "parking": "3.4坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": null,
+   "public_ratio": "",
+   "mgmt_fee": "",
+   "traffic": [
+    "A22捷運站",
+    "內壢火車站"
+   ]
+  },
+  "sale-20896273": {
+   "parking": "11.95坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 20.47,
+   "public_ratio": "31%",
+   "mgmt_fee": "",
+   "traffic": [
+    "A19捷運站",
+    "桃園高鐵站火車站"
+   ]
+  },
+  "sale-20655930": {
+   "parking": "8.96坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.27,
+   "public_ratio": "31%",
+   "mgmt_fee": "2371元/月",
+   "traffic": [
+    "169中壢-健保局公車站",
+    "205-林口長庚公車站",
+    "紅線捷運中原站捷運站",
+    "埔心火車站火車站"
+   ]
+  },
+  "sale-20711389": {
+   "parking": "7.17坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.24,
+   "public_ratio": "33%",
+   "mgmt_fee": "2928元/月",
+   "traffic": [
+    "A19捷運站"
+   ]
+  },
+  "sale-20849903": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.88,
+   "public_ratio": "32%",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "156 -中壢火車站公車站",
+    "231中壢區公所公車站",
+    "紅線捷運中原站捷運站",
+    "內壢火車站火車站"
+   ]
+  },
+  "sale-20878599": {
+   "parking": "10坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 26.0,
+   "public_ratio": "30%",
+   "mgmt_fee": "2433元/月",
+   "traffic": [
+    "南園二路公車站 周邊交通如何？",
+    "A21捷運站",
+    "中壢火車站"
+   ]
+  },
+  "sale-20810722": {
+   "parking": "10.901坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.878,
+   "public_ratio": "32%",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "群益幼稚園.中正國小公車站"
+   ]
+  },
+  "sale-20752322": {
+   "parking": "9.06坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 24.408,
+   "public_ratio": "46%",
+   "mgmt_fee": "3456元/月",
+   "traffic": [
+    "中壢客運公車站 周邊交通如何？",
+    "A22老街溪站捷運站 能步行到捷運站嗎？",
+    "中壢火車站"
+   ]
+  },
+  "sale-20798853": {
+   "parking": "9.06坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 26.408,
+   "public_ratio": "32%",
+   "mgmt_fee": "3456元/月",
+   "traffic": [
+    "中壢客運公車站",
+    "桃園客運公車站",
+    "中央大學公車站",
+    "中壢火車站"
+   ]
+  },
+  "sale-20685296": {
+   "parking": "10.901坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.878,
+   "public_ratio": "48%",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20961019": {
+   "parking": "9.33坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.48,
+   "public_ratio": "31%",
+   "mgmt_fee": "2442元/月",
+   "traffic": [
+    "中壢公車站 周邊交通如何？"
+   ]
+  },
+  "sale-20723584": {
+   "parking": "7.4坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.07,
+   "public_ratio": "28%",
+   "mgmt_fee": "24276元/年",
+   "traffic": [
+    "A21環北站捷運站",
+    "中壢車站火車站"
+   ]
+  },
+  "sale-20587376": {
+   "parking": "7.4坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 27.98,
+   "public_ratio": "28%",
+   "mgmt_fee": "2480元/月",
+   "traffic": [
+    "桃園客運公車站"
+   ]
+  },
+  "sale-20557510": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": null,
+   "public_ratio": "",
+   "mgmt_fee": "2797元/月",
+   "traffic": [
+    "群益幼稚園公車站",
+    "篤行五村公車站",
+    "內壢火車站"
+   ]
+  },
+  "sale-20769435": {
+   "parking": "6.36坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 28.76,
+   "public_ratio": "32%",
+   "mgmt_fee": "4520元/月",
+   "traffic": [
+    "中壢客運公車站",
+    "體育園區站捷運站"
+   ]
+  },
+  "sale-20836889": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.78,
+   "public_ratio": "32%",
+   "mgmt_fee": "2797元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20914654": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.79,
+   "public_ratio": "32%",
+   "mgmt_fee": "2797元/月",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20970099": {
+   "parking": "11.36坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": null,
+   "public_ratio": "",
+   "mgmt_fee": "2100元/月",
+   "traffic": [
+    "華勛、榮民南路公車站",
+    "G28捷運站",
+    "內壢、中壢火車站"
+   ]
+  },
+  "sale-20959465": {
+   "parking": "6.357坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 28.75,
+   "public_ratio": "39%",
+   "mgmt_fee": "4660元/月",
+   "traffic": [
+    "A18高鐵桃園捷運站",
+    "A19體育園區捷運站",
+    "A17領航站捷運站",
+    "高鐵桃園火車站"
+   ]
+  },
+  "sale-20386718": {
+   "parking": "6.755坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 25.428,
+   "public_ratio": "31%",
+   "mgmt_fee": "2287元/月",
+   "traffic": [
+    "統聯客運公車站",
+    "桃園客運公車站",
+    "A19桃園體育園區捷運站",
+    "A18高鐵桃園站捷運站",
+    "A17高鐵領航站捷運站",
+    "台灣高鐵-桃園站火車站"
+   ]
+  },
+  "sale-20418815": {
+   "parking": "6.755坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 25.428,
+   "public_ratio": "33%",
+   "mgmt_fee": "2287元/月",
+   "traffic": [
+    "A19體育園區捷運站",
+    "桃園高鐵站火車站"
+   ]
+  },
+  "sale-20475684": {
+   "parking": "8.17坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.85,
+   "public_ratio": "31%",
+   "mgmt_fee": "3060元/月",
+   "traffic": [
+    "A19桃園體育園區捷運站"
+   ]
+  },
+  "sale-20630734": {
+   "parking": "7.95坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 23.84,
+   "public_ratio": "",
+   "mgmt_fee": "",
+   "traffic": [
+    "內壢火車站"
+   ]
+  },
+  "sale-20653233": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.87,
+   "public_ratio": "28%",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "A18桃園高鐵捷運站"
+   ]
+  },
+  "sale-20653492": {
+   "parking": "10.9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.88,
+   "public_ratio": "32%",
+   "mgmt_fee": "2830元/月",
+   "traffic": [
+    "群益幼稚園公車站",
+    "內壢火車站"
+   ]
+  },
+  "sale-20657773": {
+   "parking": "坡道平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": null,
+   "public_ratio": "",
+   "mgmt_fee": "",
+   "traffic": [
+    "A19捷運站 能步行到捷運站嗎？"
+   ]
+  },
+  "sale-20663217": {
+   "parking": "9.33坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 20.49,
+   "public_ratio": "45%",
+   "mgmt_fee": "2442元/月",
+   "traffic": [
+    "A21環北站捷運站",
+    "中壢火車站"
+   ]
+  },
+  "sale-20665321": {
+   "parking": "9.22坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 24.37,
+   "public_ratio": "32%",
+   "mgmt_fee": "2574元/月",
+   "traffic": [
+    "中壢地政事務所公車站",
+    "A19桃園體育園區捷運站",
+    "中壢火車站"
+   ]
+  }
+ }
 }

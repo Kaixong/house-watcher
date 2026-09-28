@@ -110,8 +110,8 @@ def _dump_debug(page, n, log):
         classes = page.evaluate("""() => [...new Set([...document.querySelectorAll('[class]')]
             .flatMap(e => [...e.classList]).filter(c => /item|list|house|ware/i.test(c)))].slice(0, 40)""")
         log(f"    相關 class：{classes}")
-        (d / f"sale_page{n}.html").write_text(page.content(), "utf-8")
-        page.screenshot(path=str(d / f"sale_page{n}.png"), full_page=False)
+        (d / f"sale_{n}.html").write_text(page.content(), "utf-8")
+        page.screenshot(path=str(d / f"sale_{n}.png"), full_page=False)
     except Exception as e:  # noqa: BLE001
         log(f"    （除錯資料儲存失敗：{e}）")
 
@@ -175,23 +175,37 @@ def parse_detail(boxes: dict) -> dict:
     }
 
 
-def scrape_details(items: list[dict], headless: bool = True, log=print) -> None:
-    """逐一打開詳情頁，把結果存到 item['detail']。已有 detail 的會略過。"""
-    todo = [it for it in items if not it.get("detail")]
+def scrape_details(items: list[dict], headless: bool = True, log=print, max_pages: int = 60) -> None:
+    """逐一打開詳情頁，把結果存到 item['detail']。已有 detail 的會略過。
+    每次最多讀 max_pages 筆（其餘下次再讀）；連續失敗 3 次就停止，避免被擋時空等。"""
+    todo = [it for it in items if not it.get("detail")][:max_pages]
     if not todo:
         return
     from playwright.sync_api import sync_playwright
     log(f"  [591中古屋] 讀取 {len(todo)} 筆詳情頁（車位、主建物、附近交通）")
     with sync_playwright() as p:
         browser, page = _new_page(p, headless)
+        # 詳情頁不需要圖片、影片、字型，擋掉可以快很多
+        page.route("**/*", lambda r: r.abort() if r.request.resource_type in ("image", "media", "font") else r.continue_())
+        fails = 0
         for n, it in enumerate(todo, 1):
+            t0 = time.time()
             try:
-                page.goto(it["url"], wait_until="domcontentloaded", timeout=45000)
-                page.wait_for_selector(".detail-house-box", timeout=20000)
-                time.sleep(1.2)
+                page.goto(it["url"], wait_until="domcontentloaded", timeout=25000)
+                page.wait_for_selector(".detail-house-box", timeout=12000)
+                time.sleep(1.0)
                 it["detail"] = parse_detail(page.evaluate(DETAIL_JS))
+                fails = 0
+                if n <= 2:
+                    log(f"    詳情 {it['id']} OK（{time.time() - t0:.1f}s）：{it['detail'].get('parking')}｜{it['detail'].get('traffic')[:2]}")
             except Exception as e:  # noqa: BLE001
-                log(f"    ⚠ 詳情頁失敗 {it['id']}：{e.__class__.__name__}")
+                fails += 1
+                log(f"    ⚠ 詳情頁失敗 {it['id']}：{e.__class__.__name__}（{time.time() - t0:.0f}s）")
+                if fails == 1:
+                    _dump_debug(page, f"detail_{it['id']}", log)
+                if fails >= 3:
+                    log("    連續失敗 3 次，停止讀取詳情頁（可能被網站阻擋）")
+                    break
             if n % 10 == 0:
                 log(f"    …{n}/{len(todo)}")
             time.sleep(random.uniform(2.5, 4.5))
