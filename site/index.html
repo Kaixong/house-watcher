@@ -107,7 +107,8 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .tomap{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:40;background:var(--accent);color:var(--surface);border:0;border-radius:99px;padding:11px 18px;font:500 15px/1 "Noto Sans TC",system-ui,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer}
 .card.hl{outline:2px solid var(--accent);outline-offset:2px}
 .pin{transition:transform .15s}
-.pin.big{transform:scale(1.7);box-shadow:0 0 0 2px #2f3e8f}
+.pin.big{transform:scale(1.5)}
+.pin.sel{transform:scale(1.9);box-shadow:0 0 0 3px #fff,0 0 0 5px #b3261e}
 #mapWrap .legend{gap:16px}
 .leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.5;margin:10px 12px}
 .leaflet-popup-content a{color:#2f3e8f}
@@ -440,8 +441,9 @@ function drawMap(list){
     m.bindPopup(`<b>${esc(it.title)}</b><br>${esc(price)}${it.unit_price ? `（${it.unit_price} 萬/坪）` : ""}<br>
       ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距" + esc(it.near_name || "中心") + " " + it.distance_km + " km<br>" : ""}
       <a href="#" data-focus="${esc(it.id)}">看完整資料</a>　<a href="${esc(it.url)}" target="_blank" rel="noopener">591 原網頁 ↗</a>`, {autoPan: true});
-    m.on("click", () => focusCard(it.id));
+    m.on("click", () => select(it.id, "side"));
     m.addTo(LAYER); MARKERS[it.id] = m; pts.push([it.lat, it.lng]);
+    if (it.id === HL) { m.setZIndexOffset(1000); const p = markerOf(it.id); if (p) p.classList.add("sel"); }
   }
   const key = [$("fSearch").value, $("fSource").value, $("fText").value, $("fNew").checked, $("fActive").checked].join("|");
   setTimeout(() => {
@@ -458,19 +460,28 @@ function renderMapList(){
   const noGeo = MAPLIST.filter(it => !(it.lat && it.lng)).length;
   $("mapList").innerHTML = `<div class="mlh"><span>地圖範圍內 <b>${vis.length}</b> 筆（共 ${MAPLIST.length} 筆）</span><span>拖動或縮放地圖，清單會跟著更新${noGeo ? `；${noGeo} 筆位置未確認，請切換到列表查看` : ""}</span></div>` +
     (vis.length ? vis.map(card).join("") : '<div class="empty">這個範圍內沒有物件，試著拉遠地圖</div>');
-  if (HL) { const el = document.getElementById("card-" + HL);
-    if (el) { el.classList.add("hl"); if (Date.now() - FOCUS_AT < 1500) el.scrollIntoView({block: "center"}); } }
+  if (HL) { const el = document.getElementById("card-" + HL); if (el) el.classList.add("hl"); }
 }
-let HL = null, FOCUS_AT = 0;
-function focusCard(id, scroll = true){
-  FOCUS_AT = scroll ? Date.now() : 0;
-  const el = document.getElementById("card-" + id);
+let HL = null;
+const SIDE = () => matchMedia("(min-width: 900px)").matches;
+const smooth = () => matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+// 標記「正在看」的那一筆：地圖上的點放大加框、清單卡片加框；同時只有一筆
+function select(id, scroll){
+  if (HL && MARKERS[HL]) { MARKERS[HL].setZIndexOffset(0); const op = markerOf(HL); if (op) op.classList.remove("sel"); }
   document.querySelectorAll(".card.hl").forEach(c => c.classList.remove("hl"));
   HL = id;
+  if (MARKERS[id]) { MARKERS[id].setZIndexOffset(1000); const p = markerOf(id); if (p) p.classList.add("sel"); }
+  const el = document.getElementById("card-" + id);
   if (!el) return;
   el.classList.add("hl");
-  if (scroll) el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"});
+  if (scroll === "side" && SIDE()) {            // 桌機：只捲動右側清單，不動整個頁面
+    const box = $("mapList");
+    box.scrollTo({top: el.offsetTop - box.offsetTop - box.clientHeight / 2 + el.clientHeight / 2, behavior: smooth()});
+  } else if (scroll === "page") {                // 使用者按「看完整資料」才捲到清單
+    el.scrollIntoView({behavior: smooth(), block: "center"});
+  }
 }
+function focusCard(id){ select(id, "page"); }
 function mapOffscreen(){
   const r = $("map").getBoundingClientRect();
   return r.bottom < 80 || r.top > innerHeight - 80;
@@ -485,8 +496,7 @@ function locate(id){
   const m = MARKERS[id]; if (!m) return;
   if (mapOffscreen()) scrollToMap();
   // 桌機：清單在旁邊，順便捲到該物件；手機：留在地圖上
-  const sideBySide = matchMedia("(min-width: 900px)").matches;
-  MAP.once("moveend", () => { m.openPopup(); focusCard(id, sideBySide); });
+  MAP.once("moveend", () => { m.openPopup(); select(id, "side"); });
   MAP.setView(m.getLatLng(), Math.max(MAP.getZoom(), 16));
 }
 // 手機：捲到清單後顯示「回到地圖」
@@ -497,6 +507,7 @@ $("toMap").addEventListener("click", () => {
   if (HL && MARKERS[HL]) setTimeout(() => { MAP.panTo(MARKERS[HL].getLatLng()); MARKERS[HL].openPopup(); }, 350);
 });
 document.addEventListener("mouseover", e => {
+  if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
   const c = e.target.closest("#mapList [data-card]"); if (!c) return;
   document.querySelectorAll(".pin.big").forEach(p => p.classList.remove("big"));
   const p = markerOf(c.dataset.card); if (p) p.classList.add("big");
