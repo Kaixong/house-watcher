@@ -52,7 +52,7 @@ def passes_detail(item: dict, f: dict | None) -> tuple[bool, str]:
     if not d:
         return True, "詳情未確認"
     if d.get("not_found"):
-        return True, "詳情頁無法開啟，條件未確認"
+        return False, "物件已下架（591 詳情頁不存在）"
     if f.get("parking") == "平面" and not d.get("parking_flat"):
         return False, f"車位非平面（{d.get('parking') or '無資料'}）"
     if f.get("parking") == "有" and not d.get("parking"):

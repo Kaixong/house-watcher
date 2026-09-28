@@ -38,7 +38,7 @@ assert not passes_detail(it, f)[0]
 it["detail"] = dict(d, traffic=[])
 assert passes_detail(it, f) == (True, "591 未提供附近交通，請自行確認")
 it["detail"] = {"not_found": True}
-assert passes_detail(it, f)[0]
+assert not passes_detail(it, f)[0]
 assert not passes(dict(it, main_ping=18.5), f)
 del it["detail"]; assert passes_detail(it, f) == (True, "詳情未確認")
 print("DETAIL OK")
