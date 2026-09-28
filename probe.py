@@ -1,25 +1,31 @@
-import json
+import json, re
 from playwright.sync_api import sync_playwright
-urls = {
-  "樂居買房列表": "https://www.leju.com.tw/object_list?city_code=H",
-  "信義房屋": "https://www.sinyi.com.tw/buy/list/Taoyuan-city/320-zip/default-desc/index",
-  "永慶房屋": "https://buy.yungching.com.tw/region/桃園市-中壢區_c/",
-  "樂屋網": "https://www.rakuya.com.tw/sell/result?city=4&zipcode=320",
-  "住商不動產": "https://www.hbhousing.com.tw/buyhouse/桃園市/中壢區",
-}
 with sync_playwright() as p:
     b = p.chromium.launch(); ctx = b.new_context(locale="zh-TW", user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36")
-    for name, u in urls.items():
-        pg = ctx.new_page(); api = []
-        pg.on("response", lambda r: api.append((r.status, r.url[:140])) if r.request.resource_type in ("xhr", "fetch") and "google" not in r.url and "facebook" not in r.url else None)
-        try:
-            resp = pg.goto(u, wait_until="domcontentloaded", timeout=40000); pg.wait_for_timeout(7000)
-            txt = " ".join(pg.inner_text("body").split())
-            blocked = any(k in txt for k in ["安全驗證", "Just a moment", "Access denied", "機器人", "captcha", "Verify you are human"])
-            print(f"== {name} | status {resp.status if resp else '?'} | {pg.url[:90]} | {pg.title()[:40]} | {'被擋（機器人驗證）' if blocked else 'OK'}")
-            print("   text:", txt[:350])
-            print("   api:", [a for a in api if a[0] == 200][:8])
-        except Exception as e:
-            print(f"== {name} | ERR {e.__class__.__name__}")
-        pg.close()
+    pg = ctx.new_page(); api = []
+    pg.on("response", lambda r: api.append(r) if r.request.resource_type in ("xhr", "fetch") and "leju" in r.url and "cdn-cgi" not in r.url else None)
+    pg.goto("https://www.leju.com.tw/object_list?city_code=H", wait_until="domcontentloaded", timeout=40000); pg.wait_for_timeout(6000)
+    links = pg.evaluate("[...document.querySelectorAll('a')].map(a => [a.textContent.trim().slice(0,14), a.getAttribute('href')]).filter(x => x[1] && /object_list|object\\//.test(x[1])).slice(0, 60)")
+    print("links:", json.dumps(links, ensure_ascii=False)[:2500])
+    nd = pg.evaluate("(() => { const s = document.getElementById('__NEXT_DATA__') || document.querySelector('script[type=\"application/json\"]'); return s ? s.textContent.slice(0, 200) : null })()")
+    print("nextdata:", nd)
+    # 找中壢區
+    zl = [l for l in links if "中壢" in (l[0] or "")]
+    print("zhongli:", zl)
+    target = zl[0][1] if zl else None
+    if target:
+        api.clear()
+        pg.goto("https://www.leju.com.tw" + target if target.startswith("/") else target, wait_until="domcontentloaded", timeout=40000); pg.wait_for_timeout(7000)
+        print("== page", pg.url, pg.title())
+        txt = " ".join(pg.inner_text("body").split()); print("blocked" if "安全驗證" in txt else "ok", txt[:500])
+        # 物件卡片：找含「萬」與「坪」的連結區塊
+        card = pg.evaluate("""(() => { const as = [...document.querySelectorAll('a[href*="object"]')].filter(a => /萬/.test(a.textContent) && /坪/.test(a.textContent));
+            return {n: as.length, hrefs: as.slice(0,5).map(a => a.getAttribute('href')), html: as[0] ? (as[0].closest('li,article,div') || as[0]).outerHTML.slice(0, 3000) : null} })()""")
+        print("cards:", json.dumps(card, ensure_ascii=False)[:4200])
+        pag = pg.evaluate("[...document.querySelectorAll('a')].map(a => [a.textContent.trim(), a.getAttribute('href')]).filter(x => /^(\\d+|下一頁|›|»|>)$/.test(x[0]) && x[1]).slice(0, 10)")
+        print("pagination:", pag)
+        for r in api[:10]:
+            try: body = r.text()[:600]
+            except Exception: body = "?"
+            print("api:", r.status, r.url[:160], "|", body.replace("\\n", " ")[:600])
     b.close()
