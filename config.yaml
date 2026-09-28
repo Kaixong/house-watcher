@@ -44,4 +44,4 @@ notify:
   max_items_in_email: 30
 
 # 儀表板網址（設定好 GitHub Pages 後填上，信件裡會附連結）
-dashboard_url: ""
+dashboard_url: "https://kaixong.github.io/house-watcher/"
