@@ -481,7 +481,11 @@ function select(id, scroll){
     el.scrollIntoView({behavior: smooth(), block: "center"});
   }
 }
-function focusCard(id){ select(id, "page"); }
+function focusCard(id){
+  select(id);
+  // 等地圖移動、清單重新整理完再捲動
+  setTimeout(() => { const el = document.getElementById("card-" + id); if (el) el.scrollIntoView({behavior: smooth(), block: "center"}); }, 350);
+}
 function mapOffscreen(){
   const r = $("map").getBoundingClientRect();
   return r.bottom < 80 || r.top > innerHeight - 80;

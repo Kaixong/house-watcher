@@ -11,7 +11,7 @@ with sync_playwright() as p:
     pins.nth(n // 2).click(force=True); mp.wait_for_timeout(1200); a = mp.evaluate(Q)
     pins.nth(n // 3).click(force=True); mp.wait_for_timeout(1200); b2 = mp.evaluate(Q)
     mp.screenshot(path="shot_phone_map.png")
-    mp.locator(".leaflet-popup [data-focus]").click(); mp.wait_for_timeout(1200)
+    mp.locator(".leaflet-popup [data-focus]").click(); mp.wait_for_timeout(1800)
     c = mp.evaluate(Q + ".sy") if False else mp.evaluate("(() => { const e = document.querySelector('.card.hl'); const r = e.getBoundingClientRect(); return {cardVisible: r.top > -5 && r.bottom < innerHeight + 5, btn: !document.getElementById('toMap').hidden} })()")
     mp.screenshot(path="shot_phone_card.png")
     mp.click("#toMap"); mp.wait_for_timeout(1500); d = mp.evaluate(Q)
