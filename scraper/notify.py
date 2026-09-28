@@ -30,7 +30,7 @@ def _card(it: dict, badge: str) -> str:
             it.get("district", ""),
             it.get("layout", "")[:30],
             f"權狀 {it['ping']:g} 坪" if it.get("ping") else it.get("ping_text", ""),
-            f"主建 {it['main_ping']:g} 坪" if it.get("main_ping") else "",
+            f"{it.get('main_ping_note') or '主建'} {it['main_ping']:g} 坪" if it.get("main_ping") else "",
             f"屋齡 {it['age']:g} 年" if it.get("age") is not None else "",
             it.get("floor", ""),
         ] if x

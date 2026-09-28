@@ -14,6 +14,9 @@
 # type:
 #   sale     → 591 中古屋（sale.591.com.tw）
 #   newhouse → 591 新建案（newhouse.591.com.tw）
+#   sinyi    → 信義房屋（www.sinyi.com.tw）
+#
+# 同一間房子如果 591 和信義都有刊登，會自動合併成一筆（卡片上會多一個信義連結）。
 #
 # county（可省略）：物件所在縣市，用來查實價登錄。沒填會從 591 網址自動判斷。
 
@@ -26,13 +29,14 @@ searches:
     max_details: 120        # 每次最多讀幾筆詳情頁（讀過的會記住，不會重讀）
     filters:
       districts: ["中壢區", "桃園區", "八德區"]  # 只保留這些行政區
+      kinds: ["電梯大樓", "華廈", "公寓", "透天", "別墅"]   # 只要住宅類型
       max_price: 1500       # 總價上限（萬）
       max_age: 20           # 屋齡上限（年）
       min_main_ping: 20     # 主建物坪數下限
       parking: 平面          # 車位要求：平面 / 有（任何車位）；不限就刪掉這行
       transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]   # 「附近交通」需有其中之一；591 沒寫交通資訊的會保留並標示「請自行確認」
       exclude_keywords: ["法拍", "持分", "頂加"]
-      near:                 # 地理範圍：落在「任一個」圓心的範圍內就保留；不限就刪掉這整段
+      near: &centers        # 地理範圍：落在「任一個」圓心的範圍內就保留；下面其他條件用 *centers 共用這組圓心
         - name: 美麗歐洲社區
           lat: 24.965501    # 座標可在 Google 地圖上按右鍵複製
           lng: 121.237385
@@ -52,20 +56,31 @@ searches:
     max_pages: 60
     filters:
       districts: ["中壢區", "桃園區", "八德區"]
-      exclude_keywords: []
-      near:                 # 地理範圍：落在「任一個」圓心的範圍內就保留；不限就刪掉這整段
-        - name: 美麗歐洲社區
-          lat: 24.965501    # 座標可在 Google 地圖上按右鍵複製
-          lng: 121.237385
-          radius_km: 2
-        - name: 部桃
-          lat: 24.977890
-          lng: 121.268102
-          radius_km: 2
-        - name: 武陵高中
-          lat: 24.987424
-          lng: 121.285497
-          radius_km: 2
+      kinds: ["住家用", "住商用"]   # 排除工業用、商業用、廠辦等
+      exclude_keywords: ["廠辦", "工業", "店面", "辦公"]
+      near: *centers
+
+  - name: 信義 中壢桃園 3-4房 1500萬內 平面車位
+    type: sinyi
+    county: 桃園市
+    # 信義條件：中壢 320、桃園 330、八德 334；總價 0-1500 萬；3-4 房；類型 L=大樓 M=華廈 A=公寓
+    query:
+      zips: ["320", "330", "334"]
+      price: "0-1500"
+      rooms: "3-4"
+      types: ["L", "M", "A"]
+    link: "https://www.sinyi.com.tw/buy/list/0-1500-price/dalou-huaxia-type/3-4-roomtotal/Taoyuan-city/320-zip/index"
+    max_pages: 20
+    filters:
+      districts: ["中壢區", "桃園區", "八德區"]
+      kinds: ["大樓", "華廈", "公寓"]
+      max_price: 1500
+      max_age: 20
+      min_main_ping: 20     # 信義提供的是「主建＋陽台」坪數
+      parking: 平面
+      transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]
+      exclude_keywords: ["法拍", "持分", "頂加"]
+      near: *centers
 
 # ---------------------------------------------------------
 # 實價登錄行情

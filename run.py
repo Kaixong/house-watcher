@@ -15,7 +15,7 @@ from urllib.parse import parse_qs, urlparse
 
 import yaml
 
-from scraper import geo, newhouse591, realprice, sale591
+from scraper import geo, newhouse591, realprice, sale591, sinyi
 from scraper.filters import needs_detail, passes, passes_detail
 from scraper.notify import build_email, send_email
 
@@ -33,6 +33,38 @@ def load_state() -> dict:
     return {"items": {}, "runs": []}
 
 
+def _norm(s: str) -> str:
+    import re as _re
+    return _re.sub(r"[\s·．.()（）]", "", s or "")
+
+
+def dedupe(items: list[dict]) -> dict:
+    """回傳 {重複物件 id: 保留的物件 id}。同社區、總價差 2% 內、權狀差 1 坪內視為同一間。"""
+    rank = {"591中古屋": 0, "信義房屋": 1}
+    pool = sorted([i for i in items if i.get("source") in rank and i.get("price") and i.get("ping")],
+                  key=lambda i: rank[i["source"]])
+    kept, dup = [], {}
+    for it in pool:
+        match = None
+        for k in kept:
+            if k["source"] == it["source"]:
+                continue
+            same_comm = _norm(k.get("community")) and _norm(k.get("community")) == _norm(it.get("community"))
+            near = (k.get("lat") and it.get("lat") and geo.haversine_km(k["lat"], k["lng"], it["lat"], it["lng"]) < 0.15)
+            if (same_comm or near) and abs(k["price"] - it["price"]) <= max(10, k["price"] * 0.02) \
+                    and abs(k["ping"] - it["ping"]) <= 1:
+                match = k
+                break
+        if match:
+            dup[it["id"]] = match["id"]
+            also = match.setdefault("also", [])
+            if not any(a["url"] == it["url"] for a in also):
+                also.append({"source": it["source"], "url": it["url"], "price": it["price"]})
+        else:
+            kept.append(it)
+    return dup
+
+
 def describe(search: dict) -> dict:
     """把一組條件轉成人看得懂的文字，顯示在儀表板上。"""
     f = search.get("filters") or {}
@@ -42,8 +74,11 @@ def describe(search: dict) -> dict:
     county = _county_of(search)
     if county:
         tags.append(county.replace("臺", "台") + ("／" + "、".join(f["districts"]) if f.get("districts") else ""))
-    if q("pattern"):
-        tags.append(q("pattern").replace(",", "-") + " 房")
+    sq = search.get("query") or {}
+    if q("pattern") or sq.get("rooms"):
+        tags.append((q("pattern") or sq.get("rooms")).replace(",", "-") + " 房")
+    if f.get("kinds"):
+        tags.append("類型：" + "、".join(f["kinds"]))
     if f.get("max_price") or q("price"):
         tags.append(f"總價 {f.get('max_price') or q('price').split('$_')[-1].rstrip('$')} 萬以下")
     if f.get("max_age") is not None:
@@ -65,8 +100,8 @@ def describe(search: dict) -> dict:
         tags.append("在任一範圍內：" + "、".join(f"{c.get('name', '中心點')} {c.get('radius_km', 2)} km" for c in cs))
     if f.get("exclude_keywords"):
         tags.append("排除：" + "、".join(f["exclude_keywords"]))
-    return {"name": search["name"], "type": "新建案" if search.get("type") == "newhouse" else "中古屋",
-            "tags": tags, "url": search.get("url", ""), "near": geo.centers(f.get("near")),
+    return {"name": search["name"], "type": {"newhouse": "591 新建案", "sinyi": "信義房屋"}.get(search.get("type"), "591 中古屋"),
+            "tags": tags, "url": search.get("url") or search.get("link", ""), "near": geo.centers(f.get("near")),
             "near_logic": "符合任一範圍即可" if len(geo.centers(f.get("near"))) > 1 else ""}
 
 
@@ -106,6 +141,9 @@ def main():
                 items = sale591.scrape(s["url"], s.get("max_pages", 5), headless=not args.show)
             elif typ == "newhouse":
                 items = newhouse591.scrape(s["url"], s.get("max_pages", 3))
+            elif typ == "sinyi":
+                items = sinyi.scrape(s.get("query") or {}, county=_county_of(s),
+                                     max_pages=s.get("max_pages", 20), headless=not args.show)
             else:
                 warnings.append(f"{name}：不支援的 type「{typ}」")
                 continue
@@ -126,6 +164,16 @@ def main():
             geo.apply_distance(matched, near)
             matched = [it for it in matched if geo.within(it, near)]
             print(f"  在 {'、'.join(c.get('name', '中心') for c in geo.centers(near))} 任一範圍內 {len(matched)} 筆")
+        if typ == "sinyi" and needs_detail(s.get("filters")):  # 車位資訊列表就有，不必開詳情頁
+            kept = []
+            for it in matched:
+                ok, why = passes_detail(it, s.get("filters"))
+                if ok:
+                    if why:
+                        it["unverified"] = why
+                    kept.append(it)
+            print(f"  車位等條件符合 {len(kept)} 筆")
+            matched = kept
         if typ == "sale" and needs_detail(s.get("filters")) and matched:
             dcache = state.setdefault("details", {})
             for it in matched:  # 沿用之前讀過的詳情（含沒通過條件的），避免重複開網頁
@@ -178,6 +226,15 @@ def main():
                 it["price_history"] = hist
             it["last_seen"] = now
             state["items"][it["id"]] = it
+
+    # 跨網站去重：同一間房子在 591 和信義都有，就合併成一筆（保留 591，附上信義連結）
+    dup = dedupe([state["items"][i] for i in seen_now])
+    for did, keep_id in dup.items():
+        seen_now.discard(did)
+        state["items"].pop(did, None)
+    new_items = [n for n in new_items if n["id"] not in dup]
+    if dup:
+        print(f"▶ 跨網站重複 {len(dup)} 筆，已合併")
 
     # 實價登錄行情（只查目前在架的物件）
     if (cfg.get("realprice") or {}).get("enabled", True):

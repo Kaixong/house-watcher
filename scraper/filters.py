@@ -24,6 +24,9 @@ def passes(item: dict, f: dict | None) -> bool:
         return False
     if f.get("districts") and item.get("district") not in f["districts"]:
         return False
+    # 住宅類型：物件類型需包含清單中任一個（例如 電梯大樓、華廈、公寓、住家用）
+    if f.get("kinds") and not any(k in (item.get("kind") or "") for k in f["kinds"]):
+        return False
     text = " ".join(
         str(item.get(k, "")) for k in ("title", "address", "community", "district", "kind")
     ) + " " + " ".join(item.get("tags", []))
@@ -64,5 +67,5 @@ def passes_detail(item: dict, f: dict | None) -> tuple[bool, str]:
     if _lt(d.get("main_ping"), f.get("min_main_ping")):
         return False, "主建物坪數不足"
     if kws and not traffic:
-        return True, "591 未提供附近交通，請自行確認"
+        return True, "來源未提供附近交通，請自行確認"
     return True, ""

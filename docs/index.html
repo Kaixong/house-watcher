@@ -173,7 +173,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
   <div class="bar">
     <div class="view" role="group" aria-label="顯示方式"><button type="button" id="vList" aria-pressed="true">列表</button><button type="button" id="vMap" aria-pressed="false">地圖</button></div>
     <select id="fSearch" aria-label="追蹤條件"><option value="">全部條件</option></select>
-    <select id="fSource" aria-label="來源"><option value="">全部來源</option><option>591中古屋</option><option>591新建案</option></select>
+    <select id="fSource" aria-label="來源"><option value="">全部來源</option></select>
     <select id="fSort" aria-label="排序">
       <option value="new">最新上架</option><option value="price">總價低→高</option>
       <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="dist">離圓心近→遠</option><option value="prem">低於行情優先</option>
@@ -232,7 +232,7 @@ function fmtPrice(it){
 
 function card(it){
   const meta = [it.district, (it.layout||"").slice(0,40), it.ping ? `權狀 ${it.ping} 坪` : it.ping_text,
-    it.main_ping ? `主建 ${it.main_ping} 坪` : "",
+    it.main_ping ? `${it.main_ping_note || "主建"} ${it.main_ping} 坪` : "",
     it.age != null ? `屋齡 ${it.age} 年` : "", it.floor].filter(Boolean).map(esc).join(" · ");
   const chips = [it.is_new ? '<span class="chip new">NEW</span>' : "",
     it.prev_price ? '<span class="chip drop">降價</span>' : "",
@@ -281,7 +281,9 @@ function links(it){
   const q = encodeURIComponent;
   const place = [it.county, it.district, it.address].filter(Boolean).join("");
   const kw = it.community && it.community !== it.title ? it.community : place;
-  const out = [`<a class="lk primary" href="${esc(it.url)}" target="_blank" rel="noopener">${it.source.startsWith("591") ? "591 原網頁" : "原網頁"} ↗</a>`];
+  const label = it.source.startsWith("591") ? "591" : it.source.replace("房屋", "");
+  const out = [`<a class="lk primary" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)} 原網頁 ↗</a>`];
+  for (const a of it.also || []) out.push(`<a class="lk primary" href="${esc(a.url)}" target="_blank" rel="noopener">也在${esc(a.source.replace("房屋", ""))}${a.price && it.price && a.price !== it.price ? `（${Math.round(a.price)}萬）` : ""} ↗</a>`);
   if (it.market) out.push(`<button class="lk" type="button" data-mk="${esc(it.id)}">行情走勢</button>`);
   if (it.lat && it.lng) out.push(`<button class="lk" type="button" data-locate="${esc(it.id)}">在地圖上看</button>`);
   if (it.community_id) out.push(`<a class="lk" href="https://market.591.com.tw/${it.community_id}" target="_blank" rel="noopener">社區實價 ↗</a>`);
@@ -396,7 +398,7 @@ function renderCriteria(){
   $("crit").hidden = false;
   $("critBody").innerHTML = cs.map(c => `<div class="crow"><span class="cn">${esc(c.name)}</span><span class="ct">${esc(c.type)}</span>
     ${c.tags.map(t => `<span class="chipc">${esc(t)}</span>`).join("")}
-    <a href="${esc(c.url)}" target="_blank" rel="noopener">在 591 開啟 ↗</a></div>`).join("");
+    <a href="${esc(c.url)}" target="_blank" rel="noopener">在${c.type.startsWith("信義") ? "信義" : " 591 "}開啟 ↗</a></div>`).join("");
 }
 let MAP = null, LAYER = null, VIEW = "list";
 function setView(v){
@@ -440,7 +442,7 @@ function drawMap(list){
     const price = it.price ? `${Math.round(it.price).toLocaleString()} 萬` : (it.price_text || "");
     m.bindPopup(`<b>${esc(it.title)}</b><br>${esc(price)}${it.unit_price ? `（${it.unit_price} 萬/坪）` : ""}<br>
       ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距" + esc(it.near_name || "中心") + " " + it.distance_km + " km<br>" : ""}
-      <a href="#" data-focus="${esc(it.id)}">看完整資料</a>　<a href="${esc(it.url)}" target="_blank" rel="noopener">591 原網頁 ↗</a>`, {autoPan: true});
+      <a href="#" data-focus="${esc(it.id)}">看完整資料</a>　<a href="${esc(it.url)}" target="_blank" rel="noopener">${it.source.startsWith("591") ? "591" : esc(it.source.replace("房屋", ""))} 原網頁 ↗</a>`, {autoPan: true});
     m.on("click", () => select(it.id, "side"));
     m.addTo(LAYER); MARKERS[it.id] = m; pts.push([it.lat, it.lng]);
     if (it.id === HL) { m.setZIndexOffset(1000); const p = markerOf(it.id); if (p) p.classList.add("sel"); }
@@ -543,6 +545,7 @@ function boot(data, demo){
   $("sAll").textContent = data.items.length;
   if ((last.warnings || []).length) { $("warn").hidden = false; $("warn").innerHTML = last.warnings.map(w => "⚠ " + esc(w)).join("<br>"); }
   for (const s of data.searches || []) $("fSearch").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
+  for (const s of [...new Set(data.items.map(i => i.source))].sort()) $("fSource").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
   ["fText","fSearch","fSource","fSort","fNew","fActive"].forEach(id => $(id).addEventListener("input", render));
   $("vList").onclick = () => setView("list"); $("vMap").onclick = () => setView("map");
   renderCriteria();
