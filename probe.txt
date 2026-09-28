@@ -1,0 +1,5 @@
+127.0.0.1 - - [28/Sep/2026 14:45:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 14:45:28] "GET /data.json HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 14:45:41] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 14:45:41] "GET /data.json HTTP/1.1" 200 -
+errors: [] cards_in_view: 392 hl: {'id': 'card-new-114489', 'visible': True} locate_hl: card-sale-20396700 popup: 1
