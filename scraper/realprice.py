@@ -322,6 +322,25 @@ def enrich(items: list[dict], cfg: dict, cache_dir: Path, log=print) -> None:
     cache = json.loads(cache_file.read_text("utf-8")) if cache_file.exists() else {}
     today = date.today()
     lvr = LvrData(Path(cache_dir) / "lvr", seasons=int(cfg.get("seasons", 8)), log=log)
+    gov_index: dict[str, tuple] = {}  # 縣市 → (日期+總價索引, 最早日期)
+
+    def gov_check(county: str, deals: list[dict]) -> tuple[int, int]:
+        """591 社區成交 vs 內政部：同一天、總價差 1 萬內即視為核對成功。回傳 (核對成功, 可核對筆數)。"""
+        if county not in gov_index:
+            idx = defaultdict(list)
+            rows = lvr.rows(county)
+            for r in rows:
+                idx[r["date"]].append(r["total"])
+            gov_index[county] = (idx, min((r["date"] for r in rows), default="9999"))
+        idx, first = gov_index[county]
+        ok = n = 0
+        for d in deals:
+            if not d.get("date") or d["date"] < first or d.get("total") is None:
+                continue
+            n += 1
+            d["gov"] = any(abs(t - d["total"]) <= 1 for t in idx.get(d["date"], []))
+            ok += d["gov"]
+        return ok, n
     fetched = 0
     max_fetch = int(cfg.get("max_community_lookups", 80))
 
@@ -341,7 +360,12 @@ def enrich(items: list[dict], cfg: dict, cache_dir: Path, log=print) -> None:
                 fetched += 1
                 time.sleep(random.uniform(1, 2))
             if c and c.get("deals"):
+                if it.get("county"):
+                    ok, n = gov_check(it["county"], c["deals"])
+                else:
+                    ok = n = 0
                 s = summarize(c["deals"], today)
+                s["gov_ok"], s["gov_n"] = ok, n
                 s.update({"name": it.get("community", ""), "id": cid,
                           "url": f"https://market.591.com.tw/{cid}"})
                 m["community"] = s

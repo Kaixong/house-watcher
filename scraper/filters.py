@@ -24,8 +24,14 @@ def passes(item: dict, f: dict | None) -> bool:
         return False
     if f.get("districts") and item.get("district") not in f["districts"]:
         return False
+    # 房數範圍（例如 [3, 4]）；從格局「3房2廳」讀出房數
+    if f.get("rooms"):
+        import re as _re
+        m = _re.search(r"(\d+)\s*房", str(item.get("layout") or ""))
+        if m and not (min(f["rooms"]) <= int(m.group(1)) <= max(f["rooms"])):
+            return False
     # 住宅類型：物件類型需包含清單中任一個（例如 電梯大樓、華廈、公寓、住家用）
-    if f.get("kinds") and not any(k in (item.get("kind") or "") for k in f["kinds"]):
+    if f.get("kinds") and item.get("kind") and not any(k in item["kind"] for k in f["kinds"]):
         return False
     text = " ".join(
         str(item.get(k, "")) for k in ("title", "address", "community", "district", "kind")

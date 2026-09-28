@@ -15,20 +15,22 @@
 #   sale     → 591 中古屋（sale.591.com.tw）
 #   newhouse → 591 新建案（newhouse.591.com.tw）
 #   sinyi    → 信義房屋（www.sinyi.com.tw）
+#   hbhousing→ 住商不動產（www.hbhousing.com.tw）
+#   rakuya   → 樂屋網（www.rakuya.com.tw）
 #
-# 同一間房子如果 591 和信義都有刊登，會自動合併成一筆（卡片上會多一個信義連結）。
+# 同一間房子如果多個網站都有刊登，會自動合併成一筆（卡片上會多出其他網站的連結）。
 #
 # county（可省略）：物件所在縣市，用來查實價登錄。沒填會從 591 網址自動判斷。
 
 searches:
   - name: 中壢桃園 3-4房 1500萬內 平面車位
     type: sale
-    # 591 條件：桃園市中壢區＋桃園區＋八德區（section=67,73,75）、3-4房、屋齡 0-20 年、總價 1500 萬以下、含車位
-    url: "https://sale.591.com.tw/?shType=list&regionid=6&section=67,73,75&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$"
-    max_pages: 30
+    # 591 條件：桃園市中壢區＋平鎮區＋桃園區＋八德區（section=67,68,73,75）、3-4房、屋齡 0-20 年、總價 1500 萬以下、含車位
+    url: "https://sale.591.com.tw/?shType=list&regionid=6&section=67,68,73,75&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$"
+    max_pages: 40
     max_details: 120        # 每次最多讀幾筆詳情頁（讀過的會記住，不會重讀）
     filters:
-      districts: ["中壢區", "桃園區", "八德區"]  # 只保留這些行政區
+      districts: ["中壢區", "平鎮區", "桃園區", "八德區"]  # 只保留這些行政區
       kinds: ["電梯大樓", "華廈", "公寓", "透天", "別墅"]   # 只要住宅類型
       max_price: 1500       # 總價上限（萬）
       max_age: 20           # 屋齡上限（年）
@@ -49,13 +51,21 @@ searches:
           lat: 24.987424
           lng: 121.285497
           radius_km: 2
+        - name: 中壢車站
+          lat: 24.954039
+          lng: 121.226378
+          radius_km: 2
+        - name: 日月光中壢廠
+          lat: 24.971624
+          lng: 121.251663
+          radius_km: 2
 
   - name: 中壢桃園新建案
     type: newhouse
-    url: "https://newhouse.591.com.tw/list?regionid=6&sectionid=67,73,75"
+    url: "https://newhouse.591.com.tw/list?regionid=6&sectionid=67,68,73,75"
     max_pages: 60
     filters:
-      districts: ["中壢區", "桃園區", "八德區"]
+      districts: ["中壢區", "平鎮區", "桃園區", "八德區"]
       kinds: ["住家用", "住商用"]   # 排除工業用、商業用、廠辦等
       exclude_keywords: ["廠辦", "工業", "店面", "辦公"]
       near: *centers
@@ -63,20 +73,65 @@ searches:
   - name: 信義 中壢桃園 3-4房 1500萬內 平面車位
     type: sinyi
     county: 桃園市
-    # 信義條件：中壢 320、桃園 330、八德 334；總價 0-1500 萬；3-4 房；類型 L=大樓 M=華廈 A=公寓
+    # 信義條件：中壢 320、平鎮 324、桃園 330、八德 334；總價 0-1500 萬；3-4 房；類型 L=大樓 M=華廈 A=公寓
     query:
-      zips: ["320", "330", "334"]
+      zips: ["320", "324", "330", "334"]
       price: "0-1500"
       rooms: "3-4"
       types: ["L", "M", "A"]
     link: "https://www.sinyi.com.tw/buy/list/0-1500-price/dalou-huaxia-type/3-4-roomtotal/Taoyuan-city/320-zip/index"
     max_pages: 20
     filters:
-      districts: ["中壢區", "桃園區", "八德區"]
+      districts: ["中壢區", "平鎮區", "桃園區", "八德區"]
       kinds: ["大樓", "華廈", "公寓"]
       max_price: 1500
       max_age: 20
       min_main_ping: 20     # 信義提供的是「主建＋陽台」坪數
+      parking: 平面
+      transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]
+      exclude_keywords: ["法拍", "持分", "頂加"]
+      near: *centers
+
+  - name: 住商 中壢桃園 3-4房 1500萬內 平面車位
+    type: hbhousing
+    county: 桃園市
+    # 住商條件：中壢 320、平鎮 324、桃園 330、八德 334；總價 1500 萬以下；屋齡 20 年內（房數由程式篩）
+    query:
+      city: 桃園市
+      zips: ["320", "324", "330", "334"]
+      max_price: 1500
+      max_age: 20
+    link: "https://www.hbhousing.com.tw/buyhouse/桃園市/320-324-330-334/1500-down-price/20-down-age"
+    max_pages: 120
+    filters:
+      districts: ["中壢區", "平鎮區", "桃園區", "八德區"]
+      rooms: [3, 4]
+      kinds: ["大樓", "華廈", "公寓", "透天", "別墅"]
+      max_price: 1500
+      max_age: 20
+      min_main_ping: 20
+      parking: 平面
+      transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]
+      exclude_keywords: ["法拍", "持分", "頂加"]
+      near: *centers
+
+  - name: 樂屋網 中壢桃園 3-4房 1500萬內 平面車位
+    type: rakuya
+    county: 桃園市
+    # 樂屋網條件：郵遞區號 320,324,330,334；總價 1500 萬以下；3-4 房；屋齡 0-20 年
+    query:
+      zipcode: "320,324,330,334"
+      price: "~1500"
+      room: "3~4"
+      age: "0~20"
+    link: "https://www.rakuya.com.tw/sell/result?zipcode=320,324,330,334&price=~1500&room=3~4&age=0~20"
+    max_pages: 45
+    filters:
+      districts: ["中壢區", "平鎮區", "桃園區", "八德區"]
+      kinds: ["電梯大樓", "華廈", "公寓", "透天", "別墅"]
+      max_price: 1500
+      max_age: 20
+      min_main_ping: 20
       parking: 平面
       transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]
       exclude_keywords: ["法拍", "持分", "頂加"]

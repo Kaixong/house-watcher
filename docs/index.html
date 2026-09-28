@@ -281,9 +281,10 @@ function links(it){
   const q = encodeURIComponent;
   const place = [it.county, it.district, it.address].filter(Boolean).join("");
   const kw = it.community && it.community !== it.title ? it.community : place;
-  const label = it.source.startsWith("591") ? "591" : it.source.replace("房屋", "");
+  const short = src => src.startsWith("591") ? "591" : src.replace("房屋", "").replace("不動產", "");
+  const label = short(it.source);
   const out = [`<a class="lk primary" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)} 原網頁 ↗</a>`];
-  for (const a of it.also || []) out.push(`<a class="lk primary" href="${esc(a.url)}" target="_blank" rel="noopener">也在${esc(a.source.replace("房屋", ""))}${a.price && it.price && a.price !== it.price ? `（${Math.round(a.price)}萬）` : ""} ↗</a>`);
+  for (const a of it.also || []) out.push(`<a class="lk primary" href="${esc(a.url)}" target="_blank" rel="noopener">也在${esc(short(a.source))}${a.price && it.price && a.price !== it.price ? `（${Math.round(a.price)}萬）` : ""} ↗</a>`);
   if (it.market) out.push(`<button class="lk" type="button" data-mk="${esc(it.id)}">行情走勢</button>`);
   if (it.lat && it.lng) out.push(`<button class="lk" type="button" data-locate="${esc(it.id)}">在地圖上看</button>`);
   if (it.community_id) out.push(`<a class="lk" href="https://market.591.com.tw/${it.community_id}" target="_blank" rel="noopener">社區實價 ↗</a>`);
@@ -347,9 +348,9 @@ function bindChart(){
 }
 function dealTable(deals){
   if (!deals || !deals.length) return '<p class="note">沒有成交紀錄。</p>';
-  return `<div class="tbl"><table><thead><tr><th>成交日期</th><th>地址</th><th>樓層</th><th>格局</th><th class="n">坪數</th><th class="n">單價（萬/坪）</th><th class="n">總價（萬）</th></tr></thead><tbody>${
+  return `<div class="tbl"><table><thead><tr><th>成交日期</th><th>地址</th><th>樓層</th><th>格局</th><th class="n">坪數</th><th class="n">單價（萬/坪）</th><th class="n">總價（萬）</th><th>內政部</th></tr></thead><tbody>${
     deals.map(d => `<tr><td>${esc(d.date)}${d.presale ? "（預售）" : ""}</td><td>${esc(d.address)}</td><td>${esc(d.floor)}</td><td>${esc(d.layout)}</td>
-      <td class="n">${d.ping ?? "–"}</td><td class="n">${d.unit}</td><td class="n">${d.total != null ? Math.round(d.total).toLocaleString() : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+      <td class="n">${d.ping ?? "–"}</td><td class="n">${d.unit}</td><td class="n">${d.total != null ? Math.round(d.total).toLocaleString() : "–"}</td><td>${d.gov === true ? "✓ 已核對" : d.gov === false ? "查無" : d.type ? "（原始資料）" : "–"}</td></tr>`).join("")}</tbody></table></div>`;
 }
 function openMarket(id){
   const it = DATA.items.find(i => i.id === id); if (!it || !it.market) return;
@@ -365,14 +366,14 @@ function openMarket(id){
     <div class="mk" style="margin:0">${premChip(m)}<span>${m.ref_price ? `比較基準：${esc(m.ref_label || "")}成交單價中位數 ${m.ref_price} 萬/坪` : "成交筆數不足，暫不比較開價"}</span></div>
     <div class="kpis">
       ${kpi(it.unit_price ? it.unit_price + " 萬/坪" : (it.price_text || "–"), "此物件開價單價")}
-      ${kpi(c && (c.median_12m ?? c.median_all) ? (c.median_12m ?? c.median_all) + " 萬/坪" : null, c ? `同社區${c.median_12m ? "近一年" : "歷年"}中位數（${c.median_12m ? c.n_12m : c.n} 筆）` : "同社區：無成交資料")}
+      ${kpi(c && (c.median_12m ?? c.median_all) ? (c.median_12m ?? c.median_all) + " 萬/坪" : null, c ? `同社區${c.median_12m ? "近一年" : "歷年"}中位數（${c.median_12m ? c.n_12m : c.n} 筆）${c.gov_n ? `<br>已與內政部核對 ${c.gov_ok}/${c.gov_n} 筆` : ""}` : "同社區：無成交資料")}
       ${kpi(n && (n.median_12m ?? n.median_all) ? (n.median_12m ?? n.median_all) + " 萬/坪" : null, n ? `附近${n.median_12m ? "近一年" : ""}中位數（${n.median_12m ? n.n_12m : n.n} 筆）` : "附近：無成交資料")}
     </div>
     <div><div class="legend">${series.map(s => `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join("")}${it.unit_price ? '<span><i style="background:var(--price)"></i>此物件開價</span>' : ""}</div>
       ${lineChart(series, it.unit_price)}<div class="note">每季成交單價中位數（萬/坪，已扣除車位）。游標移到點上可看筆數。</div></div>
     ${tabs.length ? `<div class="tabs" role="tablist">${tabs.map((t, i) => `<button class="tab" role="tab" data-tab="${t[0]}" aria-selected="${i === 0}">${t[1]}</button>`).join("")}</div><div id="dealBox"></div>` : ""}
     <div class="links">${links(it).replace(/<button[^>]*data-mk[^>]*>.*?<\/button>/, "")}</div>
-    <div class="note">資料來源：591 實價登錄（同社區）、內政部不動產成交案件實際資訊（附近類似，${esc(n ? n.scope : "")}，同型態、坪數 ±35%）。行情僅供參考，實際價格請以現場與專業估價為準。</div>
+    <div class="note">資料來源：同社區＝591 整理的實價登錄（逐筆與內政部資料核對，「✓ 已核對」代表內政部有同日同總價的紀錄；「查無」多半是特殊交易被排除或 591 社區對應有誤）；附近類似＝內政部不動產成交案件實際資訊（，${esc(n ? n.scope : "")}，同型態、坪數 ±35%）。行情僅供參考，實際價格請以現場與專業估價為準。</div>
   </div>`;
   $("ov").hidden = false;
   const show = k => { $("dealBox").innerHTML = dealTable(k === "c" ? c.deals : n.deals);
@@ -398,7 +399,7 @@ function renderCriteria(){
   $("crit").hidden = false;
   $("critBody").innerHTML = cs.map(c => `<div class="crow"><span class="cn">${esc(c.name)}</span><span class="ct">${esc(c.type)}</span>
     ${c.tags.map(t => `<span class="chipc">${esc(t)}</span>`).join("")}
-    <a href="${esc(c.url)}" target="_blank" rel="noopener">在${c.type.startsWith("信義") ? "信義" : " 591 "}開啟 ↗</a></div>`).join("");
+    <a href="${esc(c.url)}" target="_blank" rel="noopener">在${c.type.startsWith("591") ? " 591 " : c.type.replace("房屋", "").replace("不動產", "")}開啟 ↗</a></div>`).join("");
 }
 let MAP = null, LAYER = null, VIEW = "list";
 function setView(v){
@@ -442,7 +443,7 @@ function drawMap(list){
     const price = it.price ? `${Math.round(it.price).toLocaleString()} 萬` : (it.price_text || "");
     m.bindPopup(`<b>${esc(it.title)}</b><br>${esc(price)}${it.unit_price ? `（${it.unit_price} 萬/坪）` : ""}<br>
       ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距" + esc(it.near_name || "中心") + " " + it.distance_km + " km<br>" : ""}
-      <a href="#" data-focus="${esc(it.id)}">看完整資料</a>　<a href="${esc(it.url)}" target="_blank" rel="noopener">${it.source.startsWith("591") ? "591" : esc(it.source.replace("房屋", ""))} 原網頁 ↗</a>`, {autoPan: true});
+      <a href="#" data-focus="${esc(it.id)}">看完整資料</a>　<a href="${esc(it.url)}" target="_blank" rel="noopener">${it.source.startsWith("591") ? "591" : esc(it.source.replace("房屋", "").replace("不動產", ""))} 原網頁 ↗</a>`, {autoPan: true});
     m.on("click", () => select(it.id, "side"));
     m.addTo(LAYER); MARKERS[it.id] = m; pts.push([it.lat, it.lng]);
     if (it.id === HL) { m.setZIndexOffset(1000); const p = markerOf(it.id); if (p) p.classList.add("sel"); }

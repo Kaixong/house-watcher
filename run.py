@@ -15,7 +15,7 @@ from urllib.parse import parse_qs, urlparse
 
 import yaml
 
-from scraper import geo, newhouse591, realprice, sale591, sinyi
+from scraper import geo, hbhousing, newhouse591, rakuya, realprice, sale591, sinyi
 from scraper.filters import needs_detail, passes, passes_detail
 from scraper.notify import build_email, send_email
 
@@ -39,20 +39,25 @@ def _norm(s: str) -> str:
 
 
 def dedupe(items: list[dict]) -> dict:
-    """回傳 {重複物件 id: 保留的物件 id}。同社區、總價差 2% 內、權狀差 1 坪內視為同一間。"""
-    rank = {"591中古屋": 0, "信義房屋": 1}
-    pool = sorted([i for i in items if i.get("source") in rank and i.get("price") and i.get("ping")],
+    """回傳 {重複物件 id: 保留的物件 id}。
+    判斷同一間：樂屋網標明的 591 編號；或同社區（或 150 公尺內）、總價差 2% 內、權狀差 1.5 坪內。
+    保留順序：591 → 信義 → 住商 → 樂屋網。"""
+    rank = {"591中古屋": 0, "信義房屋": 1, "住商不動產": 2, "樂屋網": 3}
+    pool = sorted([i for i in items if i.get("source") in rank and i.get("price")],
                   key=lambda i: rank[i["source"]])
     kept, dup = [], {}
+    by_id = {}
     for it in pool:
-        match = None
-        for k in kept:
+        match = by_id.get(it.get("same_as")) if it.get("same_as") else None  # 樂屋網標明的 591 來源編號
+        for k in ([] if match else kept):
+            if not (k.get("ping") and it.get("ping")):
+                continue
             if k["source"] == it["source"]:
                 continue
             same_comm = _norm(k.get("community")) and _norm(k.get("community")) == _norm(it.get("community"))
             near = (k.get("lat") and it.get("lat") and geo.haversine_km(k["lat"], k["lng"], it["lat"], it["lng"]) < 0.15)
             if (same_comm or near) and abs(k["price"] - it["price"]) <= max(10, k["price"] * 0.02) \
-                    and abs(k["ping"] - it["ping"]) <= 1:
+                    and abs(k["ping"] - it["ping"]) <= 1.5:
                 match = k
                 break
         if match:
@@ -62,6 +67,7 @@ def dedupe(items: list[dict]) -> dict:
                 also.append({"source": it["source"], "url": it["url"], "price": it["price"]})
         else:
             kept.append(it)
+            by_id[it["id"]] = it
     return dup
 
 
@@ -75,8 +81,9 @@ def describe(search: dict) -> dict:
     if county:
         tags.append(county.replace("臺", "台") + ("／" + "、".join(f["districts"]) if f.get("districts") else ""))
     sq = search.get("query") or {}
-    if q("pattern") or sq.get("rooms"):
-        tags.append((q("pattern") or sq.get("rooms")).replace(",", "-") + " 房")
+    if q("pattern") or sq.get("rooms") or sq.get("room") or f.get("rooms"):
+        r = q("pattern") or sq.get("rooms") or sq.get("room") or "-".join(str(x) for x in f["rooms"])
+        tags.append(str(r).replace(",", "-").replace("~", "-") + " 房")
     if f.get("kinds"):
         tags.append("類型：" + "、".join(f["kinds"]))
     if f.get("max_price") or q("price"):
@@ -100,7 +107,8 @@ def describe(search: dict) -> dict:
         tags.append("在任一範圍內：" + "、".join(f"{c.get('name', '中心點')} {c.get('radius_km', 2)} km" for c in cs))
     if f.get("exclude_keywords"):
         tags.append("排除：" + "、".join(f["exclude_keywords"]))
-    return {"name": search["name"], "type": {"newhouse": "591 新建案", "sinyi": "信義房屋"}.get(search.get("type"), "591 中古屋"),
+    return {"name": search["name"], "type": {"newhouse": "591 新建案", "sinyi": "信義房屋", "rakuya": "樂屋網",
+                                             "hbhousing": "住商不動產"}.get(search.get("type"), "591 中古屋"),
             "tags": tags, "url": search.get("url") or search.get("link", ""), "near": geo.centers(f.get("near")),
             "near_logic": "符合任一範圍即可" if len(geo.centers(f.get("near"))) > 1 else ""}
 
@@ -141,6 +149,12 @@ def main():
                 items = sale591.scrape(s["url"], s.get("max_pages", 5), headless=not args.show)
             elif typ == "newhouse":
                 items = newhouse591.scrape(s["url"], s.get("max_pages", 3))
+            elif typ == "rakuya":
+                items = rakuya.scrape(s.get("query") or {}, county=_county_of(s),
+                                      max_pages=s.get("max_pages", 45), headless=not args.show)
+            elif typ == "hbhousing":
+                items = hbhousing.scrape(s.get("query") or {}, county=_county_of(s),
+                                         max_pages=s.get("max_pages", 120), headless=not args.show)
             elif typ == "sinyi":
                 items = sinyi.scrape(s.get("query") or {}, county=_county_of(s),
                                      max_pages=s.get("max_pages", 20), headless=not args.show)
@@ -162,11 +176,16 @@ def main():
         geo.locate(matched, geocache)
         if near:
             geo.apply_distance(matched, near)
-            matched = [it for it in matched if geo.within(it, near)]
+            strict = bool(s.get("near_strict", typ == "rakuya"))  # 樂屋網沒有座標，推估不到位置的就排除
+            matched = [it for it in matched if geo.within(it, near, strict)]
             print(f"  在 {'、'.join(c.get('name', '中心') for c in geo.centers(near))} 任一範圍內 {len(matched)} 筆")
-        if typ == "sinyi" and needs_detail(s.get("filters")):  # 車位資訊列表就有，不必開詳情頁
+        if typ in ("sinyi", "rakuya", "hbhousing") and needs_detail(s.get("filters")):  # 車位資訊列表就有，不必開詳情頁
             kept = []
             for it in matched:
+                if not it.get("detail"):
+                    it["unverified"] = "來源未標示車位類型，請自行確認"
+                    kept.append(it)
+                    continue
                 ok, why = passes_detail(it, s.get("filters"))
                 if ok:
                     if why:

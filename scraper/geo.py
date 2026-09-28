@@ -83,16 +83,30 @@ class GeoCache:
         self.path.write_text(json.dumps(self.data), "utf-8")
 
 
+def _name_key(it: dict) -> str | None:
+    import re
+    c = re.sub(r"[\s·．.()（）]", "", it.get("community") or "")
+    return f"name:{it.get('district', '')}{c}" if len(c) >= 2 else None
+
+
 def locate(items: list[dict], cache: GeoCache) -> None:
-    """為物件補上 lat/lng（社區座標優先，其次詳情頁座標）。"""
+    """為物件補上 lat/lng。順序：已有座標 → 591 社區座標 → 詳情頁座標 → 同名社區（其他網站查過的）→ 地址推估。"""
     for it in items:
         if it.get("lat") and it.get("lng"):
+            k = _name_key(it)
+            if k and k not in cache.data:
+                cache.data[k] = [it["lat"], it["lng"]]  # 記住社區名稱的座標，給沒有座標的網站用
             continue
         ll = cache.community(it["community_id"]) if it.get("community_id") else None
         if not ll:
             d = it.get("detail") or {}
             if d.get("lat") and d.get("lng"):
                 ll = (d["lat"], d["lng"])
+        if not ll:
+            k = _name_key(it)
+            if k and cache.data.get(k):
+                ll = tuple(cache.data[k])
+                it["geo_src"] = "同名社區"
         if not ll and it.get("address"):
             addr = it["address"]
             if not addr.startswith(("桃園", "臺", "台", "新北", "新竹", "基隆", "高雄", "嘉義", "宜蘭", "花蓮", "苗栗", "彰化", "南投", "雲林", "屏東")):
@@ -102,6 +116,9 @@ def locate(items: list[dict], cache: GeoCache) -> None:
                 it["geo_src"] = "地址推估"
         if ll:
             it["lat"], it["lng"] = round(ll[0], 6), round(ll[1], 6)
+            k = _name_key(it)
+            if k and not it.get("geo_src") and k not in cache.data:
+                cache.data[k] = [it["lat"], it["lng"]]
 
 
 def centers(near) -> list[dict]:
@@ -124,8 +141,10 @@ def apply_distance(items: list[dict], near) -> None:
         it["in_range"] = bool(inside)
 
 
-def within(item: dict, near) -> bool:
-    """在任一圓心的範圍內就保留；沒有座標的物件先保留（之後讀詳情頁再判斷）。"""
-    if not centers(near) or item.get("distance_km") is None:
+def within(item: dict, near, strict: bool = False) -> bool:
+    """在任一圓心的範圍內就保留；沒有座標的物件先保留（strict=True 時則排除）。"""
+    if not centers(near):
         return True
+    if item.get("distance_km") is None:
+        return not strict
     return bool(item.get("in_range"))
