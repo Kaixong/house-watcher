@@ -51,13 +51,18 @@ def passes_detail(item: dict, f: dict | None) -> tuple[bool, str]:
     d = item.get("detail")
     if not d:
         return True, "詳情未確認"
+    if d.get("not_found"):
+        return True, "詳情頁無法開啟，條件未確認"
     if f.get("parking") == "平面" and not d.get("parking_flat"):
         return False, f"車位非平面（{d.get('parking') or '無資料'}）"
     if f.get("parking") == "有" and not d.get("parking"):
         return False, "沒有車位"
     kws = f.get("transit_keywords") or []
-    if kws and not any(k in t for t in d.get("traffic", []) for k in kws):
+    traffic = d.get("traffic") or []
+    if kws and traffic and not any(k in t for t in traffic for k in kws):
         return False, "附近交通沒有符合的站點"
     if _lt(d.get("main_ping"), f.get("min_main_ping")):
         return False, "主建物坪數不足"
+    if kws and not traffic:
+        return True, "591 未提供附近交通，請自行確認"
     return True, ""

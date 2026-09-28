@@ -91,6 +91,7 @@ def main():
             for it in matched:
                 if it.get("detail"):
                     dcache[it["id"]] = it["detail"]
+                it.pop("unverified", None)
             kept = []
             for it in matched:
                 ok, why = passes_detail(it, s.get("filters"))

@@ -80,6 +80,7 @@ def normalize(raw: dict) -> dict:
         "title": raw.get("title", ""),
         "url": (raw.get("url") or "").split("?")[0]
         or f"https://sale.591.com.tw/home/house/detail/2/{raw['id']}.html",
+        "link": raw.get("url") or "",  # 保留完整網址（部分物件少了參數會打不開）
         "image": raw.get("image", ""),
         "price": _num(raw.get("price_text", "")),  # 萬
         "unit_price": float(unit.group(1).replace(",", "")) if unit else None,  # 萬/坪
@@ -191,8 +192,15 @@ def scrape_details(items: list[dict], headless: bool = True, log=print, max_page
         for n, it in enumerate(todo, 1):
             t0 = time.time()
             try:
-                page.goto(it["url"], wait_until="domcontentloaded", timeout=25000)
-                page.wait_for_selector(".detail-house-box", timeout=12000)
+                page.goto(it.get("link") or it["url"], wait_until="domcontentloaded", timeout=25000)
+                try:
+                    page.wait_for_selector(".detail-house-box", timeout=12000)
+                except Exception:
+                    if "不存在" in (page.title() or ""):
+                        it["detail"] = {"not_found": True, "parking": "", "traffic": []}
+                        log(f"    詳情頁不存在 {it['id']}（{page.url}）")
+                        continue  # 物件頁不存在不算被擋
+                    raise
                 time.sleep(1.0)
                 it["detail"] = parse_detail(page.evaluate(DETAIL_JS))
                 fails = 0
