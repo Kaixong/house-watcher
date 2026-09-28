@@ -7,7 +7,7 @@ lvr = rp.LvrData(Path("lvrc"), seasons=2)
 rows = lvr.rows("桃園市")
 byd = collections.defaultdict(list)
 for r in rows: byd[r["date"]].append(r)
-ds = sorted(byd); print("rows", len(rows), "date range", ds[int(len(ds)*0.02)], ds[-1])
+lo, hi = lvr.coverage(); print("rows", len(rows), "coverage", lo, hi)
 # 也看原始檔（未過濾）有多少筆，以及過濾掉的原因
 import zipfile, csv, io
 raw = []
@@ -27,7 +27,7 @@ for it in d["items"]:
     c = (it.get("market") or {}).get("community")
     if not c or it["source"] != "591中古屋": continue
     for dl in c["deals"]:
-        if dl.get("presale") or dl["date"] < ds[int(len(ds)*0.02)] or dl["date"] > ds[-1]: continue
+        if dl.get("presale") or not (lo <= dl["date"] <= hi): continue
         cands = byd.get(dl["date"], []); rc = rawd.get(dl["date"], [])
         hit = [r for r in cands if abs(r["total"] - dl["total"]) <= 1]
         rawhit = [r for r in rc if abs(float(r["總價元"] or 0) / 1e4 - dl["total"]) <= 1]

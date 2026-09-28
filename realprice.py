@@ -209,6 +209,18 @@ class LvrData:
         self._zips = got
         return got
 
+    def coverage(self) -> tuple[str, str]:
+        """下載的季別大致涵蓋的交易日期（申報通常在交易後 1～2 個月）。"""
+        codes = sorted(p.stem for p in self._zip_paths())
+        if not codes:
+            return "9999", "0000"
+        def start(code):
+            y, q = code.split("S")
+            return date(int(y) + 1911, (int(q) - 1) * 3 + 1, 1)
+        lo = start(codes[0]) - timedelta(days=45)
+        hi = start(codes[-1]) + timedelta(days=92)
+        return lo.isoformat(), hi.isoformat()
+
     def rows(self, county: str) -> list[dict]:
         county = norm_county(county)
         if county in self._rows:
@@ -331,13 +343,11 @@ def enrich(items: list[dict], cfg: dict, cache_dir: Path, log=print) -> None:
             rows = lvr.rows(county)
             for r in rows:
                 idx[r["date"]].append(r["total"])
-            ds = sorted(r["date"] for r in rows)
-            # 資料涵蓋起點：取第 2 百分位（避免少數補登的舊交易把起點拉得太早）
-            gov_index[county] = (idx, ds[int(len(ds) * 0.02)] if ds else "9999")
-        idx, first = gov_index[county]
+            gov_index[county] = (idx,) + lvr.coverage()
+        idx, first, last = gov_index[county]
         ok = n = 0
         for d in deals:
-            if not d.get("date") or d["date"] < first or d.get("total") is None or d.get("presale"):
+            if not d.get("date") or not (first <= d["date"] <= last) or d.get("total") is None or d.get("presale"):
                 d.pop("gov", None)  # 預售屋在另一份資料、太舊的不在下載範圍：不列入核對
                 continue
             n += 1
