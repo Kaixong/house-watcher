@@ -118,11 +118,19 @@ def main():
             subj = f"🏠 房房小助手已啟動：目前有 {len(seen_now)} 筆符合條件"
             _, body = build_email([state["items"][i] for i in seen_now], [], warnings,
                                   cfg.get("dashboard_url", ""), n.get("max_items_in_email", 30))
-            send_email(subj, body)
+            _safe_send(subj, body, warnings)
         elif new_items or drops or warnings or n.get("send_when_empty"):
             subj, body = build_email(new_items, drops, warnings,
                                      cfg.get("dashboard_url", ""), n.get("max_items_in_email", 30))
-            send_email(subj, body)
+            _safe_send(subj, body, warnings)
+
+
+def _safe_send(subj, body, warnings):
+    try:
+        send_email(subj, body)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ✖ 寄信失敗：{e.__class__.__name__}: {e}")
+        print("    → 請確認 GMAIL_USER / GMAIL_APP_PASSWORD 是否正確（要用 16 碼應用程式密碼）")
 
 
 if __name__ == "__main__":
