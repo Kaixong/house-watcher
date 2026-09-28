@@ -14,6 +14,6 @@ jobs:
       - name: probe
         run: |
           pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null 2>&1
-          python probe.py > probe.txt 2>&1 || true
+          python probe.py 20905265 20735705 > probe.txt 2>&1 || true
           git config user.name bot; git config user.email actions@users.noreply.github.com
           git add probe.txt; git commit -qm "probe mobile"; git push
