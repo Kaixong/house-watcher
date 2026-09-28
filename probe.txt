@@ -1,0 +1,3 @@
+127.0.0.1 - - [28/Sep/2026 15:03:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 15:03:18] "GET /data.json HTTP/1.1" 200 -
+errors: [] btn_initial: False btn_after_scroll: True after_back map_top: 10 btn: False popup: 1 locate map_top: 12
