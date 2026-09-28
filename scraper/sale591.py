@@ -87,6 +87,24 @@ def normalize(raw: dict) -> dict:
     }
 
 
+def _dump_debug(page, n, log):
+    """載入失敗時存下截圖與網頁內容到 data/debug/，方便找原因。"""
+    from pathlib import Path
+    d = Path(__file__).resolve().parent.parent / "data" / "debug"
+    d.mkdir(parents=True, exist_ok=True)
+    try:
+        log(f"    頁面標題：{page.title()!r}　網址：{page.url}")
+        body = page.evaluate("() => document.body ? document.body.innerText.slice(0, 400) : ''")
+        log("    頁面文字：" + " ".join(body.split())[:300])
+        classes = page.evaluate("""() => [...new Set([...document.querySelectorAll('[class]')]
+            .flatMap(e => [...e.classList]).filter(c => /item|list|house|ware/i.test(c)))].slice(0, 40)""")
+        log(f"    相關 class：{classes}")
+        (d / f"sale_page{n}.html").write_text(page.content(), "utf-8")
+        page.screenshot(path=str(d / f"sale_page{n}.png"), full_page=False)
+    except Exception as e:  # noqa: BLE001
+        log(f"    （除錯資料儲存失敗：{e}）")
+
+
 def scrape(url: str, max_pages: int = 5, headless: bool = True, log=print) -> list[dict]:
     from playwright.sync_api import sync_playwright
 
@@ -118,6 +136,7 @@ def scrape(url: str, max_pages: int = 5, headless: bool = True, log=print) -> li
                 time.sleep(1.5)
             except Exception as e:  # noqa: BLE001
                 log(f"  ⚠ 第 {n} 頁載入失敗：{e.__class__.__name__}")
+                _dump_debug(page, n, log)
                 break
             raws = page.evaluate(EXTRACT_JS)
             new = 0

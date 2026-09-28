@@ -75,7 +75,7 @@ def build_email(new_items, drops, warnings, dashboard_url, max_items=30) -> tupl
 def send_email(subject: str, html_body: str, log=print) -> bool:
     user = os.environ.get("GMAIL_USER", "").strip()
     pwd = os.environ.get("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
-    to = [x.strip() for x in os.environ.get("MAIL_TO", user).split(",") if x.strip()]
+    to = [x.strip() for x in (os.environ.get("MAIL_TO") or user).split(",") if x.strip()]
     if not user or not pwd:
         log("  （未設定 GMAIL_USER / GMAIL_APP_PASSWORD，略過寄信）")
         return False
