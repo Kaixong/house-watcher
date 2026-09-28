@@ -93,7 +93,9 @@ def normalize(o: dict, county: str = "") -> dict | None:
     price = _f(o.get("salePrice") or o.get("price"))
     if not sn or not price:
         return None
-    park = str(o.get("parking") or "")
+    park = str(o.get("parking") or "").strip()
+    if park == "無":
+        park = ""
     addr = str(o.get("doorplate") or "")
     zipc = str(o.get("zipCode") or "")
     district = ZIP_DISTRICT.get(zipc) or (re.search(r"[市縣](\S{1,3}?[區鄉鎮市])", addr) or [None, ""])[1]
@@ -128,8 +130,8 @@ def normalize(o: dict, county: str = "") -> dict | None:
         # 住商的「車位」欄位多半是權屬（私有、租用…），不是平面或機械；有寫類型才當作確定
         # 空白 = 沒有車位（會被「平面車位」條件排除）
         "detail": ({"parking": park, "parking_flat": "平面" in park, "traffic": [], "source": "hb"}
-                   if (not park or re.search(r"平面|機械|坡道|升降|塔", park)) else None),
-        "parking_note": f"有車位（{park}），類型未標示" if park and not re.search(r"平面|機械|坡道|升降|塔", park) else "",
+                   if (park in ("", "無") or re.search(r"平面|機械|坡道|升降|塔", park)) else None),
+        "parking_note": f"有車位（{park}），類型未標示" if park not in ("", "無") and not re.search(r"平面|機械|坡道|升降|塔", park) else "",
     }
 
 

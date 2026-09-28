@@ -185,6 +185,7 @@ class LvrData:
         self.n = seasons
         self.log = log
         self._rows: dict[str, list[dict]] = {}
+        self.all_deals: dict[str, list[tuple[str, float]]] = {}  # 核對用：含特殊交易的 (日期, 總價萬)
         self._zips: list[Path] | None = None
 
     def _zip_paths(self) -> list[Path]:
@@ -209,6 +210,18 @@ class LvrData:
         self._zips = got
         return got
 
+    def coverage(self) -> tuple[str, str]:
+        """下載的季別大致涵蓋的交易日期（申報通常在交易後 1～2 個月）。"""
+        codes = sorted(p.stem for p in self._zip_paths())
+        if not codes:
+            return "9999", "0000"
+        def start(code):
+            y, q = code.split("S")
+            return date(int(y) + 1911, (int(q) - 1) * 3 + 1, 1)
+        lo = start(codes[0]) + timedelta(days=30)    # 季初的交易可能申報在更早、沒下載的季別
+        hi = start(codes[-1]) + timedelta(days=60)   # 季末的交易可能還沒公布
+        return lo.isoformat(), hi.isoformat()
+
     def rows(self, county: str) -> list[dict]:
         county = norm_county(county)
         if county in self._rows:
@@ -226,9 +239,13 @@ class LvrData:
             except Exception:  # noqa: BLE001
                 continue
             reader = csv.DictReader(io.StringIO(raw))
+            allv = self.all_deals.setdefault(county, [])
             for i, r in enumerate(reader):
                 if i == 0 and r.get("鄉鎮市區", "").startswith("The"):
                     continue  # 英文標題列
+                dd, tt = roc_date(r.get("交易年月日", "")), _f(r.get("總價元"))
+                if dd and tt and "建物" in r.get("交易標的", ""):
+                    allv.append((dd.isoformat(), round(tt / 10000)))
                 d = parse_lvr_row(r)
                 if d:
                     rows.append(d)
@@ -328,16 +345,14 @@ def enrich(items: list[dict], cfg: dict, cache_dir: Path, log=print) -> None:
         """591 社區成交 vs 內政部：同一天、總價差 1 萬內即視為核對成功。回傳 (核對成功, 可核對筆數)。"""
         if county not in gov_index:
             idx = defaultdict(list)
-            rows = lvr.rows(county)
-            for r in rows:
-                idx[r["date"]].append(r["total"])
-            ds = sorted(r["date"] for r in rows)
-            # 資料涵蓋起點：取第 2 百分位（避免少數補登的舊交易把起點拉得太早）
-            gov_index[county] = (idx, ds[int(len(ds) * 0.02)] if ds else "9999")
-        idx, first = gov_index[county]
+            lvr.rows(county)
+            for dd, tt in lvr.all_deals.get(norm_county(county), []):
+                idx[dd].append(tt)
+            gov_index[county] = (idx,) + lvr.coverage()
+        idx, first, last = gov_index[county]
         ok = n = 0
         for d in deals:
-            if not d.get("date") or d["date"] < first or d.get("total") is None or d.get("presale"):
+            if not d.get("date") or not (first <= d["date"] <= last) or d.get("total") is None or d.get("presale"):
                 d.pop("gov", None)  # 預售屋在另一份資料、太舊的不在下載範圍：不列入核對
                 continue
             n += 1
