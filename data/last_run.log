@@ -1,25 +1,95 @@
-▶ 台北內湖中山 2-3房 3000萬內（sale）
-  [591中古屋] 第 1 頁：https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3
+▶ 中壢區 3-4房 1500萬內 平面車位（sale）
+  [591中古屋] 第 1 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$
     取得 31 筆
-  [591中古屋] 第 2 頁：https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3&firstRow=30
+  [591中古屋] 第 2 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=30
     取得 31 筆
-  [591中古屋] 第 3 頁：https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3&firstRow=60
+  [591中古屋] 第 3 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=60
     取得 31 筆
-  [591中古屋] 第 4 頁：https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3&firstRow=90
-    取得 29 筆
-  [591中古屋] 第 5 頁：https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3&firstRow=120
-    取得 29 筆
-  共 151 筆，符合條件 30 筆
-▶ 台北市新建案（newhouse）
+  [591中古屋] 第 4 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=90
+    取得 31 筆
+  [591中古屋] 第 5 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=120
+    取得 31 筆
+  [591中古屋] 第 6 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=150
+    取得 31 筆
+  [591中古屋] 第 7 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=180
+    取得 31 筆
+  [591中古屋] 第 8 頁：https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$&firstRow=210
+    取得 31 筆
+  共 248 筆，列表條件符合 229 筆
+  [591中古屋] 讀取 229 筆詳情頁（車位、主建物、附近交通）
+    ⚠ 詳情頁失敗 sale-25161997：TimeoutError
+    …10/229
+    ⚠ 詳情頁失敗 sale-20930829：TimeoutError
+    ⚠ 詳情頁失敗 sale-20920458：TimeoutError
+    …20/229
+    ⚠ 詳情頁失敗 sale-20768611：TimeoutError
+    ⚠ 詳情頁失敗 sale-20717315：TimeoutError
+    …30/229
+    ⚠ 詳情頁失敗 sale-25166874：TimeoutError
+    ⚠ 詳情頁失敗 sale-20900865：TimeoutError
+    …40/229
+    ⚠ 詳情頁失敗 sale-20687802：TimeoutError
+    ⚠ 詳情頁失敗 sale-20952500：TimeoutError
+    …50/229
+    ⚠ 詳情頁失敗 sale-20840853：TimeoutError
+    ⚠ 詳情頁失敗 sale-20967375：TimeoutError
+    …60/229
+    ⚠ 詳情頁失敗 sale-20732743：TimeoutError
+    …70/229
+    ⚠ 詳情頁失敗 sale-25164490：TimeoutError
+    …80/229
+    ⚠ 詳情頁失敗 sale-20681443：TimeoutError
+    …90/229
+    ⚠ 詳情頁失敗 sale-20656211：TimeoutError
+    ⚠ 詳情頁失敗 sale-20679939：TimeoutError
+    …100/229
+    ⚠ 詳情頁失敗 sale-25149821：TimeoutError
+    ⚠ 詳情頁失敗 sale-20853802：TimeoutError
+    …110/229
+    ⚠ 詳情頁失敗 sale-25147839：TimeoutError
+    ⚠ 詳情頁失敗 sale-20737585：TimeoutError
+    …120/229
+    ⚠ 詳情頁失敗 sale-20778147：TimeoutError
+    ⚠ 詳情頁失敗 sale-20887238：TimeoutError
+    …130/229
+    ⚠ 詳情頁失敗 sale-20754893：TimeoutError
+    ⚠ 詳情頁失敗 sale-20772236：TimeoutError
+    …140/229
+    ⚠ 詳情頁失敗 sale-25155717：TimeoutError
+    …150/229
+    ⚠ 詳情頁失敗 sale-20961919：TimeoutError
+    ⚠ 詳情頁失敗 sale-20775218：TimeoutError
+    …160/229
+    …170/229
+    ⚠ 詳情頁失敗 sale-20976400：TimeoutError
+    ⚠ 詳情頁失敗 sale-20688580：TimeoutError
+    …180/229
+    ⚠ 詳情頁失敗 sale-25172562：TimeoutError
+    ⚠ 詳情頁失敗 sale-20711455：TimeoutError
+    …190/229
+    ⚠ 詳情頁失敗 sale-20475494：TimeoutError
+    ⚠ 詳情頁失敗 sale-20975635：TimeoutError
+    …200/229
+    ⚠ 詳情頁失敗 sale-20351689：TimeoutError
+    ⚠ 詳情頁失敗 sale-20373823：TimeoutError
+    …210/229
+    ⚠ 詳情頁失敗 sale-20644239：TimeoutError
+    ⚠ 詳情頁失敗 sale-20644976：TimeoutError
+    …220/229
+    ⚠ 詳情頁失敗 sale-25152361：TimeoutError
+    ⚠ 詳情頁失敗 sale-20664443：TimeoutError
+  詳情條件符合 92 筆
+▶ 中壢區新建案（newhouse）
   [591新建案] 第 1 頁
-    取得 21 筆（共 1184 筆）
+    取得 21 筆（共 407 筆）
   [591新建案] 第 2 頁
-    取得 20 筆（共 1184 筆）
+    取得 20 筆（共 407 筆）
   [591新建案] 第 3 頁
-    取得 20 筆（共 1184 筆）
-  共 60 筆，符合條件 37 筆
+    取得 20 筆（共 407 筆）
+  共 60 筆，列表條件符合 60 筆
 ▶ 查詢實價登錄行情
-  臺北市 實價登錄：18818 筆住宅成交（8 季）
-  行情查詢完成：社區 API 查詢 5 次，67 筆物件有行情
-✔ 完成：新物件 7、降價 0、目前在架 67
+  桃園市 實價登錄：61058 筆住宅成交（8 季）
+  行情查詢完成：社區 API 查詢 80 次，152 筆物件有行情
+✔ 完成：新物件 0、降價 0、目前在架 152
+  （第一次執行：所有物件都當作基準，不寄「新物件」通知）
   ✉ 已寄信給 bear851010@gmail.com
