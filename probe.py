@@ -1,8 +1,40 @@
-import requests, time
-for q in ["中華路一段550號, 中壢區, 桃園市", "桃園市中壢區中華路一段550號", "日月光, 中壢區", "ASE, Zhongli"]:
-    r = requests.get("https://nominatim.openstreetmap.org/search", params={"q": q, "format": "json", "limit": 3, "countrycodes": "tw"},
-                     headers={"User-Agent": "house-watcher/1.0 (personal)"}, timeout=20).json()
-    print(q, [(x["display_name"][:80], x["lat"], x["lon"]) for x in r]); time.sleep(1.2)
-r = requests.get("https://nominatim.openstreetmap.org/search", params={"street": "中華路一段", "city": "中壢區", "state": "桃園市", "format": "json", "limit": 3},
-                 headers={"User-Agent": "house-watcher/1.0 (personal)"}, timeout=20).json()
-print("street:", [(x["display_name"][:80], x["lat"], x["lon"]) for x in r])
+import json, sys, collections
+sys.path.insert(0, ".")
+import importlib.util
+spec = importlib.util.spec_from_file_location("rp", "realprice.py"); rp = importlib.util.module_from_spec(spec); spec.loader.exec_module(rp)
+from pathlib import Path
+lvr = rp.LvrData(Path("lvrc"), seasons=2)
+rows = lvr.rows("桃園市")
+byd = collections.defaultdict(list)
+for r in rows: byd[r["date"]].append(r)
+ds = sorted(byd); print("rows", len(rows), "date range", ds[int(len(ds)*0.02)], ds[-1])
+# 也看原始檔（未過濾）有多少筆，以及過濾掉的原因
+import zipfile, csv, io
+raw = []
+for zp in lvr._zip_paths():
+    with zipfile.ZipFile(zp) as z:
+        for i, r in enumerate(csv.DictReader(io.StringIO(z.read("h_lvr_land_a.csv").decode("utf-8-sig")))):
+            if i == 0: continue
+            raw.append(r)
+rawd = collections.defaultdict(list)
+for r in raw:
+    d = rp.roc_date(r.get("交易年月日", ""))
+    if d: rawd[d.isoformat()].append(r)
+print("raw rows", len(raw))
+d = json.load(open("data.json", encoding="utf-8"))
+tested = 0; stats = collections.Counter()
+for it in d["items"]:
+    c = (it.get("market") or {}).get("community")
+    if not c or it["source"] != "591中古屋": continue
+    for dl in c["deals"]:
+        if dl.get("presale") or dl["date"] < ds[int(len(ds)*0.02)] or dl["date"] > ds[-1]: continue
+        cands = byd.get(dl["date"], []); rc = rawd.get(dl["date"], [])
+        hit = [r for r in cands if abs(r["total"] - dl["total"]) <= 1]
+        rawhit = [r for r in rc if abs(float(r["總價元"] or 0) / 1e4 - dl["total"]) <= 1]
+        stats["filtered_hit" if hit else ("raw_only" if rawhit else "none")] += 1
+        if not hit and tested < 6:
+            tested += 1
+            near = sorted(rc, key=lambda r: abs(float(r["總價元"] or 0) / 1e4 - dl["total"]))[:2]
+            print("MISS", it.get("community"), dl["date"], dl["total"], dl.get("address"), "| same-day raw nearest:",
+                  [(round(float(r["總價元"]) / 1e4), r["土地位置建物門牌"][:22], r["備註"][:15], r["主要用途"]) for r in near])
+print(stats)
