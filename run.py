@@ -15,12 +15,13 @@ from urllib.parse import parse_qs, urlparse
 
 import yaml
 
-from scraper import newhouse591, realprice, sale591
+from scraper import geo, newhouse591, realprice, sale591
 from scraper.filters import needs_detail, passes, passes_detail
 from scraper.notify import build_email, send_email
 
 ROOT = Path(__file__).parent
 CACHE = ROOT / ".cache"
+GEO_CACHE = ROOT / "data" / "geo_cache.json"
 STATE = ROOT / "data" / "listings.json"
 DASH_DATA = ROOT / "docs" / "data.json"
 TPE = timezone(timedelta(hours=8))
@@ -30,6 +31,40 @@ def load_state() -> dict:
     if STATE.exists():
         return json.loads(STATE.read_text("utf-8"))
     return {"items": {}, "runs": []}
+
+
+def describe(search: dict) -> dict:
+    """把一組條件轉成人看得懂的文字，顯示在儀表板上。"""
+    f = search.get("filters") or {}
+    qs = parse_qs(urlparse(search.get("url", "")).query)
+    q = lambda k: (qs.get(k) or [""])[0]
+    tags = []
+    county = _county_of(search)
+    if county:
+        tags.append(county.replace("臺", "台") + ("／" + "、".join(f["districts"]) if f.get("districts") else ""))
+    if q("pattern"):
+        tags.append(q("pattern").replace(",", "-") + " 房")
+    if f.get("max_price") or q("price"):
+        tags.append(f"總價 {f.get('max_price') or q('price').split('$_')[-1].rstrip('$')} 萬以下")
+    if f.get("max_age") is not None:
+        tags.append(f"屋齡 {f['max_age']} 年內")
+    if f.get("min_main_ping"):
+        tags.append(f"主建 {f['min_main_ping']} 坪以上")
+    if f.get("min_ping") or f.get("max_ping"):
+        tags.append(f"權狀 {f.get('min_ping', 0)}–{f.get('max_ping', '∞')} 坪")
+    if f.get("max_unit_price"):
+        tags.append(f"單價 {f['max_unit_price']} 萬/坪以下")
+    if f.get("parking"):
+        tags.append("平面車位" if f["parking"] == "平面" else "有車位")
+    if f.get("transit_keywords"):
+        tags.append("附近有" + "/".join(f["transit_keywords"][:3]) + "等站")
+    if f.get("near"):
+        n = f["near"]
+        tags.append(f"距 {n.get('name', '中心點')} {n.get('radius_km', 2)} 公里內")
+    if f.get("exclude_keywords"):
+        tags.append("排除：" + "、".join(f["exclude_keywords"]))
+    return {"name": search["name"], "type": "新建案" if search.get("type") == "newhouse" else "中古屋",
+            "tags": tags, "url": search.get("url", ""), "near": f.get("near")}
 
 
 def _county_of(search: dict) -> str:
@@ -50,6 +85,7 @@ def main():
 
     cfg = yaml.safe_load(Path(args.config).read_text("utf-8"))
     state = load_state()
+    geocache = geo.GeoCache(GEO_CACHE)
     # 條件改名或刪除後，舊條件的物件不再保留
     names = {x["name"] for x in cfg.get("searches", [])}
     state["items"] = {k: v for k, v in state["items"].items() if v.get("search") in names}
@@ -77,6 +113,12 @@ def main():
             warnings.append(f"{name}：沒有抓到任何資料，可能被網站阻擋或網址條件有誤")
         matched = [it for it in items if passes(it, s.get("filters"))]
         print(f"  共 {len(items)} 筆，列表條件符合 {len(matched)} 筆")
+        near = (s.get("filters") or {}).get("near")
+        geo.locate(matched, geocache)
+        if near:
+            geo.apply_distance(matched, near)
+            matched = [it for it in matched if geo.within(it, near)]
+            print(f"  距離 {near.get('name', '中心')} {near.get('radius_km', 2)} 公里內 {len(matched)} 筆")
         if typ == "sale" and needs_detail(s.get("filters")) and matched:
             dcache = state.setdefault("details", {})
             for it in matched:  # 沿用之前讀過的詳情（含沒通過條件的），避免重複開網頁
@@ -101,6 +143,10 @@ def main():
                     kept.append(it)
             print(f"  詳情條件符合 {len(kept)} 筆")
             matched = kept
+            if near:  # 沒有社區座標的，改用詳情頁座標再判斷一次
+                geo.locate(matched, geocache)
+                geo.apply_distance(matched, near)
+                matched = [it for it in matched if geo.within(it, near)]
 
         county = _county_of(s)
         for it in matched:
@@ -143,12 +189,14 @@ def main():
         "active": len(seen_now), "warnings": warnings,
     }])[-52:]
 
+    geocache.save()
     STATE.parent.mkdir(exist_ok=True)
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1), "utf-8")
     DASH_DATA.parent.mkdir(exist_ok=True)
     DASH_DATA.write_text(json.dumps({
         "updated": now,
         "searches": [s["name"] for s in cfg.get("searches", [])],
+        "criteria": [describe(s) for s in cfg.get("searches", [])],
         "runs": state["runs"],
         "items": sorted(state["items"].values(),
                         key=lambda x: (not x.get("active"), x.get("first_seen", "")),

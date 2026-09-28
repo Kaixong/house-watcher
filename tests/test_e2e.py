@@ -6,7 +6,7 @@ import run
 from scraper import sale591, newhouse591, notify
 
 tmp = Path(tempfile.mkdtemp())
-run.STATE, run.DASH_DATA = tmp / "listings.json", tmp / "data.json"
+run.STATE, run.DASH_DATA, run.GEO_CACHE = tmp / "listings.json", tmp / "data.json", tmp / "geo.json"
 sent = []
 notify_send = lambda s, b, log=print: sent.append((s, b)) or True
 run.send_email = notify_send

@@ -6,6 +6,8 @@
 <title>房房小助手</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
 :root{
   color-scheme: light;
@@ -76,6 +78,22 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .empty{padding:40px;text-align:center;color:var(--muted);grid-column:1/-1}
 .demo{background:var(--accent-soft);color:var(--accent);font-size:13px;padding:8px 12px;border-radius:8px;margin-bottom:16px}
 
+.crit{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:16px;display:flex;flex-direction:column;gap:8px}
+.crit h3{margin:0;font-size:13px;font-weight:500;color:var(--muted);letter-spacing:.04em}
+.crow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:13px}
+.crow .cn{font-weight:700;margin-right:4px}
+.crow .ct{font-size:11px;color:var(--surface);background:var(--muted);border-radius:4px;padding:1px 6px}
+.chipc{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:1px 9px;font-size:12.5px}
+.crow a{font-size:12px;color:var(--accent);margin-left:auto}
+.view{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.view button{font:inherit;font-size:14px;border:0;background:var(--surface);color:var(--muted);padding:7px 14px;cursor:pointer}
+.view button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+#map{height:min(70vh,640px);border-radius:10px;border:1px solid var(--line);margin-bottom:16px}
+#mapWrap .legend{gap:16px}
+.leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.5;margin:10px 12px}
+.leaflet-popup-content a{color:#2f3e8f}
+.pin{width:14px;height:14px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.35)}
+.dist{font-size:12px;color:var(--accent);font-weight:500}
 .drow{font-size:12.5px;color:var(--ink);background:var(--bg);border-radius:6px;padding:6px 8px;margin-top:4px;line-height:1.55}
 .drow b{font-weight:500;color:var(--muted);margin-right:4px}
 .mk{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px;font-size:12.5px;color:var(--muted)}
@@ -130,25 +148,36 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
     <div class="stat"><b id="sAll">–</b><span>累計追蹤</span></div>
   </div>
   <div class="warn" id="warn" hidden></div>
+  <section class="crit" id="crit" hidden><h3>目前的篩選條件</h3><div id="critBody"></div></section>
 
   <div class="bar">
+    <div class="view" role="group" aria-label="顯示方式"><button type="button" id="vList" aria-pressed="true">列表</button><button type="button" id="vMap" aria-pressed="false">地圖</button></div>
     <select id="fSearch" aria-label="追蹤條件"><option value="">全部條件</option></select>
     <select id="fSource" aria-label="來源"><option value="">全部來源</option><option>591中古屋</option><option>591新建案</option></select>
     <select id="fSort" aria-label="排序">
       <option value="new">最新上架</option><option value="price">總價低→高</option>
-      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="prem">低於行情優先</option>
+      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="dist">離中心近→遠</option><option value="prem">低於行情優先</option>
     </select>
     <input type="search" id="fText" placeholder="搜尋標題、社區、地址">
     <label class="chk"><input type="checkbox" id="fNew"> 只看新物件</label>
     <label class="chk"><input type="checkbox" id="fActive" checked> 只看在架</label>
     <span class="count" id="count"></span>
   </div>
+  <div id="mapWrap" hidden><div id="map"></div>
+    <div class="legend" style="margin:-8px 0 16px">
+      <span><span class="pin" style="display:inline-block;background:#1d7a45;vertical-align:middle;margin-right:5px"></span>比行情便宜</span>
+      <span><span class="pin" style="display:inline-block;background:#4a5bc4;vertical-align:middle;margin-right:5px"></span>接近行情</span>
+      <span><span class="pin" style="display:inline-block;background:#c77700;vertical-align:middle;margin-right:5px"></span>比行情貴</span>
+      <span><span class="pin" style="display:inline-block;background:#7a8580;vertical-align:middle;margin-right:5px"></span>無行情資料</span>
+      <span>★ 中心點，圓圈為設定的範圍；點物件可看詳情</span>
+    </div></div>
   <div class="grid" id="grid"></div>
 </div>
 <div class="ov" id="ov" hidden></div>
 
 <script>
 const DEMO = {updated:"2026-09-28 08:00",searches:["台北內湖中山 2-3房 3000萬內","台北市新建案"],
+ criteria:[{name:"範例條件",type:"中古屋",tags:["台北市","3-4 房","總價 3000 萬以下"],url:"https://sale.591.com.tw/"}],
  runs:[{time:"2026-09-28 08:00",new:2,drops:1,active:4,warnings:[]}],
  items:[
   {source:"591中古屋",id:"d1",title:"內湖捷運三房 採光好 含平面車位",url:"https://sale.591.com.tw/",image:"",price:2680,unit_price:88.2,ping:30.4,layout:"3房2廳2衛",age:18,floor:"7F/12F",district:"內湖區",address:"成功路四段",community:"範例社區",community_id:1,county:"臺北市",kind:"電梯大樓",tags:["近捷運","有車位"],market:{premium:-3.1,premium_ref:"nearby",ref_price:91,community:{name:"範例社區",url:"https://market.591.com.tw/",n:6,n_12m:3,median_12m:89.5,median_all:86.2,trend:[["2024Q4",80.1,1],["2025Q2",83.4,2],["2025Q4",87.9,1],["2026Q2",90.2,2]],deals:[{date:"2026-05-02",unit:90.8,total:2860,ping:31.5,layout:"3房2廳2衛",floor:"8樓/12樓",address:"成功路四段"},{date:"2026-04-11",unit:89.5,total:2790,ping:31.2,layout:"3房2廳2衛",floor:"5樓/12樓",address:"成功路四段"}]},nearby:{scope:"內湖區成功路四段",n:24,n_12m:11,median_12m:91,trend:[["2024Q4",82,3],["2025Q1",83.5,2],["2025Q2",85.1,4],["2025Q3",86,3],["2025Q4",88.2,3],["2026Q1",89.9,4],["2026Q2",91.4,5]],deals:[{date:"2026-06-12",unit:92.3,total:2950,ping:32,layout:"3房2廳2衛",floor:"九層/十四層",address:"內湖區成功路四段1~30號"}]}},search:"台北內湖中山 2-3房 3000萬內",first_seen:"2026-09-28 08:00",last_seen:"2026-09-28 08:00",active:true,is_new:true},
@@ -195,7 +224,7 @@ function card(it){
       <a class="title" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
       <div class="price">${fmtPrice(it)}</div>
       <div class="meta">${meta}</div>
-      <div class="addr">${esc(it.address)}</div>
+      <div class="addr">${esc(it.address)}${it.distance_km != null ? ` <span class="dist">・距中心 ${it.distance_km} km</span>` : ""}</div>
       ${detailRow(it)}
       ${(it.tags||[]).length ? `<div class="tags">${it.tags.slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
       ${marketRow(it)}
@@ -331,10 +360,64 @@ function openMarket(id){
 }
 function closeMarket(){ $("ov").hidden = true; $("ov").innerHTML = ""; }
 document.addEventListener("click", e => {
-  const b = e.target.closest("[data-mk]"); if (b) openMarket(b.dataset.mk);
+  const b = e.target.closest("[data-mk]"); if (b) { e.preventDefault(); openMarket(b.dataset.mk); }
   if (e.target === $("ov")) closeMarket();
 });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("ov").hidden) closeMarket(); });
+
+
+function renderCriteria(){
+  const cs = DATA.criteria || [];
+  if (!cs.length) return;
+  $("crit").hidden = false;
+  $("critBody").innerHTML = cs.map(c => `<div class="crow"><span class="cn">${esc(c.name)}</span><span class="ct">${esc(c.type)}</span>
+    ${c.tags.map(t => `<span class="chipc">${esc(t)}</span>`).join("")}
+    <a href="${esc(c.url)}" target="_blank" rel="noopener">在 591 開啟 ↗</a></div>`).join("");
+}
+let MAP = null, LAYER = null, VIEW = "list";
+function setView(v){
+  VIEW = v;
+  $("vList").setAttribute("aria-pressed", v === "list");
+  $("vMap").setAttribute("aria-pressed", v === "map");
+  $("mapWrap").hidden = v !== "map";
+  $("grid").hidden = v === "map";
+  render();
+}
+function pinColor(it){
+  const p = it.market?.premium;
+  if (p == null) return "#7a8580";
+  return p > 3 ? "#c77700" : p < -3 ? "#1d7a45" : "#4a5bc4";
+}
+function drawMap(list){
+  if (typeof L === "undefined") { $("map").innerHTML = '<p class="note" style="padding:16px">地圖載入失敗，請重新整理。</p>'; return; }
+  if (!MAP) {
+    MAP = L.map("map", {scrollWheelZoom: true});
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(MAP);
+  }
+  if (LAYER) LAYER.remove();
+  LAYER = L.layerGroup().addTo(MAP);
+  const pts = [];
+  const centers = {};
+  for (const c of DATA.criteria || []) if (c.near) centers[c.near.name + c.near.lat] = c.near;
+  for (const n of Object.values(centers)) {
+    L.circle([n.lat, n.lng], {radius: (n.radius_km || 2) * 1000, color: "#2f3e8f", weight: 1.5, fillOpacity: .06}).addTo(LAYER);
+    L.marker([n.lat, n.lng], {icon: L.divIcon({className: "", html: '<div style="font-size:22px;line-height:1">★</div>', iconSize: [22, 22], iconAnchor: [11, 11]})})
+      .bindTooltip(esc(n.name), {permanent: true, direction: "top", offset: [0, -8]}).addTo(LAYER);
+    pts.push([n.lat, n.lng]);
+  }
+  for (const it of list) {
+    if (!it.lat || !it.lng) continue;
+    const m = L.marker([it.lat, it.lng], {icon: L.divIcon({className: "", html: `<div class="pin" style="background:${pinColor(it)}"></div>`, iconSize: [14, 14], iconAnchor: [7, 7]})});
+    const price = it.price ? `${Math.round(it.price).toLocaleString()} 萬` : (it.price_text || "");
+    m.bindPopup(`<b>${esc(it.title)}</b><br>${esc(price)}${it.unit_price ? `（${it.unit_price} 萬/坪）` : ""}<br>
+      ${esc([it.layout?.slice(0, 20), it.main_ping ? "主建 " + it.main_ping + " 坪" : "", it.age != null ? "屋齡 " + it.age + " 年" : ""].filter(Boolean).join(" · "))}<br>
+      ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距中心 " + it.distance_km + " km<br>" : ""}
+      <a href="${esc(it.url)}" target="_blank" rel="noopener">591 原網頁 ↗</a>　${it.market ? `<a href="#" data-mk="${esc(it.id)}">行情走勢</a>` : ""}`);
+    m.addTo(LAYER); pts.push([it.lat, it.lng]);
+  }
+  setTimeout(() => { MAP.invalidateSize(); if (pts.length) MAP.fitBounds(pts, {padding: [30, 30], maxZoom: 15}); }, 50);
+}
 
 function render(){
   const q = $("fText").value.trim(), s = $("fSearch").value, src = $("fSource").value;
@@ -343,9 +426,10 @@ function render(){
     (!$("fNew").checked || it.is_new) && (!$("fActive").checked || it.active) &&
     (!q || [it.title,it.community,it.address,it.district].join(" ").includes(q)));
   const by = $("fSort").value, big = 1e9;
-  const key = {main: it => -(it.main_ping ?? 0), prem: it => it.market?.premium ?? big, new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
+  const key = {dist: it => it.distance_km ?? big, main: it => -(it.main_ping ?? 0), prem: it => it.market?.premium ?? big, new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
   list.sort((a,b) => { const x = key(a), y = key(b); return by === "new" ? (x < y ? 1 : x > y ? -1 : 0) : x - y; });
-  $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">沒有符合的物件</div>';
+  if (VIEW === "map") drawMap(list);
+  else $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">沒有符合的物件</div>';
   $("count").textContent = `顯示 ${list.length} 筆`;
 }
 
@@ -361,6 +445,8 @@ function boot(data, demo){
   if ((last.warnings || []).length) { $("warn").hidden = false; $("warn").innerHTML = last.warnings.map(w => "⚠ " + esc(w)).join("<br>"); }
   for (const s of data.searches || []) $("fSearch").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
   ["fText","fSearch","fSource","fSort","fNew","fActive"].forEach(id => $(id).addEventListener("input", render));
+  $("vList").onclick = () => setView("list"); $("vMap").onclick = () => setView("map");
+  renderCriteria();
   render();
 }
 

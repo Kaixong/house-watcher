@@ -150,6 +150,8 @@ DETAIL_JS = r"""
     }
     out[t] = Object.keys(kv).length ? kv : list;
   }
+  const m = document.documentElement.innerHTML.match(/"latitude":\s*([\d.]+),\s*"longitude":\s*([\d.]+)/);
+  if (m) out.__geo = [parseFloat(m[1]), parseFloat(m[2])];
   return out;
 }
 """
@@ -173,6 +175,8 @@ def parse_detail(boxes: dict) -> dict:
         "public_ratio": house.get("公設比", ""),
         "mgmt_fee": house.get("管理費", ""),
         "traffic": traffic[:8],
+        "lat": (boxes.get("__geo") or [None, None])[0],
+        "lng": (boxes.get("__geo") or [None, None])[1],
     }
 
 

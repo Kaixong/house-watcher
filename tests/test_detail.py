@@ -20,11 +20,13 @@ html = """<div class="detail-house-box"><h3 class="detail-house-name">房屋資�
 <div class="detail-house-item"><div class="detail-house-key">主建物</div><div class="detail-house-value">22.79坪</div></div></div>
 <div class="detail-house-box"><h3 class="detail-house-name">附近交通</h3>
 <div class="detail-house-item"><div class="detail-house-key"></div><div class="detail-house-value">群益幼稚園公車站</div></div>
-<div class="detail-house-item"><div class="detail-house-key"></div><div class="detail-house-value">內壢火車站</div></div></div>"""
+<div class="detail-house-item"><div class="detail-house-key"></div><div class="detail-house-value">內壢火車站</div></div></div>
+<script type="application/ld+json">{"geo":{"@type":"GeoCoordinates","latitude":24.9621721,"longitude":121.2655383}}</script>"""
 with sync_playwright() as p:
     b = p.chromium.launch(); pg = b.new_page(); pg.set_content(html)
     d = sale591.parse_detail(pg.evaluate(sale591.DETAIL_JS)); b.close()
 print(d)
+assert d["lat"] == 24.9621721 and d["lng"] == 121.2655383
 assert d["parking_flat"] and d["main_ping"] == 22.79 and d["traffic"] == ["群益幼稚園公車站", "內壢火車站"]
 
 f = {"max_price": 1500, "max_age": 20, "min_main_ping": 20, "parking": "平面", "transit_keywords": ["公車", "捷運", "火車", "客運"]}
