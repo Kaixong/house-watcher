@@ -102,6 +102,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
   #mapList .card .body{padding:10px 12px}
   #mapList .card .drow,#mapList .card .tags{display:none}
 }
+.tomap{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:40;background:var(--accent);color:var(--surface);border:0;border-radius:99px;padding:11px 18px;font:500 15px/1 "Noto Sans TC",system-ui,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer}
 .card.hl{outline:2px solid var(--accent);outline-offset:2px}
 .pin{transition:transform .15s}
 .pin.big{transform:scale(1.7);box-shadow:0 0 0 2px #2f3e8f}
@@ -190,6 +191,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
   <div class="grid" id="grid"></div>
 </div>
 <div class="ov" id="ov" hidden></div>
+<button type="button" id="toMap" class="tomap" hidden>▲ 回到地圖</button>
 
 <script>
 const DEMO = {updated:"2026-09-28 08:00",searches:["台北內湖中山 2-3房 3000萬內","台北市新建案"],
@@ -399,6 +401,7 @@ function setView(v){
   $("vList").setAttribute("aria-pressed", v === "list");
   $("vMap").setAttribute("aria-pressed", v === "map");
   $("mapWrap").hidden = v !== "map";
+  if (v !== "map") $("toMap").hidden = true;
   $("grid").hidden = v === "map";
   render();
 }
@@ -466,12 +469,29 @@ function focusCard(id){
   el.classList.add("hl");
   el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"});
 }
+function mapOffscreen(){
+  const r = $("map").getBoundingClientRect();
+  return r.bottom < 80 || r.top > innerHeight - 80;
+}
+function scrollToMap(){
+  const smooth = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const top = $("map").getBoundingClientRect().top + scrollY - 12;
+  scrollTo({top, behavior: smooth ? "smooth" : "auto"});
+}
 function locate(id){
   if (VIEW !== "map") { PENDING = id; setView("map"); return; }
   const m = MARKERS[id]; if (!m) return;
+  if (mapOffscreen()) scrollToMap();
   MAP.once("moveend", () => { m.openPopup(); focusCard(id); });
   MAP.setView(m.getLatLng(), Math.max(MAP.getZoom(), 16));
 }
+// 手機：捲到清單後顯示「回到地圖」
+function updateToMap(){ $("toMap").hidden = !(VIEW === "map" && MAP && mapOffscreen()); }
+addEventListener("scroll", () => requestAnimationFrame(updateToMap), {passive: true});
+$("toMap").addEventListener("click", () => {
+  scrollToMap();
+  if (HL && MARKERS[HL]) setTimeout(() => { MAP.panTo(MARKERS[HL].getLatLng()); MARKERS[HL].openPopup(); }, 350);
+});
 document.addEventListener("mouseover", e => {
   const c = e.target.closest("#mapList [data-card]"); if (!c) return;
   document.querySelectorAll(".pin.big").forEach(p => p.classList.remove("big"));
