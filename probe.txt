@@ -1,8 +1,0 @@
-== https://www.sinyi.com.tw/buy/list/0-1500-price/Taoyuan-city/320-zip/330-zip/334-zip/index | 桃園市八德區買房：物件出售、房價分析 - 信義房屋
-filter: {"exludeSameTrade": false, "objectStatus": 0, "retType": 2, "retRange": ["334"], "mapType": 1, "price": {"priceType": 2, "priceRange": ["0-1500"]}, "objectType": []} page 1 pageCnt 20
-total: 592 first: [('力霸稀有格局兩房', 898, '2房2廳1衛', '28.2年', ['L'], None), ('稀有釋出！力霸稀有套房', 528, '1房1廳1衛', '28.2年', ['L', 'C'], None), ('皇翔稀有釋出門牌兩房車位', 1368, '2房2廳1衛', '12.0年', ['L'], ['2']), ('大成龍門精美裝潢電梯兩房', 738, '2房2廳1衛', '31.2年', ['M'], None)]
-opts: []
-== https://www.sinyi.com.tw/buy/list/0-1500-price/dalou-huaxia-type/3-4-roomtotal/Taoyuan-city/320-zip/330-zip/334-zip/index | 桃園市八德區買房：大樓、華廈物件出售、房價分析 - 信義房屋
-filter: {"exludeSameTrade": false, "objectStatus": 0, "retType": 2, "retRange": ["334"], "mapType": 1, "houselandtype": ["L", "M"], "price": {"priceType": 2, "priceRange": ["0-1500"]}, "objectType": [], "room": {"isRoofPlus": true, "roomRange": ["3-4"]}} page 1 pageCnt 20
-total: 34 first: [('力霸朝南高樓採光三房車位', 1388, '3房2廳2衛', '28.2年', ['L'], ['2']), ('大成龍門次頂樓三房', 918, '3房2廳2衛', '31.2年', ['M'], None), ('鵬躍序景觀３房車位', 1488, '3房2廳2衛', '0.8年', ['L'], ['2']), ('武陵綠大地電梯三房', 750, '3房2廳1衛', '31.9年', ['L'], None)]
-opts: [["第 1 頁", "/buy/list/0-1500-price/dalou-huaxia-type/3-4-roomtotal/Taoyuan-city/320-zip/330-zip/334-zip/index/1"], ["第 2 頁", "/buy/list/0-1500-price/dalou-huaxia-type/3-4-roomtotal/Taoyuan-city/320-zip/330-zip/334-zip/index/2"]]
