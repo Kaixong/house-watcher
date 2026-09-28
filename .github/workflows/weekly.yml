@@ -1,0 +1,56 @@
+name: 每週抓取房屋物件
+
+on:
+  schedule:
+    # 每週一 07:52（台北時間）= 週日 23:52 UTC
+    - cron: "52 23 * * 0"
+  workflow_dispatch:        # 允許手動按「Run workflow」觸發
+    inputs:
+      send_email:
+        description: "是否寄送 Gmail 通知"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write           # 讓程式能把最新資料 commit 回 repo
+
+concurrency:
+  group: house-watcher
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安裝套件
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: 執行爬蟲
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.send_email }}" = "false" ]; then
+            python run.py --no-email
+          else
+            python run.py
+          fi
+
+      - name: 儲存結果
+        run: |
+          git config user.name  "house-watcher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/ docs/data.json
+          git diff --cached --quiet || git commit -m "更新物件資料 $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M')"
+          git push

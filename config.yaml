@@ -1,0 +1,47 @@
+# =========================================================
+#  房房小助手 設定檔：改這裡就能調整搜尋條件
+# =========================================================
+#
+# 每一組 search 是一個「追蹤條件」，可以放很多組。
+#
+# 最簡單的用法：
+#   1. 到 591 網站用它的篩選器設定好條件（縣市、區域、總價、房數…）
+#   2. 把網址列的網址整串複製，貼到 url
+#   3. 下面的 filters 是「額外篩選」，591 篩不到的條件可以寫在這（不需要就留空或刪掉）
+#
+# type:
+#   sale     → 591 中古屋（sale.591.com.tw）
+#   newhouse → 591 新建案（newhouse.591.com.tw）
+
+searches:
+  - name: 台北內湖中山 2-3房 3000萬內
+    type: sale
+    url: "https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3"
+    max_pages: 5            # 最多抓幾頁（每頁約 30 筆）
+    filters:
+      max_price: 3000       # 總價上限（萬）
+      min_ping: 20          # 權狀坪數下限
+      max_ping: 45          # 權狀坪數上限
+      max_unit_price: 110   # 單價上限（萬/坪）
+      max_age: 30           # 屋齡上限（年）
+      include_keywords: []  # 標題/地址需包含其一，例如 ["捷運", "電梯"]
+      exclude_keywords: ["頂加", "法拍", "持分"]
+
+  - name: 台北市新建案
+    type: newhouse
+    url: "https://newhouse.591.com.tw/list?regionid=1"
+    max_pages: 3
+    filters:
+      max_unit_price: 100   # 單價上限（萬/坪）；「價格待定」的建案會保留
+      exclude_keywords: []
+
+# ---------------------------------------------------------
+# 通知設定（帳號密碼不要寫在這裡！請放 GitHub Secrets，見 README）
+# ---------------------------------------------------------
+notify:
+  email: true
+  send_when_empty: false   # 沒有新物件時是否仍寄信
+  max_items_in_email: 30
+
+# 儀表板網址（設定好 GitHub Pages 後填上，信件裡會附連結）
+dashboard_url: ""
