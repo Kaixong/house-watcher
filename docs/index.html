@@ -88,7 +88,23 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .view{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .view button{font:inherit;font-size:14px;border:0;background:var(--surface);color:var(--muted);padding:7px 14px;cursor:pointer}
 .view button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
-#map{height:min(70vh,640px);border-radius:10px;border:1px solid var(--line);margin-bottom:16px}
+.msplit{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:16px}
+#map{height:min(58vh,560px);border-radius:10px;border:1px solid var(--line)}
+#mapList{display:flex;flex-direction:column;gap:12px}
+#mapList > *{flex-shrink:0}
+#mapList .mlh{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;position:sticky;top:0;background:var(--bg);padding:2px 0 6px;z-index:2}
+@media (min-width:900px){
+  .msplit{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:start}
+  #map{height:min(76vh,760px);position:sticky;top:12px}
+  #mapList{max-height:min(76vh,760px);overflow-y:auto;padding-right:4px}
+  #mapList .card{display:grid;grid-template-columns:34% minmax(0,1fr)}
+  #mapList .card .ph{aspect-ratio:auto;height:100%;min-height:140px}
+  #mapList .card .body{padding:10px 12px}
+  #mapList .card .drow,#mapList .card .tags{display:none}
+}
+.card.hl{outline:2px solid var(--accent);outline-offset:2px}
+.pin{transition:transform .15s}
+.pin.big{transform:scale(1.7);box-shadow:0 0 0 2px #2f3e8f}
 #mapWrap .legend{gap:16px}
 .leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.5;margin:10px 12px}
 .leaflet-popup-content a{color:#2f3e8f}
@@ -163,13 +179,13 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
     <label class="chk"><input type="checkbox" id="fActive" checked> 只看在架</label>
     <span class="count" id="count"></span>
   </div>
-  <div id="mapWrap" hidden><div id="map"></div>
+  <div id="mapWrap" hidden><div class="msplit"><div id="map"></div><div id="mapList" aria-live="polite"></div></div>
     <div class="legend" style="margin:-8px 0 16px">
       <span><span class="pin" style="display:inline-block;background:#1d7a45;vertical-align:middle;margin-right:5px"></span>比行情便宜</span>
       <span><span class="pin" style="display:inline-block;background:#4a5bc4;vertical-align:middle;margin-right:5px"></span>接近行情</span>
       <span><span class="pin" style="display:inline-block;background:#c77700;vertical-align:middle;margin-right:5px"></span>比行情貴</span>
       <span><span class="pin" style="display:inline-block;background:#7a8580;vertical-align:middle;margin-right:5px"></span>無行情資料</span>
-      <span>★ 圓心，圓圈為範圍（落在任一圈內即符合）；點物件可看詳情</span>
+      <span>★ 圓心，圓圈為範圍（落在任一圈內即符合）；點地圖上的點，清單會捲到該物件</span>
     </div></div>
   <div class="grid" id="grid"></div>
 </div>
@@ -217,7 +233,7 @@ function card(it){
     it.prev_price ? '<span class="chip drop">降價</span>' : "",
     !it.active ? '<span class="chip off">已下架</span>' : ""].join("");
   const img = it.image ? `style="background-image:url('${esc(it.image)}')"` : "";
-  return `<article class="card ${it.active ? "" : "off"}">
+  return `<article class="card ${it.active ? "" : "off"}" id="card-${esc(it.id)}" data-card="${esc(it.id)}">
     <div class="ph" ${img}><div class="chips">${chips}</div></div>
     <div class="body">
       <div class="src">${esc(it.source)}${it.community && it.community !== it.title ? " · " + esc(it.community) : ""}</div>
@@ -262,6 +278,7 @@ function links(it){
   const kw = it.community && it.community !== it.title ? it.community : place;
   const out = [`<a class="lk primary" href="${esc(it.url)}" target="_blank" rel="noopener">${it.source.startsWith("591") ? "591 原網頁" : "原網頁"} ↗</a>`];
   if (it.market) out.push(`<button class="lk" type="button" data-mk="${esc(it.id)}">行情走勢</button>`);
+  if (it.lat && it.lng) out.push(`<button class="lk" type="button" data-locate="${esc(it.id)}">在地圖上看</button>`);
   if (it.community_id) out.push(`<a class="lk" href="https://market.591.com.tw/${it.community_id}" target="_blank" rel="noopener">社區實價 ↗</a>`);
   out.push(`<a class="lk" href="https://www.google.com/search?q=${q("site:leju.com.tw " + kw)}" target="_blank" rel="noopener">樂居 ↗</a>`);
   if (place) out.push(`<a class="lk" href="https://www.google.com/maps/search/?api=1&query=${q(place)}" target="_blank" rel="noopener">地圖 ↗</a>`);
@@ -361,6 +378,8 @@ function openMarket(id){
 function closeMarket(){ $("ov").hidden = true; $("ov").innerHTML = ""; }
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-mk]"); if (b) { e.preventDefault(); openMarket(b.dataset.mk); }
+  const lo = e.target.closest("[data-locate]"); if (lo) { e.preventDefault(); locate(lo.dataset.locate); }
+  const fo = e.target.closest("[data-focus]"); if (fo) { e.preventDefault(); focusCard(fo.dataset.focus); }
   if (e.target === $("ov")) closeMarket();
 });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("ov").hidden) closeMarket(); });
@@ -388,21 +407,24 @@ function pinColor(it){
   if (p == null) return "#7a8580";
   return p > 3 ? "#c77700" : p < -3 ? "#1d7a45" : "#4a5bc4";
 }
+let MARKERS = {}, MAPLIST = [], FITKEY = "", PENDING = null;
+function markerOf(id){ const m = MARKERS[id]; return m && m.getElement() ? m.getElement().querySelector(".pin") : null; }
 function drawMap(list){
   if (typeof L === "undefined") { $("map").innerHTML = '<p class="note" style="padding:16px">地圖載入失敗，請重新整理。</p>'; return; }
   if (!MAP) {
     MAP = L.map("map", {scrollWheelZoom: true});
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(MAP);
+    MAP.on("moveend", renderMapList);
   }
   if (LAYER) LAYER.remove();
   LAYER = L.layerGroup().addTo(MAP);
-  const pts = [];
-  const centers = {};
+  MARKERS = {}; MAPLIST = list;
+  const pts = [], centers = {};
   for (const c of DATA.criteria || []) for (const n of [].concat(c.near || [])) centers[n.name + n.lat] = n;
   for (const n of Object.values(centers)) {
-    L.circle([n.lat, n.lng], {radius: (n.radius_km || 2) * 1000, color: "#2f3e8f", weight: 1.5, fillOpacity: .06}).addTo(LAYER);
-    L.marker([n.lat, n.lng], {icon: L.divIcon({className: "", html: '<div style="font-size:22px;line-height:1">★</div>', iconSize: [22, 22], iconAnchor: [11, 11]})})
+    L.circle([n.lat, n.lng], {radius: (n.radius_km || 2) * 1000, color: "#2f3e8f", weight: 1.5, fillOpacity: .06, interactive: false}).addTo(LAYER);
+    L.marker([n.lat, n.lng], {interactive: false, icon: L.divIcon({className: "", html: '<div style="font-size:22px;line-height:1">★</div>', iconSize: [22, 22], iconAnchor: [11, 11]})})
       .bindTooltip(esc(n.name), {permanent: true, direction: "top", offset: [0, -8]}).addTo(LAYER);
     pts.push([n.lat, n.lng]);
   }
@@ -411,13 +433,51 @@ function drawMap(list){
     const m = L.marker([it.lat, it.lng], {icon: L.divIcon({className: "", html: `<div class="pin" style="background:${pinColor(it)}"></div>`, iconSize: [14, 14], iconAnchor: [7, 7]})});
     const price = it.price ? `${Math.round(it.price).toLocaleString()} 萬` : (it.price_text || "");
     m.bindPopup(`<b>${esc(it.title)}</b><br>${esc(price)}${it.unit_price ? `（${it.unit_price} 萬/坪）` : ""}<br>
-      ${esc([it.layout?.slice(0, 20), it.main_ping ? "主建 " + it.main_ping + " 坪" : "", it.age != null ? "屋齡 " + it.age + " 年" : ""].filter(Boolean).join(" · "))}<br>
       ${it.market?.premium != null ? premChip(it.market) + "<br>" : ""}${it.distance_km != null ? "距" + esc(it.near_name || "中心") + " " + it.distance_km + " km<br>" : ""}
-      <a href="${esc(it.url)}" target="_blank" rel="noopener">591 原網頁 ↗</a>　${it.market ? `<a href="#" data-mk="${esc(it.id)}">行情走勢</a>` : ""}`);
-    m.addTo(LAYER); pts.push([it.lat, it.lng]);
+      <a href="#" data-focus="${esc(it.id)}">看完整資料</a>　<a href="${esc(it.url)}" target="_blank" rel="noopener">591 原網頁 ↗</a>`, {autoPan: true});
+    m.on("click", () => focusCard(it.id));
+    m.addTo(LAYER); MARKERS[it.id] = m; pts.push([it.lat, it.lng]);
   }
-  setTimeout(() => { MAP.invalidateSize(); if (pts.length) MAP.fitBounds(pts, {padding: [30, 30], maxZoom: 15}); }, 50);
+  const key = [$("fSearch").value, $("fSource").value, $("fText").value, $("fNew").checked, $("fActive").checked].join("|");
+  setTimeout(() => {
+    MAP.invalidateSize();
+    if (PENDING) { const it = list.find(x => x.id === PENDING); PENDING = null; if (it) return locate(it.id); }
+    if (key !== FITKEY && pts.length) { FITKEY = key; MAP.fitBounds(pts, {padding: [30, 30], maxZoom: 15}); }
+    else renderMapList();
+  }, 60);
 }
+function renderMapList(){
+  if (VIEW !== "map" || !MAP) return;
+  const b = MAP.getBounds();
+  const vis = MAPLIST.filter(it => it.lat && it.lng && b.contains([it.lat, it.lng]));
+  const noGeo = MAPLIST.filter(it => !(it.lat && it.lng)).length;
+  $("mapList").innerHTML = `<div class="mlh"><span>地圖範圍內 <b>${vis.length}</b> 筆（共 ${MAPLIST.length} 筆）</span><span>拖動或縮放地圖，清單會跟著更新${noGeo ? `；${noGeo} 筆位置未確認，請切換到列表查看` : ""}</span></div>` +
+    (vis.length ? vis.map(card).join("") : '<div class="empty">這個範圍內沒有物件，試著拉遠地圖</div>');
+  if (HL) { const el = document.getElementById("card-" + HL);
+    if (el) { el.classList.add("hl"); if (Date.now() - FOCUS_AT < 1500) el.scrollIntoView({block: "center"}); } }
+}
+let HL = null, FOCUS_AT = 0;
+function focusCard(id){
+  FOCUS_AT = Date.now();
+  const el = document.getElementById("card-" + id);
+  document.querySelectorAll(".card.hl").forEach(c => c.classList.remove("hl"));
+  HL = id;
+  if (!el) return;
+  el.classList.add("hl");
+  el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"});
+}
+function locate(id){
+  if (VIEW !== "map") { PENDING = id; setView("map"); return; }
+  const m = MARKERS[id]; if (!m) return;
+  MAP.once("moveend", () => { m.openPopup(); focusCard(id); });
+  MAP.setView(m.getLatLng(), Math.max(MAP.getZoom(), 16));
+}
+document.addEventListener("mouseover", e => {
+  const c = e.target.closest("#mapList [data-card]"); if (!c) return;
+  document.querySelectorAll(".pin.big").forEach(p => p.classList.remove("big"));
+  const p = markerOf(c.dataset.card); if (p) p.classList.add("big");
+});
+document.addEventListener("mouseleave", e => { if (e.target.id === "mapList") document.querySelectorAll(".pin.big").forEach(p => p.classList.remove("big")); }, true);
 
 function render(){
   const q = $("fText").value.trim(), s = $("fSearch").value, src = $("fSource").value;
