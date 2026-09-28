@@ -1,0 +1,10 @@
+127.0.0.1 - - [28/Sep/2026 15:30:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 15:30:36] "GET /data.json HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 15:30:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [28/Sep/2026 15:30:49] "GET /data.json HTTP/1.1" 200 -
+errors: []
+phone pin1: {'sy': 961, 'mapTop': 10, 'sel': 1, 'hl': 1, 'popup': 1, 'btn': False}
+phone pin2: {'sy': 961, 'mapTop': 10, 'sel': 1, 'hl': 1, 'popup': 1, 'btn': False}
+phone 看完整資料: {'cardVisible': True, 'btn': True}
+phone 回到地圖: {'sy': 964, 'mapTop': 7, 'sel': 1, 'hl': 1, 'popup': 1, 'btn': False}
+desk sy0: 0 {'sy': 0, 'inSide': True, 'sel': 1}
