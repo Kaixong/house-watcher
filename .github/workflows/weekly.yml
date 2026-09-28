@@ -4,6 +4,9 @@ on:
   schedule:
     # 每週一 07:52（台北時間）= 週日 23:52 UTC
     - cron: "52 23 * * 0"
+  push:                     # 修改 config.yaml 存檔後自動重跑
+    branches: [main]
+    paths: [config.yaml]
   workflow_dispatch:        # 允許手動按「Run workflow」觸發
     inputs:
       send_email:
@@ -34,6 +37,13 @@ jobs:
         run: |
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
+
+      - name: 還原實價登錄快取
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: realprice-${{ github.run_id }}
+          restore-keys: realprice-
 
       - name: 執行爬蟲
         env:

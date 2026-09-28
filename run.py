@@ -11,14 +11,16 @@ import argparse
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 
 import yaml
 
-from scraper import newhouse591, sale591
+from scraper import newhouse591, realprice, sale591
 from scraper.filters import passes
 from scraper.notify import build_email, send_email
 
 ROOT = Path(__file__).parent
+CACHE = ROOT / ".cache"
 STATE = ROOT / "data" / "listings.json"
 DASH_DATA = ROOT / "docs" / "data.json"
 TPE = timezone(timedelta(hours=8))
@@ -28,6 +30,15 @@ def load_state() -> dict:
     if STATE.exists():
         return json.loads(STATE.read_text("utf-8"))
     return {"items": {}, "runs": []}
+
+
+def _county_of(search: dict) -> str:
+    """搜尋條件所在縣市：優先用 config 的 county，否則從 591 網址的 regionid 推算。"""
+    if search.get("county"):
+        return realprice.norm_county(search["county"])
+    qs = parse_qs(urlparse(search.get("url", "")).query)
+    rid = (qs.get("regionid") or qs.get("region") or [""])[0]
+    return realprice.REGION_591.get(int(rid), "") if str(rid).isdigit() else ""
 
 
 def main():
@@ -64,8 +75,11 @@ def main():
         matched = [it for it in items if passes(it, s.get("filters"))]
         print(f"  共 {len(items)} 筆，符合條件 {len(matched)} 筆")
 
+        county = _county_of(s)
         for it in matched:
             it["search"] = name
+            if county and not it.get("county"):
+                it["county"] = county
             old = state["items"].get(it["id"])
             seen_now.add(it["id"])
             if old is None:
@@ -84,6 +98,14 @@ def main():
                 it["price_history"] = hist
             it["last_seen"] = now
             state["items"][it["id"]] = it
+
+    # 實價登錄行情（只查目前在架的物件）
+    if (cfg.get("realprice") or {}).get("enabled", True):
+        print("▶ 查詢實價登錄行情")
+        try:
+            realprice.enrich([state["items"][i] for i in seen_now], cfg.get("realprice") or {}, CACHE)
+        except Exception as e:  # noqa: BLE001
+            warnings.append(f"實價登錄行情查詢失敗（{e.__class__.__name__}: {e}）")
 
     for iid, it in state["items"].items():
         it["active"] = iid in seen_now

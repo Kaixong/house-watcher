@@ -26,6 +26,7 @@ EXTRACT_JS = r"""
     image: q('img.ware-item__image')?.getAttribute('data-src') || q('img.ware-item__image')?.src || '',
     attrs: [...el.querySelectorAll('.ware-item__attr')].map(s => s.textContent.trim()),
     community: txt('.ware-item__community'),
+    community_url: q('.ware-item__community a')?.href || '',
     section: txt('.ware-item__section').replace(/-$/, ''),
     address: txt('.ware-item__address'),
     price_text: txt('.ware-item__price-value'),
@@ -52,6 +53,11 @@ def page_url(base_url: str, page: int, page_size: int = 30) -> str:
 def _num(s: str) -> float | None:
     m = re.search(r"[\d,]+(?:\.\d+)?", s or "")
     return float(m.group().replace(",", "")) if m else None
+
+
+def _cid(url: str):
+    m = re.search(r"market\.591\.com\.tw/(\d+)", url or "")
+    return int(m.group(1)) if m else None
 
 
 def normalize(raw: dict) -> dict:
@@ -82,6 +88,7 @@ def normalize(raw: dict) -> dict:
         "floor": floor,
         "kind": kind,
         "community": raw.get("community", ""),
+        "community_id": _cid(raw.get("community_url", "")),
         "district": raw.get("section", ""),
         "address": raw.get("address", ""),
         "tags": raw.get("tags", []),

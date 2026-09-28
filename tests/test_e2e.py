@@ -10,6 +10,7 @@ run.STATE, run.DASH_DATA = tmp / "listings.json", tmp / "data.json"
 sent = []
 notify_send = lambda s, b, log=print: sent.append((s, b)) or True
 run.send_email = notify_send
+run.realprice.enrich = lambda *a, **k: None  # 行情另有測試
 
 def item(i, price, ping=30, age=10, title="內湖三房"):
     return {"source":"591中古屋","id":f"sale-{i}","title":f"{title}{i}","url":"u","image":"","price":price,

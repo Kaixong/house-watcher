@@ -59,6 +59,8 @@ def normalize(it: dict) -> dict:
         "floor": "",
         "kind": it.get("purpose_str", ""),
         "community": it.get("build_name", ""),
+        "community_id": it.get("community_id") or None,
+        "county": (it.get("region") or "").replace("台", "臺"),
         "district": it.get("section", ""),
         "address": it.get("address", ""),
         "tags": it.get("tag", []) or [],
