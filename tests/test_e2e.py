@@ -11,6 +11,12 @@ sent = []
 notify_send = lambda s, b, log=print: sent.append((s, b)) or True
 run.send_email = notify_send
 run.realprice.enrich = lambda *a, **k: None  # 行情另有測試
+cfg = tmp / "config.yaml"
+cfg.write_text("""searches:
+  - {name: 測試中古屋, type: sale, url: "https://sale.591.com.tw/?regionid=1", filters: {max_price: 3000, exclude_keywords: [頂加]}}
+  - {name: 測試新建案, type: newhouse, url: "https://newhouse.591.com.tw/list?regionid=1"}
+notify: {email: true}
+""", "utf-8")
 
 def item(i, price, ping=30, age=10, title="內湖三房"):
     return {"source":"591中古屋","id":f"sale-{i}","title":f"{title}{i}","url":"u","image":"","price":price,
@@ -24,7 +30,7 @@ nh = [newhouse591.normalize({"hid":1,"build_name":"A建案","price":"85~95","pri
 for w in range(2):
     sale591.scrape = lambda *a, **k: week[w]
     newhouse591.scrape = lambda *a, **k: nh
-    sys.argv = ["run.py"]
+    sys.argv = ["run.py", "--config", str(cfg)]
     run.main()
 
 d = json.loads(run.DASH_DATA.read_text("utf-8"))

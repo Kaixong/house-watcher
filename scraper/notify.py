@@ -29,7 +29,8 @@ def _card(it: dict, badge: str) -> str:
         x for x in [
             it.get("district", ""),
             it.get("layout", "")[:30],
-            f"{it['ping']:g} 坪" if it.get("ping") else it.get("ping_text", ""),
+            f"權狀 {it['ping']:g} 坪" if it.get("ping") else it.get("ping_text", ""),
+            f"主建 {it['main_ping']:g} 坪" if it.get("main_ping") else "",
             f"屋齡 {it['age']:g} 年" if it.get("age") is not None else "",
             it.get("floor", ""),
         ] if x
@@ -44,6 +45,11 @@ def _card(it: dict, badge: str) -> str:
         color, word = ("#9a5b00", f"比行情貴 {p}%") if p > 3 else (("#1d7a45", f"比行情便宜 {abs(p)}%") if p < -3 else ("#2f3e8f", f"接近行情（{p:+}%）"))
         mk = (f'<br><span style="font-size:13px;color:{color};font-weight:600">{e(word)}</span>'
               f'<span style="font-size:12px;color:#888">　{e(m.get("ref_label", ""))}中位數 {m.get("ref_price")} 萬/坪</span>')
+    d = it.get("detail") or {}
+    dl = " ｜ ".join(x for x in [f"車位：{d['parking']}" if d.get("parking") else "",
+                                 f"交通：{'、'.join(d.get('traffic', [])[:3])}" if d.get("traffic") else ""] if x)
+    if dl:
+        mk += f'<br><span style="font-size:12px;color:#555">{e(dl)}</span>'
     img = (f'<img src="{e(it["image"])}" width="120" height="90" '
            f'style="object-fit:cover;border-radius:6px;display:block">' if it.get("image") else "")
     return f"""

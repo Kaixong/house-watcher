@@ -18,25 +18,25 @@
 # county（可省略）：物件所在縣市，用來查實價登錄。沒填會從 591 網址自動判斷。
 
 searches:
-  - name: 台北內湖中山 2-3房 3000萬內
+  - name: 中壢區 3-4房 1500萬內 平面車位
     type: sale
-    url: "https://sale.591.com.tw/?shType=list&regionid=1&section=3,10&price=1000$_3000$&pattern=2,3"
-    max_pages: 5            # 最多抓幾頁（每頁約 30 筆）
+    # 591 條件：桃園市中壢區、3-4房、屋齡 0-20 年、總價 1500 萬以下、含車位
+    url: "https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$"
+    max_pages: 8
     filters:
-      max_price: 3000       # 總價上限（萬）
-      min_ping: 20          # 權狀坪數下限
-      max_ping: 45          # 權狀坪數上限
-      max_unit_price: 110   # 單價上限（萬/坪）
-      max_age: 30           # 屋齡上限（年）
-      include_keywords: []  # 標題/地址需包含其一，例如 ["捷運", "電梯"]
-      exclude_keywords: ["頂加", "法拍", "持分"]
+      max_price: 1500       # 總價上限（萬）
+      max_age: 20           # 屋齡上限（年）
+      min_main_ping: 20     # 主建物坪數下限
+      parking: 平面          # 車位要求：平面 / 有（任何車位）；不限就刪掉這行
+      transit_keywords: ["公車", "客運", "捷運", "火車", "高鐵"]   # 「附近交通」需有其中之一
+      exclude_keywords: ["法拍", "持分", "頂加"]
 
-  - name: 台北市新建案
+  - name: 中壢區新建案
     type: newhouse
-    url: "https://newhouse.591.com.tw/list?regionid=1"
+    url: "https://newhouse.591.com.tw/list?regionid=6&sectionid=67"
     max_pages: 3
     filters:
-      max_unit_price: 100   # 單價上限（萬/坪）；「價格待定」的建案會保留
+      districts: ["中壢區"]  # 只保留這些行政區
       exclude_keywords: []
 
 # ---------------------------------------------------------

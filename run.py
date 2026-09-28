@@ -16,7 +16,7 @@ from urllib.parse import parse_qs, urlparse
 import yaml
 
 from scraper import newhouse591, realprice, sale591
-from scraper.filters import passes
+from scraper.filters import needs_detail, passes, passes_detail
 from scraper.notify import build_email, send_email
 
 ROOT = Path(__file__).parent
@@ -50,6 +50,9 @@ def main():
 
     cfg = yaml.safe_load(Path(args.config).read_text("utf-8"))
     state = load_state()
+    # 條件改名或刪除後，舊條件的物件不再保留
+    names = {x["name"] for x in cfg.get("searches", [])}
+    state["items"] = {k: v for k, v in state["items"].items() if v.get("search") in names}
     first_run = not state["items"]
     now = datetime.now(TPE).strftime("%Y-%m-%d %H:%M")
     warnings: list[str] = []
@@ -73,7 +76,25 @@ def main():
         if not items:
             warnings.append(f"{name}：沒有抓到任何資料，可能被網站阻擋或網址條件有誤")
         matched = [it for it in items if passes(it, s.get("filters"))]
-        print(f"  共 {len(items)} 筆，符合條件 {len(matched)} 筆")
+        print(f"  共 {len(items)} 筆，列表條件符合 {len(matched)} 筆")
+        if typ == "sale" and needs_detail(s.get("filters")) and matched:
+            for it in matched:  # 沿用之前讀過的詳情，避免重複開網頁
+                old = state["items"].get(it["id"]) or {}
+                if old.get("detail"):
+                    it["detail"] = old["detail"]
+            try:
+                sale591.scrape_details(matched, headless=not args.show)
+            except Exception as e:  # noqa: BLE001
+                warnings.append(f"{name}：詳情頁讀取失敗（{e.__class__.__name__}）")
+            kept = []
+            for it in matched:
+                ok, why = passes_detail(it, s.get("filters"))
+                if ok:
+                    if why:
+                        it["unverified"] = why
+                    kept.append(it)
+            print(f"  詳情條件符合 {len(kept)} 筆")
+            matched = kept
 
         county = _county_of(s)
         for it in matched:

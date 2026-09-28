@@ -76,6 +76,8 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .empty{padding:40px;text-align:center;color:var(--muted);grid-column:1/-1}
 .demo{background:var(--accent-soft);color:var(--accent);font-size:13px;padding:8px 12px;border-radius:8px;margin-bottom:16px}
 
+.drow{font-size:12.5px;color:var(--ink);background:var(--bg);border-radius:6px;padding:6px 8px;margin-top:4px;line-height:1.55}
+.drow b{font-weight:500;color:var(--muted);margin-right:4px}
 .mk{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px;font-size:12.5px;color:var(--muted)}
 .prem{font-weight:700;padding:2px 8px;border-radius:6px;font-variant-numeric:tabular-nums}
 .prem.up{background:var(--warn-soft);color:var(--warn)} .prem.down{background:var(--good-soft);color:var(--good)} .prem.eq{background:var(--accent-soft);color:var(--accent)}
@@ -134,7 +136,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
     <select id="fSource" aria-label="來源"><option value="">全部來源</option><option>591中古屋</option><option>591新建案</option></select>
     <select id="fSort" aria-label="排序">
       <option value="new">最新上架</option><option value="price">總價低→高</option>
-      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="prem">低於行情優先</option>
+      <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="prem">低於行情優先</option>
     </select>
     <input type="search" id="fText" placeholder="搜尋標題、社區、地址">
     <label class="chk"><input type="checkbox" id="fNew"> 只看新物件</label>
@@ -179,7 +181,8 @@ function fmtPrice(it){
 }
 
 function card(it){
-  const meta = [it.district, (it.layout||"").slice(0,40), it.ping ? `${it.ping} 坪` : it.ping_text,
+  const meta = [it.district, (it.layout||"").slice(0,40), it.ping ? `權狀 ${it.ping} 坪` : it.ping_text,
+    it.main_ping ? `主建 ${it.main_ping} 坪` : "",
     it.age != null ? `屋齡 ${it.age} 年` : "", it.floor].filter(Boolean).map(esc).join(" · ");
   const chips = [it.is_new ? '<span class="chip new">NEW</span>' : "",
     it.prev_price ? '<span class="chip drop">降價</span>' : "",
@@ -193,6 +196,7 @@ function card(it){
       <div class="price">${fmtPrice(it)}</div>
       <div class="meta">${meta}</div>
       <div class="addr">${esc(it.address)}</div>
+      ${detailRow(it)}
       ${(it.tags||[]).length ? `<div class="tags">${it.tags.slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
       ${marketRow(it)}
       <div class="links">${links(it)}</div>
@@ -201,6 +205,15 @@ function card(it){
 }
 
 
+function detailRow(it){
+  const d = it.detail;
+  if (!d) return it.unverified ? `<div class="addr">⚠ ${esc(it.unverified)}</div>` : "";
+  const parts = [];
+  if (d.parking) parts.push(`<b>車位</b> ${esc(d.parking)}`);
+  if ((d.traffic || []).length) parts.push(`<b>交通</b> ${esc(d.traffic.slice(0, 3).join("、"))}`);
+  if (d.public_ratio) parts.push(`<b>公設比</b> ${esc(d.public_ratio)}`);
+  return parts.length ? `<div class="drow">${parts.join("<br>")}</div>` : "";
+}
 function premChip(m){
   if (m.premium == null) return "";
   const p = m.premium, cls = p > 3 ? "up" : p < -3 ? "down" : "eq";
@@ -330,7 +343,7 @@ function render(){
     (!$("fNew").checked || it.is_new) && (!$("fActive").checked || it.active) &&
     (!q || [it.title,it.community,it.address,it.district].join(" ").includes(q)));
   const by = $("fSort").value, big = 1e9;
-  const key = {prem: it => it.market?.premium ?? big, new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
+  const key = {main: it => -(it.main_ping ?? 0), prem: it => it.market?.premium ?? big, new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
   list.sort((a,b) => { const x = key(a), y = key(b); return by === "new" ? (x < y ? 1 : x > y ? -1 : 0) : x - y; });
   $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">沒有符合的物件</div>';
   $("count").textContent = `顯示 ${list.length} 筆`;

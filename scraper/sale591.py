@@ -64,7 +64,8 @@ def normalize(raw: dict) -> dict:
     """把卡片原始文字整理成統一欄位。"""
     attrs = raw.get("attrs", [])
     layout = next((a for a in attrs if re.search(r"\d+房", a)), "")
-    ping = next((_num(a) for a in attrs if "坪" in a), None)
+    ping = next((_num(a) for a in attrs if "坪" in a and "主建" not in a), None)
+    main_ping = next((_num(a) for a in attrs if "主建" in a), None)
     floor = next((a for a in attrs if re.search(r"\d+F", a, re.I)), "")
     age_txt = next((a for a in attrs if re.search(r"(年|個月)$", a) and "坪" not in a), "")
     age = None
@@ -83,6 +84,7 @@ def normalize(raw: dict) -> dict:
         "price": _num(raw.get("price_text", "")),  # 萬
         "unit_price": float(unit.group(1).replace(",", "")) if unit else None,  # 萬/坪
         "ping": ping,
+        "main_ping": main_ping,
         "layout": layout,
         "age": age,
         "floor": floor,
@@ -114,26 +116,94 @@ def _dump_debug(page, n, log):
         log(f"    （除錯資料儲存失敗：{e}）")
 
 
+def _new_page(p, headless: bool):
+    browser = p.chromium.launch(
+        headless=headless,
+        args=["--disable-blink-features=AutomationControlled"],
+    )
+    ctx = browser.new_context(
+        locale="zh-TW",
+        timezone_id="Asia/Taipei",
+        viewport={"width": 1366, "height": 900},
+        user_agent=(
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+        ),
+    )
+    ctx.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
+    return browser, ctx.new_page()
+
+
+# 詳情頁：房屋資料、坪數說明、附近交通…每個區塊轉成 {標題: {key: value} 或 [文字]}
+DETAIL_JS = r"""
+() => {
+  const out = {};
+  for (const b of document.querySelectorAll('.detail-house-box')) {
+    const t = (b.querySelector('h3')?.textContent || '').replace(/\s+/g, '');
+    if (!t) continue;
+    const kv = {}, list = [];
+    for (const i of b.querySelectorAll('.detail-house-item')) {
+      const k = (i.querySelector('.detail-house-key')?.textContent || '').trim().replace(/[:：]$/, '');
+      const v = (i.querySelector('.detail-house-value')?.textContent || '').trim().replace(/\s+/g, ' ');
+      if (k && v) kv[k] = v; else if (v) list.push(v);
+    }
+    out[t] = Object.keys(kv).length ? kv : list;
+  }
+  return out;
+}
+"""
+
+
+def parse_detail(boxes: dict) -> dict:
+    house = boxes.get("房屋資料") or {}
+    area = boxes.get("坪數說明") or {}
+    traffic = boxes.get("附近交通") or []
+    if isinstance(house, list):
+        house = {}
+    if isinstance(area, list):
+        area = {}
+    if isinstance(traffic, dict):
+        traffic = list(traffic.values())
+    parking = house.get("車位", "")
+    return {
+        "parking": parking,
+        "parking_flat": bool(re.search(r"平面", parking)),
+        "main_ping": _num(area.get("主建物", "")),
+        "public_ratio": house.get("公設比", ""),
+        "mgmt_fee": house.get("管理費", ""),
+        "traffic": traffic[:8],
+    }
+
+
+def scrape_details(items: list[dict], headless: bool = True, log=print) -> None:
+    """逐一打開詳情頁，把結果存到 item['detail']。已有 detail 的會略過。"""
+    todo = [it for it in items if not it.get("detail")]
+    if not todo:
+        return
+    from playwright.sync_api import sync_playwright
+    log(f"  [591中古屋] 讀取 {len(todo)} 筆詳情頁（車位、主建物、附近交通）")
+    with sync_playwright() as p:
+        browser, page = _new_page(p, headless)
+        for n, it in enumerate(todo, 1):
+            try:
+                page.goto(it["url"], wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_selector(".detail-house-box", timeout=20000)
+                time.sleep(1.2)
+                it["detail"] = parse_detail(page.evaluate(DETAIL_JS))
+            except Exception as e:  # noqa: BLE001
+                log(f"    ⚠ 詳情頁失敗 {it['id']}：{e.__class__.__name__}")
+            if n % 10 == 0:
+                log(f"    …{n}/{len(todo)}")
+            time.sleep(random.uniform(2.5, 4.5))
+        browser.close()
+
+
 def scrape(url: str, max_pages: int = 5, headless: bool = True, log=print) -> list[dict]:
     from playwright.sync_api import sync_playwright
 
     results: dict[str, dict] = {}
     with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=headless,
-            args=["--disable-blink-features=AutomationControlled"],
-        )
-        ctx = browser.new_context(
-            locale="zh-TW",
-            timezone_id="Asia/Taipei",
-            viewport={"width": 1366, "height": 900},
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
-            ),
-        )
-        ctx.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
-        page = ctx.new_page()
+        browser, page = _new_page(p, headless)
 
         for n in range(1, max_pages + 1):
             u = page_url(url, n)
