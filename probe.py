@@ -1,15 +1,16 @@
-import subprocess, time
-from playwright.sync_api import sync_playwright
-srv = subprocess.Popen(["python", "-m", "http.server", "8770", "-d", "site"]); time.sleep(1)
-with sync_playwright() as p:
-    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1200, "height": 900})
-    errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
-    pg.goto("http://localhost:8770/"); pg.wait_for_timeout(2500)
-    pg.screenshot(path="shot_list.png")
-    pg.click("#vMap"); pg.wait_for_timeout(3500)
-    pg.locator(".pin").nth(5).click(force=True); pg.wait_for_timeout(800)
-    pg.screenshot(path="shot_map.png")
-    mp = b.new_page(viewport={"width": 390, "height": 844}); mp.goto("http://localhost:8770/"); mp.wait_for_timeout(2000); mp.screenshot(path="shot_phone.png")
-    print("errors:", errs, "pins:", pg.locator(".pin").count(), "leaflet:", pg.evaluate("typeof L"))
-    b.close()
-srv.kill()
+import requests, time, json
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/140 Safari/537.36"}
+secs = {}
+for page in range(1, 25):
+    r = requests.get("https://bff-newhouse.591.com.tw/v1/list-search", headers=UA, timeout=20,
+                     params={"page": page, "device": "pc", "device_id": "abc123xyz", "regionid": 6}).json()
+    for it in (r.get("data") or {}).get("items") or []:
+        secs[it.get("section")] = it.get("sectionid")
+    time.sleep(1)
+    if len(secs) >= 13: break
+print("sections", json.dumps(secs, ensure_ascii=False))
+for q in ["衛生福利部桃園醫院", "桃園市立武陵高級中等學校", "武陵高中 桃園", "部立桃園醫院", "美麗歐洲 中壢"]:
+    r = requests.get("https://nominatim.openstreetmap.org/search", params={"q": q, "format": "json", "limit": 2, "countrycodes": "tw"},
+                     headers={"User-Agent": "house-watcher-probe/1.0 (github.com/Kaixong/house-watcher)"}, timeout=20).json()
+    print("geo", q, [(x.get("display_name")[:60], x.get("lat"), x.get("lon")) for x in r])
+    time.sleep(1.2)
