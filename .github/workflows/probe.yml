@@ -1,0 +1,26 @@
+name: probe
+on:
+  push:
+    branches: [probe]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: probe
+        run: |
+          {
+          for s in 115S2 115S1 114S4; do
+            echo "== season $s"
+            curl -sSL -A "Mozilla/5.0" -o s_$s.zip -w "http=%{http_code} size=%{size_download} type=%{content_type}\n" "https://plvr.land.moi.gov.tw/DownloadSeason?season=$s&type=zip&fileName=lvr_landcsv.zip" || echo curl-fail
+            unzip -l s_$s.zip 2>&1 | grep -E "a_lvr_land_a|f_lvr_land_a|manifest|Archive|error" | head -6
+          done
+          f=$(ls -S s_*.zip | head -1); unzip -o -q $f a_lvr_land_a.csv 2>/dev/null && head -c 1500 a_lvr_land_a.csv && echo && wc -l a_lvr_land_a.csv
+          echo "== 591 market from runner"
+          curl -s -A "Mozilla/5.0" "https://bff-market.591.com.tw/v1/price/list?community_id=5374&split_park=1&trans_type=1&page=1&page_size=20&_source=0" | head -c 400; echo
+          curl -s -A "Mozilla/5.0" "https://bff-market.591.com.tw/v1/price/list?community_id=5374&split_park=1&trans_type=1&page=1&page_size=20&_source=0" | python3 -c "import sys,json;d=json.load(sys.stdin)['data'];print({k:v for k,v in d.items() if k!='items'})"
+          } > probe.txt 2>&1
+          git config user.name bot; git config user.email actions@users.noreply.github.com
+          git add probe.txt; git commit -qm "probe result"; git push
