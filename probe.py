@@ -1,20 +1,20 @@
-import json, re
+import json, re, collections
 from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
     b = p.chromium.launch(); ctx = b.new_context(locale="zh-TW", user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36")
-    pg = ctx.new_page(); api = []
-    pg.on("response", lambda r: api.append(r) if r.request.resource_type in ("xhr", "fetch") and "leju" in r.url and "cdn-cgi" not in r.url else None)
-    pg.goto("https://www.leju.com.tw/object_list?city_code=H", wait_until="domcontentloaded", timeout=40000); pg.wait_for_timeout(8000)
+    pg = ctx.new_page()
+    u = "https://www.leju.com.tw/object_list?city_code=H&post_codes=320,330,334&page=2"
+    pg.goto(u, wait_until="domcontentloaded", timeout=40000); pg.wait_for_timeout(7000)
+    print("url", pg.url, pg.title())
     html = pg.content()
-    print("len", len(html), "title", pg.title())
-    i = html.find("中壢區買房"); print("around 中壢區買房:", html[max(0, i-400):i+200] if i >= 0 else None)
-    print("anchors:", pg.evaluate("[...document.querySelectorAll('a')].length"))
-    print("sample anchors:", json.dumps(pg.evaluate("[...document.querySelectorAll('a')].slice(40, 90).map(a => [a.textContent.trim().slice(0,16), a.getAttribute('href')])"), ensure_ascii=False)[:2500])
-    m = re.findall(r'href="([^"]*(?:object|house|sale)[^"]*)"', html)[:30]; print("hrefs in html:", m)
-    for k in ["__NUXT__", "__NEXT_DATA__", "__INITIAL_STATE__", "window.__data"]:
-        print(k, k in html)
-    for r in api[:12]:
-        try: body = r.text()[:500]
-        except Exception: body = "?"
-        print("api:", r.status, r.url[:170], "|", body[:500])
+    pats = collections.Counter(re.sub(r"[0-9a-zA-Z]{6,}", "<ID>", h) for h in re.findall(r'href="(/[^"?#]+)"', html)); print("href patterns:", pats.most_common(15))
+    info = pg.evaluate("""(() => {
+      const as = [...document.querySelectorAll('a')].filter(a => /萬/.test(a.textContent) && /坪/.test(a.textContent) && a.textContent.length < 600);
+      const box = as[0] ? as[0] : null;
+      return {n: as.length, sampleHref: as.slice(0, 4).map(a => a.getAttribute('href')), text: as.slice(0, 3).map(a => a.innerText.replace(/\\s+/g, ' | ').slice(0, 300)), html: box ? box.outerHTML.slice(0, 3500) : null};
+    })()""")
+    print(json.dumps(info, ensure_ascii=False)[:6000])
+    nd = pg.evaluate("(() => { const s = document.getElementById('__NUXT_DATA__'); return s ? s.textContent.length + ' ' + s.textContent.slice(0, 1500) : 'no __NUXT_DATA__' })()")
+    print("nuxtdata:", nd[:1600])
+    txt = " ".join(pg.inner_text("body").split()); i = txt.find("戶"); print("count text:", re.findall(r"共\\s*[\\d,]+\\s*[筆戶]|[\\d,]+\\s*筆物件|[\\d,]+戶", txt)[:5])
     b.close()
