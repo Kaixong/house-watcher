@@ -23,7 +23,7 @@ searches:
     # 591 條件：桃園市中壢區、3-4房、屋齡 0-20 年、總價 1500 萬以下、含車位
     url: "https://sale.591.com.tw/?shType=list&regionid=6&section=67&pattern=3,4&label=7&price=0$_1500$&houseage=0$_20$"
     max_pages: 8
-    max_details: 60         # 每次最多讀幾筆詳情頁（讀過的會記住，不會重讀）
+    max_details: 120        # 每次最多讀幾筆詳情頁（讀過的會記住，不會重讀）
     filters:
       max_price: 1500       # 總價上限（萬）
       max_age: 20           # 屋齡上限（年）
