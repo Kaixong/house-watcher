@@ -34,4 +34,10 @@ geo.apply_distance([x, y], multi)
 assert x["near_name"] == "部桃" and x["in_range"] and geo.within(x, multi), x
 assert not y["in_range"] and not geo.within(y, multi), y
 assert geo.centers(near) == [near] and geo.centers(None) == []
+class N:
+    def json(self): return [{"lat": "24.99", "lon": "121.30"}]
+with mock.patch.object(geo.requests, "get", return_value=N()), mock.patch.object(geo.time, "sleep"):
+    z = {"id": "z", "county": "桃園市", "district": "桃園區", "address": "中山路889號之1"}
+    geo.locate([z], c)
+    assert z["lat"] == 24.99 and z["geo_src"] == "地址推估" and "addr:桃園市桃園區中山路889號" in c.data, (z, list(c.data))
 print("GEO OK")

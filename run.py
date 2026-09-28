@@ -117,6 +117,10 @@ def main():
         matched = [it for it in items if passes(it, s.get("filters"))]
         print(f"  共 {len(items)} 筆，列表條件符合 {len(matched)} 筆")
         near = (s.get("filters") or {}).get("near")
+        _c = _county_of(s)
+        for it in matched:
+            if _c and not it.get("county"):
+                it["county"] = _c
         geo.locate(matched, geocache)
         if near:
             geo.apply_distance(matched, near)

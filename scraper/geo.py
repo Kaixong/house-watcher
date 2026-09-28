@@ -50,6 +50,34 @@ class GeoCache:
         time.sleep(random.uniform(0.6, 1.2))
         return tuple(v) if v else None
 
+    def address(self, addr: str) -> tuple[float, float] | None:
+        """用 OpenStreetMap（Nominatim）把地址轉成座標。每秒最多 1 次，結果會快取。"""
+        import re
+        q = re.split(r"[、，,]|與|口|\(|（", addr or "")[0].strip()
+        q = re.sub(r"(\d+)(巷|弄|號).*$", r"\1\2", q)  # 門牌只留到第一個巷/弄/號
+        if len(q) < 5:
+            return None
+        key = "addr:" + q
+        if key in self.data:
+            v = self.data[key]
+            return tuple(v) if v else None
+        v = None
+        for query in (q, re.sub(r"\d+(巷|弄|號)$", "", q)):  # 查不到就只用路名再試一次
+            try:
+                r = requests.get("https://nominatim.openstreetmap.org/search", timeout=20,
+                                 params={"q": query, "format": "json", "limit": 1, "countrycodes": "tw"},
+                                 headers={"User-Agent": "house-watcher/1.0 (personal house search)"})
+                res = r.json()
+                time.sleep(1.1)
+                if res:
+                    v = [float(res[0]["lat"]), float(res[0]["lon"])]
+                    break
+            except Exception as e:  # noqa: BLE001
+                self.log(f"    地址座標查詢失敗：{e.__class__.__name__}")
+                return None
+        self.data[key] = v
+        return tuple(v) if v else None
+
     def save(self):
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text(json.dumps(self.data), "utf-8")
@@ -65,6 +93,13 @@ def locate(items: list[dict], cache: GeoCache) -> None:
             d = it.get("detail") or {}
             if d.get("lat") and d.get("lng"):
                 ll = (d["lat"], d["lng"])
+        if not ll and it.get("address"):
+            addr = it["address"]
+            if not addr.startswith(("桃園", "臺", "台", "新北", "新竹", "基隆", "高雄", "嘉義", "宜蘭", "花蓮", "苗栗", "彰化", "南投", "雲林", "屏東")):
+                addr = f"{it.get('county', '')}{it.get('district', '')}{addr}"
+            ll = cache.address(addr)
+            if ll:
+                it["geo_src"] = "地址推估"
         if ll:
             it["lat"], it["lng"] = round(ll[0], 6), round(ll[1], 6)
 

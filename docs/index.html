@@ -224,7 +224,7 @@ function card(it){
       <a class="title" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
       <div class="price">${fmtPrice(it)}</div>
       <div class="meta">${meta}</div>
-      <div class="addr">${esc(it.address)}${it.distance_km != null ? ` <span class="dist">・距${esc(it.near_name || "中心")} ${it.distance_km} km</span>` : ""}</div>
+      <div class="addr">${esc(it.address)}${it.distance_km != null ? ` <span class="dist">・距${esc(it.near_name || "中心")} ${it.distance_km} km${it.geo_src ? "（依地址推估）" : ""}</span>` : (it.lat ? "" : ' <span class="dist">・位置未確認</span>')}</div>
       ${detailRow(it)}
       ${(it.tags||[]).length ? `<div class="tags">${it.tags.slice(0,5).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>` : ""}
       ${marketRow(it)}

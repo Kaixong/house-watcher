@@ -49,7 +49,7 @@ searches:
   - name: 中壢桃園新建案
     type: newhouse
     url: "https://newhouse.591.com.tw/list?regionid=6&sectionid=67,73,75"
-    max_pages: 10
+    max_pages: 60
     filters:
       districts: ["中壢區", "桃園區", "八德區"]
       exclude_keywords: []
