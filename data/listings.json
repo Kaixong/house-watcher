@@ -5,7 +5,7 @@
    "id": "new-139355",
    "title": "佳元織川",
    "url": "https://newhouse.591.com.tw/139355",
-   "image": "https://img1.591.com.tw/house/2026/05/27/177984995593504001.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/05/27/177984995593504001.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -31,12 +31,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 11,
      "n_12m": 11,
      "median_12m": 106.8,
+     "n_24m": 11,
+     "median_24m": 106.8,
      "median_all": 106.8,
      "trend": [
       [
@@ -202,6 +204,8 @@
      "n": 1281,
      "n_12m": 85,
      "median_12m": 95.7,
+     "n_24m": 260,
+     "median_24m": 89.2,
      "median_all": 76.4,
      "trend": [
       [
@@ -506,12 +510,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 101,
      "n_12m": 18,
      "median_12m": 103.8,
+     "n_24m": 101,
+     "median_24m": 99.6,
      "median_all": 99.6,
      "trend": [
       [
@@ -704,6 +710,8 @@
      "n": 173,
      "n_12m": 21,
      "median_12m": 79.4,
+     "n_24m": 58,
+     "median_24m": 76.9,
      "median_all": 70.3,
      "trend": [
       [
@@ -974,6 +982,7 @@
     "premium": -3.7,
     "premium_ref": "community",
     "ref_price": 103.8,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -1011,12 +1020,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 89,
      "n_12m": 84,
      "median_12m": 143.4,
+     "n_24m": 89,
+     "median_24m": 143.4,
      "median_all": 143.4,
      "trend": [
       [
@@ -1199,6 +1210,8 @@
      "n": 8,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 3,
+     "median_24m": 102.1,
      "median_all": 93.2,
      "trend": [
       [
@@ -1361,7 +1374,7 @@
    "id": "new-141665",
    "title": "慕曦",
    "url": "https://newhouse.591.com.tw/141665",
-   "image": "https://img1.591.com.tw/house/2026/06/17/178168221342243803.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/06/17/178168221342243803.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -1388,12 +1401,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 10,
      "n_12m": 10,
      "median_12m": 122.1,
+     "n_24m": 10,
+     "median_24m": 122.1,
      "median_all": 122.1,
      "trend": [
       [
@@ -1537,6 +1552,8 @@
      "n": 16,
      "n_12m": 7,
      "median_12m": 69.0,
+     "n_24m": 12,
+     "median_24m": 75.7,
      "median_all": 70.5,
      "trend": [
       [
@@ -1774,7 +1791,7 @@
    "id": "new-141169",
    "title": "炎洲琉玉",
    "url": "https://newhouse.591.com.tw/141169",
-   "image": "https://img1.591.com.tw/house/2026/08/17/178693024813658000.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/08/17/178693024813658000.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -1800,12 +1817,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 1281,
      "n_12m": 85,
      "median_12m": 95.7,
+     "n_24m": 260,
+     "median_24m": 89.2,
      "median_all": 76.4,
      "trend": [
       [
@@ -2109,12 +2128,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 41,
      "n_12m": 5,
      "median_12m": 131.1,
+     "n_24m": 36,
+     "median_24m": 132.8,
      "median_all": 133.5,
      "trend": [
       [
@@ -2312,6 +2333,8 @@
      "n": 62,
      "n_12m": 3,
      "median_12m": 106.5,
+     "n_24m": 51,
+     "median_24m": 94.4,
      "median_all": 94.4,
      "trend": [
       [
@@ -2549,7 +2572,7 @@
    "id": "new-140703",
    "title": "台北天河",
    "url": "https://newhouse.591.com.tw/140703",
-   "image": "https://img1.591.com.tw/house/2026/05/18/177906638701771605.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/05/18/177906638701771605.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -2576,12 +2599,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 22,
      "n_12m": 22,
      "median_12m": 112.2,
+     "n_24m": 22,
+     "median_24m": 112.2,
      "median_all": 112.2,
      "trend": [
       [
@@ -2749,6 +2774,8 @@
      "n": 151,
      "n_12m": 10,
      "median_12m": 109.8,
+     "n_24m": 39,
+     "median_24m": 115.3,
      "median_all": 88.0,
      "trend": [
       [
@@ -3026,7 +3053,7 @@
    "id": "new-138810",
    "title": "賦格對位",
    "url": "https://newhouse.591.com.tw/138810",
-   "image": "https://img2.591.com.tw/house/2025/12/02/176464225697121700.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/12/02/176464225697121700.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -3051,12 +3078,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 20,
      "n_12m": 20,
      "median_12m": 135.1,
+     "n_24m": 20,
+     "median_24m": 135.1,
      "median_all": 135.1,
      "trend": [
       [
@@ -3234,6 +3263,8 @@
      "n": 17,
      "n_12m": 1,
      "median_12m": 120.9,
+     "n_24m": 7,
+     "median_24m": 87.7,
      "median_all": 77.9,
      "trend": [
       [
@@ -3488,12 +3519,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 55,
      "n_12m": 55,
      "median_12m": 151.4,
+     "n_24m": 55,
+     "median_24m": 151.4,
      "median_all": 151.4,
      "trend": [
       [
@@ -3671,6 +3704,8 @@
      "n": 18,
      "n_12m": 5,
      "median_12m": 92.8,
+     "n_24m": 14,
+     "median_24m": 87.2,
      "median_all": 90.0,
      "trend": [
       [
@@ -3908,7 +3943,7 @@
    "id": "new-138508",
    "title": "中山之心",
    "url": "https://newhouse.591.com.tw/138508",
-   "image": "https://img2.591.com.tw/house/2025/04/07/174399716175902907.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/04/07/174399716175902907.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -3933,12 +3968,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 12,
      "n_12m": 8,
      "median_12m": 139.8,
+     "n_24m": 12,
+     "median_24m": 140.2,
      "median_all": 140.2,
      "trend": [
       [
@@ -4121,6 +4158,8 @@
      "n": 15,
      "n_12m": 3,
      "median_12m": 80.8,
+     "n_24m": 12,
+     "median_24m": 68.0,
      "median_all": 70.7,
      "trend": [
       [
@@ -4379,12 +4418,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 41,
      "n_12m": 4,
      "median_12m": 108.2,
+     "n_24m": 5,
+     "median_24m": 104.2,
      "median_all": 84.2,
      "trend": [
       [
@@ -4649,12 +4690,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 41,
      "n_12m": 4,
      "median_12m": 108.2,
+     "n_24m": 5,
+     "median_24m": 104.2,
      "median_all": 84.2,
      "trend": [
       [
@@ -4892,7 +4935,7 @@
    "id": "new-129392",
    "title": "富域",
    "url": "https://newhouse.591.com.tw/129392",
-   "image": "https://img2.591.com.tw/house/2022/03/24/164810303348869105.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2022/03/24/164810303348869105.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "3500~5500萬/戶",
    "unit_price": null,
@@ -4917,12 +4960,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 195,
      "n_12m": 9,
      "median_12m": 88.8,
+     "n_24m": 12,
+     "median_24m": 88.1,
      "median_all": 74.5,
      "trend": [
       [
@@ -5155,6 +5200,8 @@
      "n": 1281,
      "n_12m": 85,
      "median_12m": 95.7,
+     "n_24m": 260,
+     "median_24m": 89.2,
      "median_all": 76.4,
      "trend": [
       [
@@ -5432,7 +5479,7 @@
    "id": "new-137874",
    "title": "長虹.聖得福TOP31",
    "url": "https://newhouse.591.com.tw/137874",
-   "image": "https://img2.591.com.tw/house/2025/01/07/173624831090176300.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/01/07/173624831090176300.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -5459,12 +5506,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 68,
      "n_12m": 30,
      "median_12m": 147.5,
+     "n_24m": 68,
+     "median_24m": 150.5,
      "median_all": 150.5,
      "trend": [
       [
@@ -5657,6 +5706,8 @@
      "n": 15,
      "n_12m": 2,
      "median_12m": 100.1,
+     "n_24m": 7,
+     "median_24m": 123.2,
      "median_all": 151.7,
      "trend": [
       [
@@ -5894,7 +5945,7 @@
    "id": "new-140767",
    "title": "東其駿",
    "url": "https://newhouse.591.com.tw/140767",
-   "image": "https://img2.591.com.tw/house/2026/08/27/178782484018758502.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2026/08/27/178782484018758502.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -5920,12 +5971,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 1281,
      "n_12m": 85,
      "median_12m": 95.7,
+     "n_24m": 260,
+     "median_24m": 89.2,
      "median_all": 76.4,
      "trend": [
       [
@@ -6229,12 +6282,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 11,
      "n_12m": 11,
      "median_12m": 116.3,
+     "n_24m": 11,
+     "median_24m": 116.3,
      "median_all": 116.3,
      "trend": [
       [
@@ -6390,6 +6445,8 @@
      "n": 41,
      "n_12m": 10,
      "median_12m": 99.0,
+     "n_24m": 25,
+     "median_24m": 95.0,
      "median_all": 92.5,
      "trend": [
       [
@@ -6642,7 +6699,7 @@
    "id": "new-141376",
    "title": "寶亞得玥",
    "url": "https://newhouse.591.com.tw/141376",
-   "image": "https://img1.591.com.tw/house/2026/06/05/178064139058069408.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/06/05/178064139058069408.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "99~113萬/坪",
    "unit_price": 99.0,
@@ -6668,12 +6725,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 11,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 7,
+     "median_24m": 70.3,
      "median_all": 67.8,
      "trend": [
       [
@@ -6874,6 +6933,7 @@
     "premium": 46.0,
     "premium_ref": "nearby",
     "ref_price": 67.8,
+    "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -6910,12 +6970,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 48,
      "n_12m": 46,
      "median_12m": 133.5,
+     "n_24m": 48,
+     "median_24m": 133.5,
      "median_all": 133.5,
      "trend": [
       [
@@ -7098,6 +7160,8 @@
      "n": 31,
      "n_12m": 2,
      "median_12m": 130.8,
+     "n_24m": 4,
+     "median_24m": 130.8,
      "median_all": 124.7,
      "trend": [
       [
@@ -7357,12 +7421,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 34,
      "n_12m": 34,
      "median_12m": 157.9,
+     "n_24m": 34,
+     "median_24m": 157.9,
      "median_all": 157.9,
      "trend": [
       [
@@ -7540,6 +7606,8 @@
      "n": 18,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 7,
+     "median_24m": 117.9,
      "median_all": 117.5,
      "trend": [
       [
@@ -7791,12 +7859,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 24,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 7,
+     "median_24m": 89.5,
      "median_all": 88.5,
      "trend": [
       [
@@ -7979,6 +8049,8 @@
      "n": 266,
      "n_12m": 2,
      "median_12m": 100.0,
+     "n_24m": 7,
+     "median_24m": 102.0,
      "median_all": 73.2,
      "trend": [
       [
@@ -8221,7 +8293,7 @@
    "id": "new-129258",
    "title": "天母仰格",
    "url": "https://newhouse.591.com.tw/129258",
-   "image": "https://img1.591.com.tw/house/2023/12/14/170252478667633007.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2023/12/14/170252478667633007.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "100~120萬/坪",
    "unit_price": 100.0,
@@ -8247,12 +8319,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 21,
      "n_12m": 11,
      "median_12m": 90.1,
+     "n_24m": 17,
+     "median_24m": 94.2,
      "median_all": 95.8,
      "trend": [
       [
@@ -8450,6 +8524,8 @@
      "n": 90,
      "n_12m": 8,
      "median_12m": 90.8,
+     "n_24m": 20,
+     "median_24m": 100.6,
      "median_all": 91.0,
      "trend": [
       [
@@ -8705,6 +8781,7 @@
     "premium": 11.0,
     "premium_ref": "community",
     "ref_price": 90.1,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -8742,12 +8819,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 14,
      "n_12m": 14,
      "median_12m": 115.1,
+     "n_24m": 14,
+     "median_24m": 115.1,
      "median_all": 115.1,
      "trend": [
       [
@@ -8925,6 +9004,8 @@
      "n": 66,
      "n_12m": 15,
      "median_12m": 114.0,
+     "n_24m": 28,
+     "median_24m": 111.8,
      "median_all": 82.7,
      "trend": [
       [
@@ -9162,7 +9243,7 @@
    "id": "new-141888",
    "title": "戀戀溫州",
    "url": "https://newhouse.591.com.tw/141888",
-   "image": "https://img1.591.com.tw/house/2026/08/07/178607102233282109.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/08/07/178607102233282109.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -9189,12 +9270,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 36,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 1,
+     "median_24m": 146.6,
      "median_all": 137.6,
      "trend": [
       [
@@ -9437,12 +9520,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 821,
      "n_12m": 87,
      "median_12m": 148.9,
+     "n_24m": 219,
+     "median_24m": 133.1,
      "median_all": 119.8,
      "trend": [
       [
@@ -9720,7 +9805,7 @@
    "id": "new-139028",
    "title": "SOHO筑富",
    "url": "https://newhouse.591.com.tw/139028",
-   "image": "https://img2.591.com.tw/house/2025/10/13/176032459112176501.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/10/13/176032459112176501.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "98~120萬/坪",
    "unit_price": 98.0,
@@ -9747,12 +9832,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 17,
      "n_12m": 17,
      "median_12m": 109.2,
+     "n_24m": 17,
+     "median_24m": 109.2,
      "median_all": 109.2,
      "trend": [
       [
@@ -9925,6 +10012,8 @@
      "n": 66,
      "n_12m": 15,
      "median_12m": 114.0,
+     "n_24m": 28,
+     "median_24m": 111.8,
      "median_all": 82.7,
      "trend": [
       [
@@ -10155,6 +10244,7 @@
     "premium": -10.3,
     "premium_ref": "community",
     "ref_price": 109.2,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -10165,7 +10255,7 @@
    "id": "new-139153",
    "title": "中租名笙",
    "url": "https://newhouse.591.com.tw/139153",
-   "image": "https://img2.591.com.tw/house/2025/10/02/175938416606848708.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/10/02/175938416606848708.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -10190,12 +10280,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 20,
      "n_12m": 20,
      "median_12m": 135.1,
+     "n_24m": 20,
+     "median_24m": 135.1,
      "median_all": 135.1,
      "trend": [
       [
@@ -10368,6 +10460,8 @@
      "n": 9,
      "n_12m": 2,
      "median_12m": 113.2,
+     "n_24m": 4,
+     "median_24m": 113.2,
      "median_all": 106.2,
      "trend": [
       [
@@ -10571,12 +10665,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 9,
      "n_12m": 9,
      "median_12m": 98.4,
+     "n_24m": 9,
+     "median_24m": 98.4,
      "median_all": 98.4,
      "trend": [
       [
@@ -10703,6 +10799,8 @@
      "n": 25,
      "n_12m": 7,
      "median_12m": 51.5,
+     "n_24m": 15,
+     "median_24m": 44.9,
      "median_all": 44.7,
      "trend": [
       [
@@ -10938,6 +11036,7 @@
     "premium": -2.4,
     "premium_ref": "community",
     "ref_price": 98.4,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -10975,12 +11074,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 33,
      "n_12m": 25,
      "median_12m": 96.3,
+     "n_24m": 33,
+     "median_24m": 98.9,
      "median_all": 98.9,
      "trend": [
       [
@@ -11163,6 +11264,8 @@
      "n": 69,
      "n_12m": 15,
      "median_12m": 94.8,
+     "n_24m": 23,
+     "median_24m": 96.3,
      "median_all": 89.4,
      "trend": [
       [
@@ -11388,6 +11491,7 @@
     "premium": 3.8,
     "premium_ref": "community",
     "ref_price": 96.3,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -11398,7 +11502,7 @@
    "id": "new-132143",
    "title": "豐基皇居",
    "url": "https://newhouse.591.com.tw/132143",
-   "image": "https://img1.591.com.tw/house/2025/10/21/176104091383890302.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2025/10/21/176104091383890302.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -11425,12 +11529,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 10,
      "n_12m": 10,
      "median_12m": 130.2,
+     "n_24m": 10,
+     "median_24m": 130.2,
      "median_all": 130.2,
      "trend": [
       [
@@ -11574,6 +11680,8 @@
      "n": 59,
      "n_12m": 10,
      "median_12m": 134.8,
+     "n_24m": 42,
+     "median_24m": 131.2,
      "median_all": 130.0,
      "trend": [
       [
@@ -11846,7 +11954,7 @@
    "id": "new-138996",
    "title": "睿泰絵。",
    "url": "https://newhouse.591.com.tw/138996",
-   "image": "https://img2.591.com.tw/house/2025/09/08/175732563049164000.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/09/08/175732563049164000.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -11873,12 +11981,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 15,
      "n_12m": 15,
      "median_12m": 138.2,
+     "n_24m": 15,
+     "median_24m": 138.2,
      "median_all": 138.2,
      "trend": [
       [
@@ -12056,6 +12166,8 @@
      "n": 99,
      "n_12m": 11,
      "median_12m": 125.8,
+     "n_24m": 26,
+     "median_24m": 122.9,
      "median_all": 103.8,
      "trend": [
       [
@@ -12360,12 +12472,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 26,
      "n_12m": 26,
      "median_12m": 115.2,
+     "n_24m": 26,
+     "median_24m": 115.2,
      "median_all": 115.2,
      "trend": [
       [
@@ -12538,6 +12652,8 @@
      "n": 8,
      "n_12m": 2,
      "median_12m": 108.8,
+     "n_24m": 5,
+     "median_24m": 80.3,
      "median_all": 79.6,
      "trend": [
       [
@@ -12755,12 +12871,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 24,
      "n_12m": 24,
      "median_12m": 118.0,
+     "n_24m": 24,
+     "median_24m": 118.0,
      "median_all": 118.0,
      "trend": [
       [
@@ -12928,6 +13046,8 @@
      "n": 652,
      "n_12m": 55,
      "median_12m": 106.5,
+     "n_24m": 144,
+     "median_24m": 106.2,
      "median_all": 93.7,
      "trend": [
       [
@@ -13270,7 +13390,7 @@
    "id": "new-136935",
    "title": "中正傑座-甄豪宅",
    "url": "https://newhouse.591.com.tw/136935",
-   "image": "https://img1.591.com.tw/house/2026/05/28/177993734564806205.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/05/28/177993734564806205.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -13296,12 +13416,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 29,
      "n_12m": 1,
      "median_12m": 70.0,
+     "n_24m": 16,
+     "median_24m": 70.3,
      "median_all": 68.5,
      "trend": [
       [
@@ -13572,7 +13694,7 @@
    "id": "new-140465",
    "title": "昇陽醴居",
    "url": "https://newhouse.591.com.tw/140465",
-   "image": "https://img1.591.com.tw/house/2026/04/07/177552759491987004.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/04/07/177552759491987004.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -13598,12 +13720,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 15:53",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 59,
      "n_12m": 59,
      "median_12m": 130.6,
+     "n_24m": 59,
+     "median_24m": 130.6,
      "median_all": 130.6,
      "trend": [
       [
@@ -13771,6 +13895,8 @@
      "n": 12,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 1,
+     "median_24m": 111.7,
      "median_all": 111.5,
      "trend": [
       [
@@ -14051,7 +14177,7 @@
    "id": "sale-20623623",
    "title": "台灣朗居魏良杰🍎獨家內湖五期【新潤峰哲】空屋我有key",
    "url": "https://sale.591.com.tw/home/house/detail/2/20623623.html",
-   "image": "https://img1.591.com.tw/house/2026/04/26/177719973862938000.png!400x300.png",
+   "image": "https://img2.591.com.tw/house/2026/04/26/177719973862938000.png!400x300.png",
    "price": 2980.0,
    "unit_price": 69.01,
    "ping": 43.18,
@@ -14078,12 +14204,14 @@
      2980.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 27,
      "n_12m": 1,
      "median_12m": 64.7,
+     "n_24m": 3,
+     "median_24m": 65.3,
      "median_all": 55.6,
      "trend": [
       [
@@ -14321,6 +14449,8 @@
      "n": 68,
      "n_12m": 3,
      "median_12m": 83.4,
+     "n_24m": 3,
+     "median_24m": 83.4,
      "median_all": 120.3,
      "trend": [
       [
@@ -14568,9 +14698,10 @@
      ],
      "scope": "內湖區行善路"
     },
-    "premium": -17.3,
-    "premium_ref": "nearby",
-    "ref_price": 83.4,
+    "premium": 5.7,
+    "premium_ref": "community",
+    "ref_price": 65.3,
+    "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -14610,12 +14741,14 @@
      2998.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 32,
      "n_12m": 1,
      "median_12m": 61.8,
+     "n_24m": 3,
+     "median_24m": 61.8,
      "median_all": 47.7,
      "trend": [
       [
@@ -14853,6 +14986,8 @@
      "n": 18,
      "n_12m": 6,
      "median_12m": 70.8,
+     "n_24m": 14,
+     "median_24m": 69.3,
      "median_all": 71.0,
      "trend": [
       [
@@ -15085,9 +15220,10 @@
      ],
      "scope": "內湖區康寧路三段"
     },
-    "premium": -3.7,
-    "premium_ref": "nearby",
-    "ref_price": 70.8,
+    "premium": 10.4,
+    "premium_ref": "community",
+    "ref_price": 61.8,
+    "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -15123,12 +15259,14 @@
      2130.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 6,
      "n_12m": 2,
      "median_12m": 95.8,
+     "n_24m": 4,
+     "median_24m": 100.0,
      "median_all": 100.0,
      "trend": [
       [
@@ -15254,6 +15392,7 @@
     "premium": -0.0,
     "premium_ref": "nearby",
     "ref_price": 100.0,
+    "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -15290,12 +15429,14 @@
      2380.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 157,
      "n_12m": 8,
      "median_12m": 89.0,
+     "n_24m": 13,
+     "median_24m": 88.7,
      "median_all": 65.6,
      "trend": [
       [
@@ -15533,6 +15674,8 @@
      "n": 12,
      "n_12m": 3,
      "median_12m": 78.0,
+     "n_24m": 8,
+     "median_24m": 81.1,
      "median_all": 81.2,
      "trend": [
       [
@@ -15758,6 +15901,7 @@
     "premium": 7.7,
     "premium_ref": "community",
     "ref_price": 89.0,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -15768,7 +15912,7 @@
    "id": "sale-20353829",
    "title": "台灣阿成推薦~捷運旁稀有大空間一樓",
    "url": "https://sale.591.com.tw/home/house/detail/2/20353829.html",
-   "image": "https://img2.591.com.tw/house/2026/07/20/178454226902654600.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/07/20/178454226902654600.jpg!400x300.jpg",
    "price": 2880.0,
    "unit_price": 87.7,
    "ping": 32.84,
@@ -15793,12 +15937,14 @@
      2880.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 14,
      "n_12m": 4,
      "median_12m": 64.9,
+     "n_24m": 12,
+     "median_24m": 64.0,
      "median_all": 63.2,
      "trend": [
       [
@@ -16029,6 +16175,7 @@
     "premium": 35.1,
     "premium_ref": "nearby",
     "ref_price": 64.9,
+    "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -16039,7 +16186,7 @@
    "id": "sale-20794861",
    "title": "松山捷運電梯高樓三房抽車位．管理好舒適便利㊣光頭小黃誠信認真",
    "url": "https://sale.591.com.tw/home/house/detail/2/20794861.html",
-   "image": "https://img2.591.com.tw/house/2026/09/25/179030466074746104.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/25/179030466074746104.jpg!400x300.jpg",
    "price": 2880.0,
    "unit_price": 73.34,
    "ping": 39.27,
@@ -16064,12 +16211,14 @@
      2880.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 110,
      "n_12m": 4,
      "median_12m": 66.0,
+     "n_24m": 8,
+     "median_24m": 66.0,
      "median_all": 51.5,
      "trend": [
       [
@@ -16307,6 +16456,8 @@
      "n": 45,
      "n_12m": 2,
      "median_12m": 65.4,
+     "n_24m": 5,
+     "median_24m": 63.8,
      "median_all": 118.2,
      "trend": [
       [
@@ -16567,6 +16718,7 @@
     "premium": 11.1,
     "premium_ref": "community",
     "ref_price": 66.0,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -16577,7 +16729,7 @@
    "id": "sale-20686394",
    "title": "大直新貴溫馨2+1房車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20686394.html",
-   "image": "https://img2.591.com.tw/house/2025/10/11/176017780991988405.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2025/10/11/176017780991988405.jpg!400x300.jpg",
    "price": 2188.0,
    "unit_price": 76.53,
    "ping": 28.59,
@@ -16603,12 +16755,14 @@
      2188.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 21,
      "n_12m": 4,
      "median_12m": 74.4,
+     "n_24m": 7,
+     "median_24m": 75.1,
      "median_all": 66.2,
      "trend": [
       [
@@ -16846,6 +17000,8 @@
      "n": 17,
      "n_12m": 4,
      "median_12m": 76.1,
+     "n_24m": 15,
+     "median_24m": 79.3,
      "median_all": 78.7,
      "trend": [
       [
@@ -17076,6 +17232,7 @@
     "premium": 2.9,
     "premium_ref": "community",
     "ref_price": 74.4,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -17111,12 +17268,14 @@
      2988.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 32,
      "n_12m": 1,
      "median_12m": 61.8,
+     "n_24m": 3,
+     "median_24m": 61.8,
      "median_all": 47.7,
      "trend": [
       [
@@ -17354,6 +17513,8 @@
      "n": 18,
      "n_12m": 6,
      "median_12m": 70.8,
+     "n_24m": 14,
+     "median_24m": 69.3,
      "median_all": 71.0,
      "trend": [
       [
@@ -17586,9 +17747,10 @@
      ],
      "scope": "內湖區康寧路三段"
     },
-    "premium": -4.0,
-    "premium_ref": "nearby",
-    "ref_price": 70.8,
+    "premium": 10.0,
+    "premium_ref": "community",
+    "ref_price": 61.8,
+    "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -17599,7 +17761,7 @@
    "id": "sale-20866244",
    "title": "【台灣永悅】麗湖WYNN💎１＋２房＋車│魔術空間優質住宅│",
    "url": "https://sale.591.com.tw/home/house/detail/2/20866244.html",
-   "image": "https://img2.591.com.tw/house/2026/09/21/179000265621580006.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/21/179000265621580006.jpg!400x300.jpg",
    "price": 2888.0,
    "unit_price": 97.92,
    "ping": 34.61,
@@ -17625,12 +17787,14 @@
      2888.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 34,
      "n_12m": 3,
      "median_12m": 98.0,
+     "n_24m": 6,
+     "median_24m": 97.1,
      "median_all": 78.2,
      "trend": [
       [
@@ -17868,6 +18032,8 @@
      "n": 6,
      "n_12m": 1,
      "median_12m": 98.0,
+     "n_24m": 3,
+     "median_24m": 75.2,
      "median_all": 82.2,
      "trend": [
       [
@@ -17993,6 +18159,7 @@
     "premium": -0.1,
     "premium_ref": "community",
     "ref_price": 98.0,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -18003,7 +18170,7 @@
    "id": "sale-20710575",
    "title": "【台灣永悅】夢想家│精美裝潢．２房＋車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20710575.html",
-   "image": "https://img2.591.com.tw/house/2026/09/21/179000159427491701.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/21/179000159427491701.jpg!400x300.jpg",
    "price": 2400.0,
    "unit_price": 91.06,
    "ping": 31.9,
@@ -18030,12 +18197,14 @@
      2400.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 15,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 1,
+     "median_24m": 69.7,
      "median_all": 53.3,
      "trend": [
       [
@@ -18258,6 +18427,8 @@
      "n": 9,
      "n_12m": 1,
      "median_12m": 90.3,
+     "n_24m": 6,
+     "median_24m": 82.2,
      "median_all": 77.5,
      "trend": [
       [
@@ -18420,9 +18591,10 @@
      ],
      "scope": "內湖區新明路"
     },
-    "premium": 70.8,
-    "premium_ref": "community",
-    "ref_price": 53.3,
+    "premium": 17.5,
+    "premium_ref": "nearby",
+    "ref_price": 77.5,
+    "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -18459,12 +18631,14 @@
      2888.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 162,
      "n_12m": 8,
      "median_12m": 85.9,
+     "n_24m": 20,
+     "median_24m": 85.0,
      "median_all": 72.3,
      "trend": [
       [
@@ -18702,6 +18876,8 @@
      "n": 546,
      "n_12m": 30,
      "median_12m": 80.3,
+     "n_24m": 90,
+     "median_24m": 88.2,
      "median_all": 93.8,
      "trend": [
       [
@@ -18972,6 +19148,7 @@
     "premium": -11.8,
     "premium_ref": "community",
     "ref_price": 85.9,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -19008,12 +19185,14 @@
      2188.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 21,
      "n_12m": 4,
      "median_12m": 74.4,
+     "n_24m": 7,
+     "median_24m": 75.1,
      "median_all": 66.2,
      "trend": [
       [
@@ -19251,6 +19430,8 @@
      "n": 17,
      "n_12m": 4,
      "median_12m": 76.1,
+     "n_24m": 15,
+     "median_24m": 79.3,
      "median_all": 78.7,
      "trend": [
       [
@@ -19481,6 +19662,7 @@
     "premium": 2.9,
     "premium_ref": "community",
     "ref_price": 74.4,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -19516,12 +19698,14 @@
      2790.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 65,
      "n_12m": 2,
      "median_12m": 62.0,
+     "n_24m": 6,
+     "median_24m": 67.0,
      "median_all": 56.8,
      "trend": [
       [
@@ -19759,6 +19943,8 @@
      "n": 6,
      "n_12m": 1,
      "median_12m": 69.1,
+     "n_24m": 4,
+     "median_24m": 72.8,
      "median_all": 72.8,
      "trend": [
       [
@@ -19881,9 +20067,10 @@
      ],
      "scope": "內湖區陽光街（不限屋齡）"
     },
-    "premium": 43.2,
+    "premium": 21.4,
     "premium_ref": "community",
-    "ref_price": 56.8,
+    "ref_price": 67.0,
+    "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -19894,7 +20081,7 @@
    "id": "sale-20752327",
    "title": "🌺我是承辦｜獨家！榮星花園絕版4米2採光精品",
    "url": "https://sale.591.com.tw/home/house/detail/2/20752327.html",
-   "image": "https://img1.591.com.tw/house/2025/08/02/175412169114279607.jpg!fit.1000x.water2.jpg",
+   "image": "https://img2.591.com.tw/house/2025/08/02/175412169114279607.jpg!fit.1000x.water2.jpg",
    "price": 2280.0,
    "unit_price": 102.66,
    "ping": 22.21,
@@ -19920,12 +20107,14 @@
      2280.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 21,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 0,
+     "median_24m": null,
      "median_all": 74.3,
      "trend": [
       [
@@ -20138,6 +20327,8 @@
      "n": 446,
      "n_12m": 39,
      "median_12m": 95.7,
+     "n_24m": 101,
+     "median_24m": 95.7,
      "median_all": 94.5,
      "trend": [
       [
@@ -20408,6 +20599,7 @@
     "premium": 7.3,
     "premium_ref": "nearby",
     "ref_price": 95.7,
+    "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -20651,7 +20843,7 @@
    "id": "sale-20514712",
    "title": "29.28坪📣行天宮站📣看屋要快|時尚",
    "url": "https://sale.591.com.tw/home/house/detail/2/20514712.html",
-   "image": "https://img1.591.com.tw/house/2026/05/08/177824973943361204.png!1000x.water2.png",
+   "image": "https://img2.591.com.tw/house/2026/05/08/177824973943361204.png!1000x.water2.png",
    "price": 2988.0,
    "unit_price": 102.05,
    "ping": 29.28,
@@ -20664,7 +20856,7 @@
    "district": "中山區",
    "address": "建國北路三段",
    "tags": [
-    "9分鐘前更新",
+    "17分鐘前更新",
     "AI即時回覆",
     "影片房屋",
     "有陽台"
@@ -20679,12 +20871,14 @@
      2988.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 151,
      "n_12m": 4,
      "median_12m": 98.2,
+     "n_24m": 8,
+     "median_24m": 95.9,
      "median_all": 83.8,
      "trend": [
       [
@@ -20922,6 +21116,8 @@
      "n": 10,
      "n_12m": 4,
      "median_12m": 98.2,
+     "n_24m": 6,
+     "median_24m": 98.2,
      "median_all": 95.9,
      "trend": [
       [
@@ -21117,6 +21313,7 @@
     "premium": 3.9,
     "premium_ref": "community",
     "ref_price": 98.2,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -21136,14 +21333,16 @@
    "floor": "5F/12F",
    "kind": "電梯大樓",
    "community": "紐約上城",
+   "community_id": 4369,
    "district": "內湖區",
    "address": "民權東路六段",
    "tags": [
-    "5小時前更新",
+    "27分鐘前更新",
     "有陽台"
    ],
    "poster": "仲介陳冠成",
    "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
    "first_seen": "2026-09-28 15:59",
    "price_history": [
     [
@@ -21151,8 +21350,482 @@
      2380.0
     ]
    ],
-   "last_seen": "2026-09-28 15:59",
-   "active": false,
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 157,
+     "n_12m": 8,
+     "median_12m": 89.0,
+     "n_24m": 13,
+     "median_24m": 88.7,
+     "median_all": 65.6,
+     "trend": [
+      [
+       "2022Q1",
+       72.3,
+       4
+      ],
+      [
+       "2022Q2",
+       74.0,
+       1
+      ],
+      [
+       "2022Q3",
+       73.0,
+       6
+      ],
+      [
+       "2022Q4",
+       74.3,
+       2
+      ],
+      [
+       "2023Q1",
+       77.1,
+       3
+      ],
+      [
+       "2023Q2",
+       76.0,
+       2
+      ],
+      [
+       "2023Q3",
+       79.9,
+       4
+      ],
+      [
+       "2023Q4",
+       80.0,
+       5
+      ],
+      [
+       "2024Q1",
+       82.9,
+       4
+      ],
+      [
+       "2024Q2",
+       86.2,
+       4
+      ],
+      [
+       "2024Q3",
+       90.8,
+       3
+      ],
+      [
+       "2024Q4",
+       92.1,
+       3
+      ],
+      [
+       "2025Q2",
+       86.9,
+       2
+      ],
+      [
+       "2025Q4",
+       78.2,
+       1
+      ],
+      [
+       "2026Q1",
+       88.7,
+       3
+      ],
+      [
+       "2026Q2",
+       91.4,
+       4
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-06-14",
+       "unit": 90.8,
+       "total": 1188.0,
+       "ping": 13.1,
+       "main_ping": 13.1,
+       "layout": "1房1廳",
+       "floor": "8樓/12樓",
+       "address": "民權東路六段146號 | 8樓之21",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-06-09",
+       "unit": 85.3,
+       "total": 1258.0,
+       "ping": 14.8,
+       "main_ping": 14.8,
+       "layout": "1房1廳",
+       "floor": "10樓/12樓",
+       "address": "民權東路六段146號 | 10樓之15",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-06-03",
+       "unit": 92.0,
+       "total": 1358.0,
+       "ping": 14.8,
+       "main_ping": 14.8,
+       "layout": "2房1廳",
+       "floor": "11樓/12樓",
+       "address": "民權東路六段146號 | 11樓之15",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-05-23",
+       "unit": 93.8,
+       "total": 1268.0,
+       "ping": 13.5,
+       "main_ping": 13.5,
+       "layout": "1房1廳",
+       "floor": "8樓/12樓",
+       "address": "民權東路六段146號 | 8樓之9",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-03-22",
+       "unit": 89.2,
+       "total": 1182.0,
+       "ping": 13.2,
+       "main_ping": 13.2,
+       "layout": "0房1廳",
+       "floor": "5樓/12樓",
+       "address": "民權東路六段146號 | 5樓之23",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-02-09",
+       "unit": 87.1,
+       "total": 988.0,
+       "ping": 11.3,
+       "main_ping": 11.3,
+       "layout": "2房1廳",
+       "floor": "10樓/12樓",
+       "address": "民權東路六段146號 | 10樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-04",
+       "unit": 88.7,
+       "total": 1200.0,
+       "ping": 13.5,
+       "main_ping": 13.5,
+       "layout": "0房1廳",
+       "floor": "5樓/12樓",
+       "address": "民權東路六段146號 | 5樓之12",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-11-01",
+       "unit": 78.2,
+       "total": 1185.0,
+       "ping": 15.0,
+       "main_ping": 13.2,
+       "layout": "0房1廳",
+       "floor": "11樓/12樓",
+       "address": "民權東路六段146號 | 11樓之18",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2025-04-26",
+       "unit": 86.6,
+       "total": 1146.0,
+       "ping": 13.2,
+       "main_ping": 13.2,
+       "layout": "1房1廳",
+       "floor": "5樓/12樓",
+       "address": "民權東路六段146號 | 5樓之18",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-04-17",
+       "unit": 87.3,
+       "total": 1288.0,
+       "ping": 14.8,
+       "main_ping": 14.8,
+       "layout": "1房1廳",
+       "floor": "12樓/12樓",
+       "address": "民權東路六段146號 | 12樓之19",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-28",
+       "unit": 92.1,
+       "total": 1218.0,
+       "ping": 13.2,
+       "main_ping": 13.2,
+       "layout": "2房1廳",
+       "floor": "12樓/12樓",
+       "address": "民權東路六段146號 | 12樓之18",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-10-20",
+       "unit": 86.4,
+       "total": 1275.0,
+       "ping": 14.8,
+       "main_ping": 14.8,
+       "layout": "1房1廳",
+       "floor": "4樓/12樓",
+       "address": "民權東路六段146號 | 4樓之15",
+       "park": "無車位",
+       "presale": false
+      }
+     ],
+     "name": "紐約上城",
+     "id": 4369,
+     "url": "https://market.591.com.tw/4369"
+    },
+    "nearby": {
+     "n": 12,
+     "n_12m": 3,
+     "median_12m": 78.0,
+     "n_24m": 8,
+     "median_24m": 81.1,
+     "median_all": 81.2,
+     "trend": [
+      [
+       "2024Q2",
+       73.7,
+       2
+      ],
+      [
+       "2024Q3",
+       86.8,
+       2
+      ],
+      [
+       "2024Q4",
+       83.3,
+       3
+      ],
+      [
+       "2025Q2",
+       92.5,
+       1
+      ],
+      [
+       "2025Q3",
+       78.9,
+       1
+      ],
+      [
+       "2025Q4",
+       95.0,
+       1
+      ],
+      [
+       "2026Q1",
+       75.4,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-25",
+       "unit": 78.0,
+       "total": 2250,
+       "ping": 28.6,
+       "main_ping": 14.8,
+       "layout": "4房2廳1衛",
+       "floor": "四層/五層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１９０巷１１７弄３５號四樓",
+       "age": 16.8,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2026-01-12",
+       "unit": 72.8,
+       "total": 1720,
+       "ping": 23.6,
+       "main_ping": 11.0,
+       "layout": "1房1廳1衛",
+       "floor": "二層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷４２弄５３號二樓之１",
+       "age": 23.1,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2025-12-06",
+       "unit": 95.0,
+       "total": 2888,
+       "ping": 30.4,
+       "main_ping": 17.4,
+       "layout": "2房1廳1衛",
+       "floor": "四層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷９０號四樓",
+       "age": 9.7,
+       "park": ""
+      },
+      {
+       "date": "2025-09-06",
+       "unit": 78.9,
+       "total": 1040,
+       "ping": 17.8,
+       "main_ping": 5.5,
+       "layout": "1房1廳1衛",
+       "floor": "二層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１５０之１號二樓之１３",
+       "age": 16.7,
+       "park": "塔式車位"
+      },
+      {
+       "date": "2025-06-10",
+       "unit": 92.5,
+       "total": 2488,
+       "ping": 29.4,
+       "main_ping": 13.4,
+       "layout": "1房1廳1衛",
+       "floor": "三層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１７９號三樓之１",
+       "age": 9.7,
+       "park": "升降機械"
+      },
+      {
+       "date": "2024-12-25",
+       "unit": 83.3,
+       "total": 2150,
+       "ping": 26.1,
+       "main_ping": 13.4,
+       "layout": "4房1廳1衛",
+       "floor": "三層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段２５６號三樓之１",
+       "age": 16.1,
+       "park": "塔式車位"
+      },
+      {
+       "date": "2024-12-12",
+       "unit": 86.9,
+       "total": 1920,
+       "ping": 22.1,
+       "main_ping": 13.8,
+       "layout": "2房2廳1衛",
+       "floor": "四層/九層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段２８０巷２１號四樓之１",
+       "age": 27.3,
+       "park": ""
+      },
+      {
+       "date": "2024-11-18",
+       "unit": 76.1,
+       "total": 1958,
+       "ping": 23.4,
+       "main_ping": 11.0,
+       "layout": "2房1廳1衛",
+       "floor": "四層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷４２弄５３號四樓之１",
+       "age": 22.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-09-17",
+       "unit": 94.4,
+       "total": 1538,
+       "ping": 16.3,
+       "main_ping": 6.1,
+       "layout": "1房1廳1衛",
+       "floor": "十一層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１４６號十一樓之２５",
+       "age": 17.2,
+       "park": ""
+      },
+      {
+       "date": "2024-08-11",
+       "unit": 79.2,
+       "total": 1850,
+       "ping": 23.4,
+       "main_ping": 11.0,
+       "layout": "1房1廳1衛",
+       "floor": "七層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷４２弄５３號七樓之１",
+       "age": 21.7,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-05-25",
+       "unit": 87.2,
+       "total": 2260,
+       "ping": 25.9,
+       "main_ping": 14.4,
+       "layout": "2房2廳1衛",
+       "floor": "八層/十層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷６６號八樓之１",
+       "age": 14.9,
+       "park": ""
+      },
+      {
+       "date": "2024-04-27",
+       "unit": 60.1,
+       "total": 1000,
+       "ping": 16.6,
+       "main_ping": 11.0,
+       "layout": "1房1廳1衛",
+       "floor": "四層/五層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１５１號四樓之２",
+       "age": 16.7,
+       "park": ""
+      }
+     ],
+     "scope": "內湖區民權東路六段"
+    },
+    "premium": 7.7,
+    "premium_ref": "community",
+    "ref_price": 89.0,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
    "is_new": false
   },
   "sale-20714860": {
@@ -21160,7 +21833,7 @@
    "id": "sale-20714860",
    "title": "【寬悅團隊振維成家】葫洲站公視景觀三房車位",
    "url": "https://sale.591.com.tw/home/house/detail/2/20714860.html",
-   "image": "https://img2.591.com.tw/house/2026/09/19/178978889498536401.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/19/178978889498536401.jpg!400x300.jpg",
    "price": 2998.0,
    "unit_price": 68.2,
    "ping": 43.96,
@@ -21173,7 +21846,7 @@
    "district": "內湖區",
    "address": "康寧路三段75巷",
    "tags": [
-    "19分鐘前更新",
+    "27分鐘前更新",
     "含車位",
     "有陽台"
    ],
@@ -21187,12 +21860,14 @@
      2998.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 32,
      "n_12m": 1,
      "median_12m": 61.8,
+     "n_24m": 3,
+     "median_24m": 61.8,
      "median_all": 47.7,
      "trend": [
       [
@@ -21430,6 +22105,8 @@
      "n": 18,
      "n_12m": 6,
      "median_12m": 70.8,
+     "n_24m": 14,
+     "median_24m": 69.3,
      "median_all": 71.0,
      "trend": [
       [
@@ -21662,9 +22339,10 @@
      ],
      "scope": "內湖區康寧路三段"
     },
-    "premium": -3.7,
-    "premium_ref": "nearby",
-    "ref_price": 70.8,
+    "premium": 10.4,
+    "premium_ref": "community",
+    "ref_price": 61.8,
+    "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -21688,7 +22366,7 @@
    "district": "內湖區",
    "address": "新明路",
    "tags": [
-    "19分鐘前更新"
+    "27分鐘前更新"
    ],
    "poster": "仲介葉先生",
    "search": "台北內湖中山 2-3房 3000萬內",
@@ -21700,12 +22378,14 @@
      2280.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 110,
      "n_12m": 5,
      "median_12m": 75.2,
+     "n_24m": 12,
+     "median_24m": 75.6,
      "median_all": 60.0,
      "trend": [
       [
@@ -21943,6 +22623,8 @@
      "n": 8,
      "n_12m": 1,
      "median_12m": 90.3,
+     "n_24m": 6,
+     "median_24m": 82.2,
      "median_all": 76.8,
      "trend": [
       [
@@ -22093,6 +22775,7 @@
     "premium": 12.9,
     "premium_ref": "community",
     "ref_price": 75.2,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -22112,15 +22795,17 @@
    "floor": "4F/8F",
    "kind": "華廈",
    "community": "月光奏鳴曲大廈",
+   "community_id": 6546,
    "district": "內湖區",
    "address": "民權東路六段",
    "tags": [
-    "5小時前更新",
+    "27分鐘前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介住商ABBY",
    "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
    "first_seen": "2026-09-28 15:59",
    "price_history": [
     [
@@ -22128,8 +22813,367 @@
      2280.0
     ]
    ],
-   "last_seen": "2026-09-28 15:59",
-   "active": false,
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 32,
+     "n_12m": 1,
+     "median_12m": 76.6,
+     "n_24m": 2,
+     "median_24m": 79.9,
+     "median_all": 64.8,
+     "trend": [
+      [
+       "2013Q2",
+       64.0,
+       20
+      ],
+      [
+       "2013Q3",
+       66.5,
+       1
+      ],
+      [
+       "2017Q3",
+       64.7,
+       1
+      ],
+      [
+       "2020Q2",
+       61.2,
+       1
+      ],
+      [
+       "2020Q3",
+       62.0,
+       1
+      ],
+      [
+       "2021Q3",
+       65.2,
+       2
+      ],
+      [
+       "2022Q1",
+       76.5,
+       2
+      ],
+      [
+       "2022Q2",
+       71.6,
+       1
+      ],
+      [
+       "2024Q1",
+       78.6,
+       1
+      ],
+      [
+       "2024Q4",
+       83.3,
+       1
+      ],
+      [
+       "2025Q4",
+       76.6,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-11-09",
+       "unit": 76.6,
+       "total": 1988.0,
+       "ping": 26.1,
+       "main_ping": 24.0,
+       "layout": "2房1廳",
+       "floor": "5樓/8樓",
+       "address": "民權東路六段256號 | 5樓之1",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-25",
+       "unit": 83.3,
+       "total": 2150.0,
+       "ping": 26.1,
+       "main_ping": 24.0,
+       "layout": "4房1廳",
+       "floor": "3樓/8樓",
+       "address": "民權東路六段256號 | 3樓之1",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2024-03-20",
+       "unit": 78.6,
+       "total": 1900.0,
+       "ping": 24.3,
+       "main_ping": 22.3,
+       "layout": "3房2廳",
+       "floor": "2樓/8樓",
+       "address": "民權東路六段256號 | 2樓",
+       "park": "其他車位",
+       "presale": false
+      },
+      {
+       "date": "2022-06-11",
+       "unit": 71.6,
+       "total": 1870.0,
+       "ping": 26.1,
+       "main_ping": 24.0,
+       "layout": "4房2廳",
+       "floor": "2樓/8樓",
+       "address": "民權東路六段256號 | 2樓之1",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2022-01-28",
+       "unit": 75.4,
+       "total": 1830.0,
+       "ping": 24.3,
+       "main_ping": 22.3,
+       "layout": "4房2廳",
+       "floor": "8樓/8樓",
+       "address": "民權東路六段256號 | 8樓",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2022-01-08",
+       "unit": 77.6,
+       "total": 1780.0,
+       "ping": 23.1,
+       "main_ping": 21.0,
+       "layout": "4房1廳",
+       "floor": "7樓/8樓",
+       "address": "民權東路六段256號 | 7樓之2",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2021-08-30",
+       "unit": 66.6,
+       "total": 1750.0,
+       "ping": 26.1,
+       "main_ping": 24.0,
+       "layout": "2房1廳",
+       "floor": "6樓/8樓",
+       "address": "民權東路六段256號 | 6樓之1",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2021-08-24",
+       "unit": 63.8,
+       "total": 1570.0,
+       "ping": 24.3,
+       "main_ping": 22.3,
+       "layout": "3房2廳",
+       "floor": "7樓/8樓",
+       "address": "民權東路六段256號 | 7樓",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2020-09-05",
+       "unit": 62.0,
+       "total": 1530.0,
+       "ping": 24.3,
+       "main_ping": 22.3,
+       "layout": "2房2廳",
+       "floor": "3樓/8樓",
+       "address": "民權東路六段256號 | 3樓",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2020-05-16",
+       "unit": 61.2,
+       "total": 1435.0,
+       "ping": 23.1,
+       "main_ping": 21.0,
+       "layout": "3房1廳",
+       "floor": "4樓/8樓",
+       "address": "民權東路六段256號 | 4樓之2",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2017-09-18",
+       "unit": 64.7,
+       "total": 1500.0,
+       "ping": 23.1,
+       "main_ping": 21.0,
+       "layout": "3房2廳",
+       "floor": "2樓/8樓",
+       "address": "民權東路六段256號 | 2樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-08-04",
+       "unit": 66.5,
+       "total": 1630.0,
+       "ping": 24.3,
+       "main_ping": 22.3,
+       "layout": "2房1廳",
+       "floor": "3樓/8樓",
+       "address": "民權東路六段256號 | 3樓",
+       "park": "機械車位",
+       "presale": false
+      }
+     ],
+     "name": "月光奏鳴曲大廈",
+     "id": 6546,
+     "url": "https://market.591.com.tw/6546"
+    },
+    "nearby": {
+     "n": 7,
+     "n_12m": 2,
+     "median_12m": 75.4,
+     "n_24m": 4,
+     "median_24m": 77.0,
+     "median_all": 78.0,
+     "trend": [
+      [
+       "2024Q2",
+       73.7,
+       2
+      ],
+      [
+       "2024Q3",
+       79.2,
+       1
+      ],
+      [
+       "2024Q4",
+       79.7,
+       2
+      ],
+      [
+       "2026Q1",
+       75.4,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-25",
+       "unit": 78.0,
+       "total": 2250,
+       "ping": 28.6,
+       "main_ping": 14.8,
+       "layout": "4房2廳1衛",
+       "floor": "四層/五層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１９０巷１１７弄３５號四樓",
+       "age": 16.8,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2026-01-12",
+       "unit": 72.8,
+       "total": 1720,
+       "ping": 23.6,
+       "main_ping": 11.0,
+       "layout": "1房1廳1衛",
+       "floor": "二層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷４２弄５３號二樓之１",
+       "age": 23.1,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-12-25",
+       "unit": 83.3,
+       "total": 2150,
+       "ping": 26.1,
+       "main_ping": 13.4,
+       "layout": "4房1廳1衛",
+       "floor": "三層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段２５６號三樓之１",
+       "age": 16.1,
+       "park": "塔式車位"
+      },
+      {
+       "date": "2024-11-18",
+       "unit": 76.1,
+       "total": 1958,
+       "ping": 23.4,
+       "main_ping": 11.0,
+       "layout": "2房1廳1衛",
+       "floor": "四層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷４２弄５３號四樓之１",
+       "age": 22.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-08-11",
+       "unit": 79.2,
+       "total": 1850,
+       "ping": 23.4,
+       "main_ping": 11.0,
+       "layout": "1房1廳1衛",
+       "floor": "七層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷４２弄５３號七樓之１",
+       "age": 21.7,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-05-25",
+       "unit": 87.2,
+       "total": 2260,
+       "ping": 25.9,
+       "main_ping": 14.4,
+       "layout": "2房2廳1衛",
+       "floor": "八層/十層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１８０巷６６號八樓之１",
+       "age": 14.9,
+       "park": ""
+      },
+      {
+       "date": "2024-04-27",
+       "unit": 60.1,
+       "total": 1000,
+       "ping": 16.6,
+       "main_ping": 11.0,
+       "layout": "1房1廳1衛",
+       "floor": "四層/五層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１５１號四樓之２",
+       "age": 16.7,
+       "park": ""
+      }
+     ],
+     "scope": "內湖區民權東路六段"
+    },
+    "premium": 20.2,
+    "premium_ref": "nearby",
+    "ref_price": 78.0,
+    "ref_label": "附近歷年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
    "is_new": false
   },
   "sale-20783955": {
@@ -22137,7 +23181,7 @@
    "id": "sale-20783955",
    "title": "【台灣小廖】內科綠景16年屋2房車位，近西湖捷運站，屋況佳",
    "url": "https://sale.591.com.tw/home/house/detail/2/20783955.html",
-   "image": "https://img2.591.com.tw/house/2026/09/20/178988899537421206.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/20/178988899537421206.jpg!400x300.jpg",
    "price": 2280.0,
    "unit_price": 102.45,
    "ping": 25.7,
@@ -22150,7 +23194,7 @@
    "district": "內湖區",
    "address": "內湖路一段411巷",
    "tags": [
-    "19分鐘前更新",
+    "27分鐘前更新",
     "含車位",
     "有陽台"
    ],
@@ -22164,12 +23208,14 @@
      2280.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 49,
      "n_12m": 1,
      "median_12m": 86.0,
+     "n_24m": 3,
+     "median_24m": 87.3,
      "median_all": 61.9,
      "trend": [
       [
@@ -22407,6 +23453,8 @@
      "n": 39,
      "n_12m": 1,
      "median_12m": 86.0,
+     "n_24m": 27,
+     "median_24m": 91.9,
      "median_all": 91.5,
      "trend": [
       [
@@ -22629,9 +23677,10 @@
      ],
      "scope": "內湖區內湖路一段（不限屋齡）"
     },
-    "premium": 65.5,
+    "premium": 17.4,
     "premium_ref": "community",
-    "ref_price": 61.9,
+    "ref_price": 87.3,
+    "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -22655,7 +23704,7 @@
    "district": "內湖區",
    "address": "新明路",
    "tags": [
-    "19分鐘前更新",
+    "27分鐘前更新",
     "含車位",
     "有陽台"
    ],
@@ -22669,12 +23718,14 @@
      2988.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 32,
      "n_12m": 1,
      "median_12m": 75.0,
+     "n_24m": 1,
+     "median_24m": 75.0,
      "median_all": 61.3,
      "trend": [
       [
@@ -22867,6 +23918,8 @@
      "n": 8,
      "n_12m": 2,
      "median_12m": 84.9,
+     "n_24m": 4,
+     "median_24m": 77.2,
      "median_all": 73.6,
      "trend": [
       [
@@ -23019,9 +24072,10 @@
      ],
      "scope": "內湖區新明路"
     },
-    "premium": 57.7,
-    "premium_ref": "community",
-    "ref_price": 61.3,
+    "premium": 31.3,
+    "premium_ref": "nearby",
+    "ref_price": 73.6,
+    "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
    "active": true,
@@ -23032,7 +24086,7 @@
    "id": "sale-20863784",
    "title": "文德站👑輕齡屋|美廈💦|3房2廳1衛",
    "url": "https://sale.591.com.tw/home/house/detail/2/20863784.html",
-   "image": "https://img1.591.com.tw/house/2026/08/18/178701745099255905.jpg!1000x.water2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/08/18/178701745099255905.jpg!1000x.water2.jpg",
    "price": 2980.0,
    "unit_price": 102.75,
    "ping": 28.01,
@@ -23045,7 +24099,7 @@
    "district": "內湖區",
    "address": "陽光街161巷",
    "tags": [
-    "19分鐘前更新",
+    "27分鐘前更新",
     "AI即時回覆",
     "影片房屋",
     "含車位"
@@ -23060,12 +24114,14 @@
      2980.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 197,
      "n_12m": 4,
      "median_12m": 89.8,
+     "n_24m": 10,
+     "median_24m": 91.7,
      "median_all": 78.1,
      "trend": [
       [
@@ -23303,6 +24359,8 @@
      "n": 7,
      "n_12m": 1,
      "median_12m": 69.1,
+     "n_24m": 4,
+     "median_24m": 82.2,
      "median_all": 79.9,
      "trend": [
       [
@@ -23438,17 +24496,18 @@
     "premium": 14.4,
     "premium_ref": "community",
     "ref_price": 89.8,
+    "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20935561": {
    "source": "591中古屋",
    "id": "sale-20935561",
    "title": "專任~大道東河畔河景大2房~21南京光復(汪敬德)",
    "url": "https://sale.591.com.tw/home/house/detail/2/20935561.html",
-   "image": "https://img1.591.com.tw/house/2026/09/19/178982797690311305.jpg!400x300.jpg",
+   "image": "https://img2.591.com.tw/house/2026/09/19/178982797690311305.jpg!400x300.jpg",
    "price": 2988.0,
    "unit_price": 96.65,
    "ping": 38.48,
@@ -23461,7 +24520,7 @@
    "district": "內湖區",
    "address": "新明路",
    "tags": [
-    "19分鐘前更新",
+    "27分鐘前更新",
     "含車位",
     "有陽台"
    ],
@@ -23475,12 +24534,14 @@
      2988.0
     ]
    ],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 32,
      "n_12m": 1,
      "median_12m": 75.0,
+     "n_24m": 1,
+     "median_24m": 75.0,
      "median_all": 61.3,
      "trend": [
       [
@@ -23673,6 +24734,8 @@
      "n": 7,
      "n_12m": 2,
      "median_12m": 84.9,
+     "n_24m": 4,
+     "median_24m": 77.2,
      "median_all": 74.8,
      "trend": [
       [
@@ -23810,13 +24873,14 @@
      ],
      "scope": "內湖區新明路"
     },
-    "premium": 57.7,
-    "premium_ref": "community",
-    "ref_price": 61.3,
+    "premium": 29.2,
+    "premium_ref": "nearby",
+    "ref_price": 74.8,
+    "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20948000": {
    "source": "591中古屋",
@@ -24293,8 +25357,8 @@
     "ref_price": 72.4,
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20969347": {
    "source": "591中古屋",
@@ -24761,8 +25825,8 @@
     "ref_price": 65.0,
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "new-139444": {
    "source": "591新建案",
@@ -24795,12 +25859,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 16:18",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 45,
      "n_12m": 38,
      "median_12m": 90.8,
+     "n_24m": 45,
+     "median_24m": 91.0,
      "median_all": 91.0,
      "trend": [
       [
@@ -24983,6 +26049,8 @@
      "n": 266,
      "n_12m": 2,
      "median_12m": 100.0,
+     "n_24m": 7,
+     "median_24m": 102.0,
      "median_all": 73.2,
      "trend": [
       [
@@ -25218,14 +26286,14 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "new-140092": {
    "source": "591新建案",
    "id": "new-140092",
    "title": "天光之埕",
    "url": "https://newhouse.591.com.tw/140092",
-   "image": "https://img1.591.com.tw/house/2026/01/07/176778051197886000.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/01/07/176778051197886000.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -25251,12 +26319,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 16:18",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "community": {
      "n": 20,
      "n_12m": 20,
      "median_12m": 121.5,
+     "n_24m": 20,
+     "median_24m": 121.5,
      "median_all": 121.5,
      "trend": [
       [
@@ -25429,6 +26499,8 @@
      "n": 8,
      "n_12m": 0,
      "median_12m": null,
+     "n_24m": 8,
+     "median_24m": 44.9,
      "median_all": 44.9,
      "trend": [
       [
@@ -25574,14 +26646,14 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "new-141487": {
    "source": "591新建案",
    "id": "new-141487",
    "title": "富甲寶植",
    "url": "https://newhouse.591.com.tw/141487",
-   "image": "https://img1.591.com.tw/house/2026/07/28/178521889850703207.jpg!400x300.s2.jpg",
+   "image": "https://img2.591.com.tw/house/2026/07/28/178521889850703207.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "價格待定",
    "unit_price": null,
@@ -25607,12 +26679,14 @@
    "search": "台北市新建案",
    "first_seen": "2026-09-28 16:18",
    "price_history": [],
-   "last_seen": "2026-09-28 16:18",
+   "last_seen": "2026-09-28 16:26",
    "market": {
     "nearby": {
      "n": 1281,
      "n_12m": 85,
      "median_12m": 95.7,
+     "n_24m": 260,
+     "median_24m": 89.2,
      "median_all": 76.4,
      "trend": [
       [
@@ -25883,6 +26957,3013 @@
     "updated": "2026-09-28"
    },
    "active": true,
+   "is_new": false
+  },
+  "sale-25160272": {
+   "source": "591中古屋",
+   "id": "sale-25160272",
+   "title": "【台灣永悅】麗湖WYNN💎１＋２房＋車│魔術空間優質住宅│",
+   "url": "https://sale.591.com.tw/home/house/detail/2/25160272.html",
+   "image": "https://img1.591.com.tw/house/2026/09/21/179000265621580006.jpg!400x300.jpg",
+   "price": 2888.0,
+   "unit_price": 97.92,
+   "ping": 34.61,
+   "layout": "3房2廳1衛",
+   "age": 18.0,
+   "floor": "9F/12F",
+   "kind": "電梯大樓",
+   "community": "麗湖WYNN",
+   "community_id": 4736,
+   "district": "內湖區",
+   "address": "成功路五段83巷",
+   "tags": [
+    "含車位",
+    "有陽台"
+   ],
+   "poster": "仲介李承晏",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     2888.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 34,
+     "n_12m": 3,
+     "median_12m": 98.0,
+     "n_24m": 6,
+     "median_24m": 97.1,
+     "median_all": 78.2,
+     "trend": [
+      [
+       "2020Q4",
+       63.7,
+       1
+      ],
+      [
+       "2021Q1",
+       67.4,
+       1
+      ],
+      [
+       "2022Q1",
+       77.0,
+       2
+      ],
+      [
+       "2022Q2",
+       80.0,
+       1
+      ],
+      [
+       "2022Q3",
+       77.6,
+       1
+      ],
+      [
+       "2023Q1",
+       89.9,
+       1
+      ],
+      [
+       "2023Q3",
+       84.9,
+       1
+      ],
+      [
+       "2023Q4",
+       91.0,
+       2
+      ],
+      [
+       "2024Q1",
+       83.3,
+       3
+      ],
+      [
+       "2024Q2",
+       86.1,
+       1
+      ],
+      [
+       "2024Q3",
+       98.8,
+       1
+      ],
+      [
+       "2024Q4",
+       104.3,
+       1
+      ],
+      [
+       "2025Q2",
+       92.0,
+       1
+      ],
+      [
+       "2025Q3",
+       96.2,
+       1
+      ],
+      [
+       "2025Q4",
+       98.0,
+       1
+      ],
+      [
+       "2026Q1",
+       97.3,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-13",
+       "unit": 100.3,
+       "total": 1060.0,
+       "ping": 10.6,
+       "main_ping": 10.6,
+       "layout": "1房1廳",
+       "floor": "4樓/12樓",
+       "address": "成功路五段83號 | 4樓之1",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-24",
+       "unit": 94.3,
+       "total": 1528.0,
+       "ping": 16.2,
+       "main_ping": 16.2,
+       "layout": "2房1廳",
+       "floor": "5樓/12樓",
+       "address": "成功路五段83號 | 5樓之8",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-10-06",
+       "unit": 98.0,
+       "total": 2990.0,
+       "ping": 41.8,
+       "main_ping": 27.4,
+       "layout": "4房2廳",
+       "floor": "10樓/12樓",
+       "address": "成功路五段83號 | 10樓之2",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-07-30",
+       "unit": 96.2,
+       "total": 3000.0,
+       "ping": 38.0,
+       "main_ping": 28.6,
+       "layout": "2房2廳",
+       "floor": "12樓/12樓",
+       "address": "成功路五段83號 | 12樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-24",
+       "unit": 92.0,
+       "total": 2725.0,
+       "ping": 34.6,
+       "main_ping": 27.4,
+       "layout": "2房2廳",
+       "floor": "3樓/12樓",
+       "address": "成功路五段83號 | 3樓之5",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-17",
+       "unit": 104.3,
+       "total": 1376.0,
+       "ping": 18.4,
+       "main_ping": 11.3,
+       "layout": "1房1廳",
+       "floor": "6樓/12樓",
+       "address": "成功路五段83號 | 6樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-07-08",
+       "unit": 98.8,
+       "total": 2910.0,
+       "ping": 31.2,
+       "main_ping": 27.4,
+       "layout": "3房2廳",
+       "floor": "11樓/12樓",
+       "address": "成功路五段83號 | 11樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-05-19",
+       "unit": 86.1,
+       "total": 2800.0,
+       "ping": 42.9,
+       "main_ping": 28.6,
+       "layout": "2房2廳",
+       "floor": "4樓/12樓",
+       "address": "成功路五段83號 | 4樓之3",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-03-10",
+       "unit": 80.1,
+       "total": 1575.0,
+       "ping": 30.2,
+       "main_ping": 15.9,
+       "layout": "1房1廳",
+       "floor": "8樓/12樓",
+       "address": "成功路五段83號 | 8樓",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-01-29",
+       "unit": 83.3,
+       "total": 1350.0,
+       "ping": 16.2,
+       "main_ping": 16.2,
+       "layout": "1房1廳",
+       "floor": "2樓/12樓",
+       "address": "成功路五段83號 | 2樓之8",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-01-28",
+       "unit": 89.6,
+       "total": 3688.0,
+       "ping": 51.7,
+       "main_ping": 37.4,
+       "layout": "3房2廳",
+       "floor": "9樓/12樓",
+       "address": "成功路五段83號 | 9樓之3",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2023-11-11",
+       "unit": 92.4,
+       "total": 1042.0,
+       "ping": 11.3,
+       "main_ping": 11.3,
+       "layout": "1房1廳",
+       "floor": "4樓/12樓",
+       "address": "成功路五段83號 | 4樓之2",
+       "park": "無車位",
+       "presale": false
+      }
+     ],
+     "name": "麗湖WYNN",
+     "id": 4736,
+     "url": "https://market.591.com.tw/4736"
+    },
+    "nearby": {
+     "n": 6,
+     "n_12m": 1,
+     "median_12m": 98.0,
+     "n_24m": 3,
+     "median_24m": 75.2,
+     "median_all": 82.2,
+     "trend": [
+      [
+       "2024Q2",
+       92.8,
+       2
+      ],
+      [
+       "2024Q3",
+       63.1,
+       1
+      ],
+      [
+       "2025Q2",
+       74.3,
+       1
+      ],
+      [
+       "2025Q3",
+       75.2,
+       1
+      ],
+      [
+       "2025Q4",
+       98.0,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-10-06",
+       "unit": 98.0,
+       "total": 2990,
+       "ping": 41.8,
+       "main_ping": 15.9,
+       "layout": "4房2廳2衛",
+       "floor": "十層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段８３號十樓之２",
+       "age": 17.3,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-12",
+       "unit": 75.2,
+       "total": 3300,
+       "ping": 43.9,
+       "main_ping": 34.8,
+       "layout": "4房2廳2衛",
+       "floor": "三層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段７９號三樓",
+       "age": 43.7,
+       "park": ""
+      },
+      {
+       "date": "2025-05-02",
+       "unit": 74.3,
+       "total": 3450,
+       "ping": 44.4,
+       "main_ping": 24.7,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４２０巷１７號五樓之２",
+       "age": 28.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-09-27",
+       "unit": 63.1,
+       "total": 2950,
+       "ping": 46.7,
+       "main_ping": 28.2,
+       "layout": "3房2廳2衛",
+       "floor": "十層/十六層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段１２號十樓",
+       "age": 29.2,
+       "park": ""
+      },
+      {
+       "date": "2024-06-22",
+       "unit": 89.2,
+       "total": 3700,
+       "ping": 41.5,
+       "main_ping": 28.4,
+       "layout": "2房2廳1衛",
+       "floor": "四層/十九層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４０８號四樓",
+       "age": 23.7,
+       "park": ""
+      },
+      {
+       "date": "2024-06-08",
+       "unit": 96.5,
+       "total": 2700,
+       "ping": 28.0,
+       "main_ping": 17.7,
+       "layout": "2房2廳1衛",
+       "floor": "三層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４２０巷１７號三樓之１",
+       "age": 27.1,
+       "park": ""
+      }
+     ],
+     "scope": "內湖區成功路五段（不限屋齡）"
+    },
+    "premium": -0.1,
+    "premium_ref": "community",
+    "ref_price": 98.0,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20948868": {
+   "source": "591中古屋",
+   "id": "sale-20948868",
+   "title": "❤️[台灣永悅]💙麗湖WYNN魔術挑高兩房車💚葫洲商圈",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20948868.html",
+   "image": "https://img1.591.com.tw/house/2026/09/22/179005690150395407.jpg!400x300.jpg",
+   "price": 2888.0,
+   "unit_price": 97.92,
+   "ping": 34.61,
+   "layout": "2房2廳1衛",
+   "age": 18.0,
+   "floor": "9F/12F",
+   "kind": "電梯大樓",
+   "community": "麗湖WYNN",
+   "community_id": 4736,
+   "district": "內湖區",
+   "address": "成功路五段",
+   "tags": [
+    "27分鐘前更新",
+    "含車位",
+    "有陽台"
+   ],
+   "poster": "仲介常智彥",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     2888.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 34,
+     "n_12m": 3,
+     "median_12m": 98.0,
+     "n_24m": 6,
+     "median_24m": 97.1,
+     "median_all": 78.2,
+     "trend": [
+      [
+       "2020Q4",
+       63.7,
+       1
+      ],
+      [
+       "2021Q1",
+       67.4,
+       1
+      ],
+      [
+       "2022Q1",
+       77.0,
+       2
+      ],
+      [
+       "2022Q2",
+       80.0,
+       1
+      ],
+      [
+       "2022Q3",
+       77.6,
+       1
+      ],
+      [
+       "2023Q1",
+       89.9,
+       1
+      ],
+      [
+       "2023Q3",
+       84.9,
+       1
+      ],
+      [
+       "2023Q4",
+       91.0,
+       2
+      ],
+      [
+       "2024Q1",
+       83.3,
+       3
+      ],
+      [
+       "2024Q2",
+       86.1,
+       1
+      ],
+      [
+       "2024Q3",
+       98.8,
+       1
+      ],
+      [
+       "2024Q4",
+       104.3,
+       1
+      ],
+      [
+       "2025Q2",
+       92.0,
+       1
+      ],
+      [
+       "2025Q3",
+       96.2,
+       1
+      ],
+      [
+       "2025Q4",
+       98.0,
+       1
+      ],
+      [
+       "2026Q1",
+       97.3,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-13",
+       "unit": 100.3,
+       "total": 1060.0,
+       "ping": 10.6,
+       "main_ping": 10.6,
+       "layout": "1房1廳",
+       "floor": "4樓/12樓",
+       "address": "成功路五段83號 | 4樓之1",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-24",
+       "unit": 94.3,
+       "total": 1528.0,
+       "ping": 16.2,
+       "main_ping": 16.2,
+       "layout": "2房1廳",
+       "floor": "5樓/12樓",
+       "address": "成功路五段83號 | 5樓之8",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-10-06",
+       "unit": 98.0,
+       "total": 2990.0,
+       "ping": 41.8,
+       "main_ping": 27.4,
+       "layout": "4房2廳",
+       "floor": "10樓/12樓",
+       "address": "成功路五段83號 | 10樓之2",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-07-30",
+       "unit": 96.2,
+       "total": 3000.0,
+       "ping": 38.0,
+       "main_ping": 28.6,
+       "layout": "2房2廳",
+       "floor": "12樓/12樓",
+       "address": "成功路五段83號 | 12樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-24",
+       "unit": 92.0,
+       "total": 2725.0,
+       "ping": 34.6,
+       "main_ping": 27.4,
+       "layout": "2房2廳",
+       "floor": "3樓/12樓",
+       "address": "成功路五段83號 | 3樓之5",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-17",
+       "unit": 104.3,
+       "total": 1376.0,
+       "ping": 18.4,
+       "main_ping": 11.3,
+       "layout": "1房1廳",
+       "floor": "6樓/12樓",
+       "address": "成功路五段83號 | 6樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-07-08",
+       "unit": 98.8,
+       "total": 2910.0,
+       "ping": 31.2,
+       "main_ping": 27.4,
+       "layout": "3房2廳",
+       "floor": "11樓/12樓",
+       "address": "成功路五段83號 | 11樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-05-19",
+       "unit": 86.1,
+       "total": 2800.0,
+       "ping": 42.9,
+       "main_ping": 28.6,
+       "layout": "2房2廳",
+       "floor": "4樓/12樓",
+       "address": "成功路五段83號 | 4樓之3",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-03-10",
+       "unit": 80.1,
+       "total": 1575.0,
+       "ping": 30.2,
+       "main_ping": 15.9,
+       "layout": "1房1廳",
+       "floor": "8樓/12樓",
+       "address": "成功路五段83號 | 8樓",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-01-29",
+       "unit": 83.3,
+       "total": 1350.0,
+       "ping": 16.2,
+       "main_ping": 16.2,
+       "layout": "1房1廳",
+       "floor": "2樓/12樓",
+       "address": "成功路五段83號 | 2樓之8",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-01-28",
+       "unit": 89.6,
+       "total": 3688.0,
+       "ping": 51.7,
+       "main_ping": 37.4,
+       "layout": "3房2廳",
+       "floor": "9樓/12樓",
+       "address": "成功路五段83號 | 9樓之3",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2023-11-11",
+       "unit": 92.4,
+       "total": 1042.0,
+       "ping": 11.3,
+       "main_ping": 11.3,
+       "layout": "1房1廳",
+       "floor": "4樓/12樓",
+       "address": "成功路五段83號 | 4樓之2",
+       "park": "無車位",
+       "presale": false
+      }
+     ],
+     "name": "麗湖WYNN",
+     "id": 4736,
+     "url": "https://market.591.com.tw/4736"
+    },
+    "nearby": {
+     "n": 6,
+     "n_12m": 1,
+     "median_12m": 98.0,
+     "n_24m": 3,
+     "median_24m": 75.2,
+     "median_all": 82.2,
+     "trend": [
+      [
+       "2024Q2",
+       92.8,
+       2
+      ],
+      [
+       "2024Q3",
+       63.1,
+       1
+      ],
+      [
+       "2025Q2",
+       74.3,
+       1
+      ],
+      [
+       "2025Q3",
+       75.2,
+       1
+      ],
+      [
+       "2025Q4",
+       98.0,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-10-06",
+       "unit": 98.0,
+       "total": 2990,
+       "ping": 41.8,
+       "main_ping": 15.9,
+       "layout": "4房2廳2衛",
+       "floor": "十層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段８３號十樓之２",
+       "age": 17.3,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-12",
+       "unit": 75.2,
+       "total": 3300,
+       "ping": 43.9,
+       "main_ping": 34.8,
+       "layout": "4房2廳2衛",
+       "floor": "三層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段７９號三樓",
+       "age": 43.7,
+       "park": ""
+      },
+      {
+       "date": "2025-05-02",
+       "unit": 74.3,
+       "total": 3450,
+       "ping": 44.4,
+       "main_ping": 24.7,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４２０巷１７號五樓之２",
+       "age": 28.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-09-27",
+       "unit": 63.1,
+       "total": 2950,
+       "ping": 46.7,
+       "main_ping": 28.2,
+       "layout": "3房2廳2衛",
+       "floor": "十層/十六層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段１２號十樓",
+       "age": 29.2,
+       "park": ""
+      },
+      {
+       "date": "2024-06-22",
+       "unit": 89.2,
+       "total": 3700,
+       "ping": 41.5,
+       "main_ping": 28.4,
+       "layout": "2房2廳1衛",
+       "floor": "四層/十九層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４０８號四樓",
+       "age": 23.7,
+       "park": ""
+      },
+      {
+       "date": "2024-06-08",
+       "unit": 96.5,
+       "total": 2700,
+       "ping": 28.0,
+       "main_ping": 17.7,
+       "layout": "2房2廳1衛",
+       "floor": "三層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４２０巷１７號三樓之１",
+       "age": 27.1,
+       "park": ""
+      }
+     ],
+     "scope": "內湖區成功路五段（不限屋齡）"
+    },
+    "premium": -0.1,
+    "premium_ref": "community",
+    "ref_price": 98.0,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20937881": {
+   "source": "591中古屋",
+   "id": "sale-20937881",
+   "title": "河畔景觀~大道東次頂樓3改2房",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20937881.html",
+   "image": "https://img2.591.com.tw/house/2026/09/20/178989177673211806.jpg!400x300.jpg",
+   "price": 2988.0,
+   "unit_price": 94.58,
+   "ping": 38.48,
+   "layout": "2房2廳2衛",
+   "age": 2.0,
+   "floor": "12F/13F",
+   "kind": "電梯大樓",
+   "community": "大道東",
+   "community_id": 103135,
+   "district": "內湖區",
+   "address": "新明路",
+   "tags": [
+    "27分鐘前更新",
+    "含車位",
+    "有陽台"
+   ],
+   "poster": "仲介陳奕綸",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     2988.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 32,
+     "n_12m": 1,
+     "median_12m": 75.0,
+     "n_24m": 1,
+     "median_24m": 75.0,
+     "median_all": 61.3,
+     "trend": [
+      [
+       "2020Q1",
+       61.6,
+       19
+      ],
+      [
+       "2020Q2",
+       59.5,
+       8
+      ],
+      [
+       "2021Q1",
+       73.3,
+       1
+      ],
+      [
+       "2021Q2",
+       58.3,
+       1
+      ],
+      [
+       "2023Q2",
+       54.8,
+       1
+      ],
+      [
+       "2024Q3",
+       66.9,
+       1
+      ],
+      [
+       "2025Q4",
+       75.0,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-12-11",
+       "unit": 75.0,
+       "total": 4950.0,
+       "ping": 80.2,
+       "main_ping": 61.1,
+       "layout": "2房2廳",
+       "floor": "6樓/13樓",
+       "address": "新明路458號 | 6樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-07-28",
+       "unit": 66.9,
+       "total": 1268.0,
+       "ping": 25.8,
+       "main_ping": 16.3,
+       "layout": "0房0廳",
+       "floor": "5樓/13樓",
+       "address": "新明路458號 | 5樓之2",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2023-04-19",
+       "unit": 54.8,
+       "total": 1810.0,
+       "ping": 39.4,
+       "main_ping": 29.8,
+       "layout": "3房2廳",
+       "floor": "3樓/13樓",
+       "address": "新明路458號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2021-06-29",
+       "unit": 58.3,
+       "total": 2038.0,
+       "ping": 41.2,
+       "main_ping": 31.6,
+       "layout": "3房2廳",
+       "floor": "5樓/13樓",
+       "address": "新明路458號 | 5樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2021-02-26",
+       "unit": 73.3,
+       "total": 2060.0,
+       "ping": 34.4,
+       "main_ping": 25.6,
+       "layout": "2房2廳",
+       "floor": "13樓/13樓",
+       "address": "新明路458號 | 13樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-25",
+       "unit": 56.6,
+       "total": 1930.0,
+       "ping": 39.7,
+       "main_ping": 31.0,
+       "layout": "3房2廳",
+       "floor": "3樓/13樓",
+       "address": "新明路458號 | 3樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-25",
+       "unit": 64.6,
+       "total": 2150.0,
+       "ping": 39.5,
+       "main_ping": 30.7,
+       "layout": "3房2廳",
+       "floor": "11樓/13樓",
+       "address": "新明路458號 | 11樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-20",
+       "unit": 59.9,
+       "total": 2048.0,
+       "ping": 39.9,
+       "main_ping": 31.1,
+       "layout": "3房2廳",
+       "floor": "6樓/13樓",
+       "address": "新明路458號 | 6樓之2",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-19",
+       "unit": 58.0,
+       "total": 2015.0,
+       "ping": 41.2,
+       "main_ping": 31.6,
+       "layout": "3房2廳",
+       "floor": "4樓/13樓",
+       "address": "新明路458號 | 4樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-19",
+       "unit": 65.7,
+       "total": 2136.0,
+       "ping": 39.2,
+       "main_ping": 29.7,
+       "layout": "3房2廳",
+       "floor": "13樓/13樓",
+       "address": "新明路458號 | 13樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-17",
+       "unit": 54.2,
+       "total": 1258.0,
+       "ping": 23.2,
+       "main_ping": 23.2,
+       "layout": "2房2廳",
+       "floor": "4樓/13樓",
+       "address": "新明路458號 | 4樓之3",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2020-04-06",
+       "unit": 60.6,
+       "total": 2072.0,
+       "ping": 40.7,
+       "main_ping": 31.1,
+       "layout": "3房2廳",
+       "floor": "6樓/13樓",
+       "address": "新明路458號 | 6樓之1",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "大道東",
+     "id": 103135,
+     "url": "https://market.591.com.tw/103135"
+    },
+    "nearby": {
+     "n": 7,
+     "n_12m": 2,
+     "median_12m": 84.9,
+     "n_24m": 4,
+     "median_24m": 77.2,
+     "median_all": 74.8,
+     "trend": [
+      [
+       "2024Q2",
+       81.2,
+       2
+      ],
+      [
+       "2024Q3",
+       66.9,
+       1
+      ],
+      [
+       "2024Q4",
+       64.9,
+       1
+      ],
+      [
+       "2025Q3",
+       74.8,
+       1
+      ],
+      [
+       "2025Q4",
+       84.9,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-11-25",
+       "unit": 90.3,
+       "total": 2700,
+       "ping": 43.0,
+       "main_ping": 11.7,
+       "layout": "2房2廳1衛",
+       "floor": "十七層/二十層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路４２８巷１號十七樓之８",
+       "age": 6.6,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-17",
+       "unit": 79.5,
+       "total": 3950,
+       "ping": 49.7,
+       "main_ping": 25.5,
+       "layout": "3房2廳2衛",
+       "floor": "十三層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路４２８巷２號十三樓",
+       "age": 2.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-07-06",
+       "unit": 74.8,
+       "total": 2600,
+       "ping": 34.8,
+       "main_ping": 12.7,
+       "layout": "2房2廳1衛",
+       "floor": "十二層/二十層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路４２８巷１號十二樓之７",
+       "age": 6.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-11-21",
+       "unit": 64.9,
+       "total": 3225,
+       "ping": 49.7,
+       "main_ping": 25.5,
+       "layout": "3房2廳2衛",
+       "floor": "九層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路４２８巷１０號九樓",
+       "age": 1.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-07-28",
+       "unit": 66.9,
+       "total": 1268,
+       "ping": 25.8,
+       "main_ping": 9.6,
+       "layout": "0房0廳0衛",
+       "floor": "五層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路４５８號五樓之２",
+       "age": 0.7,
+       "park": "升降平面"
+      },
+      {
+       "date": "2024-05-16",
+       "unit": 89.9,
+       "total": 2280,
+       "ping": 31.6,
+       "main_ping": 12.1,
+       "layout": "1房1廳1衛",
+       "floor": "十八層/二十層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路４２８巷１號十八樓",
+       "age": 5.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-04-25",
+       "unit": 72.4,
+       "total": 2388,
+       "ping": 35.2,
+       "main_ping": 15.8,
+       "layout": "2房2廳1衛",
+       "floor": "三層/六層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "新明路",
+       "address": "內湖區新明路３１２巷２之２號三樓",
+       "age": 10.3,
+       "park": "升降機械"
+      }
+     ],
+     "scope": "內湖區新明路"
+    },
+    "premium": 26.4,
+    "premium_ref": "nearby",
+    "ref_price": 74.8,
+    "ref_label": "附近歷年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20712836": {
+   "source": "591中古屋",
+   "id": "sale-20712836",
+   "title": "💜卓悅聯盟💜♥️捷運公園🌳湖水裔捷運兩室車🍀",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20712836.html",
+   "image": "https://img2.591.com.tw/house/2025/07/31/175395863537060803.jpg!400x300.jpg",
+   "price": 2198.0,
+   "unit_price": 75.92,
+   "ping": 38.19,
+   "layout": "2房2廳1衛",
+   "age": 15.0,
+   "floor": "2F/12F",
+   "kind": "電梯大樓",
+   "community": "湖水裔大樓",
+   "community_id": 5822,
+   "district": "內湖區",
+   "address": "文德路210巷",
+   "tags": [
+    "28分鐘前更新"
+   ],
+   "poster": "仲介林珅羽",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     2198.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 99,
+     "n_12m": 4,
+     "median_12m": 96.5,
+     "n_24m": 11,
+     "median_24m": 96.1,
+     "median_all": 71.0,
+     "trend": [
+      [
+       "2021Q2",
+       74.0,
+       4
+      ],
+      [
+       "2021Q3",
+       74.4,
+       2
+      ],
+      [
+       "2021Q4",
+       86.6,
+       3
+      ],
+      [
+       "2022Q1",
+       84.8,
+       2
+      ],
+      [
+       "2022Q2",
+       82.2,
+       1
+      ],
+      [
+       "2022Q4",
+       84.2,
+       1
+      ],
+      [
+       "2023Q1",
+       72.2,
+       1
+      ],
+      [
+       "2023Q3",
+       81.4,
+       2
+      ],
+      [
+       "2023Q4",
+       69.8,
+       1
+      ],
+      [
+       "2024Q2",
+       91.9,
+       4
+      ],
+      [
+       "2024Q4",
+       74.8,
+       3
+      ],
+      [
+       "2025Q1",
+       94.4,
+       2
+      ],
+      [
+       "2025Q2",
+       97.8,
+       2
+      ],
+      [
+       "2025Q4",
+       91.2,
+       2
+      ],
+      [
+       "2026Q1",
+       96.1,
+       1
+      ],
+      [
+       "2026Q2",
+       102.0,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-05-04",
+       "unit": 102.0,
+       "total": 2026.0,
+       "ping": 19.9,
+       "main_ping": 19.9,
+       "layout": "1房1廳",
+       "floor": "1樓/7樓",
+       "address": "文德路210巷6弄28號 | 1樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-03-14",
+       "unit": 96.1,
+       "total": 2550.0,
+       "ping": 31.2,
+       "main_ping": 25.0,
+       "layout": "2房1廳",
+       "floor": "5樓/12樓",
+       "address": "文德路210巷30弄6號 | 5樓之7",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2025-10-18",
+       "unit": 85.4,
+       "total": 2925.0,
+       "ping": 43.4,
+       "main_ping": 30.9,
+       "layout": "2房1廳",
+       "floor": "2樓/12樓",
+       "address": "文德路210巷30弄6號 | 2樓之10",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-10-09",
+       "unit": 97.0,
+       "total": 2565.0,
+       "ping": 35.9,
+       "main_ping": 23.3,
+       "layout": "1房2廳",
+       "floor": "7樓/12樓",
+       "address": "文德路210巷30弄6號 | 7樓之3",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-31",
+       "unit": 98.8,
+       "total": 2018.0,
+       "ping": 25.2,
+       "main_ping": 18.9,
+       "layout": "1房1廳",
+       "floor": "5樓/12樓",
+       "address": "文德路210巷30弄6號 | 5樓之6",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2025-04-06",
+       "unit": 96.8,
+       "total": 1980.0,
+       "ping": 20.4,
+       "main_ping": 20.4,
+       "layout": "1房1廳",
+       "floor": "3樓/12樓",
+       "address": "文德路210巷30弄6號 | 3樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-03-22",
+       "unit": 96.3,
+       "total": 2000.0,
+       "ping": 25.2,
+       "main_ping": 18.9,
+       "layout": "2房1廳",
+       "floor": "6樓/12樓",
+       "address": "文德路210巷30弄6號 | 6樓之6",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2025-03-07",
+       "unit": 92.6,
+       "total": 2721.0,
+       "ping": 38.9,
+       "main_ping": 26.4,
+       "layout": "1房2廳",
+       "floor": "11樓/12樓",
+       "address": "文德路210巷30弄6號 | 11樓之6",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-12",
+       "unit": 74.8,
+       "total": 4680.0,
+       "ping": 71.1,
+       "main_ping": 58.6,
+       "layout": "3房2廳",
+       "floor": "12樓/12樓",
+       "address": "文德路210巷30弄6號 | 12樓之2",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-11-02",
+       "unit": 69.0,
+       "total": 2650.0,
+       "ping": 47.3,
+       "main_ping": 34.8,
+       "layout": "1房2廳",
+       "floor": "2樓/12樓",
+       "address": "文德路210巷30弄6號 | 2樓之8",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-10-10",
+       "unit": 85.3,
+       "total": 1860.0,
+       "ping": 31.4,
+       "main_ping": 18.9,
+       "layout": "1房1廳",
+       "floor": "3樓/12樓",
+       "address": "文德路210巷30弄6號 | 3樓之5",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-06-18",
+       "unit": 86.8,
+       "total": 2280.0,
+       "ping": 35.9,
+       "main_ping": 23.4,
+       "layout": "1房2廳",
+       "floor": "5樓/12樓",
+       "address": "文德路210巷30弄6號 | 5樓之3",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "湖水裔大樓",
+     "id": 5822,
+     "url": "https://market.591.com.tw/5822"
+    },
+    "nearby": {
+     "n": 9,
+     "n_12m": 3,
+     "median_12m": 99.9,
+     "n_24m": 6,
+     "median_24m": 97.9,
+     "median_all": 97.0,
+     "trend": [
+      [
+       "2024Q2",
+       86.8,
+       1
+      ],
+      [
+       "2024Q3",
+       81.8,
+       2
+      ],
+      [
+       "2024Q4",
+       85.3,
+       1
+      ],
+      [
+       "2025Q1",
+       96.3,
+       1
+      ],
+      [
+       "2025Q2",
+       98.8,
+       1
+      ],
+      [
+       "2025Q4",
+       98.5,
+       2
+      ],
+      [
+       "2026Q1",
+       103.0,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-03",
+       "unit": 103.0,
+       "total": 3800,
+       "ping": 36.9,
+       "main_ping": 23.1,
+       "layout": "4房2廳1衛",
+       "floor": "十二層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２７３號十二樓",
+       "age": 18.3,
+       "park": ""
+      },
+      {
+       "date": "2025-12-13",
+       "unit": 99.9,
+       "total": 3088,
+       "ping": 40.8,
+       "main_ping": 19.3,
+       "layout": "3房2廳1衛",
+       "floor": "六層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄１０２號六樓之３",
+       "age": 23.1,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-10-09",
+       "unit": 97.0,
+       "total": 2565,
+       "ping": 35.9,
+       "main_ping": 13.0,
+       "layout": "1房2廳1衛",
+       "floor": "七層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號七樓之３",
+       "age": 15.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-31",
+       "unit": 98.8,
+       "total": 2018,
+       "ping": 25.2,
+       "main_ping": 9.9,
+       "layout": "1房1廳1衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號五樓之６",
+       "age": 15.2,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2025-03-22",
+       "unit": 96.3,
+       "total": 2000,
+       "ping": 25.2,
+       "main_ping": 9.9,
+       "layout": "2房1廳1衛",
+       "floor": "六層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號六樓之６",
+       "age": 15.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-10-10",
+       "unit": 85.3,
+       "total": 1860,
+       "ping": 31.4,
+       "main_ping": 9.9,
+       "layout": "1房1廳1衛",
+       "floor": "三層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號三樓之５",
+       "age": 14.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-08-17",
+       "unit": 97.7,
+       "total": 3550,
+       "ping": 36.2,
+       "main_ping": 18.8,
+       "layout": "2房2廳2衛",
+       "floor": "六層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路６６巷１４弄２１號六樓",
+       "age": 7.4,
+       "park": "其他"
+      },
+      {
+       "date": "2024-07-15",
+       "unit": 65.9,
+       "total": 3250,
+       "ping": 49.3,
+       "main_ping": 22.9,
+       "layout": "3房2廳2衛",
+       "floor": "四層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄１０２號四樓",
+       "age": 21.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-06-18",
+       "unit": 86.8,
+       "total": 2280,
+       "ping": 35.9,
+       "main_ping": 13.0,
+       "layout": "1房2廳1衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號五樓之３",
+       "age": 14.2,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "內湖區文德路"
+    },
+    "premium": -21.3,
+    "premium_ref": "community",
+    "ref_price": 96.5,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20896870": {
+   "source": "591中古屋",
+   "id": "sale-20896870",
+   "title": "【捷運港墘站儷湖山水】",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20896870.html",
+   "image": "https://img1.591.com.tw/house/2026/09/13/178926609884937306.jpg!400x300.jpg",
+   "price": 1760.0,
+   "unit_price": 45.69,
+   "ping": 38.52,
+   "layout": "2房1廳1衛",
+   "age": 23.0,
+   "floor": "2F/7F",
+   "kind": "電梯大樓",
+   "community": "儷湖山水",
+   "community_id": 34953,
+   "district": "內湖區",
+   "address": "環山路三段",
+   "tags": [
+    "28分鐘前更新"
+   ],
+   "poster": "代理人【歡迎全國同業配案】",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     1760.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 6,
+     "n_12m": 0,
+     "median_12m": null,
+     "n_24m": 0,
+     "median_24m": null,
+     "median_all": 67.8,
+     "trend": [
+      [
+       "2014Q3",
+       69.2,
+       1
+      ],
+      [
+       "2014Q4",
+       66.3,
+       1
+      ],
+      [
+       "2020Q4",
+       67.8,
+       2
+      ],
+      [
+       "2021Q4",
+       69.2,
+       1
+      ],
+      [
+       "2022Q1",
+       66.3,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2022-01-26",
+       "unit": 66.3,
+       "total": 2500.0,
+       "ping": 37.7,
+       "main_ping": 27.0,
+       "layout": "2房2廳",
+       "floor": "2樓/7樓",
+       "address": "環山路三段16號之1 | 2樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2021-12-30",
+       "unit": 69.2,
+       "total": 2800.0,
+       "ping": 40.4,
+       "main_ping": 29.7,
+       "layout": "2房2廳",
+       "floor": "3樓/7樓",
+       "address": "環山路三段16號之1 | 3樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-11-06",
+       "unit": 66.3,
+       "total": 2500.0,
+       "ping": 37.7,
+       "main_ping": 28.8,
+       "layout": "2房2廳",
+       "floor": "2樓/7樓",
+       "address": "環山路三段16號之1 | 2樓之1",
+       "park": "其他車位",
+       "presale": false
+      },
+      {
+       "date": "2020-11-06",
+       "unit": 69.2,
+       "total": 2800.0,
+       "ping": 40.4,
+       "main_ping": 31.5,
+       "layout": "2房2廳",
+       "floor": "3樓/7樓",
+       "address": "環山路三段16號之1 | 3樓之1",
+       "park": "其他車位",
+       "presale": false
+      },
+      {
+       "date": "2014-12-10",
+       "unit": 66.3,
+       "total": 2500.0,
+       "ping": 37.7,
+       "main_ping": 28.8,
+       "layout": "2房2廳",
+       "floor": "2樓/7樓",
+       "address": "環山路三段16號之1 | 2樓之1",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2014-09-13",
+       "unit": 69.2,
+       "total": 2798.0,
+       "ping": 40.4,
+       "main_ping": 31.5,
+       "layout": "2房2廳",
+       "floor": "3樓/7樓",
+       "address": "環山路三段16號之1 | 3樓之1",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "儷湖山水",
+     "id": 34953,
+     "url": "https://market.591.com.tw/34953"
+    },
+    "nearby": {
+     "n": 316,
+     "n_12m": 49,
+     "median_12m": 75.4,
+     "n_24m": 109,
+     "median_24m": 76.5,
+     "median_all": 83.3,
+     "trend": [
+      [
+       "2022Q3",
+       101.2,
+       14
+      ],
+      [
+       "2022Q4",
+       113.4,
+       3
+      ],
+      [
+       "2023Q1",
+       96.1,
+       1
+      ],
+      [
+       "2023Q2",
+       95.4,
+       14
+      ],
+      [
+       "2023Q3",
+       98.3,
+       6
+      ],
+      [
+       "2023Q4",
+       102.6,
+       2
+      ],
+      [
+       "2024Q1",
+       87.6,
+       3
+      ],
+      [
+       "2024Q2",
+       74.8,
+       27
+      ],
+      [
+       "2024Q3",
+       64.5,
+       13
+      ],
+      [
+       "2024Q4",
+       80.5,
+       14
+      ],
+      [
+       "2025Q1",
+       80.2,
+       19
+      ],
+      [
+       "2025Q2",
+       73.3,
+       16
+      ],
+      [
+       "2025Q3",
+       76.5,
+       13
+      ],
+      [
+       "2025Q4",
+       77.4,
+       35
+      ],
+      [
+       "2026Q1",
+       74.1,
+       11
+      ],
+      [
+       "2026Q2",
+       65.8,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-04-11",
+       "unit": 65.8,
+       "total": 3150,
+       "ping": 47.8,
+       "main_ping": 33.6,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十六層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "星雲街",
+       "address": "內湖區星雲街１６０號五樓",
+       "age": 30.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-03-25",
+       "unit": 78.0,
+       "total": 2250,
+       "ping": 28.6,
+       "main_ping": 14.8,
+       "layout": "4房2廳1衛",
+       "floor": "四層/五層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "民權東路六段",
+       "address": "內湖區民權東路六段１９０巷１１７弄３５號四樓",
+       "age": 16.8,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2026-03-14",
+       "unit": 96.4,
+       "total": 4330,
+       "ping": 51.3,
+       "main_ping": 27.7,
+       "layout": "3房2廳2衛",
+       "floor": "十二層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路五段",
+       "address": "內湖區成功路五段４５０巷５號十二樓",
+       "age": 25.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-03-14",
+       "unit": 69.2,
+       "total": 2930,
+       "ping": 42.3,
+       "main_ping": 21.4,
+       "layout": "4房2廳2衛",
+       "floor": "七層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "環山路一段",
+       "address": "內湖區環山路一段６２之１號七樓",
+       "age": 31.4,
+       "park": "升降機械"
+      },
+      {
+       "date": "2026-03-04",
+       "unit": 63.3,
+       "total": 1998,
+       "ping": 31.6,
+       "main_ping": 18.5,
+       "layout": "2房2廳1衛",
+       "floor": "二層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "文湖街",
+       "address": "內湖區文湖街２１巷１１８弄１０號二樓",
+       "age": 13.9,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2026-03-03",
+       "unit": 103.0,
+       "total": 3800,
+       "ping": 36.9,
+       "main_ping": 23.1,
+       "layout": "4房2廳1衛",
+       "floor": "十二層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２７３號十二樓",
+       "age": 18.3,
+       "park": ""
+      },
+      {
+       "date": "2026-02-23",
+       "unit": 87.3,
+       "total": 2550,
+       "ping": 29.2,
+       "main_ping": 14.8,
+       "layout": "1房2廳1衛",
+       "floor": "三層/九層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "行善路",
+       "address": "內湖區行善路８９之１號三樓之３",
+       "age": 17.5,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2026-02-05",
+       "unit": 67.1,
+       "total": 2600,
+       "ping": 38.7,
+       "main_ping": 23.4,
+       "layout": "3房2廳2衛",
+       "floor": "八層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "行善路",
+       "address": "內湖區行善路５９巷１５號八樓",
+       "age": 27.8,
+       "park": ""
+      },
+      {
+       "date": "2026-02-03",
+       "unit": 55.6,
+       "total": 2630,
+       "ping": 44.1,
+       "main_ping": 22.1,
+       "layout": "4房2廳2衛",
+       "floor": "十一層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文湖街",
+       "address": "內湖區文湖街２１巷１１２弄１９號十一樓",
+       "age": 24.3,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2026-01-26",
+       "unit": 46.6,
+       "total": 1400,
+       "ping": 30.1,
+       "main_ping": 10.8,
+       "layout": "1房1廳1衛",
+       "floor": "六層/十一層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "成功路二段",
+       "address": "內湖區成功路二段４８６巷１２號六樓",
+       "age": 27.4,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-24",
+       "unit": 75.1,
+       "total": 1800,
+       "ping": 26.6,
+       "main_ping": 14.1,
+       "layout": "2房2廳1衛",
+       "floor": "三層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "文湖街",
+       "address": "內湖區文湖街２１巷１１２弄１０號三樓",
+       "age": 22.7,
+       "park": "升降機械"
+      },
+      {
+       "date": "2026-01-11",
+       "unit": 74.1,
+       "total": 2755,
+       "ping": 37.2,
+       "main_ping": 15.6,
+       "layout": "2房2廳1衛",
+       "floor": "五層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "江南街",
+       "address": "內湖區江南街１１１號五樓之４",
+       "age": 20.8,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "內湖區（同型態、坪數相近）"
+    },
+    "premium": -39.4,
+    "premium_ref": "nearby",
+    "ref_price": 75.4,
+    "ref_label": "附近近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20932192": {
+   "source": "591中古屋",
+   "id": "sale-20932192",
+   "title": "❤️[台灣永悅]💙米蘭TOP複合式挑高3房💚文德捷運美宅",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20932192.html",
+   "image": "https://img2.591.com.tw/house/2026/09/19/178978689814468609.jpg!400x300.jpg",
+   "price": 2175.0,
+   "unit_price": 109.6,
+   "ping": 25.02,
+   "layout": "3房2廳1衛",
+   "age": 28.0,
+   "floor": "9F/9F",
+   "kind": "電梯大樓",
+   "community": "米蘭TOP",
+   "community_id": 891,
+   "district": "內湖區",
+   "address": "文德路90巷",
+   "tags": [
+    "28分鐘前更新",
+    "含車位",
+    "有陽台"
+   ],
+   "poster": "仲介常智彥",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     2175.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 20,
+     "n_12m": 0,
+     "median_12m": null,
+     "n_24m": 0,
+     "median_24m": null,
+     "median_all": 73.8,
+     "trend": [
+      [
+       "2013Q3",
+       63.0,
+       2
+      ],
+      [
+       "2013Q4",
+       79.1,
+       1
+      ],
+      [
+       "2016Q1",
+       67.4,
+       1
+      ],
+      [
+       "2016Q2",
+       73.2,
+       1
+      ],
+      [
+       "2018Q1",
+       60.0,
+       1
+      ],
+      [
+       "2019Q2",
+       66.8,
+       1
+      ],
+      [
+       "2020Q3",
+       70.3,
+       1
+      ],
+      [
+       "2020Q4",
+       68.4,
+       2
+      ],
+      [
+       "2021Q3",
+       72.0,
+       1
+      ],
+      [
+       "2022Q3",
+       79.9,
+       1
+      ],
+      [
+       "2023Q1",
+       76.1,
+       1
+      ],
+      [
+       "2023Q2",
+       74.4,
+       1
+      ],
+      [
+       "2023Q4",
+       80.5,
+       1
+      ],
+      [
+       "2024Q2",
+       94.0,
+       3
+      ],
+      [
+       "2024Q3",
+       96.6,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2024-07-27",
+       "unit": 101.3,
+       "total": 1600.0,
+       "ping": 15.8,
+       "main_ping": 15.8,
+       "layout": "0房1廳",
+       "floor": "1樓/9樓",
+       "address": "文德路90巷40號 | 1樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-07-21",
+       "unit": 91.9,
+       "total": 1950.0,
+       "ping": 30.2,
+       "main_ping": 18.0,
+       "layout": "2房2廳",
+       "floor": "3樓/9樓",
+       "address": "文德路90巷34號 | 3樓之6",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2024-06-29",
+       "unit": 97.7,
+       "total": 1800.0,
+       "ping": 18.4,
+       "main_ping": 18.4,
+       "layout": "2房1廳",
+       "floor": "3樓/9樓",
+       "address": "文德路90巷34號 | 3樓之2",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-06-18",
+       "unit": 94.0,
+       "total": 1428.0,
+       "ping": 15.2,
+       "main_ping": 15.2,
+       "layout": "1房1廳",
+       "floor": "9樓/9樓",
+       "address": "文德路90巷34號 | 9樓之1",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-04-27",
+       "unit": 94.0,
+       "total": 1688.0,
+       "ping": 18.0,
+       "main_ping": 18.0,
+       "layout": "2房1廳",
+       "floor": "2樓/9樓",
+       "address": "文德路90巷34號 | 2樓之7",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2023-10-14",
+       "unit": 80.5,
+       "total": 1500.0,
+       "ping": 22.9,
+       "main_ping": 16.8,
+       "layout": "2房2廳",
+       "floor": "5樓/9樓",
+       "address": "文德路90巷34號 | 5樓之6",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2023-05-31",
+       "unit": 74.4,
+       "total": 1220.0,
+       "ping": 16.4,
+       "main_ping": 16.4,
+       "layout": "1房1廳",
+       "floor": "2樓/9樓",
+       "address": "文德路90巷34號 | 2樓之1",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2023-01-12",
+       "unit": 76.1,
+       "total": 1210.0,
+       "ping": 15.9,
+       "main_ping": 15.9,
+       "layout": "1房1廳",
+       "floor": "3樓/9樓",
+       "address": "文德路90巷34號 | 3樓之5",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2022-08-06",
+       "unit": 79.9,
+       "total": 1425.0,
+       "ping": 17.8,
+       "main_ping": 17.8,
+       "layout": "2房2廳",
+       "floor": "8樓/9樓",
+       "address": "文德路90巷34號 | 8樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2021-07-15",
+       "unit": 72.0,
+       "total": 1320.0,
+       "ping": 18.3,
+       "main_ping": 18.3,
+       "layout": "1房1廳",
+       "floor": "5樓/9樓",
+       "address": "文德路90巷34號 | 5樓之3",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2020-12-10",
+       "unit": 66.5,
+       "total": 1230.0,
+       "ping": 18.5,
+       "main_ping": 18.5,
+       "layout": "2房2廳",
+       "floor": "2樓/9樓",
+       "address": "文德路90巷34號 | 2樓之5",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2020-11-25",
+       "unit": 70.3,
+       "total": 1398.0,
+       "ping": 23.9,
+       "main_ping": 17.8,
+       "layout": "0房1廳",
+       "floor": "5樓/9樓",
+       "address": "文德路90巷34號 | 5樓之2",
+       "park": "機械車位",
+       "presale": false
+      }
+     ],
+     "name": "米蘭TOP",
+     "id": 891,
+     "url": "https://market.591.com.tw/891"
+    },
+    "nearby": {
+     "n": 10,
+     "n_12m": 1,
+     "median_12m": 55.3,
+     "n_24m": 6,
+     "median_24m": 90.8,
+     "median_all": 95.4,
+     "trend": [
+      [
+       "2024Q2",
+       97.4,
+       3
+      ],
+      [
+       "2024Q3",
+       49.9,
+       1
+      ],
+      [
+       "2024Q4",
+       82.6,
+       2
+      ],
+      [
+       "2025Q1",
+       96.3,
+       1
+      ],
+      [
+       "2025Q2",
+       97.8,
+       2
+      ],
+      [
+       "2025Q4",
+       55.3,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-11-21",
+       "unit": 55.3,
+       "total": 1450,
+       "ping": 26.2,
+       "main_ping": 11.5,
+       "layout": "1房1廳1衛",
+       "floor": "四層/十六層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路６６巷１４弄２０號四樓",
+       "age": 31.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-31",
+       "unit": 98.8,
+       "total": 2018,
+       "ping": 25.2,
+       "main_ping": 9.9,
+       "layout": "1房1廳1衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號五樓之６",
+       "age": 15.2,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2025-04-06",
+       "unit": 96.8,
+       "total": 1980,
+       "ping": 20.4,
+       "main_ping": 9.8,
+       "layout": "1房1廳1衛",
+       "floor": "三層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號三樓",
+       "age": 15.0,
+       "park": ""
+      },
+      {
+       "date": "2025-03-22",
+       "unit": 96.3,
+       "total": 2000,
+       "ping": 25.2,
+       "main_ping": 9.9,
+       "layout": "2房1廳1衛",
+       "floor": "六層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號六樓之６",
+       "age": 15.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-12-03",
+       "unit": 79.9,
+       "total": 1300,
+       "ping": 16.3,
+       "main_ping": 12.9,
+       "layout": "2房1廳1衛",
+       "floor": "四層/十六層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路６６巷１４弄１０號四樓",
+       "age": 30.0,
+       "park": ""
+      },
+      {
+       "date": "2024-10-10",
+       "unit": 85.3,
+       "total": 1860,
+       "ping": 31.4,
+       "main_ping": 9.9,
+       "layout": "1房1廳1衛",
+       "floor": "三層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號三樓之５",
+       "age": 14.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-08-16",
+       "unit": 49.9,
+       "total": 1563,
+       "ping": 26.3,
+       "main_ping": 10.0,
+       "layout": "2房1廳1衛",
+       "floor": "八層/十層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路１００號八樓之８",
+       "age": 28.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-06-16",
+       "unit": 101.9,
+       "total": 1933,
+       "ping": 19.0,
+       "main_ping": 10.5,
+       "layout": "1房1廳1衛",
+       "floor": "五層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路６６巷１４弄２７號五樓",
+       "age": 7.3,
+       "park": ""
+      },
+      {
+       "date": "2024-05-26",
+       "unit": 94.5,
+       "total": 1828,
+       "ping": 19.4,
+       "main_ping": 10.0,
+       "layout": "1房2廳1衛",
+       "floor": "四層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２１０巷３０弄６號四樓之８",
+       "age": 14.2,
+       "park": ""
+      },
+      {
+       "date": "2024-04-13",
+       "unit": 97.4,
+       "total": 1700,
+       "ping": 20.8,
+       "main_ping": 10.6,
+       "layout": "2房1廳1衛",
+       "floor": "五層/十層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "內湖區",
+       "road": "文德路",
+       "address": "內湖區文德路２７５號五樓之４",
+       "age": 18.0,
+       "park": "坡道機械"
+      }
+     ],
+     "scope": "內湖區文德路（不限屋齡）"
+    },
+    "premium": 14.9,
+    "premium_ref": "nearby",
+    "ref_price": 95.4,
+    "ref_label": "附近歷年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20749214": {
+   "source": "591中古屋",
+   "id": "sale-20749214",
+   "title": "🍎專-龍江典雅景觀2房車🍎2層皆可站/輕齡電梯附車位",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20749214.html",
+   "image": "https://img2.591.com.tw/house/2026/08/17/178695201226840000.jpg!400x300.jpg",
+   "price": 2988.0,
+   "unit_price": 94.39,
+   "ping": 33.5,
+   "layout": "2房2廳2衛",
+   "age": 13.0,
+   "floor": "7F/8F",
+   "kind": "華廈",
+   "community": "遠宏香榭",
+   "community_id": 3671310,
+   "district": "中山區",
+   "address": "龍江路356巷",
+   "tags": [
+    "28分鐘前更新",
+    "含車位"
+   ],
+   "poster": "仲介蔡君葳",
+   "search": "台北內湖中山 2-3房 3000萬內",
+   "county": "臺北市",
+   "first_seen": "2026-09-28 16:26",
+   "price_history": [
+    [
+     "2026-09-28 16:26",
+     2988.0
+    ]
+   ],
+   "last_seen": "2026-09-28 16:26",
+   "market": {
+    "community": {
+     "n": 26,
+     "n_12m": 0,
+     "median_12m": null,
+     "n_24m": 0,
+     "median_24m": null,
+     "median_all": 70.4,
+     "trend": [
+      [
+       "2013Q2",
+       78.5,
+       7
+      ],
+      [
+       "2013Q3",
+       67.1,
+       15
+      ],
+      [
+       "2019Q2",
+       50.8,
+       1
+      ],
+      [
+       "2021Q2",
+       70.5,
+       1
+      ],
+      [
+       "2022Q2",
+       59.8,
+       1
+      ],
+      [
+       "2024Q2",
+       79.6,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2024-06-01",
+       "unit": 79.6,
+       "total": 2250.0,
+       "ping": 29.8,
+       "main_ping": 26.3,
+       "layout": "3房1廳",
+       "floor": "3樓/8樓",
+       "address": "龍江路356巷50號 | 3樓之1",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2022-06-06",
+       "unit": 59.8,
+       "total": 1950.0,
+       "ping": 33.5,
+       "main_ping": 30.0,
+       "layout": "2房2廳",
+       "floor": "2樓/8樓",
+       "address": "龍江路356巷50號 | 2樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2021-04-18",
+       "unit": 70.5,
+       "total": 2000.0,
+       "ping": 29.8,
+       "main_ping": 26.3,
+       "layout": "2房2廳",
+       "floor": "7樓/8樓",
+       "address": "龍江路356巷50號 | 7樓之1",
+       "park": "塔式車位",
+       "presale": false
+      },
+      {
+       "date": "2019-05-26",
+       "unit": 50.8,
+       "total": 1737.0,
+       "ping": 33.8,
+       "main_ping": 30.2,
+       "layout": "1房1廳",
+       "floor": "7樓/8樓",
+       "address": "龍江路356巷50號 | 7樓",
+       "park": "其他車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-24",
+       "unit": 62.4,
+       "total": 2150.0,
+       "ping": 37.0,
+       "main_ping": 30.0,
+       "layout": "2房2廳",
+       "floor": "5樓/8樓",
+       "address": "龍江路356巷50號 | 5樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-23",
+       "unit": 67.1,
+       "total": 2180.0,
+       "ping": 33.8,
+       "main_ping": 30.2,
+       "layout": "2房2廳",
+       "floor": "5樓/8樓",
+       "address": "龍江路356巷50號 | 5樓",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-17",
+       "unit": 64.8,
+       "total": 2220.0,
+       "ping": 37.0,
+       "main_ping": 30.0,
+       "layout": "2房2廳",
+       "floor": "3樓/8樓",
+       "address": "龍江路356巷50號 | 3樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-17",
+       "unit": 70.3,
+       "total": 2325.0,
+       "ping": 33.8,
+       "main_ping": 30.2,
+       "layout": "2房2廳",
+       "floor": "6樓/8樓",
+       "address": "龍江路356巷50號 | 6樓",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-11",
+       "unit": 64.1,
+       "total": 2310.0,
+       "ping": 40.9,
+       "main_ping": 30.3,
+       "layout": "2房2廳",
+       "floor": "3樓/8樓",
+       "address": "龍江路356巷50號 | 3樓",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-11",
+       "unit": 68.4,
+       "total": 2200.0,
+       "ping": 33.5,
+       "main_ping": 30.0,
+       "layout": "2房2廳",
+       "floor": "7樓/8樓",
+       "address": "龍江路356巷50號 | 7樓之2",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-09-11",
+       "unit": 72.7,
+       "total": 2400.0,
+       "ping": 33.8,
+       "main_ping": 30.2,
+       "layout": "2房2廳",
+       "floor": "7樓/8樓",
+       "address": "龍江路356巷50號 | 7樓",
+       "park": "機械車位",
+       "presale": false
+      },
+      {
+       "date": "2013-08-28",
+       "unit": 63.5,
+       "total": 2120.0,
+       "ping": 33.8,
+       "main_ping": 30.2,
+       "layout": "2房2廳",
+       "floor": "2樓/8樓",
+       "address": "龍江路356巷50號 | 2樓",
+       "park": "機械車位",
+       "presale": false
+      }
+     ],
+     "name": "遠宏香榭",
+     "id": 3671310,
+     "url": "https://market.591.com.tw/3671310"
+    },
+    "nearby": {
+     "n": 15,
+     "n_12m": 4,
+     "median_12m": 77.3,
+     "n_24m": 10,
+     "median_24m": 77.3,
+     "median_all": 79.6,
+     "trend": [
+      [
+       "2024Q2",
+       79.6,
+       3
+      ],
+      [
+       "2024Q3",
+       78.9,
+       2
+      ],
+      [
+       "2025Q1",
+       87.4,
+       2
+      ],
+      [
+       "2025Q2",
+       70.5,
+       4
+      ],
+      [
+       "2026Q1",
+       77.3,
+       4
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-01-22",
+       "unit": 92.4,
+       "total": 2600,
+       "ping": 28.2,
+       "main_ping": 15.2,
+       "layout": "2房2廳1衛",
+       "floor": "三層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２９６號三樓",
+       "age": 17.0,
+       "park": ""
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 70.5,
+       "total": 2600,
+       "ping": 36.9,
+       "main_ping": 29.5,
+       "layout": "1房2廳2衛",
+       "floor": "五層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２６４號五樓",
+       "age": 43.3,
+       "park": ""
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 71.9,
+       "total": 2650,
+       "ping": 36.9,
+       "main_ping": 29.5,
+       "layout": "2房1廳2衛",
+       "floor": "六層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２６４號六樓",
+       "age": 43.3,
+       "park": ""
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 82.7,
+       "total": 3050,
+       "ping": 36.9,
+       "main_ping": 29.5,
+       "layout": "2房1廳1衛",
+       "floor": "七層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２６４號七樓",
+       "age": 43.3,
+       "park": ""
+      },
+      {
+       "date": "2025-06-24",
+       "unit": 113.6,
+       "total": 2788,
+       "ping": 30.4,
+       "main_ping": 12.1,
+       "layout": "1房2廳1衛",
+       "floor": "三層/九層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路３７巷２６號三樓之１",
+       "age": 1.1,
+       "park": "塔式車位"
+      },
+      {
+       "date": "2025-05-15",
+       "unit": 70.5,
+       "total": 2600,
+       "ping": 36.9,
+       "main_ping": 29.5,
+       "layout": "0房0廳0衛",
+       "floor": "二層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２６４號二樓",
+       "age": 42.6,
+       "park": ""
+      },
+      {
+       "date": "2025-05-15",
+       "unit": 70.5,
+       "total": 2600,
+       "ping": 36.9,
+       "main_ping": 29.5,
+       "layout": "0房0廳0衛",
+       "floor": "三層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２６４號三樓",
+       "age": 42.6,
+       "park": ""
+      },
+      {
+       "date": "2025-05-15",
+       "unit": 70.5,
+       "total": 2600,
+       "ping": 36.9,
+       "main_ping": 29.5,
+       "layout": "0房0廳0衛",
+       "floor": "四層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２６４號四樓",
+       "age": 42.6,
+       "park": ""
+      },
+      {
+       "date": "2025-02-23",
+       "unit": 88.6,
+       "total": 3660,
+       "ping": 41.3,
+       "main_ping": 34.9,
+       "layout": "4房2廳2衛",
+       "floor": "七層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２７１巷５號七樓",
+       "age": 41.4,
+       "park": ""
+      },
+      {
+       "date": "2025-01-23",
+       "unit": 86.3,
+       "total": 2200,
+       "ping": 25.5,
+       "main_ping": 9.7,
+       "layout": "1房2廳1衛",
+       "floor": "三層/九層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路３７巷２６號三樓之２",
+       "age": 0.7,
+       "park": "升降機械"
+      },
+      {
+       "date": "2024-08-27",
+       "unit": 75.1,
+       "total": 2850,
+       "ping": 37.9,
+       "main_ping": 31.1,
+       "layout": "3房2廳2衛",
+       "floor": "五層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路３７５號五樓",
+       "age": 38.5,
+       "park": ""
+      },
+      {
+       "date": "2024-07-23",
+       "unit": 82.8,
+       "total": 3620,
+       "ping": 43.7,
+       "main_ping": 37.9,
+       "layout": "3房2廳2衛",
+       "floor": "二層/七層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中山區",
+       "road": "龍江路",
+       "address": "中山區龍江路２７１巷３號二樓",
+       "age": 40.8,
+       "park": ""
+      }
+     ],
+     "scope": "中山區龍江路（不限屋齡）"
+    },
+    "premium": 22.1,
+    "premium_ref": "nearby",
+    "ref_price": 77.3,
+    "ref_label": "附近近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
    "is_new": true
   }
  },
@@ -25917,6 +29998,13 @@
    "new": 7,
    "drops": 0,
    "active": 60,
+   "warnings": []
+  },
+  {
+   "time": "2026-09-28 16:26",
+   "new": 7,
+   "drops": 0,
+   "active": 67,
    "warnings": []
   }
  ]
