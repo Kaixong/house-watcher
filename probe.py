@@ -1,16 +1,25 @@
-import requests, time, json
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/140 Safari/537.36"}
-secs = {}
-for page in range(1, 25):
-    r = requests.get("https://bff-newhouse.591.com.tw/v1/list-search", headers=UA, timeout=20,
-                     params={"page": page, "device": "pc", "device_id": "abc123xyz", "regionid": 6}).json()
-    for it in (r.get("data") or {}).get("items") or []:
-        secs[it.get("section")] = it.get("sectionid")
-    time.sleep(1)
-    if len(secs) >= 13: break
-print("sections", json.dumps(secs, ensure_ascii=False))
-for q in ["衛生福利部桃園醫院", "桃園市立武陵高級中等學校", "武陵高中 桃園", "部立桃園醫院", "美麗歐洲 中壢"]:
-    r = requests.get("https://nominatim.openstreetmap.org/search", params={"q": q, "format": "json", "limit": 2, "countrycodes": "tw"},
-                     headers={"User-Agent": "house-watcher-probe/1.0 (github.com/Kaixong/house-watcher)"}, timeout=20).json()
-    print("geo", q, [(x.get("display_name")[:60], x.get("lat"), x.get("lon")) for x in r])
-    time.sleep(1.2)
+import subprocess, time
+from playwright.sync_api import sync_playwright
+srv = subprocess.Popen(["python", "-m", "http.server", "8770", "-d", "site"]); time.sleep(1)
+with sync_playwright() as p:
+    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1280, "height": 900})
+    errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+    pg.goto("http://localhost:8770/"); pg.wait_for_timeout(2500)
+    pg.click("#vMap"); pg.wait_for_timeout(3500)
+    pg.evaluate("window.scrollTo(0, document.getElementById('mapWrap').offsetTop - 10)"); pg.wait_for_timeout(500)
+    n0 = pg.locator("#mapList .card").count()
+    pins = pg.locator(".pin"); pins.nth(pins.count() // 2).click(force=True); pg.wait_for_timeout(1800)
+    hl = pg.evaluate("(() => { const e = document.querySelector('#mapList .card.hl'); if (!e) return null; const r = e.getBoundingClientRect(), L = document.getElementById('mapList').getBoundingClientRect(); return {id: e.id, visible: r.top >= L.top - 5 && r.bottom <= L.bottom + 5} })()")
+    pg.screenshot(path="shot_map.png")
+    # list view → 在地圖上看
+    pg.click("#vList"); pg.wait_for_timeout(800)
+    pg.locator("#grid [data-locate]").nth(3).click(); pg.wait_for_timeout(2500)
+    hl2 = pg.evaluate("document.querySelector('#mapList .card.hl')?.id")
+    popup = pg.locator(".leaflet-popup").count()
+    pg.screenshot(path="shot_locate.png")
+    mp = b.new_page(viewport={"width": 390, "height": 844}); mp.goto("http://localhost:8770/"); mp.wait_for_timeout(2000)
+    mp.click("#vMap"); mp.wait_for_timeout(3000); mpins = mp.locator(".pin"); mpins.nth(mpins.count() // 2).click(force=True); mp.wait_for_timeout(1500)
+    mp.screenshot(path="shot_phone.png")
+    print("errors:", errs, "cards_in_view:", n0, "hl:", hl, "locate_hl:", hl2, "popup:", popup)
+    b.close()
+srv.kill()
