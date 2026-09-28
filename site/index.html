@@ -460,14 +460,14 @@ function renderMapList(){
     if (el) { el.classList.add("hl"); if (Date.now() - FOCUS_AT < 1500) el.scrollIntoView({block: "center"}); } }
 }
 let HL = null, FOCUS_AT = 0;
-function focusCard(id){
-  FOCUS_AT = Date.now();
+function focusCard(id, scroll = true){
+  FOCUS_AT = scroll ? Date.now() : 0;
   const el = document.getElementById("card-" + id);
   document.querySelectorAll(".card.hl").forEach(c => c.classList.remove("hl"));
   HL = id;
   if (!el) return;
   el.classList.add("hl");
-  el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"});
+  if (scroll) el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"});
 }
 function mapOffscreen(){
   const r = $("map").getBoundingClientRect();
@@ -482,7 +482,9 @@ function locate(id){
   if (VIEW !== "map") { PENDING = id; setView("map"); return; }
   const m = MARKERS[id]; if (!m) return;
   if (mapOffscreen()) scrollToMap();
-  MAP.once("moveend", () => { m.openPopup(); focusCard(id); });
+  // 桌機：清單在旁邊，順便捲到該物件；手機：留在地圖上
+  const sideBySide = matchMedia("(min-width: 900px)").matches;
+  MAP.once("moveend", () => { m.openPopup(); focusCard(id, sideBySide); });
   MAP.setView(m.getLatLng(), Math.max(MAP.getZoom(), 16));
 }
 // 手機：捲到清單後顯示「回到地圖」
