@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/runner/work/house-watcher/house-watcher/probe.py", line 1, in <module>
-    import json, re, requests
-ModuleNotFoundError: No module named 'requests'
