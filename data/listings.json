@@ -567,7 +567,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25161997": {
@@ -1605,7 +1605,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20873743": {
@@ -2107,7 +2107,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20945994": {
@@ -2660,7 +2660,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20804765": {
@@ -3187,7 +3187,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20834254": {
@@ -3654,7 +3654,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20930829": {
@@ -4181,7 +4181,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20920458": {
@@ -4713,7 +4713,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20916441": {
@@ -5240,7 +5240,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20921626": {
@@ -5730,7 +5730,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20817319": {
@@ -6257,7 +6257,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20768611": {
@@ -6715,7 +6715,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20717315": {
@@ -7128,7 +7128,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20693978": {
@@ -7516,7 +7516,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20826213": {
@@ -7539,11 +7539,14 @@
    "district": "中壢區",
    "address": "南園二路",
    "tags": [
-    "2小時前更新",
+    "42分鐘前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介鄧秀英",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
    "detail": {
     "parking": "9.32坪，平面式，已含售金內",
     "parking_flat": true,
@@ -7565,7 +7568,7 @@
      1300.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -9114,7 +9117,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20687802": {
@@ -9497,7 +9500,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20952500": {
@@ -10028,7 +10031,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20971850": {
@@ -10051,9 +10054,12 @@
    "district": "中壢區",
    "address": "莊敬路829巷",
    "tags": [
-    "2小時前更新"
+    "42分鐘前更新"
    ],
    "poster": "仲介黃珅朋",
+   "lat": 24.964102,
+   "lng": 121.254903,
+   "distance_km": 1.77,
    "detail": {
     "parking": "6.48坪，平面式，已含售金內",
     "parking_flat": true,
@@ -10073,7 +10079,7 @@
      1468.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 105,
@@ -11117,7 +11123,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20967375": {
@@ -11641,7 +11647,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20969536": {
@@ -12051,7 +12057,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20652624": {
@@ -12060,7 +12066,7 @@
    "title": "🍎專任急售🍎中壢交流道A21🍎南園二路麗朵3房車🍎",
    "url": "https://sale.591.com.tw/home/house/detail/2/20652624.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20652624.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/03/02/177243167964495003.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/03/02/177243167964495003.jpg!400x300.jpg",
    "price": 1498.0,
    "unit_price": 29.76,
    "ping": 50.33,
@@ -12074,11 +12080,14 @@
    "district": "中壢區",
    "address": "南園二路296巷",
    "tags": [
-    "2小時前更新",
+    "42分鐘前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介鍾小姐",
+   "lat": 24.972692,
+   "lng": 121.227891,
+   "distance_km": 1.25,
    "detail": {
     "parking": "10坪，平面式，已含售金內",
     "parking_flat": true,
@@ -12098,7 +12107,7 @@
      1498.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -12597,7 +12606,7 @@
    "title": "專💎近體育園區景觀戶🎯這間，是給「懂位置價值」的你！",
    "url": "https://sale.591.com.tw/home/house/detail/2/20732743.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20732743.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/video/cover/2026-08-14/3207795.png!1000x.water2.png",
+   "image": "https://img1.591.com.tw/video/cover/2026-08-14/3207795.png!1000x.water2.png",
    "price": 1388.0,
    "unit_price": 31.87,
    "ping": 43.55,
@@ -12611,12 +12620,15 @@
    "district": "中壢區",
    "address": "普忠路",
    "tags": [
-    "10分鐘前更新",
+    "3小時前更新",
     "影片房屋",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介邱小姐",
+   "lat": 24.954577,
+   "lng": 121.251682,
+   "distance_km": 1.88,
    "detail": {
     "parking": "9.78坪，平面式，已含售金內",
     "parking_flat": true,
@@ -12636,7 +12648,7 @@
      1388.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 149,
@@ -13713,7 +13725,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25164490": {
@@ -14765,7 +14777,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20722891": {
@@ -15298,7 +15310,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20687596": {
@@ -15866,7 +15878,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20737897": {
@@ -16394,7 +16406,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20818369": {
@@ -16925,7 +16937,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20681443": {
@@ -17416,7 +17428,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20748027": {
@@ -17779,7 +17791,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20656211": {
@@ -18310,7 +18322,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20679939": {
@@ -18837,7 +18849,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20544201": {
@@ -18846,7 +18858,7 @@
    "title": "💖獨家承辦｜忠福｜美麗歐洲三房平車｜生活順手｜好舒心💖",
    "url": "https://sale.591.com.tw/home/house/detail/2/20544201.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20544201.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/06/11/178115160135910209.png!400x300.png",
+   "image": "https://img1.591.com.tw/house/2026/06/11/178115160135910209.png!400x300.png",
    "price": 1198.0,
    "unit_price": 28.54,
    "ping": 41.98,
@@ -18860,11 +18872,14 @@
    "district": "中壢區",
    "address": "中園路",
    "tags": [
-    "5小時前更新",
+    "12分鐘前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介胡尚峰",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
    "detail": {
     "parking": "7.4坪，平面式，已含售金內",
     "parking_flat": true,
@@ -18887,7 +18902,7 @@
      1198.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 187,
@@ -19936,7 +19951,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20809147": {
@@ -19959,11 +19974,14 @@
    "district": "中壢區",
    "address": "莊敬路829巷",
    "tags": [
-    "5小時前更新",
+    "13分鐘前更新",
     "含車位",
     "重劃區"
    ],
    "poster": "仲介胡尚峰",
+   "lat": 24.964102,
+   "lng": 121.254903,
+   "distance_km": 1.77,
    "detail": {
     "parking": "平面式，已含售金內",
     "parking_flat": true,
@@ -19986,7 +20004,7 @@
      1468.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 105,
@@ -21298,7 +21316,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20721313": {
@@ -21321,12 +21339,15 @@
    "district": "中壢區",
    "address": "莊敬路829巷",
    "tags": [
-    "6小時前更新",
+    "9小時前更新",
     "明星學區",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介張黃記",
+   "lat": 24.964102,
+   "lng": 121.254903,
+   "distance_km": 1.77,
    "detail": {
     "parking": "6.48坪，平面式，已含售金內",
     "parking_flat": true,
@@ -21346,7 +21367,7 @@
      1468.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 105,
@@ -22900,7 +22921,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20822392": {
@@ -23468,7 +23489,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20778147": {
@@ -23999,7 +24020,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20887238": {
@@ -24490,7 +24511,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20896273": {
@@ -24513,7 +24534,7 @@
    "district": "中壢區",
    "address": "月眉二路111巷",
    "tags": [
-    "8小時前更新"
+    "10小時前更新"
    ],
    "poster": "仲介耿蓓蓓",
    "detail": {
@@ -24536,7 +24557,7 @@
      1198.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "nearby": {
      "n": 37,
@@ -25327,7 +25348,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20711389": {
@@ -25855,7 +25876,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20849903": {
@@ -26426,7 +26447,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20754893": {
@@ -26961,7 +26982,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20772236": {
@@ -27485,7 +27506,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20878599": {
@@ -27508,12 +27529,15 @@
    "district": "中壢區",
    "address": "南園二路296巷",
    "tags": [
-    "18小時前更新",
+    "21小時前更新",
     "明星學區",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介邱炘玟",
+   "lat": 24.972692,
+   "lng": 121.227891,
+   "distance_km": 1.25,
    "detail": {
     "parking": "10坪，平面式，已含售金內",
     "parking_flat": true,
@@ -27535,7 +27559,7 @@
      1480.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -29015,7 +29039,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20775218": {
@@ -29024,7 +29048,7 @@
    "title": "🍎稀有釋出🍎中壢內壢交流道和瑞捷星3房車歡迎賞屋",
    "url": "https://sale.591.com.tw/home/house/detail/2/20775218.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20775218.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/07/06/178332633803105303.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/07/06/178332633803105303.jpg!400x300.jpg",
    "price": 1398.0,
    "unit_price": 31.64,
    "ping": 44.18,
@@ -29038,9 +29062,12 @@
    "district": "中壢區",
    "address": "南園二路",
    "tags": [
-    "20小時前更新"
+    "23小時前更新"
    ],
    "poster": "仲介劉益良",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
    "detail": {
     "parking": "9坪，平面式，已含售金內",
     "parking_flat": true,
@@ -29061,7 +29088,7 @@
      1398.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -29594,7 +29621,7 @@
      1460.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "nearby": {
      "n": 6874,
@@ -30417,7 +30444,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20798853": {
@@ -30963,7 +30990,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20685296": {
@@ -34705,6 +34732,7 @@
    "id": "sale-20587376",
    "title": "中壢獨家💗美麗歐洲高樓4改3房平車💗睦築康康",
    "url": "https://sale.591.com.tw/home/house/detail/2/20587376.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20587376.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
    "image": "https://img2.591.com.tw/house/2026/07/21/178459960831893003.jpeg!400x300.jpeg",
    "price": 1398.0,
    "unit_price": 28.54,
@@ -34723,6 +34751,9 @@
     "有陽台"
    ],
    "poster": "仲介黃康怡",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
    "detail": {
     "parking": "7.4坪，平面式，已含售金內",
     "parking_flat": true,
@@ -34742,7 +34773,7 @@
      1398.0
     ]
    ],
-   "last_seen": "2026-09-28 16:47",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 187,
@@ -35217,7 +35248,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": false,
+   "active": true,
    "is_new": false
   },
   "sale-20557510": {
@@ -36308,7 +36339,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20836889": {
@@ -37439,7 +37470,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20475494": {
@@ -43431,7 +43462,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20653233": {
@@ -45100,7 +45131,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20663217": {
@@ -45108,6 +45139,7 @@
    "id": "sale-20663217",
    "title": "中壢房仲菇娘🌼A21機捷SOGO忠福商圈🌼超值三房車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20663217.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20663217.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
    "image": "https://img1.591.com.tw/house/2026/09/09/178894148859780105.jpg!400x300.jpg",
    "price": 1498.0,
    "unit_price": 26.05,
@@ -45126,6 +45158,9 @@
     "含車位"
    ],
    "poster": "仲介李怡萱",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
    "detail": {
     "parking": "9.33坪，平面式，已含售金內",
     "parking_flat": true,
@@ -45146,7 +45181,7 @@
      1498.0
     ]
    ],
-   "last_seen": "2026-09-28 17:33",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -45636,7 +45671,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": false,
+   "active": true,
    "is_new": false
   },
   "sale-25152361": {
@@ -46649,7 +46684,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20665321": {
@@ -47620,7 +47655,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-132898": {
@@ -48124,7 +48159,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140973": {
@@ -48604,7 +48639,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140692": {
@@ -48920,7 +48955,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136230": {
@@ -49395,7 +49430,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139612": {
@@ -49711,7 +49746,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139585": {
@@ -50188,7 +50223,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137242": {
@@ -50220,10 +50255,13 @@
    ],
    "poster": "內壢生活圈",
    "is_ad": true,
+   "lat": 24.972222,
+   "lng": 121.254381,
+   "distance_km": 1.87,
    "search": "中壢區新建案",
    "first_seen": "2026-09-28 16:47",
    "price_history": [],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 79,
@@ -51130,7 +51168,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-138909": {
@@ -51471,7 +51509,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139707": {
@@ -51866,7 +51904,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-141154": {
@@ -52125,7 +52163,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140927": {
@@ -52610,7 +52648,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140292": {
@@ -53102,7 +53140,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-138542": {
@@ -53572,7 +53610,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-138517": {
@@ -54076,7 +54114,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137444": {
@@ -54575,7 +54613,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137347": {
@@ -54964,7 +55002,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139572": {
@@ -55387,7 +55425,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139363": {
@@ -55842,7 +55880,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136731": {
@@ -56345,7 +56383,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-122426": {
@@ -56895,7 +56933,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137760": {
@@ -57357,7 +57395,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-138544": {
@@ -57861,7 +57899,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140943": {
@@ -58040,7 +58078,7 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-141225": {
@@ -58355,7 +58393,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139692": {
@@ -58853,7 +58891,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-141687": {
@@ -59168,7 +59206,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136549": {
@@ -59677,7 +59715,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137455": {
@@ -60140,7 +60178,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-138958": {
@@ -60606,7 +60644,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-138565": {
@@ -61086,7 +61124,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137208": {
@@ -61601,7 +61639,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136369": {
@@ -62106,7 +62144,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-133185": {
@@ -62611,7 +62649,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-131809": {
@@ -63672,7 +63710,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-127721": {
@@ -64659,7 +64697,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-121697": {
@@ -65157,7 +65195,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-141785": {
@@ -65358,7 +65396,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-141046": {
@@ -65703,7 +65741,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140944": {
@@ -65983,7 +66021,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-140156": {
@@ -66423,7 +66461,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-139021": {
@@ -66431,7 +66469,7 @@
    "id": "new-139021",
    "title": "光明吾居",
    "url": "https://newhouse.591.com.tw/139021",
-   "image": "https://img2.591.com.tw/house/2025/03/05/174115741070362209.jpg!400x300.s2.jpg",
+   "image": "https://img1.591.com.tw/house/2025/03/05/174115741070362209.jpg!400x300.s2.jpg",
    "price": null,
    "price_text": "49萬/坪",
    "unit_price": 49.0,
@@ -66454,10 +66492,13 @@
    ],
    "poster": "中壢高中生活圈",
    "is_ad": true,
+   "lat": 24.96377,
+   "lng": 121.218064,
+   "distance_km": 1.96,
    "search": "中壢區新建案",
    "first_seen": "2026-09-28 16:47",
    "price_history": [],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "nearby": {
      "n": 8360,
@@ -67248,7 +67289,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137393": {
@@ -68095,7 +68136,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-137178": {
@@ -68368,7 +68409,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136962": {
@@ -68883,7 +68924,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136897": {
@@ -69322,7 +69363,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-136390": {
@@ -69821,7 +69862,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-135884": {
@@ -70183,7 +70224,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-135770": {
@@ -70528,7 +70569,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-134564": {
@@ -70873,7 +70914,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-133276": {
@@ -71362,7 +71403,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-132801": {
@@ -71846,7 +71887,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-123935": {
@@ -72341,7 +72382,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-121698": {
@@ -72869,7 +72910,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "new-117785": {
@@ -73403,7 +73444,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25161788": {
@@ -74992,11 +75033,14 @@
    "district": "中壢區",
    "address": "中園路",
    "tags": [
-    "7小時前更新",
+    "52分鐘前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介郭人中",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
    "detail": {
     "parking": "7.4坪，平面式，已含售金內",
     "parking_flat": true,
@@ -75015,7 +75059,7 @@
      1198.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 187,
@@ -75962,7 +76006,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20751570": {
@@ -75990,6 +76034,9 @@
     "有陽台"
    ],
    "poster": "仲介林佳怡",
+   "lat": 24.954577,
+   "lng": 121.251682,
+   "distance_km": 1.88,
    "detail": {
     "parking": "平面式，已含售金內",
     "parking_flat": true,
@@ -76008,7 +76055,7 @@
      1388.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 149,
@@ -77084,7 +77131,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20801087": {
@@ -77609,7 +77656,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20749145": {
@@ -78176,7 +78223,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20722551": {
@@ -78707,7 +78754,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20812633": {
@@ -79241,7 +79288,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20722725": {
@@ -79772,7 +79819,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20699159": {
@@ -80303,7 +80350,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20437418": {
@@ -80854,7 +80901,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20433358": {
@@ -80877,12 +80924,15 @@
    "district": "中壢區",
    "address": "南園二路296巷",
    "tags": [
-    "4小時前更新",
+    "43分鐘前更新",
     "明星學區",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介任中欽",
+   "lat": 24.972692,
+   "lng": 121.227891,
+   "distance_km": 1.25,
    "detail": {
     "parking": "平面式，已含售金內",
     "parking_flat": true,
@@ -80901,7 +80951,7 @@
      1498.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -81400,7 +81450,7 @@
    "title": "✨和瑞捷星｜南園二路質感3房平車｜近SOGO｜A21捷運站",
    "url": "https://sale.591.com.tw/home/house/detail/2/20900362.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20900362.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img1.591.com.tw/house/2026/07/14/178401423305346104.jpg!400x300.jpg",
+   "image": "https://img2.591.com.tw/house/2026/07/14/178401423305346104.jpg!400x300.jpg",
    "price": 1398.0,
    "unit_price": 31.64,
    "ping": 44.18,
@@ -81414,9 +81464,12 @@
    "district": "中壢區",
    "address": "南園二路",
    "tags": [
-    "5小時前更新"
+    "2小時前更新"
    ],
    "poster": "仲介張先生",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
    "detail": {
     "parking": "9.33坪，平面式，已含售金內",
     "parking_flat": true,
@@ -81435,7 +81488,7 @@
      1398.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -82722,7 +82775,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20669882": {
@@ -83258,7 +83311,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20740892": {
@@ -83824,7 +83877,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20783995": {
@@ -84390,7 +84443,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25148825": {
@@ -85438,7 +85491,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20720815": {
@@ -85967,7 +86020,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20704676": {
@@ -86458,7 +86511,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20786186": {
@@ -87024,7 +87077,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20641018": {
@@ -87033,7 +87086,7 @@
    "title": "A21重劃區麗朵3房車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20641018.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20641018.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/09/07/178875321612416602.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/07/178875321612416602.jpg!400x300.jpg",
    "price": 1480.0,
    "unit_price": 29.05,
    "ping": 50.94,
@@ -87047,10 +87100,13 @@
    "district": "中壢區",
    "address": "南園二路296巷",
    "tags": [
-    "7小時前更新",
+    "10小時前更新",
     "含車位"
    ],
    "poster": "仲介陳建勲",
+   "lat": 24.972692,
+   "lng": 121.227891,
+   "distance_km": 1.25,
    "detail": {
     "parking": "10.08坪，平面式，已含售金內",
     "parking_flat": true,
@@ -87069,7 +87125,7 @@
      1480.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -87582,10 +87638,13 @@
    "district": "中壢區",
    "address": "中園路",
    "tags": [
-    "8小時前更新",
+    "10小時前更新",
     "含車位"
    ],
    "poster": "仲介陳沛詩",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
    "detail": {
     "parking": "7.4坪，平面式，已含售金內",
     "parking_flat": true,
@@ -87604,7 +87663,7 @@
      1398.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 187,
@@ -88610,7 +88669,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20914736": {
@@ -89176,7 +89235,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20886286": {
@@ -89702,7 +89761,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20946480": {
@@ -90251,7 +90310,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20773397": {
@@ -90777,7 +90836,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20856255": {
@@ -90786,7 +90845,7 @@
    "title": "🏡專約-稀有四房+平面車位-近內壢交流道",
    "url": "https://sale.591.com.tw/home/house/detail/2/20856255.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20856255.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/07/07/178341947203351405.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/07/07/178341947203351405.jpg!400x300.jpg",
    "price": 1438.0,
    "unit_price": 29.35,
    "ping": 48.99,
@@ -90800,9 +90859,12 @@
    "district": "中壢區",
    "address": "中園路",
    "tags": [
-    "8小時前更新"
+    "10小時前更新"
    ],
    "poster": "仲介甘小姐",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
    "detail": {
     "parking": "7.4坪，平面式，已含售金內",
     "parking_flat": true,
@@ -90821,7 +90883,7 @@
      1438.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 187,
@@ -91787,7 +91849,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20909246": {
@@ -91810,9 +91872,12 @@
    "district": "中壢區",
    "address": "南園二路",
    "tags": [
-    "8小時前更新"
+    "10小時前更新"
    ],
    "poster": "仲介戴成翰",
+   "lat": 24.971846,
+   "lng": 121.227005,
+   "distance_km": 1.26,
    "detail": {
     "parking": "平面式，已含售金內",
     "parking_flat": true,
@@ -91831,7 +91896,7 @@
      1388.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 61,
@@ -92887,7 +92952,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20955168": {
@@ -93416,7 +93481,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20869657": {
@@ -93983,7 +94048,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25147348": {
@@ -94803,7 +94868,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20828541": {
@@ -95324,7 +95389,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20872457": {
@@ -95888,7 +95953,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20828209": {
@@ -96415,7 +96480,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20864682": {
@@ -96981,7 +97046,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20828056": {
@@ -97548,7 +97613,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20775128": {
@@ -98079,7 +98144,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20772190": {
@@ -98543,7 +98608,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20687897": {
@@ -99074,7 +99139,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20951953": {
@@ -99626,7 +99691,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20790466": {
@@ -100162,7 +100227,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20753083": {
@@ -100171,7 +100236,7 @@
    "title": "中原大學邊間景觀三房+平面車位",
    "url": "https://sale.591.com.tw/home/house/detail/2/20753083.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20753083.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/08/18/178702184730391700.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/08/18/178702184730391700.jpg!400x300.jpg",
    "price": 1388.0,
    "unit_price": 31.87,
    "ping": 43.55,
@@ -100185,11 +100250,14 @@
    "district": "中壢區",
    "address": "普忠路589巷",
    "tags": [
-    "18小時前更新",
+    "21小時前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介邱秀珍",
+   "lat": 24.954577,
+   "lng": 121.251682,
+   "distance_km": 1.88,
    "detail": {
     "parking": "9.78坪，平面式，已含售金內",
     "parking_flat": true,
@@ -100208,7 +100276,7 @@
      1388.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 149,
@@ -101254,7 +101322,7 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20347636": {
@@ -101778,7 +101846,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20757986": {
@@ -101787,7 +101855,7 @@
    "title": "中原大學邊間景觀三房車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20757986.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20757986.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/09/09/178892912150785905.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/09/178892912150785905.jpg!400x300.jpg",
    "price": 1388.0,
    "unit_price": 31.87,
    "ping": 43.55,
@@ -101801,11 +101869,14 @@
    "district": "中壢區",
    "address": "普忠路",
    "tags": [
-    "18小時前更新",
+    "21小時前更新",
     "含車位",
     "有陽台"
    ],
    "poster": "仲介仇開銀",
+   "lat": 24.954577,
+   "lng": 121.251682,
+   "distance_km": 1.88,
    "detail": {
     "parking": "9.78坪，平面式，已含售金內",
     "parking_flat": true,
@@ -101824,7 +101895,7 @@
      1388.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 149,
@@ -102823,7 +102894,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20824471": {
@@ -103349,7 +103420,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20825773": {
@@ -103838,7 +103909,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20702015": {
@@ -104329,7 +104400,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25170990": {
@@ -105228,7 +105299,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20883571": {
@@ -105610,7 +105681,7 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20909068": {
@@ -106109,7 +106180,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20891439": {
@@ -106599,7 +106670,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20974653": {
@@ -108156,7 +108227,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20676143": {
@@ -108645,7 +108716,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20667753": {
@@ -109172,7 +109243,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20739777": {
@@ -109709,7 +109780,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20680730": {
@@ -110241,7 +110312,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20666191": {
@@ -110731,7 +110802,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20677136": {
@@ -111809,7 +111880,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20762241": {
@@ -112274,7 +112345,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20820215": {
@@ -112765,7 +112836,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20912870": {
@@ -113300,7 +113371,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20666777": {
@@ -113830,7 +113901,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20841759": {
@@ -114292,7 +114363,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20684673": {
@@ -114816,7 +114887,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20733620": {
@@ -115278,7 +115349,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20831294": {
@@ -115805,7 +115876,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20778660": {
@@ -116332,7 +116403,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20691637": {
@@ -117375,7 +117446,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20701026": {
@@ -117875,7 +117946,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20764427": {
@@ -118921,7 +118992,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20642370": {
@@ -120446,7 +120517,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20832517": {
@@ -124349,7 +124420,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20764112": {
@@ -124915,7 +124986,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20900159": {
@@ -125478,7 +125549,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20853503": {
@@ -126042,7 +126113,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20900355": {
@@ -126607,7 +126678,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20881633": {
@@ -127172,7 +127243,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20912462": {
@@ -127740,7 +127811,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20906618": {
@@ -128306,7 +128377,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20753016": {
@@ -128871,7 +128942,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20752563": {
@@ -129436,7 +129507,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20764790": {
@@ -130001,7 +130072,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25098786": {
@@ -131123,7 +131194,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20870265": {
@@ -131680,7 +131751,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20780125": {
@@ -132238,7 +132309,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20784860": {
@@ -132795,7 +132866,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20887012": {
@@ -133353,7 +133424,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20902448": {
@@ -133910,7 +133981,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20768432": {
@@ -134919,7 +134990,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20671424": {
@@ -135446,7 +135517,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20645516": {
@@ -135928,7 +135999,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-25161692": {
@@ -142943,7 +143014,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20677863": {
@@ -143434,7 +143505,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20787903": {
@@ -143958,7 +144029,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20723257": {
@@ -144488,7 +144559,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20943347": {
@@ -144497,7 +144568,7 @@
    "title": "全區最便宜全聯正對面和瑞捷星裝潢三房車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20943347.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20943347.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img2.591.com.tw/house/2026/09/21/178997890762424007.jpg!400x300.jpg",
+   "image": "https://img1.591.com.tw/house/2026/09/21/178997890762424007.jpg!400x300.jpg",
    "price": 1300.0,
    "unit_price": 29.42,
    "ping": 44.19,
@@ -144515,6 +144586,9 @@
     "含車位"
    ],
    "poster": "仲介詹雅淇",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
    "detail": {
     "parking": "9.33坪，平面式，已含售金內",
     "parking_flat": true,
@@ -144533,7 +144607,7 @@
      1300.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -145549,7 +145623,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20920422": {
@@ -146080,7 +146154,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20863470": {
@@ -146605,7 +146679,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20870271": {
@@ -147136,7 +147210,7 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20861764": {
@@ -161894,7 +161968,7 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
+   "active": false,
    "is_new": false
   },
   "sale-20683233": {
@@ -162421,8 +162495,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20634161": {
    "source": "591中古屋",
@@ -162957,8 +163031,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20946666": {
    "source": "591中古屋",
@@ -163456,8 +163530,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20905265": {
    "source": "591中古屋",
@@ -164021,8 +164095,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20735705": {
    "source": "591中古屋",
@@ -164586,8 +164660,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20821862": {
    "source": "591中古屋",
@@ -164997,8 +165071,8 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20919947": {
    "source": "591中古屋",
@@ -165486,8 +165560,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20712300": {
    "source": "591中古屋",
@@ -165513,6 +165587,9 @@
     "有陽台"
    ],
    "poster": "仲介林艾潔",
+   "lat": 24.954577,
+   "lng": 121.251682,
+   "distance_km": 1.88,
    "detail": {
     "parking": "9.78坪，平面式，已含售金內",
     "parking_flat": true,
@@ -165531,7 +165608,7 @@
      1388.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 149,
@@ -166042,7 +166119,7 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20977025": {
    "source": "591中古屋",
@@ -166520,8 +166597,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20657710": {
    "source": "591中古屋",
@@ -167051,8 +167128,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20560932": {
    "source": "591中古屋",
@@ -167582,8 +167659,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20665489": {
    "source": "591中古屋",
@@ -168071,8 +168148,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20967157": {
    "source": "591中古屋",
@@ -168611,8 +168688,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20419087": {
    "source": "591中古屋",
@@ -169137,8 +169214,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20653960": {
    "source": "591中古屋",
@@ -169663,8 +169740,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20828907": {
    "source": "591中古屋",
@@ -170107,8 +170184,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20967560": {
    "source": "591中古屋",
@@ -170130,10 +170207,13 @@
    "district": "中壢區",
    "address": "中園路",
    "tags": [
-    "2小時前更新",
+    "42分鐘前更新",
     "含車位"
    ],
    "poster": "仲介黃珅朋",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
    "detail": {
     "parking": "7.4坪，平面式，已含售金內",
     "parking_flat": true,
@@ -170152,7 +170232,7 @@
      1198.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 187,
@@ -170633,7 +170713,7 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20922981": {
    "source": "591中古屋",
@@ -171197,8 +171277,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20955087": {
    "source": "591中古屋",
@@ -171726,8 +171806,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20926003": {
    "source": "591中古屋",
@@ -172246,8 +172326,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20778810": {
    "source": "591中古屋",
@@ -172811,8 +172891,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20756023": {
    "source": "591中古屋",
@@ -173376,8 +173456,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20901061": {
    "source": "591中古屋",
@@ -173942,8 +174022,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20932029": {
    "source": "591中古屋",
@@ -174476,8 +174556,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20906200": {
    "source": "591中古屋",
@@ -175040,8 +175120,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20838924": {
    "source": "591中古屋",
@@ -175506,8 +175586,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20778924": {
    "source": "591中古屋",
@@ -176041,8 +176121,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20853799": {
    "source": "591中古屋",
@@ -176577,8 +176657,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20822059": {
    "source": "591中古屋",
@@ -176862,8 +176942,8 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20834327": {
    "source": "591中古屋",
@@ -177341,8 +177421,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20962906": {
    "source": "591中古屋",
@@ -177792,8 +177872,8 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20716899": {
    "source": "591中古屋",
@@ -178358,8 +178438,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20874655": {
    "source": "591中古屋",
@@ -178923,8 +179003,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20703167": {
    "source": "591中古屋",
@@ -179429,8 +179509,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20736168": {
    "source": "591中古屋",
@@ -179848,8 +179928,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20403129": {
    "source": "591中古屋",
@@ -180391,8 +180471,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20967441": {
    "source": "591中古屋",
@@ -180400,7 +180480,7 @@
    "title": "🔥獨家專任降價急售！冠世界三房+車位、主附大空間好規劃",
    "url": "https://sale.591.com.tw/home/house/detail/2/20967441.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20967441.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img1.591.com.tw/house/2026/09/26/179039712418585607.png!400x300.png",
+   "image": "https://img2.591.com.tw/house/2026/09/26/179039712418585607.png!400x300.png",
    "price": 1328.0,
    "unit_price": 30.66,
    "ping": 43.32,
@@ -180414,10 +180494,13 @@
    "district": "中壢區",
    "address": "中園路",
    "tags": [
-    "2小時前更新",
+    "42分鐘前更新",
     "含車位"
    ],
    "poster": "仲介黃珅朋",
+   "lat": 24.965847,
+   "lng": 121.23714,
+   "distance_km": 0.05,
    "detail": {
     "parking": "7.05坪，平面式，已含售金內",
     "parking_flat": true,
@@ -180436,7 +180519,7 @@
      1328.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "nearby": {
      "n": 19,
@@ -180678,7 +180761,7 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20867173": {
    "source": "591中古屋",
@@ -181211,8 +181294,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20888768": {
    "source": "591中古屋",
@@ -181703,8 +181786,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20950905": {
    "source": "591中古屋",
@@ -182227,8 +182310,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20903399": {
    "source": "591中古屋",
@@ -182792,8 +182875,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20943238": {
    "source": "591中古屋",
@@ -183331,8 +183414,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20909203": {
    "source": "591中古屋",
@@ -183896,8 +183979,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20874831": {
    "source": "591中古屋",
@@ -184417,8 +184500,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20788490": {
    "source": "591中古屋",
@@ -184943,8 +185026,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20799207": {
    "source": "591中古屋",
@@ -185354,8 +185437,8 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20884812": {
    "source": "591中古屋",
@@ -185377,9 +185460,12 @@
    "district": "中壢區",
    "address": "桃41",
    "tags": [
-    "3小時前更新"
+    "6小時前更新"
    ],
    "poster": "仲介陳勝志",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
    "detail": {
     "parking": "平面式，已含售金內",
     "parking_flat": true,
@@ -185398,7 +185484,7 @@
      1398.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -185919,7 +186005,7 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20793386": {
    "source": "591中古屋",
@@ -186206,8 +186292,8 @@
     "ref_label": "附近歷年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20977053": {
    "source": "591中古屋",
@@ -186730,8 +186816,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20755274": {
    "source": "591中古屋",
@@ -187247,8 +187333,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-25173797": {
    "source": "591中古屋",
@@ -187729,8 +187815,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20468655": {
    "source": "591中古屋",
@@ -188246,8 +188332,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20654661": {
    "source": "591中古屋",
@@ -188768,8 +188854,8 @@
     "ref_label": "附近近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20864500": {
    "source": "591中古屋",
@@ -188777,7 +188863,7 @@
    "title": "中壢A21捷運忠福國小/忠福商圈/啟英高中🏠和瑞捷星3房車",
    "url": "https://sale.591.com.tw/home/house/detail/2/20864500.html",
    "link": "https://sale.591.com.tw/home/house/detail/2/20864500.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
-   "image": "https://img1.591.com.tw/house/2026/09/07/178876785390817001.jpg!400x300.jpg",
+   "image": "https://img2.591.com.tw/house/2026/09/07/178876785390817001.jpg!400x300.jpg",
    "price": 1300.0,
    "unit_price": 29.55,
    "ping": 44.0,
@@ -188796,7 +188882,20 @@
     "有陽台"
    ],
    "poster": "仲介謝子庭",
-   "unverified": "詳情未確認",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
+   "detail": {
+    "parking": "9坪，平面式，已含售金內",
+    "parking_flat": true,
+    "main_ping": 20.0,
+    "public_ratio": "",
+    "mgmt_fee": "",
+    "traffic": [],
+    "lat": 24.9723675,
+    "lng": 121.232639
+   },
+   "unverified": "591 未提供附近交通，請自行確認",
    "search": "中壢區 3-4房 1500萬內 平面車位",
    "county": "桃園市",
    "first_seen": "2026-09-28 17:55",
@@ -188806,7 +188905,7 @@
      1300.0
     ]
    ],
-   "last_seen": "2026-09-28 17:55",
+   "last_seen": "2026-09-28 20:41",
    "market": {
     "community": {
      "n": 188,
@@ -189292,7 +189391,7 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": false
   },
   "sale-20976920": {
    "source": "591中古屋",
@@ -189745,8 +189844,8 @@
     "ref_label": "同社區近一年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "sale-20948882": {
    "source": "591中古屋",
@@ -190262,8 +190361,8 @@
     "ref_label": "同社區近兩年",
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "new-140543": {
    "source": "591新建案",
@@ -190487,8 +190586,8 @@
     },
     "updated": "2026-09-28"
    },
-   "active": true,
-   "is_new": true
+   "active": false,
+   "is_new": false
   },
   "new-136394": {
    "source": "591新建案",
@@ -190840,6 +190939,3119 @@
     },
     "updated": "2026-09-28"
    },
+   "active": false,
+   "is_new": false
+  },
+  "sale-20902964": {
+   "source": "591中古屋",
+   "id": "sale-20902964",
+   "title": "🔥【A21重劃區｜三房車1480萬】",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20902964.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20902964.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
+   "image": "https://img2.591.com.tw/house/2026/09/22/179005156514454800.jpg!400x300.jpg",
+   "price": 1480.0,
+   "unit_price": 29.05,
+   "ping": 50.94,
+   "main_ping": 26.2,
+   "layout": "3房2廳2衛",
+   "age": 12.0,
+   "floor": "4F/14F",
+   "kind": "電梯大樓",
+   "community": "麗朵",
+   "community_id": 7696,
+   "district": "中壢區",
+   "address": "南園二路296巷",
+   "tags": [
+    "總價低於同社區3房 108萬",
+    "含車位",
+    "有陽台"
+   ],
+   "poster": "仲介吳佳玲",
+   "lat": 24.972692,
+   "lng": 121.227891,
+   "distance_km": 1.25,
+   "detail": {
+    "parking": "10.08坪，平面式，已含售金內",
+    "parking_flat": true,
+    "main_ping": 26.2,
+    "public_ratio": "",
+    "mgmt_fee": "2443元/月",
+    "traffic": [
+     "A20捷運站",
+     "A21捷運站"
+    ],
+    "lat": 24.9717794,
+    "lng": 121.2350451
+   },
+   "search": "中壢區 3-4房 1500萬內 平面車位",
+   "county": "桃園市",
+   "first_seen": "2026-09-28 20:41",
+   "price_history": [
+    [
+     "2026-09-28 20:41",
+     1480.0
+    ]
+   ],
+   "last_seen": "2026-09-28 20:41",
+   "market": {
+    "community": {
+     "n": 188,
+     "n_12m": 10,
+     "median_12m": 31.3,
+     "n_24m": 14,
+     "median_24m": 32.0,
+     "median_all": 19.4,
+     "trend": [
+      [
+       "2022Q1",
+       24.0,
+       8
+      ],
+      [
+       "2022Q2",
+       25.3,
+       6
+      ],
+      [
+       "2022Q3",
+       29.3,
+       1
+      ],
+      [
+       "2022Q4",
+       27.4,
+       5
+      ],
+      [
+       "2023Q1",
+       26.4,
+       4
+      ],
+      [
+       "2023Q2",
+       25.2,
+       4
+      ],
+      [
+       "2023Q3",
+       21.6,
+       2
+      ],
+      [
+       "2023Q4",
+       28.1,
+       2
+      ],
+      [
+       "2024Q1",
+       29.2,
+       1
+      ],
+      [
+       "2024Q2",
+       32.2,
+       2
+      ],
+      [
+       "2024Q3",
+       39.3,
+       1
+      ],
+      [
+       "2024Q4",
+       36.5,
+       1
+      ],
+      [
+       "2025Q2",
+       34.5,
+       3
+      ],
+      [
+       "2025Q4",
+       33.2,
+       1
+      ],
+      [
+       "2026Q1",
+       30.3,
+       6
+      ],
+      [
+       "2026Q2",
+       31.5,
+       3
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-06-14",
+       "unit": 32.6,
+       "total": 1442.0,
+       "ping": 50.0,
+       "main_ping": 39.9,
+       "layout": "3房2廳",
+       "floor": "15樓/15樓",
+       "address": "南園二路296巷50號 | 15樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-05-03",
+       "unit": 31.2,
+       "total": 1553.0,
+       "ping": 61.0,
+       "main_ping": 40.9,
+       "layout": "3房2廳",
+       "floor": "14樓/14樓",
+       "address": "南園二路296巷36號 | 14樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-04-26",
+       "unit": 31.5,
+       "total": 1550.0,
+       "ping": 60.4,
+       "main_ping": 40.3,
+       "layout": "3房2廳",
+       "floor": "7樓/13樓",
+       "address": "南園二路296巷22號 | 7樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-03-25",
+       "unit": 33.8,
+       "total": 1500.0,
+       "ping": 50.3,
+       "main_ping": 40.3,
+       "layout": "3房2廳",
+       "floor": "2樓/13樓",
+       "address": "南園二路296巷20號 | 2樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-03-10",
+       "unit": 25.6,
+       "total": 1688.0,
+       "ping": 75.1,
+       "main_ping": 55.0,
+       "layout": "4房2廳",
+       "floor": "8樓/13樓",
+       "address": "南園二路296巷28號 | 8樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-03-10",
+       "unit": 25.6,
+       "total": 1688.0,
+       "ping": 75.1,
+       "main_ping": 55.0,
+       "layout": "4房2廳",
+       "floor": "6樓/13樓",
+       "address": "南園二路296巷28號 | 6樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-02-13",
+       "unit": 29.5,
+       "total": 1525.0,
+       "ping": 61.7,
+       "main_ping": 41.6,
+       "layout": "3房2廳",
+       "floor": "7樓/14樓",
+       "address": "南園二路296巷38號 | 7樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-02-09",
+       "unit": 31.4,
+       "total": 1550.0,
+       "ping": 60.4,
+       "main_ping": 40.3,
+       "layout": "2房2廳",
+       "floor": "4樓/13樓",
+       "address": "南園二路296巷26號 | 4樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-04",
+       "unit": 31.1,
+       "total": 1412.0,
+       "ping": 50.9,
+       "main_ping": 40.9,
+       "layout": "3房2廳",
+       "floor": "7樓/14樓",
+       "address": "南園二路296巷36號 | 7樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-11-21",
+       "unit": 33.2,
+       "total": 1485.0,
+       "ping": 50.6,
+       "main_ping": 40.5,
+       "layout": "3房2廳",
+       "floor": "11樓/14樓",
+       "address": "南園二路296巷42號 | 11樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-26",
+       "unit": 37.5,
+       "total": 1080.0,
+       "ping": 35.1,
+       "main_ping": 25.1,
+       "layout": "2房1廳",
+       "floor": "8樓/14樓",
+       "address": "南園二路296巷32號 | 8樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-10",
+       "unit": 34.5,
+       "total": 2050.0,
+       "ping": 71.5,
+       "main_ping": 51.3,
+       "layout": "3房2廳",
+       "floor": "12樓/15樓",
+       "address": "南園二路296巷10號 | 12樓",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "麗朵",
+     "id": 7696,
+     "url": "https://market.591.com.tw/7696"
+    },
+    "nearby": {
+     "n": 38,
+     "n_12m": 9,
+     "median_12m": 29.8,
+     "n_24m": 24,
+     "median_24m": 29.8,
+     "median_all": 29.7,
+     "trend": [
+      [
+       "2024Q1",
+       26.4,
+       1
+      ],
+      [
+       "2024Q2",
+       28.6,
+       9
+      ],
+      [
+       "2024Q3",
+       29.4,
+       4
+      ],
+      [
+       "2024Q4",
+       30.0,
+       6
+      ],
+      [
+       "2025Q1",
+       31.6,
+       3
+      ],
+      [
+       "2025Q2",
+       29.2,
+       4
+      ],
+      [
+       "2025Q3",
+       30.6,
+       3
+      ],
+      [
+       "2025Q4",
+       29.8,
+       3
+      ],
+      [
+       "2026Q1",
+       29.6,
+       4
+      ],
+      [
+       "2026Q2",
+       25.7,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-04-26",
+       "unit": 25.7,
+       "total": 1550,
+       "ping": 60.4,
+       "main_ping": 24.5,
+       "layout": "3房2廳2衛",
+       "floor": "七層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２２號七樓",
+       "age": 11.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-03-25",
+       "unit": 29.8,
+       "total": 1500,
+       "ping": 50.3,
+       "main_ping": 24.5,
+       "layout": "3房2廳2衛",
+       "floor": "二層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２０號二樓",
+       "age": 11.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-03-21",
+       "unit": 42.3,
+       "total": 1920,
+       "ping": 50.3,
+       "main_ping": 25.5,
+       "layout": "3房2廳2衛",
+       "floor": "七層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路３８１巷１２號七樓",
+       "age": 2.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 29.4,
+       "total": 1300,
+       "ping": 44.2,
+       "main_ping": 22.5,
+       "layout": "3房2廳2衛",
+       "floor": "九層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２７０號九樓",
+       "age": 14.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-04",
+       "unit": 27.7,
+       "total": 1412,
+       "ping": 50.9,
+       "main_ping": 26.3,
+       "layout": "3房2廳2衛",
+       "floor": "七層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷３６號七樓",
+       "age": 11.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-12-22",
+       "unit": 29.8,
+       "total": 1195,
+       "ping": 40.1,
+       "main_ping": 19.0,
+       "layout": "2房2廳1衛",
+       "floor": "十四層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２１弄５８號十四樓",
+       "age": 12.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-21",
+       "unit": 29.3,
+       "total": 1485,
+       "ping": 50.6,
+       "main_ping": 26.3,
+       "layout": "3房2廳2衛",
+       "floor": "十一層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷４２號十一樓",
+       "age": 11.4,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-02",
+       "unit": 30.6,
+       "total": 1630,
+       "ping": 53.2,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "六層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２６９號六樓",
+       "age": 13.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-28",
+       "unit": 30.6,
+       "total": 1238,
+       "ping": 40.5,
+       "main_ping": 20.1,
+       "layout": "2房2廳1衛",
+       "floor": "十層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２８０號十樓",
+       "age": 13.9,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-05",
+       "unit": 29.1,
+       "total": 1180,
+       "ping": 40.5,
+       "main_ping": 20.1,
+       "layout": "3房2廳1衛",
+       "floor": "八層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２８０號八樓",
+       "age": 13.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-08-18",
+       "unit": 32.3,
+       "total": 1720,
+       "ping": 53.2,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２６９號五樓",
+       "age": 13.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-26",
+       "unit": 30.7,
+       "total": 1080,
+       "ping": 35.1,
+       "main_ping": 16.1,
+       "layout": "2房1廳1衛",
+       "floor": "八層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷３２號八樓",
+       "age": 10.9,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "中壢區南園二路"
+    },
+    "premium": -7.2,
+    "premium_ref": "community",
+    "ref_price": 31.3,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20938998": {
+   "source": "591中古屋",
+   "id": "sale-20938998",
+   "title": "護理師房仲推薦《和瑞捷星3房車》",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20938998.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20938998.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
+   "image": "https://img2.591.com.tw/house/2026/07/02/178297929466973509.jpg!400x300.jpg",
+   "price": 1398.0,
+   "unit_price": 31.64,
+   "ping": 44.18,
+   "main_ping": 22.48,
+   "layout": "3房2廳2衛",
+   "age": 14.0,
+   "floor": "5F/14F",
+   "kind": "電梯大樓",
+   "community": "和瑞捷星",
+   "community_id": 7760,
+   "district": "中壢區",
+   "address": "南園二路",
+   "tags": [],
+   "poster": "仲介吳曉鵑",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
+   "detail": {
+    "parking": "9.33坪，平面式，已含售金內",
+    "parking_flat": true,
+    "main_ping": 22.48,
+    "public_ratio": "",
+    "mgmt_fee": "2442元/月",
+    "traffic": [],
+    "lat": 24.9707694,
+    "lng": 121.2310409
+   },
+   "unverified": "591 未提供附近交通，請自行確認",
+   "search": "中壢區 3-4房 1500萬內 平面車位",
+   "county": "桃園市",
+   "first_seen": "2026-09-28 20:41",
+   "price_history": [
+    [
+     "2026-09-28 20:41",
+     1398.0
+    ]
+   ],
+   "last_seen": "2026-09-28 20:41",
+   "market": {
+    "community": {
+     "n": 188,
+     "n_12m": 3,
+     "median_12m": 33.6,
+     "n_24m": 7,
+     "median_24m": 33.6,
+     "median_all": 18.3,
+     "trend": [
+      [
+       "2021Q2",
+       20.0,
+       3
+      ],
+      [
+       "2021Q3",
+       20.9,
+       3
+      ],
+      [
+       "2021Q4",
+       21.9,
+       5
+      ],
+      [
+       "2022Q2",
+       25.1,
+       3
+      ],
+      [
+       "2022Q3",
+       25.4,
+       4
+      ],
+      [
+       "2023Q1",
+       26.6,
+       2
+      ],
+      [
+       "2023Q2",
+       26.6,
+       2
+      ],
+      [
+       "2023Q3",
+       28.8,
+       2
+      ],
+      [
+       "2023Q4",
+       28.4,
+       3
+      ],
+      [
+       "2024Q1",
+       31.5,
+       3
+      ],
+      [
+       "2024Q2",
+       32.8,
+       2
+      ],
+      [
+       "2024Q3",
+       34.2,
+       2
+      ],
+      [
+       "2024Q4",
+       34.1,
+       3
+      ],
+      [
+       "2025Q3",
+       34.2,
+       2
+      ],
+      [
+       "2026Q1",
+       33.6,
+       1
+      ],
+      [
+       "2026Q2",
+       33.6,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-05-30",
+       "unit": 33.6,
+       "total": 1430.0,
+       "ping": 47.8,
+       "main_ping": 38.4,
+       "layout": "3房2廳",
+       "floor": "4樓/13樓",
+       "address": "南園二路258號 | 4樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 33.6,
+       "total": 1300.0,
+       "ping": 44.2,
+       "main_ping": 34.9,
+       "layout": "3房2廳",
+       "floor": "9樓/13樓",
+       "address": "南園二路270號 | 9樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-09-28",
+       "unit": 35.2,
+       "total": 1238.0,
+       "ping": 40.5,
+       "main_ping": 31.2,
+       "layout": "2房2廳",
+       "floor": "10樓/14樓",
+       "address": "南園二路280號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-09-05",
+       "unit": 33.3,
+       "total": 1180.0,
+       "ping": 40.5,
+       "main_ping": 31.2,
+       "layout": "3房2廳",
+       "floor": "8樓/14樓",
+       "address": "南園二路280號 | 8樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-26",
+       "unit": 29.9,
+       "total": 1600.0,
+       "ping": 58.1,
+       "main_ping": 48.8,
+       "layout": "4房2廳",
+       "floor": "6樓/13樓",
+       "address": "南園二路292號 | 6樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-11-29",
+       "unit": 34.7,
+       "total": 1124.0,
+       "ping": 37.7,
+       "main_ping": 28.3,
+       "layout": "2房2廳",
+       "floor": "3樓/13樓",
+       "address": "南園二路266號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-11-09",
+       "unit": 34.1,
+       "total": 1330.0,
+       "ping": 44.2,
+       "main_ping": 34.9,
+       "layout": "3房2廳",
+       "floor": "10樓/13樓",
+       "address": "南園二路270號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-08-20",
+       "unit": 33.0,
+       "total": 1178.0,
+       "ping": 40.8,
+       "main_ping": 31.4,
+       "layout": "2房2廳",
+       "floor": "2樓/14樓",
+       "address": "南園二路280號 | 2樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-08-10",
+       "unit": 35.4,
+       "total": 1970.0,
+       "ping": 66.4,
+       "main_ping": 47.7,
+       "layout": "4房2廳",
+       "floor": "10樓/13樓",
+       "address": "南園二路262號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-05-09",
+       "unit": 35.6,
+       "total": 1160.0,
+       "ping": 37.7,
+       "main_ping": 28.3,
+       "layout": "2房2廳",
+       "floor": "9樓/13樓",
+       "address": "南園二路266號 | 9樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-04-10",
+       "unit": 30.0,
+       "total": 1744.0,
+       "ping": 67.5,
+       "main_ping": 48.8,
+       "layout": "4房2廳",
+       "floor": "3樓/13樓",
+       "address": "南園二路292號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-03-03",
+       "unit": 28.6,
+       "total": 950.0,
+       "ping": 37.7,
+       "main_ping": 28.3,
+       "layout": "2房2廳",
+       "floor": "7樓/13樓",
+       "address": "南園二路268號 | 7樓",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "和瑞捷星",
+     "id": 7760,
+     "url": "https://market.591.com.tw/7760"
+    },
+    "nearby": {
+     "n": 34,
+     "n_12m": 7,
+     "median_12m": 29.8,
+     "n_24m": 22,
+     "median_24m": 29.8,
+     "median_all": 29.8,
+     "trend": [
+      [
+       "2024Q1",
+       26.4,
+       1
+      ],
+      [
+       "2024Q2",
+       28.7,
+       8
+      ],
+      [
+       "2024Q3",
+       29.2,
+       3
+      ],
+      [
+       "2024Q4",
+       30.0,
+       6
+      ],
+      [
+       "2025Q1",
+       31.6,
+       3
+      ],
+      [
+       "2025Q2",
+       29.2,
+       4
+      ],
+      [
+       "2025Q3",
+       30.6,
+       3
+      ],
+      [
+       "2025Q4",
+       29.8,
+       3
+      ],
+      [
+       "2026Q1",
+       29.4,
+       3
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-25",
+       "unit": 29.8,
+       "total": 1500,
+       "ping": 50.3,
+       "main_ping": 24.5,
+       "layout": "3房2廳2衛",
+       "floor": "二層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２０號二樓",
+       "age": 11.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 29.4,
+       "total": 1300,
+       "ping": 44.2,
+       "main_ping": 22.5,
+       "layout": "3房2廳2衛",
+       "floor": "九層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２７０號九樓",
+       "age": 14.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-04",
+       "unit": 27.7,
+       "total": 1412,
+       "ping": 50.9,
+       "main_ping": 26.3,
+       "layout": "3房2廳2衛",
+       "floor": "七層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷３６號七樓",
+       "age": 11.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-12-22",
+       "unit": 29.8,
+       "total": 1195,
+       "ping": 40.1,
+       "main_ping": 19.0,
+       "layout": "2房2廳1衛",
+       "floor": "十四層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２１弄５８號十四樓",
+       "age": 12.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-21",
+       "unit": 29.3,
+       "total": 1485,
+       "ping": 50.6,
+       "main_ping": 26.3,
+       "layout": "3房2廳2衛",
+       "floor": "十一層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷４２號十一樓",
+       "age": 11.4,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-02",
+       "unit": 30.6,
+       "total": 1630,
+       "ping": 53.2,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "六層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２６９號六樓",
+       "age": 13.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-28",
+       "unit": 30.6,
+       "total": 1238,
+       "ping": 40.5,
+       "main_ping": 20.1,
+       "layout": "2房2廳1衛",
+       "floor": "十層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２８０號十樓",
+       "age": 13.9,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-05",
+       "unit": 29.1,
+       "total": 1180,
+       "ping": 40.5,
+       "main_ping": 20.1,
+       "layout": "3房2廳1衛",
+       "floor": "八層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２８０號八樓",
+       "age": 13.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-08-18",
+       "unit": 32.3,
+       "total": 1720,
+       "ping": 53.2,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２６９號五樓",
+       "age": 13.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-26",
+       "unit": 30.7,
+       "total": 1080,
+       "ping": 35.1,
+       "main_ping": 16.1,
+       "layout": "2房1廳1衛",
+       "floor": "八層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷３２號八樓",
+       "age": 10.9,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-03",
+       "unit": 29.7,
+       "total": 1620,
+       "ping": 54.6,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "十層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２７３號十樓",
+       "age": 12.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-04-15",
+       "unit": 28.7,
+       "total": 1438,
+       "ping": 50.0,
+       "main_ping": 24.2,
+       "layout": "3房2廳2衛",
+       "floor": "二層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷４８號二樓",
+       "age": 10.8,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "中壢區南園二路"
+    },
+    "premium": -5.8,
+    "premium_ref": "community",
+    "ref_price": 33.6,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20396700": {
+   "source": "591中古屋",
+   "id": "sale-20396700",
+   "title": "㊣(專簽)中壢-美麗歐洲四房+平面車位㊣",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20396700.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20396700.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
+   "image": "https://img2.591.com.tw/house/2026/04/02/177510133328650606.jpg!400x300.jpg",
+   "price": 1438.0,
+   "unit_price": 29.35,
+   "ping": 49.0,
+   "main_ping": 27.97,
+   "layout": "4房2廳2衛",
+   "age": 19.0,
+   "floor": "15F/15F",
+   "kind": "電梯大樓",
+   "community": "美麗歐洲",
+   "community_id": 7546,
+   "district": "中壢區",
+   "address": "中園路",
+   "tags": [],
+   "poster": "仲介徐鎧鈞",
+   "lat": 24.965501,
+   "lng": 121.237385,
+   "distance_km": 0.0,
+   "detail": {
+    "parking": "7.4坪，平面式，已含售金內",
+    "parking_flat": true,
+    "main_ping": 27.97,
+    "public_ratio": "28%",
+    "mgmt_fee": "2408元/月",
+    "traffic": [],
+    "lat": 24.9664807,
+    "lng": 121.2353547
+   },
+   "unverified": "591 未提供附近交通，請自行確認",
+   "search": "中壢區 3-4房 1500萬內 平面車位",
+   "county": "桃園市",
+   "first_seen": "2026-09-28 20:41",
+   "price_history": [
+    [
+     "2026-09-28 20:41",
+     1438.0
+    ]
+   ],
+   "last_seen": "2026-09-28 20:41",
+   "market": {
+    "community": {
+     "n": 187,
+     "n_12m": 4,
+     "median_12m": 29.4,
+     "n_24m": 16,
+     "median_24m": 30.2,
+     "median_all": 21.0,
+     "trend": [
+      [
+       "2022Q3",
+       23.0,
+       5
+      ],
+      [
+       "2022Q4",
+       23.8,
+       6
+      ],
+      [
+       "2023Q1",
+       25.5,
+       7
+      ],
+      [
+       "2023Q2",
+       23.8,
+       6
+      ],
+      [
+       "2023Q3",
+       24.9,
+       4
+      ],
+      [
+       "2023Q4",
+       26.1,
+       9
+      ],
+      [
+       "2024Q1",
+       28.1,
+       9
+      ],
+      [
+       "2024Q2",
+       30.2,
+       9
+      ],
+      [
+       "2024Q3",
+       28.9,
+       1
+      ],
+      [
+       "2024Q4",
+       32.7,
+       3
+      ],
+      [
+       "2025Q1",
+       36.1,
+       2
+      ],
+      [
+       "2025Q2",
+       29.4,
+       4
+      ],
+      [
+       "2025Q3",
+       30.4,
+       3
+      ],
+      [
+       "2025Q4",
+       29.3,
+       1
+      ],
+      [
+       "2026Q1",
+       29.5,
+       1
+      ],
+      [
+       "2026Q2",
+       31.4,
+       2
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-06-20",
+       "unit": 33.6,
+       "total": 500.0,
+       "ping": 14.9,
+       "main_ping": 14.9,
+       "layout": "0房0廳",
+       "floor": "2樓/15樓",
+       "address": "中園路22號 | 2樓之2",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-04-25",
+       "unit": 29.1,
+       "total": 520.0,
+       "ping": 17.9,
+       "main_ping": 17.9,
+       "layout": "1房1廳",
+       "floor": "7樓/15樓",
+       "address": "中園路22號 | 7樓之11",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-10",
+       "unit": 29.5,
+       "total": 850.0,
+       "ping": 31.1,
+       "main_ping": 23.7,
+       "layout": "2房2廳",
+       "floor": "11樓/15樓",
+       "address": "中園路22號 | 11樓之26",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-10-26",
+       "unit": 29.3,
+       "total": 1180.0,
+       "ping": 42.6,
+       "main_ping": 35.2,
+       "layout": "3房2廳",
+       "floor": "13樓/15樓",
+       "address": "中園路26號 | 13樓之11",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-09-23",
+       "unit": 33.3,
+       "total": 595.0,
+       "ping": 17.9,
+       "main_ping": 17.9,
+       "layout": "0房0廳",
+       "floor": "9樓/15樓",
+       "address": "中園路22號 | 9樓之11",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-08-24",
+       "unit": 26.9,
+       "total": 1080.0,
+       "ping": 42.0,
+       "main_ping": 34.6,
+       "layout": "3房2廳",
+       "floor": "8樓/15樓",
+       "address": "中園路26號 | 8樓之5",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-07-22",
+       "unit": 30.4,
+       "total": 960.0,
+       "ping": 34.0,
+       "main_ping": 26.6,
+       "layout": "2房2廳",
+       "floor": "15樓/15樓",
+       "address": "中園路22號 | 15樓之21",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-06-29",
+       "unit": 30.0,
+       "total": 550.0,
+       "ping": 18.4,
+       "main_ping": 18.4,
+       "layout": "1房1廳",
+       "floor": "11樓/15樓",
+       "address": "中園路22號 | 11樓之5",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-17",
+       "unit": 27.4,
+       "total": 730.0,
+       "ping": 26.6,
+       "main_ping": 26.6,
+       "layout": "2房2廳",
+       "floor": "2樓/15樓",
+       "address": "中園路22號 | 2樓之21",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-05-06",
+       "unit": 28.7,
+       "total": 1500.0,
+       "ping": 54.4,
+       "main_ping": 47.0,
+       "layout": "3房2廳",
+       "floor": "13樓/15樓",
+       "address": "中園路26號 | 13樓之7",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-04-17",
+       "unit": 31.1,
+       "total": 485.0,
+       "ping": 15.6,
+       "main_ping": 15.6,
+       "layout": "1房1廳",
+       "floor": "4樓/15樓",
+       "address": "中園路22號 | 4樓之10",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-02-07",
+       "unit": 30.4,
+       "total": 870.0,
+       "ping": 31.1,
+       "main_ping": 23.7,
+       "layout": "2房1廳",
+       "floor": "15樓/15樓",
+       "address": "中園路22號 | 15樓之22",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "美麗歐洲",
+     "id": 7546,
+     "url": "https://market.591.com.tw/7546"
+    },
+    "nearby": {
+     "n": 16,
+     "n_12m": 1,
+     "median_12m": 29.3,
+     "n_24m": 9,
+     "median_24m": 29.3,
+     "median_all": 28.4,
+     "trend": [
+      [
+       "2024Q2",
+       28.2,
+       6
+      ],
+      [
+       "2024Q3",
+       26.4,
+       1
+      ],
+      [
+       "2024Q4",
+       31.7,
+       3
+      ],
+      [
+       "2025Q1",
+       28.0,
+       1
+      ],
+      [
+       "2025Q2",
+       29.4,
+       2
+      ],
+      [
+       "2025Q3",
+       26.9,
+       2
+      ],
+      [
+       "2025Q4",
+       29.3,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-10-26",
+       "unit": 29.3,
+       "total": 1180,
+       "ping": 42.6,
+       "main_ping": 23.3,
+       "layout": "3房2廳2衛",
+       "floor": "十三層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２６號十三樓之１１",
+       "age": 18.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-08-24",
+       "unit": 25.7,
+       "total": 1080,
+       "ping": 42.0,
+       "main_ping": 23.1,
+       "layout": "3房2廳2衛",
+       "floor": "八層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２６號八樓之５",
+       "age": 18.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-07-22",
+       "unit": 28.2,
+       "total": 960,
+       "ping": 34.0,
+       "main_ping": 18.0,
+       "layout": "2房2廳1衛",
+       "floor": "十五層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２２號十五樓之２１",
+       "age": 18.4,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-06-04",
+       "unit": 31.1,
+       "total": 1180,
+       "ping": 38.0,
+       "main_ping": 20.8,
+       "layout": "3房2廳2衛",
+       "floor": "十三層/二十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路３２之１號十三樓",
+       "age": 15.0,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2025-05-06",
+       "unit": 27.6,
+       "total": 1500,
+       "ping": 54.4,
+       "main_ping": 32.1,
+       "layout": "3房2廳2衛",
+       "floor": "十三層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２６號十三樓之７",
+       "age": 18.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-03-02",
+       "unit": 28.0,
+       "total": 1200,
+       "ping": 42.9,
+       "main_ping": 23.7,
+       "layout": "3房2廳2衛",
+       "floor": "二十一層/二十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路３２之３號二十一樓",
+       "age": 14.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-12-23",
+       "unit": 31.7,
+       "total": 1150,
+       "ping": 36.3,
+       "main_ping": 19.1,
+       "layout": "2房1廳1衛",
+       "floor": "八層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２２號八樓之２８",
+       "age": 17.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-12-09",
+       "unit": 32.7,
+       "total": 998,
+       "ping": 33.3,
+       "main_ping": 17.4,
+       "layout": "2房1廳1衛",
+       "floor": "五層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２２號五樓之１",
+       "age": 17.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-11-24",
+       "unit": 30.9,
+       "total": 1175,
+       "ping": 38.0,
+       "main_ping": 20.8,
+       "layout": "3房2廳2衛",
+       "floor": "三層/二十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路３２之１號三樓",
+       "age": 14.5,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-08-22",
+       "unit": 26.4,
+       "total": 1200,
+       "ping": 45.4,
+       "main_ping": 22.7,
+       "layout": "3房2廳2衛",
+       "floor": "十三層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路２１號十三樓",
+       "age": 17.9,
+       "park": "坡道機械"
+      },
+      {
+       "date": "2024-06-27",
+       "unit": 27.9,
+       "total": 1210,
+       "ping": 43.3,
+       "main_ping": 24.2,
+       "layout": "3房2廳2衛",
+       "floor": "十九層/二十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路３２之７號十九樓",
+       "age": 14.1,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-06-07",
+       "unit": 30.0,
+       "total": 1100,
+       "ping": 36.7,
+       "main_ping": 16.7,
+       "layout": "2房2廳1衛",
+       "floor": "八層/二十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中園路",
+       "address": "中壢區中園路３６之１５號八樓",
+       "age": 14.0,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "中壢區中園路"
+    },
+    "premium": -0.2,
+    "premium_ref": "community",
+    "ref_price": 29.4,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20454130": {
+   "source": "591中古屋",
+   "id": "sale-20454130",
+   "title": "和瑞捷星三房車",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20454130.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20454130.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
+   "image": "https://img2.591.com.tw/house/2026/09/07/178876636436929608.jpg!400x300.jpg",
+   "price": 1300.0,
+   "unit_price": 37.29,
+   "ping": 44.18,
+   "main_ping": 20.49,
+   "layout": "3房2廳2衛",
+   "age": 14.0,
+   "floor": "4F/14F",
+   "kind": "電梯大樓",
+   "community": "和瑞捷星",
+   "community_id": 7760,
+   "district": "中壢區",
+   "address": "南園二路",
+   "tags": [
+    "總價低於同社區3房 98萬",
+    "含車位",
+    "有陽台"
+   ],
+   "poster": "仲介林宜穎",
+   "lat": 24.971721,
+   "lng": 121.228653,
+   "distance_km": 1.12,
+   "detail": {
+    "parking": "9.32坪，平面式，費用另計",
+    "parking_flat": true,
+    "main_ping": 20.49,
+    "public_ratio": "31%",
+    "mgmt_fee": "",
+    "traffic": [],
+    "lat": 24.9723675,
+    "lng": 121.232639
+   },
+   "unverified": "591 未提供附近交通，請自行確認",
+   "search": "中壢區 3-4房 1500萬內 平面車位",
+   "county": "桃園市",
+   "first_seen": "2026-09-28 20:41",
+   "price_history": [
+    [
+     "2026-09-28 20:41",
+     1300.0
+    ]
+   ],
+   "last_seen": "2026-09-28 20:41",
+   "market": {
+    "community": {
+     "n": 188,
+     "n_12m": 3,
+     "median_12m": 33.6,
+     "n_24m": 7,
+     "median_24m": 33.6,
+     "median_all": 18.3,
+     "trend": [
+      [
+       "2021Q2",
+       20.0,
+       3
+      ],
+      [
+       "2021Q3",
+       20.9,
+       3
+      ],
+      [
+       "2021Q4",
+       21.9,
+       5
+      ],
+      [
+       "2022Q2",
+       25.1,
+       3
+      ],
+      [
+       "2022Q3",
+       25.4,
+       4
+      ],
+      [
+       "2023Q1",
+       26.6,
+       2
+      ],
+      [
+       "2023Q2",
+       26.6,
+       2
+      ],
+      [
+       "2023Q3",
+       28.8,
+       2
+      ],
+      [
+       "2023Q4",
+       28.4,
+       3
+      ],
+      [
+       "2024Q1",
+       31.5,
+       3
+      ],
+      [
+       "2024Q2",
+       32.8,
+       2
+      ],
+      [
+       "2024Q3",
+       34.2,
+       2
+      ],
+      [
+       "2024Q4",
+       34.1,
+       3
+      ],
+      [
+       "2025Q3",
+       34.2,
+       2
+      ],
+      [
+       "2026Q1",
+       33.6,
+       1
+      ],
+      [
+       "2026Q2",
+       33.6,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-05-30",
+       "unit": 33.6,
+       "total": 1430.0,
+       "ping": 47.8,
+       "main_ping": 38.4,
+       "layout": "3房2廳",
+       "floor": "4樓/13樓",
+       "address": "南園二路258號 | 4樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 33.6,
+       "total": 1300.0,
+       "ping": 44.2,
+       "main_ping": 34.9,
+       "layout": "3房2廳",
+       "floor": "9樓/13樓",
+       "address": "南園二路270號 | 9樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-09-28",
+       "unit": 35.2,
+       "total": 1238.0,
+       "ping": 40.5,
+       "main_ping": 31.2,
+       "layout": "2房2廳",
+       "floor": "10樓/14樓",
+       "address": "南園二路280號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-09-05",
+       "unit": 33.3,
+       "total": 1180.0,
+       "ping": 40.5,
+       "main_ping": 31.2,
+       "layout": "3房2廳",
+       "floor": "8樓/14樓",
+       "address": "南園二路280號 | 8樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-26",
+       "unit": 29.9,
+       "total": 1600.0,
+       "ping": 58.1,
+       "main_ping": 48.8,
+       "layout": "4房2廳",
+       "floor": "6樓/13樓",
+       "address": "南園二路292號 | 6樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-11-29",
+       "unit": 34.7,
+       "total": 1124.0,
+       "ping": 37.7,
+       "main_ping": 28.3,
+       "layout": "2房2廳",
+       "floor": "3樓/13樓",
+       "address": "南園二路266號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-11-09",
+       "unit": 34.1,
+       "total": 1330.0,
+       "ping": 44.2,
+       "main_ping": 34.9,
+       "layout": "3房2廳",
+       "floor": "10樓/13樓",
+       "address": "南園二路270號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-08-20",
+       "unit": 33.0,
+       "total": 1178.0,
+       "ping": 40.8,
+       "main_ping": 31.4,
+       "layout": "2房2廳",
+       "floor": "2樓/14樓",
+       "address": "南園二路280號 | 2樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-08-10",
+       "unit": 35.4,
+       "total": 1970.0,
+       "ping": 66.4,
+       "main_ping": 47.7,
+       "layout": "4房2廳",
+       "floor": "10樓/13樓",
+       "address": "南園二路262號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-05-09",
+       "unit": 35.6,
+       "total": 1160.0,
+       "ping": 37.7,
+       "main_ping": 28.3,
+       "layout": "2房2廳",
+       "floor": "9樓/13樓",
+       "address": "南園二路266號 | 9樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-04-10",
+       "unit": 30.0,
+       "total": 1744.0,
+       "ping": 67.5,
+       "main_ping": 48.8,
+       "layout": "4房2廳",
+       "floor": "3樓/13樓",
+       "address": "南園二路292號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-03-03",
+       "unit": 28.6,
+       "total": 950.0,
+       "ping": 37.7,
+       "main_ping": 28.3,
+       "layout": "2房2廳",
+       "floor": "7樓/13樓",
+       "address": "南園二路268號 | 7樓",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "和瑞捷星",
+     "id": 7760,
+     "url": "https://market.591.com.tw/7760"
+    },
+    "nearby": {
+     "n": 34,
+     "n_12m": 7,
+     "median_12m": 29.8,
+     "n_24m": 22,
+     "median_24m": 29.8,
+     "median_all": 29.8,
+     "trend": [
+      [
+       "2024Q1",
+       26.4,
+       1
+      ],
+      [
+       "2024Q2",
+       28.7,
+       8
+      ],
+      [
+       "2024Q3",
+       29.2,
+       3
+      ],
+      [
+       "2024Q4",
+       30.0,
+       6
+      ],
+      [
+       "2025Q1",
+       31.6,
+       3
+      ],
+      [
+       "2025Q2",
+       29.2,
+       4
+      ],
+      [
+       "2025Q3",
+       30.6,
+       3
+      ],
+      [
+       "2025Q4",
+       29.8,
+       3
+      ],
+      [
+       "2026Q1",
+       29.4,
+       3
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-03-25",
+       "unit": 29.8,
+       "total": 1500,
+       "ping": 50.3,
+       "main_ping": 24.5,
+       "layout": "3房2廳2衛",
+       "floor": "二層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２０號二樓",
+       "age": 11.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-22",
+       "unit": 29.4,
+       "total": 1300,
+       "ping": 44.2,
+       "main_ping": 22.5,
+       "layout": "3房2廳2衛",
+       "floor": "九層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２７０號九樓",
+       "age": 14.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-01-04",
+       "unit": 27.7,
+       "total": 1412,
+       "ping": 50.9,
+       "main_ping": 26.3,
+       "layout": "3房2廳2衛",
+       "floor": "七層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷３６號七樓",
+       "age": 11.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-12-22",
+       "unit": 29.8,
+       "total": 1195,
+       "ping": 40.1,
+       "main_ping": 19.0,
+       "layout": "2房2廳1衛",
+       "floor": "十四層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２１弄５８號十四樓",
+       "age": 12.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-21",
+       "unit": 29.3,
+       "total": 1485,
+       "ping": 50.6,
+       "main_ping": 26.3,
+       "layout": "3房2廳2衛",
+       "floor": "十一層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷４２號十一樓",
+       "age": 11.4,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-11-02",
+       "unit": 30.6,
+       "total": 1630,
+       "ping": 53.2,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "六層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２６９號六樓",
+       "age": 13.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-28",
+       "unit": 30.6,
+       "total": 1238,
+       "ping": 40.5,
+       "main_ping": 20.1,
+       "layout": "2房2廳1衛",
+       "floor": "十層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２８０號十樓",
+       "age": 13.9,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-09-05",
+       "unit": 29.1,
+       "total": 1180,
+       "ping": 40.5,
+       "main_ping": 20.1,
+       "layout": "3房2廳1衛",
+       "floor": "八層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２８０號八樓",
+       "age": 13.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-08-18",
+       "unit": 32.3,
+       "total": 1720,
+       "ping": 53.2,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２６９號五樓",
+       "age": 13.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-26",
+       "unit": 30.7,
+       "total": 1080,
+       "ping": 35.1,
+       "main_ping": 16.1,
+       "layout": "2房1廳1衛",
+       "floor": "八層/十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷３２號八樓",
+       "age": 10.9,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-05-03",
+       "unit": 29.7,
+       "total": 1620,
+       "ping": 54.6,
+       "main_ping": 27.9,
+       "layout": "3房2廳2衛",
+       "floor": "十層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２７３號十樓",
+       "age": 12.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2025-04-15",
+       "unit": 28.7,
+       "total": 1438,
+       "ping": 50.0,
+       "main_ping": 24.2,
+       "layout": "3房2廳2衛",
+       "floor": "二層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷４８號二樓",
+       "age": 10.8,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "中壢區南園二路"
+    },
+    "premium": 11.0,
+    "premium_ref": "community",
+    "ref_price": 33.6,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "sale-20516546": {
+   "source": "591中古屋",
+   "id": "sale-20516546",
+   "title": "涵韻景觀三房車",
+   "url": "https://sale.591.com.tw/home/house/detail/2/20516546.html",
+   "link": "https://sale.591.com.tw/home/house/detail/2/20516546.html?itm_source=sale&itm_medium=list&itm_campaign=filter_results",
+   "image": "https://img1.591.com.tw/house/2026/03/09/177303742595614501.jpg!400x300.jpg",
+   "price": 1498.0,
+   "unit_price": 32.22,
+   "ping": 46.5,
+   "main_ping": null,
+   "layout": "3房2廳2衛",
+   "age": 12.0,
+   "floor": "12F/12F",
+   "kind": "電梯大樓",
+   "community": "涵韻",
+   "community_id": 7732,
+   "district": "中壢區",
+   "address": "長樂五街",
+   "tags": [],
+   "poster": "代理人廖為軒",
+   "lat": 24.974643,
+   "lng": 121.24833,
+   "distance_km": 1.5,
+   "detail": {
+    "parking": "平面式，已含售金內",
+    "parking_flat": true,
+    "main_ping": null,
+    "public_ratio": "",
+    "mgmt_fee": "",
+    "traffic": [],
+    "lat": 24.9741596,
+    "lng": 121.2481418
+   },
+   "unverified": "591 未提供附近交通，請自行確認",
+   "search": "中壢區 3-4房 1500萬內 平面車位",
+   "county": "桃園市",
+   "first_seen": "2026-09-28 20:41",
+   "price_history": [
+    [
+     "2026-09-28 20:41",
+     1498.0
+    ]
+   ],
+   "last_seen": "2026-09-28 20:41",
+   "market": {
+    "community": {
+     "n": 97,
+     "n_12m": 0,
+     "median_12m": null,
+     "n_24m": 3,
+     "median_24m": 33.6,
+     "median_all": 15.9,
+     "trend": [
+      [
+       "2016Q3",
+       16.7,
+       1
+      ],
+      [
+       "2016Q4",
+       16.9,
+       2
+      ],
+      [
+       "2017Q1",
+       18.0,
+       1
+      ],
+      [
+       "2017Q3",
+       17.1,
+       2
+      ],
+      [
+       "2018Q2",
+       17.4,
+       2
+      ],
+      [
+       "2019Q1",
+       17.4,
+       2
+      ],
+      [
+       "2019Q3",
+       18.2,
+       1
+      ],
+      [
+       "2020Q3",
+       17.9,
+       1
+      ],
+      [
+       "2020Q4",
+       18.3,
+       1
+      ],
+      [
+       "2022Q3",
+       26.1,
+       1
+      ],
+      [
+       "2022Q4",
+       26.0,
+       2
+      ],
+      [
+       "2023Q3",
+       27.6,
+       1
+      ],
+      [
+       "2024Q1",
+       28.1,
+       1
+      ],
+      [
+       "2024Q4",
+       32.6,
+       1
+      ],
+      [
+       "2025Q2",
+       33.6,
+       1
+      ],
+      [
+       "2025Q3",
+       33.7,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-08-18",
+       "unit": 33.7,
+       "total": 1441.0,
+       "ping": 46.8,
+       "main_ping": 39.3,
+       "layout": "3房1廳",
+       "floor": "8樓/12樓",
+       "address": "長樂五街90號 | 8樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2025-06-06",
+       "unit": 33.6,
+       "total": 1600.0,
+       "ping": 51.5,
+       "main_ping": 44.0,
+       "layout": "3房2廳",
+       "floor": "8樓/12樓",
+       "address": "長樂五街88號 | 8樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-10-14",
+       "unit": 32.6,
+       "total": 1401.0,
+       "ping": 46.8,
+       "main_ping": 39.3,
+       "layout": "3房2廳",
+       "floor": "10樓/12樓",
+       "address": "長樂五街90號 | 10樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2024-03-24",
+       "unit": 28.1,
+       "total": 1355.0,
+       "ping": 51.5,
+       "main_ping": 44.0,
+       "layout": "3房2廳",
+       "floor": "11樓/12樓",
+       "address": "長樂五街88號 | 11樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2023-09-16",
+       "unit": 27.6,
+       "total": 1314.0,
+       "ping": 50.8,
+       "main_ping": 43.2,
+       "layout": "3房2廳",
+       "floor": "5樓/12樓",
+       "address": "長樂五街92號 | 5樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2022-12-06",
+       "unit": 28.1,
+       "total": 1310.0,
+       "ping": 49.9,
+       "main_ping": 42.3,
+       "layout": "3房2廳",
+       "floor": "12樓/12樓",
+       "address": "長樂五街82號 | 12樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2022-10-01",
+       "unit": 23.9,
+       "total": 930.0,
+       "ping": 38.9,
+       "main_ping": 38.9,
+       "layout": "3房2廳",
+       "floor": "2樓/12樓",
+       "address": "長樂五街80號 | 2樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2022-08-31",
+       "unit": 26.1,
+       "total": 1270.0,
+       "ping": 51.5,
+       "main_ping": 44.0,
+       "layout": "3房2廳",
+       "floor": "5樓/12樓",
+       "address": "長樂五街88號 | 5樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-10-15",
+       "unit": 18.3,
+       "total": 910.0,
+       "ping": 50.8,
+       "main_ping": 43.2,
+       "layout": "3房2廳",
+       "floor": "3樓/12樓",
+       "address": "長樂五街92號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2020-08-06",
+       "unit": 17.9,
+       "total": 900.0,
+       "ping": 51.2,
+       "main_ping": 43.7,
+       "layout": "3房2廳",
+       "floor": "4樓/12樓",
+       "address": "長樂五街86號 | 4樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2019-07-07",
+       "unit": 18.2,
+       "total": 820.0,
+       "ping": 45.9,
+       "main_ping": 38.9,
+       "layout": "3房2廳",
+       "floor": "3樓/12樓",
+       "address": "長樂五街80號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      },
+      {
+       "date": "2019-03-11",
+       "unit": 17.2,
+       "total": 870.0,
+       "ping": 51.2,
+       "main_ping": 43.7,
+       "layout": "3房2廳",
+       "floor": "3樓/12樓",
+       "address": "長樂五街86號 | 3樓",
+       "park": "平面車位",
+       "presale": false
+      }
+     ],
+     "name": "涵韻",
+     "id": 7732,
+     "url": "https://market.591.com.tw/7732"
+    },
+    "nearby": {
+     "n": 6372,
+     "n_12m": 271,
+     "median_12m": 32.1,
+     "n_24m": 913,
+     "median_24m": 32.9,
+     "median_all": 38.3,
+     "trend": [
+      [
+       "2022Q3",
+       45.3,
+       471
+      ],
+      [
+       "2022Q4",
+       44.0,
+       289
+      ],
+      [
+       "2023Q1",
+       43.2,
+       241
+      ],
+      [
+       "2023Q2",
+       42.0,
+       471
+      ],
+      [
+       "2023Q3",
+       41.9,
+       344
+      ],
+      [
+       "2023Q4",
+       41.3,
+       379
+      ],
+      [
+       "2024Q1",
+       41.9,
+       321
+      ],
+      [
+       "2024Q2",
+       35.3,
+       783
+      ],
+      [
+       "2024Q3",
+       35.1,
+       435
+      ],
+      [
+       "2024Q4",
+       32.0,
+       175
+      ],
+      [
+       "2025Q1",
+       33.9,
+       189
+      ],
+      [
+       "2025Q2",
+       33.3,
+       144
+      ],
+      [
+       "2025Q3",
+       32.8,
+       134
+      ],
+      [
+       "2025Q4",
+       34.1,
+       124
+      ],
+      [
+       "2026Q1",
+       31.9,
+       114
+      ],
+      [
+       "2026Q2",
+       32.0,
+       27
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-05-21",
+       "unit": 41.8,
+       "total": 1420,
+       "ping": 33.9,
+       "main_ping": 13.5,
+       "layout": "2房2廳1衛",
+       "floor": "八層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "永昌路",
+       "address": "中壢區永昌路１６１號八樓",
+       "age": 5.1,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-05-10",
+       "unit": 28.3,
+       "total": 1300,
+       "ping": 45.9,
+       "main_ping": 23.4,
+       "layout": "3房2廳2衛",
+       "floor": "十層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "正大街",
+       "address": "中壢區正大街６８號十樓",
+       "age": 20.1,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-05-09",
+       "unit": 29.0,
+       "total": 1050,
+       "ping": 36.2,
+       "main_ping": 15.6,
+       "layout": "2房2廳1衛",
+       "floor": "七層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "長春五路",
+       "address": "中壢區長春五路４８號七樓",
+       "age": 18.6,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-05-01",
+       "unit": 21.6,
+       "total": 1042,
+       "ping": 48.3,
+       "main_ping": 22.9,
+       "layout": "3房2廳2衛",
+       "floor": "六層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "榮和六街",
+       "address": "中壢區榮和六街１０６號六樓",
+       "age": 9.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-04-26",
+       "unit": 25.7,
+       "total": 1550,
+       "ping": 60.4,
+       "main_ping": 24.5,
+       "layout": "3房2廳2衛",
+       "floor": "七層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "南園二路",
+       "address": "中壢區南園二路２９６巷２２號七樓",
+       "age": 11.8,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-04-24",
+       "unit": 26.2,
+       "total": 1045,
+       "ping": 39.9,
+       "main_ping": 17.3,
+       "layout": "2房2廳1衛",
+       "floor": "九層/十五層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "華美三路",
+       "address": "中壢區華美三路３５３號九樓之２",
+       "age": 9.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-04-22",
+       "unit": 37.8,
+       "total": 1668,
+       "ping": 44.1,
+       "main_ping": 19.8,
+       "layout": "3房2廳2衛",
+       "floor": "十三層/十七層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "永泰路",
+       "address": "中壢區永泰路１２５號十三樓",
+       "age": 6.0,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-04-20",
+       "unit": 29.6,
+       "total": 1110,
+       "ping": 37.4,
+       "main_ping": 17.6,
+       "layout": "2房1廳1衛",
+       "floor": "七層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "龍陵路",
+       "address": "中壢區龍陵路２５號七樓",
+       "age": 10.0,
+       "park": ""
+      },
+      {
+       "date": "2026-04-18",
+       "unit": 32.5,
+       "total": 1385,
+       "ping": 42.6,
+       "main_ping": 19.6,
+       "layout": "2房2廳1衛",
+       "floor": "七層/十三層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "龍慈路",
+       "address": "中壢區龍慈路３６號七樓",
+       "age": 2.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-04-17",
+       "unit": 29.5,
+       "total": 1200,
+       "ping": 40.7,
+       "main_ping": 25.1,
+       "layout": "3房2廳2衛",
+       "floor": "二十四層/二十四層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "中山東路三段",
+       "address": "中壢區中山東路三段５９號二十四樓之６",
+       "age": 18.0,
+       "park": ""
+      },
+      {
+       "date": "2026-04-15",
+       "unit": 37.6,
+       "total": 1562,
+       "ping": 47.9,
+       "main_ping": 22.5,
+       "layout": "3房2廳2衛",
+       "floor": "十二層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "復華十一街",
+       "address": "中壢區復華十一街６８號十二樓",
+       "age": 6.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2026-04-12",
+       "unit": 50.9,
+       "total": 1998,
+       "ping": 39.2,
+       "main_ping": 16.5,
+       "layout": "2房2廳1衛",
+       "floor": "十四層/十九層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "領航南路三段",
+       "address": "中壢區領航南路三段２５３號十四樓",
+       "age": 6.6,
+       "park": "坡道平面"
+      }
+     ],
+     "scope": "中壢區（同型態、坪數相近）"
+    },
+    "premium": -4.1,
+    "premium_ref": "community",
+    "ref_price": 33.6,
+    "ref_label": "同社區近兩年",
+    "updated": "2026-09-28"
+   },
+   "active": true,
+   "is_new": true
+  },
+  "new-135109": {
+   "source": "591新建案",
+   "id": "new-135109",
+   "title": "The Nexus 新識界",
+   "url": "https://newhouse.591.com.tw/135109",
+   "image": "https://img2.591.com.tw/house/2023/12/12/170235258316441402.jpg!400x300.s2.jpg",
+   "price": null,
+   "price_text": "41~43萬/坪",
+   "unit_price": 41.0,
+   "unit_price_max": 43.0,
+   "ping": null,
+   "ping_text": "80~350坪",
+   "layout": "開放格局(80~350坪)",
+   "age": null,
+   "floor": "",
+   "kind": "工商用",
+   "community": "The Nexus 新識界",
+   "community_id": 5934867,
+   "county": "桃園市",
+   "district": "中壢區",
+   "address": "桃園市中壢區廣州路223號",
+   "tags": [],
+   "poster": "中壢後站生活圈",
+   "is_ad": true,
+   "lat": 24.953435,
+   "lng": 121.233199,
+   "distance_km": 1.41,
+   "search": "中壢區新建案",
+   "first_seen": "2026-09-28 20:41",
+   "price_history": [],
+   "last_seen": "2026-09-28 20:41",
+   "market": {
+    "community": {
+     "n": 39,
+     "n_12m": 7,
+     "median_12m": 40.9,
+     "n_24m": 15,
+     "median_24m": 33.6,
+     "median_all": 33.0,
+     "trend": [
+      [
+       "2024Q1",
+       32.0,
+       10
+      ],
+      [
+       "2024Q2",
+       35.0,
+       8
+      ],
+      [
+       "2024Q3",
+       30.9,
+       6
+      ],
+      [
+       "2024Q4",
+       30.5,
+       4
+      ],
+      [
+       "2025Q1",
+       31.8,
+       3
+      ],
+      [
+       "2025Q2",
+       30.9,
+       1
+      ],
+      [
+       "2025Q4",
+       33.6,
+       1
+      ],
+      [
+       "2026Q1",
+       41.3,
+       5
+      ],
+      [
+       "2026Q2",
+       37.7,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2026-04-23",
+       "unit": 37.7,
+       "total": 3338.0,
+       "ping": 88.5,
+       "main_ping": 88.5,
+       "layout": "0房0廳",
+       "floor": "7樓/11樓",
+       "address": "廣州路217號 | 7樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-02-09",
+       "unit": 42.6,
+       "total": 3784.0,
+       "ping": 88.8,
+       "main_ping": 88.8,
+       "layout": "0房0廳",
+       "floor": "10樓/11樓",
+       "address": "廣州路225號 | 10樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-02-09",
+       "unit": 40.9,
+       "total": 3616.0,
+       "ping": 88.4,
+       "main_ping": 88.4,
+       "layout": "0房0廳",
+       "floor": "10樓/11樓",
+       "address": "廣州路223號 | 10樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-02-04",
+       "unit": 41.8,
+       "total": 3712.0,
+       "ping": 88.8,
+       "main_ping": 88.8,
+       "layout": "0房0廳",
+       "floor": "8樓/11樓",
+       "address": "廣州路225號 | 8樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-08",
+       "unit": 40.1,
+       "total": 3547.0,
+       "ping": 88.4,
+       "main_ping": 88.4,
+       "layout": "0房0廳",
+       "floor": "8樓/11樓",
+       "address": "廣州路219號 | 8樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2026-01-08",
+       "unit": 41.3,
+       "total": 3320.0,
+       "ping": 80.4,
+       "main_ping": 80.4,
+       "layout": "0房0廳",
+       "floor": "8樓/11樓",
+       "address": "廣州路217號 | 8樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-11-26",
+       "unit": 33.6,
+       "total": 2968.0,
+       "ping": 88.4,
+       "main_ping": 88.4,
+       "layout": "0房0廳",
+       "floor": "5樓/11樓",
+       "address": "廣州路223號 | 5樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-04-29",
+       "unit": 30.9,
+       "total": 2946.0,
+       "ping": 95.2,
+       "main_ping": 95.2,
+       "layout": "0房0廳",
+       "floor": "2樓/11樓",
+       "address": "廣州路217號 | 2樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-03-25",
+       "unit": 35.2,
+       "total": 2843.0,
+       "ping": 80.7,
+       "main_ping": 80.7,
+       "layout": "0房0廳",
+       "floor": "11樓/11樓",
+       "address": "廣州路225號 | 11樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-03-08",
+       "unit": 31.4,
+       "total": 2778.0,
+       "ping": 88.4,
+       "main_ping": 88.4,
+       "layout": "0房0廳",
+       "floor": "3樓/11樓",
+       "address": "廣州路219號 | 3樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2025-02-15",
+       "unit": 31.8,
+       "total": 2815.0,
+       "ping": 88.4,
+       "main_ping": 88.4,
+       "layout": "0房0廳",
+       "floor": "7樓/11樓",
+       "address": "廣州路219號 | 7樓",
+       "park": "無車位",
+       "presale": false
+      },
+      {
+       "date": "2024-12-02",
+       "unit": 31.4,
+       "total": 2778.0,
+       "ping": 88.4,
+       "main_ping": 88.4,
+       "layout": "0房0廳",
+       "floor": "3樓/11樓",
+       "address": "廣州路219號 | 3樓",
+       "park": "無車位",
+       "presale": false
+      }
+     ],
+     "name": "The Nexus 新識界",
+     "id": 5934867,
+     "url": "https://market.591.com.tw/5934867"
+    },
+    "nearby": {
+     "n": 9,
+     "n_12m": 0,
+     "median_12m": null,
+     "n_24m": 6,
+     "median_24m": 23.4,
+     "median_all": 22.8,
+     "trend": [
+      [
+       "2024Q2",
+       19.0,
+       2
+      ],
+      [
+       "2024Q3",
+       22.8,
+       1
+      ],
+      [
+       "2024Q4",
+       23.8,
+       5
+      ],
+      [
+       "2025Q2",
+       22.3,
+       1
+      ]
+     ],
+     "deals": [
+      {
+       "date": "2025-05-28",
+       "unit": 22.3,
+       "total": 910,
+       "ping": 40.8,
+       "main_ping": 26.2,
+       "layout": "3房2廳2衛",
+       "floor": "五層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２３６之２號五樓",
+       "age": 32.2,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-12-29",
+       "unit": 23.8,
+       "total": 700,
+       "ping": 29.4,
+       "main_ping": 20.3,
+       "layout": "2房2廳1衛",
+       "floor": "三層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２３８之２號三樓",
+       "age": 31.8,
+       "park": ""
+      },
+      {
+       "date": "2024-12-01",
+       "unit": 28.7,
+       "total": 1285,
+       "ping": 44.7,
+       "main_ping": 24.9,
+       "layout": "3房2廳2衛",
+       "floor": "三層/八層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路６０號三樓",
+       "age": 26.1,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-11-19",
+       "unit": 23.0,
+       "total": 936,
+       "ping": 40.7,
+       "main_ping": 26.1,
+       "layout": "3房2廳2衛",
+       "floor": "三層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２３６之２號三樓",
+       "age": 31.7,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-10-29",
+       "unit": 40.7,
+       "total": 400,
+       "ping": 9.8,
+       "main_ping": 9.8,
+       "layout": "5房4廳2衛",
+       "floor": "全/二層",
+       "type": "透天厝",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路１６９號",
+       "age": 44.4,
+       "park": ""
+      },
+      {
+       "date": "2024-10-11",
+       "unit": 16.5,
+       "total": 790,
+       "ping": 40.5,
+       "main_ping": 25.6,
+       "layout": "3房2廳2衛",
+       "floor": "九層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２４０之３號九樓",
+       "age": 31.6,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-09-23",
+       "unit": 22.8,
+       "total": 900,
+       "ping": 39.5,
+       "main_ping": 25.2,
+       "layout": "3房2廳2衛",
+       "floor": "十一層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２３８之２號十一樓",
+       "age": 31.5,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-06-30",
+       "unit": 21.6,
+       "total": 900,
+       "ping": 41.7,
+       "main_ping": 32.3,
+       "layout": "3房2廳2衛",
+       "floor": "四層/十二層",
+       "type": "住宅大樓(11層含以上有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２３６之２號四樓",
+       "age": 31.3,
+       "park": "坡道平面"
+      },
+      {
+       "date": "2024-06-13",
+       "unit": 16.4,
+       "total": 898,
+       "ping": 54.7,
+       "main_ping": 34.9,
+       "layout": "1房2廳3衛",
+       "floor": "五層/六層",
+       "type": "華廈(10層含以下有電梯)",
+       "district": "中壢區",
+       "road": "廣州路",
+       "address": "中壢區廣州路２１０號五樓",
+       "age": 25.1,
+       "park": ""
+      }
+     ],
+     "scope": "中壢區廣州路（不限屋齡）"
+    },
+    "premium": 0.2,
+    "premium_ref": "community",
+    "ref_price": 40.9,
+    "ref_label": "同社區近一年",
+    "updated": "2026-09-28"
+   },
    "active": true,
    "is_new": true
   }
@@ -190910,6 +194122,13 @@
    "new": 64,
    "drops": 0,
    "active": 288,
+   "warnings": []
+  },
+  {
+   "time": "2026-09-28 20:41",
+   "new": 6,
+   "drops": 0,
+   "active": 37,
    "warnings": []
   }
  ],
@@ -192952,6 +196171,79 @@
    "public_ratio": "48%",
    "mgmt_fee": "2830元/月",
    "traffic": []
+  },
+  "sale-20902964": {
+   "parking": "10.08坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 26.2,
+   "public_ratio": "",
+   "mgmt_fee": "2443元/月",
+   "traffic": [
+    "A20捷運站",
+    "A21捷運站"
+   ],
+   "lat": 24.9717794,
+   "lng": 121.2350451
+  },
+  "sale-20938998": {
+   "parking": "9.33坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 22.48,
+   "public_ratio": "",
+   "mgmt_fee": "2442元/月",
+   "traffic": [],
+   "lat": 24.9707694,
+   "lng": 121.2310409
+  },
+  "sale-20864500": {
+   "parking": "9坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 20.0,
+   "public_ratio": "",
+   "mgmt_fee": "",
+   "traffic": [],
+   "lat": 24.9723675,
+   "lng": 121.232639
+  },
+  "sale-20108990": {
+   "parking": "機械式，已含售金內",
+   "parking_flat": false,
+   "main_ping": 22.31,
+   "public_ratio": "24%",
+   "mgmt_fee": "2000元/月",
+   "traffic": [],
+   "lat": 24.9615556,
+   "lng": 121.2292946
+  },
+  "sale-20396700": {
+   "parking": "7.4坪，平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": 27.97,
+   "public_ratio": "28%",
+   "mgmt_fee": "2408元/月",
+   "traffic": [],
+   "lat": 24.9664807,
+   "lng": 121.2353547
+  },
+  "sale-20454130": {
+   "parking": "9.32坪，平面式，費用另計",
+   "parking_flat": true,
+   "main_ping": 20.49,
+   "public_ratio": "31%",
+   "mgmt_fee": "",
+   "traffic": [],
+   "lat": 24.9723675,
+   "lng": 121.232639
+  },
+  "sale-20516546": {
+   "parking": "平面式，已含售金內",
+   "parking_flat": true,
+   "main_ping": null,
+   "public_ratio": "",
+   "mgmt_fee": "",
+   "traffic": [],
+   "lat": 24.9741596,
+   "lng": 121.2481418
   }
  }
 }
