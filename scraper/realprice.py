@@ -331,11 +331,14 @@ def enrich(items: list[dict], cfg: dict, cache_dir: Path, log=print) -> None:
             rows = lvr.rows(county)
             for r in rows:
                 idx[r["date"]].append(r["total"])
-            gov_index[county] = (idx, min((r["date"] for r in rows), default="9999"))
+            ds = sorted(r["date"] for r in rows)
+            # 資料涵蓋起點：取第 2 百分位（避免少數補登的舊交易把起點拉得太早）
+            gov_index[county] = (idx, ds[int(len(ds) * 0.02)] if ds else "9999")
         idx, first = gov_index[county]
         ok = n = 0
         for d in deals:
-            if not d.get("date") or d["date"] < first or d.get("total") is None:
+            if not d.get("date") or d["date"] < first or d.get("total") is None or d.get("presale"):
+                d.pop("gov", None)  # 預售屋在另一份資料、太舊的不在下載範圍：不列入核對
                 continue
             n += 1
             d["gov"] = any(abs(t - d["total"]) <= 1 for t in idx.get(d["date"], []))

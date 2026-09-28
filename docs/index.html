@@ -284,7 +284,13 @@ function links(it){
   const short = src => src.startsWith("591") ? "591" : src.replace("房屋", "").replace("不動產", "");
   const label = short(it.source);
   const out = [`<a class="lk primary" href="${esc(it.url)}" target="_blank" rel="noopener">${esc(label)} 原網頁 ↗</a>`];
-  for (const a of it.also || []) out.push(`<a class="lk primary" href="${esc(a.url)}" target="_blank" rel="noopener">也在${esc(short(a.source))}${a.price && it.price && a.price !== it.price ? `（${Math.round(a.price)}萬）` : ""} ↗</a>`);
+  // 其他網站的同一間房子：每個網站一顆按鈕，多則刊登顯示則數
+  const bySrc = {};
+  for (const a of it.also || []) (bySrc[a.source] = bySrc[a.source] || []).push(a);
+  for (const [src, arr] of Object.entries(bySrc)) {
+    const a = arr[0], diff = a.price && it.price && a.price !== it.price ? `・${Math.round(a.price)}萬` : "";
+    out.push(`<a class="lk primary" href="${esc(a.url)}" target="_blank" rel="noopener">也在${esc(short(src))}${arr.length > 1 ? `（${arr.length} 則）` : ""}${diff} ↗</a>`);
+  }
   if (it.market) out.push(`<button class="lk" type="button" data-mk="${esc(it.id)}">行情走勢</button>`);
   if (it.lat && it.lng) out.push(`<button class="lk" type="button" data-locate="${esc(it.id)}">在地圖上看</button>`);
   if (it.community_id) out.push(`<a class="lk" href="https://market.591.com.tw/${it.community_id}" target="_blank" rel="noopener">社區實價 ↗</a>`);

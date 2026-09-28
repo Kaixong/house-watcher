@@ -125,7 +125,11 @@ def normalize(o: dict, county: str = "") -> dict | None:
         "lng": _f(o.get("lon")),
         "tags": [],
         "poster": "住商不動產",
-        "detail": {"parking": park, "parking_flat": "平面" in park, "traffic": [], "source": "hb"} if park else None,
+        # 住商的「車位」欄位多半是權屬（私有、租用…），不是平面或機械；有寫類型才當作確定
+        # 空白 = 沒有車位（會被「平面車位」條件排除）
+        "detail": ({"parking": park, "parking_flat": "平面" in park, "traffic": [], "source": "hb"}
+                   if (not park or re.search(r"平面|機械|坡道|升降|塔", park)) else None),
+        "parking_note": f"有車位（{park}），類型未標示" if park and not re.search(r"平面|機械|坡道|升降|塔", park) else "",
     }
 
 

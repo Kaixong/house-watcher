@@ -183,7 +183,7 @@ def main():
             kept = []
             for it in matched:
                 if not it.get("detail"):
-                    it["unverified"] = "來源未標示車位類型，請自行確認"
+                    it["unverified"] = (it.get("parking_note") or "來源未標示車位類型") + "，請自行確認"
                     kept.append(it)
                     continue
                 ok, why = passes_detail(it, s.get("filters"))
