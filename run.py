@@ -136,6 +136,7 @@ def main():
     names = {x["name"] for x in cfg.get("searches", [])}
     state["items"] = {k: v for k, v in state["items"].items() if v.get("search") in names}
     first_run = not state["items"]
+    week_ago = (datetime.now(TPE) - timedelta(days=7)).strftime("%Y-%m-%d %H:%M")
     now = datetime.now(TPE).strftime("%Y-%m-%d %H:%M")
     warnings: list[str] = []
     new_items, drops = [], []
@@ -232,14 +233,22 @@ def main():
             if old is None:
                 it["first_seen"] = now
                 it["price_history"] = [[now, it.get("price")]] if it.get("price") else []
-                if not first_run:
+                if first_run:
+                    it["baseline"] = True   # 第一次執行抓到的是基準，不算新物件
+                else:
                     new_items.append(it)
             else:
                 it["first_seen"] = old.get("first_seen", now)
+                if old.get("baseline"):
+                    it["baseline"] = True
                 hist = old.get("price_history", [])
                 if it.get("price") and old.get("price") and it["price"] < old["price"]:
-                    it["prev_price"] = old["price"]
+                    it["prev_price"] = old["price"]      # 這次偵測到降價
+                    it["drop_at"] = now
                     drops.append(it)
+                elif old.get("drop_at", "") >= week_ago and old.get("prev_price") and it.get("price") \
+                        and old["prev_price"] > it["price"]:
+                    it["prev_price"], it["drop_at"] = old["prev_price"], old["drop_at"]  # 7 天內降過價，繼續標示
                 if it.get("price") and (not hist or hist[-1][1] != it["price"]):
                     hist.append([now, it["price"]])
                 it["price_history"] = hist
@@ -265,7 +274,11 @@ def main():
 
     for iid, it in state["items"].items():
         it["active"] = iid in seen_now
-        it["is_new"] = any(n["id"] == iid for n in new_items)
+        # 新物件＝7 天內第一次出現；手動多跑幾次也不會讓 NEW 消失
+        it["is_new"] = bool(it.get("active")) and it.get("first_seen", "") >= week_ago and not it.get("baseline")
+        it["new_this_run"] = any(n["id"] == iid for n in new_items)
+        # 降價＝7 天內偵測到降價，或來源網站標示了原價（信義、住商）
+        it["is_drop"] = bool(it.get("active") and it.get("prev_price") and it.get("price") and it["prev_price"] > it["price"])
 
     state["runs"] = (state.get("runs", []) + [{
         "time": now, "new": len(new_items), "drops": len(drops),
@@ -300,8 +313,11 @@ def main():
                                   cfg.get("dashboard_url", ""), n.get("max_items_in_email", 30))
             _safe_send(subj, body, warnings)
         elif new_items or drops or warnings or n.get("send_when_empty"):
+            act = [state["items"][i] for i in seen_now]
+            summary = {"active": len(act), "week_new": sum(1 for i in act if i.get("first_seen", "") >= week_ago),
+                       "drops": sum(1 for i in act if i.get("is_drop"))}
             subj, body = build_email(new_items, drops, warnings,
-                                     cfg.get("dashboard_url", ""), n.get("max_items_in_email", 30))
+                                     cfg.get("dashboard_url", ""), n.get("max_items_in_email", 30), summary)
             _safe_send(subj, body, warnings)
 
 

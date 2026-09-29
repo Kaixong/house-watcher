@@ -594,7 +594,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20712300": {
    "source": "591中古屋",
@@ -1154,7 +1155,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20578253": {
    "source": "591中古屋",
@@ -1734,7 +1736,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20756023": {
    "source": "591中古屋",
@@ -2318,7 +2321,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20932029": {
    "source": "591中古屋",
@@ -2871,7 +2875,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20778810": {
    "source": "591中古屋",
@@ -3455,7 +3460,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20778924": {
    "source": "591中古屋",
@@ -4009,7 +4015,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20967560": {
    "source": "591中古屋",
@@ -4560,7 +4567,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20826213": {
    "source": "591中古屋",
@@ -5113,7 +5121,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20853782": {
    "source": "591中古屋",
@@ -5654,7 +5663,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20969833": {
    "source": "591中古屋",
@@ -6094,7 +6104,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20780229": {
    "source": "591中古屋",
@@ -6642,7 +6653,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20967441": {
    "source": "591中古屋",
@@ -6933,7 +6945,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20953309": {
    "source": "591中古屋",
@@ -7513,7 +7526,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20853799": {
    "source": "591中古屋",
@@ -8068,7 +8082,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20922702": {
    "source": "591中古屋",
@@ -8616,7 +8631,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20652624": {
    "source": "591中古屋",
@@ -9172,7 +9188,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20971850": {
    "source": "591中古屋",
@@ -9748,7 +9765,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20831083": {
    "source": "591中古屋",
@@ -10334,7 +10352,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20710032": {
    "source": "591中古屋",
@@ -10879,7 +10898,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20732743": {
    "source": "591中古屋",
@@ -11456,7 +11476,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20884812": {
    "source": "591中古屋",
@@ -12039,7 +12060,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20751570": {
    "source": "591中古屋",
@@ -12614,7 +12636,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20748027": {
    "source": "591中古屋",
@@ -12996,7 +13019,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20809308": {
    "source": "591中古屋",
@@ -13584,7 +13608,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20544201": {
    "source": "591中古屋",
@@ -14133,7 +14158,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20809147": {
    "source": "591中古屋",
@@ -14707,7 +14733,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20687596": {
    "source": "591中古屋",
@@ -15301,7 +15328,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20749145": {
    "source": "591中古屋",
@@ -15887,7 +15915,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20433358": {
    "source": "591中古屋",
@@ -16515,7 +16544,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20783995": {
    "source": "591中古屋",
@@ -17100,7 +17130,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20900362": {
    "source": "591中古屋",
@@ -17680,7 +17711,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20786186": {
    "source": "591中古屋",
@@ -18265,7 +18297,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20740892": {
    "source": "591中古屋",
@@ -18850,7 +18883,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20721313": {
    "source": "591中古屋",
@@ -19422,7 +19456,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20641018": {
    "source": "591中古屋",
@@ -19976,7 +20011,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20914736": {
    "source": "591中古屋",
@@ -20561,7 +20597,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20828852": {
    "source": "591中古屋",
@@ -21100,7 +21137,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20822392": {
    "source": "591中古屋",
@@ -21687,7 +21725,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20856255": {
    "source": "591中古屋",
@@ -22225,7 +22264,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20896273": {
    "source": "591中古屋",
@@ -22527,7 +22567,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20909246": {
    "source": "591中古屋",
@@ -23080,7 +23121,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20849903": {
    "source": "591中古屋",
@@ -23670,7 +23712,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20955168": {
    "source": "591中古屋",
@@ -24218,7 +24261,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20754893": {
    "source": "591中古屋",
@@ -24772,7 +24816,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20828056": {
    "source": "591中古屋",
@@ -25358,7 +25403,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20869657": {
    "source": "591中古屋",
@@ -25944,7 +25990,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20878599": {
    "source": "591中古屋",
@@ -26503,7 +26550,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20757986": {
    "source": "591中古屋",
@@ -27110,7 +27158,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20753083": {
    "source": "591中古屋",
@@ -27685,7 +27734,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20775218": {
    "source": "591中古屋",
@@ -28235,7 +28285,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20947192": {
    "source": "591中古屋",
@@ -28781,7 +28832,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20810722": {
    "source": "591中古屋",
@@ -29208,7 +29260,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20780609": {
    "source": "591中古屋",
@@ -29795,7 +29848,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20782744": {
    "source": "591中古屋",
@@ -30337,7 +30391,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20863475": {
    "source": "591中古屋",
@@ -30875,7 +30930,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20964550": {
    "source": "591中古屋",
@@ -31431,7 +31487,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20976100": {
    "source": "591中古屋",
@@ -31968,7 +32025,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20881633": {
    "source": "591中古屋",
@@ -32552,7 +32610,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20744095": {
    "source": "591中古屋",
@@ -33135,7 +33194,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20943347": {
    "source": "591中古屋",
@@ -33684,7 +33744,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20734986": {
    "source": "591中古屋",
@@ -34213,7 +34274,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20454130": {
    "source": "591中古屋",
@@ -34765,7 +34827,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20933145": {
    "source": "591中古屋",
@@ -35304,7 +35367,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20694779": {
    "source": "591中古屋",
@@ -35835,7 +35899,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20829581": {
    "source": "591中古屋",
@@ -36408,7 +36473,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20663217": {
    "source": "591中古屋",
@@ -36964,7 +37030,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20653492": {
    "source": "591中古屋",
@@ -37551,7 +37618,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20938998": {
    "source": "591中古屋",
@@ -38099,7 +38167,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20630734": {
    "source": "591中古屋",
@@ -38655,7 +38724,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20936632": {
    "source": "591中古屋",
@@ -39214,7 +39284,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20587376": {
    "source": "591中古屋",
@@ -39740,7 +39811,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20961019": {
    "source": "591中古屋",
@@ -40287,7 +40359,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20708290": {
    "source": "591中古屋",
@@ -40588,7 +40661,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20735025": {
    "source": "591中古屋",
@@ -41131,7 +41205,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20736115": {
    "source": "591中古屋",
@@ -41664,7 +41739,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20736903": {
    "source": "591中古屋",
@@ -42196,7 +42272,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20739777": {
    "source": "591中古屋",
@@ -42752,7 +42829,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20746290": {
    "source": "591中古屋",
@@ -43307,7 +43385,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20749438": {
    "source": "591中古屋",
@@ -43872,7 +43951,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20750132": {
    "source": "591中古屋",
@@ -44444,7 +44524,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20752563": {
    "source": "591中古屋",
@@ -45028,7 +45109,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20753016": {
    "source": "591中古屋",
@@ -45612,7 +45694,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20967917": {
    "source": "591中古屋",
@@ -46199,7 +46282,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20961315": {
    "source": "591中古屋",
@@ -46784,7 +46868,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20792218": {
    "source": "591中古屋",
@@ -47370,7 +47455,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20796531": {
    "source": "591中古屋",
@@ -47956,7 +48042,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20797386": {
    "source": "591中古屋",
@@ -48541,7 +48628,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20800827": {
    "source": "591中古屋",
@@ -49127,7 +49215,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20807523": {
    "source": "591中古屋",
@@ -49714,7 +49803,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20816269": {
    "source": "591中古屋",
@@ -50300,7 +50390,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20819129": {
    "source": "591中古屋",
@@ -50885,7 +50976,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20819230": {
    "source": "591中古屋",
@@ -51472,7 +51564,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20813594": {
    "source": "591中古屋",
@@ -52057,7 +52150,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20827278": {
    "source": "591中古屋",
@@ -52642,7 +52736,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20828354": {
    "source": "591中古屋",
@@ -53216,7 +53311,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20832517": {
    "source": "591中古屋",
@@ -53803,7 +53899,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20759985": {
    "source": "591中古屋",
@@ -54391,7 +54488,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20761236": {
    "source": "591中古屋",
@@ -54977,7 +55075,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20761359": {
    "source": "591中古屋",
@@ -55563,7 +55662,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20852354": {
    "source": "591中古屋",
@@ -56149,7 +56249,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20870265": {
    "source": "591中古屋",
@@ -56736,7 +56837,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20780125": {
    "source": "591中古屋",
@@ -57323,7 +57425,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20784860": {
    "source": "591中古屋",
@@ -57909,7 +58012,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20887012": {
    "source": "591中古屋",
@@ -58497,7 +58601,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20902448": {
    "source": "591中古屋",
@@ -59084,7 +59189,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20887300": {
    "source": "591中古屋",
@@ -59643,7 +59749,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20831294": {
    "source": "591中古屋",
@@ -60175,7 +60282,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20776605": {
    "source": "591中古屋",
@@ -60892,7 +61000,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20781195": {
    "source": "591中古屋",
@@ -61449,7 +61558,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20787903": {
    "source": "591中古屋",
@@ -61992,7 +62102,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20792068": {
    "source": "591中古屋",
@@ -62578,7 +62689,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20798278": {
    "source": "591中古屋",
@@ -63113,7 +63225,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20798286": {
    "source": "591中古屋",
@@ -63669,7 +63782,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20810301": {
    "source": "591中古屋",
@@ -64255,7 +64369,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20819426": {
    "source": "591中古屋",
@@ -64842,7 +64957,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20819893": {
    "source": "591中古屋",
@@ -65284,7 +65400,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20827850": {
    "source": "591中古屋",
@@ -65832,7 +65949,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20858515": {
    "source": "591中古屋",
@@ -66380,7 +66498,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20685296": {
    "source": "591中古屋",
@@ -66964,7 +67083,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20901492": {
    "source": "591中古屋",
@@ -67492,7 +67612,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20653233": {
    "source": "591中古屋",
@@ -68077,7 +68198,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20351689": {
    "source": "591中古屋",
@@ -68634,7 +68756,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20902964": {
    "source": "591中古屋",
@@ -69193,7 +69316,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20862192": {
    "source": "591中古屋",
@@ -69768,7 +69892,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20900355": {
    "source": "591中古屋",
@@ -70338,7 +70463,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20912462": {
    "source": "591中古屋",
@@ -70911,7 +71037,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20768483": {
    "source": "591中古屋",
@@ -71495,7 +71622,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20881132": {
    "source": "591中古屋",
@@ -72045,7 +72173,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20881150": {
    "source": "591中古屋",
@@ -72602,7 +72731,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20906618": {
    "source": "591中古屋",
@@ -73187,7 +73317,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20650164": {
    "source": "591中古屋",
@@ -73744,7 +73875,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20662008": {
    "source": "591中古屋",
@@ -74287,7 +74419,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20710854": {
    "source": "591中古屋",
@@ -74832,7 +74965,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20716951": {
    "source": "591中古屋",
@@ -75375,7 +75509,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20754811": {
    "source": "591中古屋",
@@ -75932,7 +76067,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20764644": {
    "source": "591中古屋",
@@ -76489,7 +76625,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20909445": {
    "source": "591中古屋",
@@ -77065,7 +77202,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20663075": {
    "source": "591中古屋",
@@ -77636,7 +77774,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20909328": {
    "source": "591中古屋",
@@ -78207,7 +78346,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20727803": {
    "source": "591中古屋",
@@ -78747,7 +78887,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20693636": {
    "source": "591中古屋",
@@ -79289,7 +79430,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20661886": {
    "source": "591中古屋",
@@ -79859,7 +80001,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20772571": {
    "source": "591中古屋",
@@ -80420,7 +80563,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20855684": {
    "source": "591中古屋",
@@ -81000,7 +81144,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20762021": {
    "source": "591中古屋",
@@ -81547,7 +81692,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20516546": {
    "source": "591中古屋",
@@ -82116,7 +82262,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20653363": {
    "source": "591中古屋",
@@ -82696,7 +82843,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20787054": {
    "source": "591中古屋",
@@ -83241,7 +83389,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20682596": {
    "source": "591中古屋",
@@ -83796,7 +83945,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20687393": {
    "source": "591中古屋",
@@ -84328,7 +84478,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140946": {
    "source": "591新建案",
@@ -84791,7 +84942,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137242": {
    "source": "591新建案",
@@ -85238,7 +85390,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137546": {
    "source": "591新建案",
@@ -85725,7 +85878,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-138711": {
    "source": "591新建案",
@@ -86235,7 +86389,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-139572": {
    "source": "591新建案",
@@ -86665,7 +86820,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141211": {
    "source": "591新建案",
@@ -87046,7 +87202,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135959": {
    "source": "591新建案",
@@ -87571,7 +87728,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135648": {
    "source": "591新建案",
@@ -88105,7 +88263,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140500": {
    "source": "591新建案",
@@ -88406,7 +88565,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-139021": {
    "source": "591新建案",
@@ -88726,7 +88886,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-138735": {
    "source": "591新建案",
@@ -89180,7 +89341,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-133746": {
    "source": "591新建案",
@@ -89692,7 +89854,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-136582": {
    "source": "591新建案",
@@ -90104,7 +90267,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-133404": {
    "source": "591新建案",
@@ -90586,7 +90750,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129131": {
    "source": "591新建案",
@@ -91118,7 +91283,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127487": {
    "source": "591新建案",
@@ -91656,7 +91822,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140543": {
    "source": "591新建案",
@@ -91886,7 +92053,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-138034": {
    "source": "591新建案",
@@ -92299,7 +92467,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135348": {
    "source": "591新建案",
@@ -92782,7 +92951,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135109": {
    "source": "591新建案",
@@ -93197,7 +93367,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135020": {
    "source": "591新建案",
@@ -93666,7 +93837,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-133780": {
    "source": "591新建案",
@@ -94132,7 +94304,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141804": {
    "source": "591新建案",
@@ -94448,7 +94621,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140496": {
    "source": "591新建案",
@@ -94733,7 +94907,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140205": {
    "source": "591新建案",
@@ -95088,7 +95263,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137857": {
    "source": "591新建案",
@@ -95540,7 +95716,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142278": {
    "source": "591新建案",
@@ -95808,7 +95985,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141884": {
    "source": "591新建案",
@@ -96070,7 +96248,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141123": {
    "source": "591新建案",
@@ -96342,7 +96521,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142198": {
    "source": "591新建案",
@@ -96615,7 +96795,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142124": {
    "source": "591新建案",
@@ -96877,7 +97058,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142094": {
    "source": "591新建案",
@@ -97169,7 +97351,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142051": {
    "source": "591新建案",
@@ -97482,7 +97665,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142027": {
    "source": "591新建案",
@@ -97789,7 +97973,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142018": {
    "source": "591新建案",
@@ -98057,7 +98242,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142017": {
    "source": "591新建案",
@@ -98224,7 +98410,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141999": {
    "source": "591新建案",
@@ -98471,7 +98658,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141948": {
    "source": "591新建案",
@@ -98778,7 +98966,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141934": {
    "source": "591新建案",
@@ -99040,7 +99229,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141881": {
    "source": "591新建案",
@@ -99332,7 +99522,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141871": {
    "source": "591新建案",
@@ -99489,7 +99680,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141847": {
    "source": "591新建案",
@@ -99796,7 +99988,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141787": {
    "source": "591新建案",
@@ -100109,7 +100302,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141650": {
    "source": "591新建案",
@@ -100362,7 +100556,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141474": {
    "source": "591新建案",
@@ -100654,7 +100849,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141171": {
    "source": "591新建案",
@@ -100961,7 +101157,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140891": {
    "source": "591新建案",
@@ -101158,7 +101355,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-139557": {
    "source": "591新建案",
@@ -101410,7 +101608,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-134562": {
    "source": "591新建案",
@@ -101908,7 +102107,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20969824": {
    "source": "591中古屋",
@@ -102313,7 +102513,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20901061": {
    "source": "591中古屋",
@@ -102898,7 +103099,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20922981": {
    "source": "591中古屋",
@@ -103482,7 +103684,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20396700": {
    "source": "591中古屋",
@@ -104042,7 +104245,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20864500": {
    "source": "591中古屋",
@@ -104594,7 +104798,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20557510": {
    "source": "591中古屋",
@@ -105183,7 +105388,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20496742": {
    "source": "591中古屋",
@@ -105729,7 +105935,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20683739": {
    "source": "591中古屋",
@@ -106316,7 +106523,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20669542": {
    "source": "591中古屋",
@@ -106903,7 +107111,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20644976": {
    "source": "591中古屋",
@@ -107456,7 +107665,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20650174": {
    "source": "591中古屋",
@@ -107898,7 +108108,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20713991": {
    "source": "591中古屋",
@@ -108432,7 +108643,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20706409": {
    "source": "591中古屋",
@@ -109019,7 +109231,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20708318": {
    "source": "591中古屋",
@@ -109550,7 +109763,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20708879": {
    "source": "591中古屋",
@@ -110081,7 +110295,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20723584": {
    "source": "591中古屋",
@@ -110613,7 +110828,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20727114": {
    "source": "591中古屋",
@@ -111201,7 +111417,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20672866": {
    "source": "591中古屋",
@@ -111754,7 +111971,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20764790": {
    "source": "591中古屋",
@@ -112338,7 +112556,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20684627": {
    "source": "591中古屋",
@@ -112631,7 +112850,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20687402": {
    "source": "591中古屋",
@@ -113217,7 +113437,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20692230": {
    "source": "591中古屋",
@@ -113789,7 +114010,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20914654": {
    "source": "591中古屋",
@@ -114373,7 +114595,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20870271": {
    "source": "591中古屋",
@@ -114923,7 +115146,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20968834": {
    "source": "591中古屋",
@@ -115460,7 +115684,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20912000": {
    "source": "591中古屋",
@@ -116043,7 +116268,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20912209": {
    "source": "591中古屋",
@@ -116599,7 +116825,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20920422": {
    "source": "591中古屋",
@@ -117149,7 +117376,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20940069": {
    "source": "591中古屋",
@@ -117738,7 +117966,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20976757": {
    "source": "591中古屋",
@@ -118325,7 +118554,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20901364": {
    "source": "591中古屋",
@@ -118659,7 +118889,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20908204": {
    "source": "591中古屋",
@@ -119231,7 +119462,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20771365": {
    "source": "591中古屋",
@@ -119804,7 +120036,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20125493": {
    "source": "591中古屋",
@@ -120337,7 +120570,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20395723": {
    "source": "591中古屋",
@@ -120895,7 +121129,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20526006": {
    "source": "591中古屋",
@@ -121448,7 +121683,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20616069": {
    "source": "591中古屋",
@@ -122006,7 +122242,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20638689": {
    "source": "591中古屋",
@@ -122587,7 +122824,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20647933": {
    "source": "591中古屋",
@@ -123167,7 +123405,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20899521": {
    "source": "591中古屋",
@@ -123748,7 +123987,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20949765": {
    "source": "591中古屋",
@@ -124224,7 +124464,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20677870": {
    "source": "591中古屋",
@@ -124763,7 +125004,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-138978": {
    "source": "591新建案",
@@ -125158,7 +125400,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137567": {
    "source": "591新建案",
@@ -125649,7 +125892,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126640": {
    "source": "591新建案",
@@ -126187,7 +126431,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140195": {
    "source": "591新建案",
@@ -126688,7 +126933,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-138278": {
    "source": "591新建案",
@@ -127200,7 +127446,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137393": {
    "source": "591新建案",
@@ -127690,7 +127937,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129261": {
    "source": "591新建案",
@@ -128244,7 +128492,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141492": {
    "source": "591新建案",
@@ -128661,7 +128910,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131060": {
    "source": "591新建案",
@@ -129228,7 +129478,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-142054": {
    "source": "591新建案",
@@ -129506,7 +129757,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141117": {
    "source": "591新建案",
@@ -129789,7 +130041,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137534": {
    "source": "591新建案",
@@ -130106,7 +130359,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-133316": {
    "source": "591新建案",
@@ -130626,7 +130880,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-139695": {
    "source": "591新建案",
@@ -131015,7 +131270,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135704": {
    "source": "591新建案",
@@ -131516,7 +131772,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135266": {
    "source": "591新建案",
@@ -132040,7 +132297,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-123550": {
    "source": "591新建案",
@@ -132613,7 +132871,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-132715": {
    "source": "591新建案",
@@ -133019,7 +133278,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-130779": {
    "source": "591新建案",
@@ -133534,7 +133794,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124892": {
    "source": "591新建案",
@@ -134107,7 +134368,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124692": {
    "source": "591新建案",
@@ -134638,7 +134900,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137395": {
    "source": "591新建案",
@@ -135133,7 +135396,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135538": {
    "source": "591新建案",
@@ -135633,7 +135897,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-135436": {
    "source": "591新建案",
@@ -136134,7 +136399,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-134900": {
    "source": "591新建案",
@@ -136619,7 +136885,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129491": {
    "source": "591新建案",
@@ -137182,7 +137449,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117383": {
    "source": "591新建案",
@@ -137751,7 +138019,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137190": {
    "source": "591新建案",
@@ -138238,7 +138507,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107098": {
    "source": "591新建案",
@@ -138767,7 +139037,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107030": {
    "source": "591新建案",
@@ -139296,7 +139567,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125731": {
    "source": "591新建案",
@@ -139812,7 +140084,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124891": {
    "source": "591新建案",
@@ -140337,7 +140610,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124445": {
    "source": "591新建案",
@@ -140844,7 +141118,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122890": {
    "source": "591新建案",
@@ -141408,7 +141683,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-121908": {
    "source": "591新建案",
@@ -141943,7 +142219,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118777": {
    "source": "591新建案",
@@ -142464,7 +142741,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117925": {
    "source": "591新建案",
@@ -143018,7 +143296,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-128854": {
    "source": "591新建案",
@@ -143499,7 +143778,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127137": {
    "source": "591新建案",
@@ -144001,7 +144281,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125958": {
    "source": "591新建案",
@@ -144523,7 +144804,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117313": {
    "source": "591新建案",
@@ -145097,7 +145379,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115048": {
    "source": "591新建案",
@@ -145542,7 +145825,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-133973": {
    "source": "591新建案",
@@ -145816,7 +146100,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-133315": {
    "source": "591新建案",
@@ -146335,7 +146620,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131641": {
    "source": "591新建案",
@@ -146861,7 +147147,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131542": {
    "source": "591新建案",
@@ -147387,7 +147674,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131042": {
    "source": "591新建案",
@@ -147890,7 +148178,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-130086": {
    "source": "591新建案",
@@ -148381,7 +148670,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127724": {
    "source": "591新建案",
@@ -148906,7 +149196,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125455": {
    "source": "591新建案",
@@ -149447,7 +149738,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129534": {
    "source": "591新建案",
@@ -149979,7 +150271,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125176": {
    "source": "591新建案",
@@ -150457,7 +150750,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131241": {
    "source": "591新建案",
@@ -150965,7 +151259,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-121026": {
    "source": "591新建案",
@@ -151533,7 +151828,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-134972": {
    "source": "591新建案",
@@ -151966,7 +152262,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131540": {
    "source": "591新建案",
@@ -152478,7 +152775,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131400": {
    "source": "591新建案",
@@ -152938,7 +153236,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129510": {
    "source": "591新建案",
@@ -153354,7 +153653,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129129": {
    "source": "591新建案",
@@ -153852,7 +154152,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122256": {
    "source": "591新建案",
@@ -154426,7 +154727,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131187": {
    "source": "591新建案",
@@ -154865,7 +155167,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126399": {
    "source": "591新建案",
@@ -155401,7 +155704,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124092": {
    "source": "591新建案",
@@ -155964,7 +156268,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120783": {
    "source": "591新建案",
@@ -156498,7 +156803,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131849": {
    "source": "591新建案",
@@ -156923,7 +157229,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-128488": {
    "source": "591新建案",
@@ -157447,7 +157754,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124142": {
    "source": "591新建案",
@@ -157974,7 +158282,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122420": {
    "source": "591新建案",
@@ -158477,7 +158786,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118544": {
    "source": "591新建案",
@@ -159010,7 +159320,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-103183": {
    "source": "591新建案",
@@ -159484,7 +159795,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-105929": {
    "source": "591新建案",
@@ -159928,7 +160240,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-105820": {
    "source": "591新建案",
@@ -160299,7 +160612,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-104909": {
    "source": "591新建案",
@@ -160645,7 +160959,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-104549": {
    "source": "591新建案",
@@ -161164,7 +161479,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-103871": {
    "source": "591新建案",
@@ -161610,7 +161926,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-102875": {
    "source": "591新建案",
@@ -162139,7 +162456,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-101345": {
    "source": "591新建案",
@@ -162583,7 +162901,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126002": {
    "source": "591新建案",
@@ -163127,7 +163446,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122888": {
    "source": "591新建案",
@@ -163685,7 +164005,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122235": {
    "source": "591新建案",
@@ -163990,7 +164311,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115666": {
    "source": "591新建案",
@@ -164374,7 +164696,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115337": {
    "source": "591新建案",
@@ -164947,7 +165270,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-130202": {
    "source": "591新建案",
@@ -165463,7 +165787,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127136": {
    "source": "591新建案",
@@ -166000,7 +166325,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124056": {
    "source": "591新建案",
@@ -166500,7 +166826,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120335": {
    "source": "591新建案",
@@ -167074,7 +167401,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112585": {
    "source": "591新建案",
@@ -167553,7 +167881,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107655": {
    "source": "591新建案",
@@ -168127,7 +168456,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126419": {
    "source": "591新建案",
@@ -168632,7 +168962,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125137": {
    "source": "591新建案",
@@ -169195,7 +169526,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-123457": {
    "source": "591新建案",
@@ -169768,7 +170100,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-121502": {
    "source": "591新建案",
@@ -170285,7 +170618,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129080": {
    "source": "591新建案",
@@ -170813,7 +171147,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127848": {
    "source": "591新建案",
@@ -171287,7 +171622,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127482": {
    "source": "591新建案",
@@ -171798,7 +172134,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125234": {
    "source": "591新建案",
@@ -172326,7 +172663,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125135": {
    "source": "591新建案",
@@ -172874,7 +173212,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-123900": {
    "source": "591新建案",
@@ -173374,7 +173713,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118773": {
    "source": "591新建案",
@@ -173938,7 +174278,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125448": {
    "source": "591新建案",
@@ -174481,7 +174822,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-123520": {
    "source": "591新建案",
@@ -174974,7 +175316,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119118": {
    "source": "591新建案",
@@ -175521,7 +175864,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126740": {
    "source": "591新建案",
@@ -175827,7 +176171,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120745": {
    "source": "591新建案",
@@ -176350,7 +176695,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119855": {
    "source": "591新建案",
@@ -176853,7 +177199,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119686": {
    "source": "591新建案",
@@ -177306,7 +177653,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119516": {
    "source": "591新建案",
@@ -177864,7 +178212,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118572": {
    "source": "591新建案",
@@ -178438,7 +178787,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117765": {
    "source": "591新建案",
@@ -178987,7 +179337,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107668": {
    "source": "591新建案",
@@ -179560,7 +179911,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-105989": {
    "source": "591新建案",
@@ -180112,7 +180464,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120461": {
    "source": "591新建案",
@@ -180391,7 +180744,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120317": {
    "source": "591新建案",
@@ -180930,7 +181284,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-111717": {
    "source": "591新建案",
@@ -181457,7 +181812,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107624": {
    "source": "591新建案",
@@ -181982,7 +182338,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124403": {
    "source": "591新建案",
@@ -182385,7 +182742,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122583": {
    "source": "591新建案",
@@ -182939,7 +183297,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122275": {
    "source": "591新建案",
@@ -183401,7 +183760,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122074": {
    "source": "591新建案",
@@ -183975,7 +184335,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120802": {
    "source": "591新建案",
@@ -184368,7 +184729,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117277": {
    "source": "591新建案",
@@ -184904,7 +185266,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112623": {
    "source": "591新建案",
@@ -185478,7 +185841,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126798": {
    "source": "591新建案",
@@ -185856,7 +186220,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125181": {
    "source": "591新建案",
@@ -186328,7 +186693,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-123899": {
    "source": "591新建案",
@@ -186858,7 +187224,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119522": {
    "source": "591新建案",
@@ -187396,7 +187763,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119520": {
    "source": "591新建案",
@@ -187924,7 +188292,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-125680": {
    "source": "591新建案",
@@ -188194,7 +188563,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122324": {
    "source": "591新建案",
@@ -188763,7 +189133,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119568": {
    "source": "591新建案",
@@ -189166,7 +189537,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118136": {
    "source": "591新建案",
@@ -189735,7 +190107,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124857": {
    "source": "591新建案",
@@ -190248,7 +190621,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122021": {
    "source": "591新建案",
@@ -190804,7 +191178,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119119": {
    "source": "591新建案",
@@ -191373,7 +191748,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118784": {
    "source": "591新建案",
@@ -191947,7 +192323,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118371": {
    "source": "591新建案",
@@ -192469,7 +192846,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117315": {
    "source": "591新建案",
@@ -193043,7 +193421,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117293": {
    "source": "591新建案",
@@ -193617,7 +193996,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122797": {
    "source": "591新建案",
@@ -194095,7 +194475,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-121758": {
    "source": "591新建案",
@@ -194656,7 +195037,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-121661": {
    "source": "591新建案",
@@ -195230,7 +195612,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-121119": {
    "source": "591新建案",
@@ -195648,7 +196031,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117912": {
    "source": "591新建案",
@@ -196166,7 +196550,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-117690": {
    "source": "591新建案",
@@ -196499,7 +196884,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116861": {
    "source": "591新建案",
@@ -197032,7 +197418,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-113999": {
    "source": "591新建案",
@@ -197606,7 +197993,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-122081": {
    "source": "591新建案",
@@ -197927,7 +198315,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119512": {
    "source": "591新建案",
@@ -198415,7 +198804,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-118821": {
    "source": "591新建案",
@@ -198923,7 +199313,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112516": {
    "source": "591新建案",
@@ -199496,7 +199887,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-105986": {
    "source": "591新建案",
@@ -200035,7 +200427,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120045": {
    "source": "591新建案",
@@ -200572,7 +200965,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115731": {
    "source": "591新建案",
@@ -201143,7 +201537,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115722": {
    "source": "591新建案",
@@ -201691,7 +202086,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115217": {
    "source": "591新建案",
@@ -202263,7 +202659,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119142": {
    "source": "591新建案",
@@ -202719,7 +203116,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116359": {
    "source": "591新建案",
@@ -203143,7 +203541,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116073": {
    "source": "591新建案",
@@ -203671,7 +204070,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115051": {
    "source": "591新建案",
@@ -204244,7 +204644,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114046": {
    "source": "591新建案",
@@ -204782,7 +205183,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112943": {
    "source": "591新建案",
@@ -205231,7 +205633,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115496": {
    "source": "591新建案",
@@ -205747,7 +206150,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114489": {
    "source": "591新建案",
@@ -206195,7 +206599,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-113021": {
    "source": "591新建案",
@@ -206761,7 +207166,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-110392": {
    "source": "591新建案",
@@ -207303,7 +207709,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107791": {
    "source": "591新建案",
@@ -207831,7 +208238,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107749": {
    "source": "591新建案",
@@ -208274,7 +208682,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107698": {
    "source": "591新建案",
@@ -208800,7 +209209,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112792": {
    "source": "591新建案",
@@ -209372,7 +209782,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112148": {
    "source": "591新建案",
@@ -209927,7 +210338,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-107790": {
    "source": "591新建案",
@@ -210375,7 +210787,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-120320": {
    "source": "591新建案",
@@ -210889,7 +211302,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115159": {
    "source": "591新建案",
@@ -211423,7 +211837,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115047": {
    "source": "591新建案",
@@ -211863,7 +212278,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114693": {
    "source": "591新建案",
@@ -212387,7 +212803,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116884": {
    "source": "591新建案",
@@ -212908,7 +213325,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116316": {
    "source": "591新建案",
@@ -213316,7 +213734,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116209": {
    "source": "591新建案",
@@ -213636,7 +214055,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-115871": {
    "source": "591新建案",
@@ -214147,7 +214567,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-111811": {
    "source": "591新建案",
@@ -214482,7 +214903,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-111621": {
    "source": "591新建案",
@@ -214924,7 +215346,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-110961": {
    "source": "591新建案",
@@ -215498,7 +215921,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-103951": {
    "source": "591新建案",
@@ -216037,7 +216461,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-103886": {
    "source": "591新建案",
@@ -216531,7 +216956,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-100943": {
    "source": "591新建案",
@@ -216794,7 +217220,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20948001": {
    "source": "591中古屋",
@@ -217380,7 +217807,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20964888": {
    "source": "591中古屋",
@@ -217971,7 +218399,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20853503": {
    "source": "591中古屋",
@@ -218554,7 +218983,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20900159": {
    "source": "591中古屋",
@@ -219136,7 +219566,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20764112": {
    "source": "591中古屋",
@@ -219721,7 +220152,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20680730": {
    "source": "591中古屋",
@@ -220272,7 +220704,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20694591": {
    "source": "591中古屋",
@@ -220858,7 +221291,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20836889": {
    "source": "591中古屋",
@@ -221444,7 +221878,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20675098": {
    "source": "591中古屋",
@@ -221974,7 +222409,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20846555": {
    "source": "591中古屋",
@@ -222550,7 +222986,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20938434": {
    "source": "591中古屋",
@@ -223094,7 +223531,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sinyi-87252Q": {
    "source": "信義房屋",
@@ -223422,7 +223860,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sinyi-8699CJ": {
    "source": "信義房屋",
@@ -223757,7 +224196,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20945964": {
    "source": "591中古屋",
@@ -224302,7 +224742,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20804765": {
    "source": "591中古屋",
@@ -224848,7 +225289,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20634161": {
    "source": "591中古屋",
@@ -225415,7 +225857,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20788490": {
    "source": "591中古屋",
@@ -225960,7 +226403,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20768611": {
    "source": "591中古屋",
@@ -226437,7 +226881,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20828209": {
    "source": "591中古屋",
@@ -226983,7 +227428,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20773397": {
    "source": "591中古屋",
@@ -227528,7 +227974,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20824471": {
    "source": "591中古屋",
@@ -228073,7 +228520,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20848229": {
    "source": "591中古屋",
@@ -228622,7 +229070,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20668625": {
    "source": "591中古屋",
@@ -229209,7 +229658,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20801087": {
    "source": "591中古屋",
@@ -229753,7 +230203,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20810727": {
    "source": "591中古屋",
@@ -230298,7 +230749,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20888879": {
    "source": "591中古屋",
@@ -230883,7 +231335,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20885528": {
    "source": "591中古屋",
@@ -231476,7 +231929,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20679939": {
    "source": "591中古屋",
@@ -232022,7 +232476,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20958169": {
    "source": "591中古屋",
@@ -232610,7 +233065,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20812633": {
    "source": "591中古屋",
@@ -233157,7 +233613,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20737897": {
    "source": "591中古屋",
@@ -233704,7 +234161,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20669882": {
    "source": "591中古屋",
@@ -234259,7 +234717,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20755604": {
    "source": "591中古屋",
@@ -234807,7 +235266,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20942214": {
    "source": "591中古屋",
@@ -235352,7 +235812,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20727189": {
    "source": "591中古屋",
@@ -235899,7 +236360,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20770431": {
    "source": "591中古屋",
@@ -236444,7 +236906,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20788070": {
    "source": "591中古屋",
@@ -236990,7 +237453,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20810055": {
    "source": "591中古屋",
@@ -237623,7 +238087,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20829198": {
    "source": "591中古屋",
@@ -238169,7 +238634,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20841169": {
    "source": "591中古屋",
@@ -238712,7 +239178,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20901073": {
    "source": "591中古屋",
@@ -239256,7 +239723,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20869291": {
    "source": "591中古屋",
@@ -239799,7 +240267,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20943754": {
    "source": "591中古屋",
@@ -240342,7 +240811,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20945932": {
    "source": "591中古屋",
@@ -240888,7 +241358,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20757304": {
    "source": "591中古屋",
@@ -241435,7 +241906,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20688734": {
    "source": "591中古屋",
@@ -241983,7 +242455,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20767214": {
    "source": "591中古屋",
@@ -242529,7 +243002,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20851950": {
    "source": "591中古屋",
@@ -243072,7 +243546,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20722617": {
    "source": "591中古屋",
@@ -243615,7 +244090,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20805041": {
    "source": "591中古屋",
@@ -244160,7 +244636,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20948882": {
    "source": "591中古屋",
@@ -244706,7 +245183,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20843000": {
    "source": "591中古屋",
@@ -245252,7 +245730,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20974284": {
    "source": "591中古屋",
@@ -245798,7 +246277,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20767032": {
    "source": "591中古屋",
@@ -246346,7 +246826,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20768432": {
    "source": "591中古屋",
@@ -246903,7 +247384,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20774871": {
    "source": "591中古屋",
@@ -247448,7 +247930,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20671424": {
    "source": "591中古屋",
@@ -248005,7 +248488,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20863470": {
    "source": "591中古屋",
@@ -248549,7 +249033,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20912870": {
    "source": "591中古屋",
@@ -249103,7 +249588,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20825804": {
    "source": "591中古屋",
@@ -249649,7 +250135,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20688125": {
    "source": "591中古屋",
@@ -250192,7 +250679,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20955196": {
    "source": "591中古屋",
@@ -250738,7 +251226,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20841173": {
    "source": "591中古屋",
@@ -251284,7 +251773,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20946579": {
    "source": "591中古屋",
@@ -251830,7 +252320,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20950820": {
    "source": "591中古屋",
@@ -252416,7 +252907,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20649146": {
    "source": "591中古屋",
@@ -252994,7 +253486,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20681970": {
    "source": "591中古屋",
@@ -253541,7 +254034,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20811916": {
    "source": "591中古屋",
@@ -254094,7 +254588,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20764403": {
    "source": "591中古屋",
@@ -254639,7 +255134,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20904443": {
    "source": "591中古屋",
@@ -255112,7 +255608,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20541500": {
    "source": "591中古屋",
@@ -255697,7 +256194,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20637749": {
    "source": "591中古屋",
@@ -256255,7 +256753,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20895030": {
    "source": "591中古屋",
@@ -256830,7 +257329,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20677211": {
    "source": "591中古屋",
@@ -257386,7 +257886,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20682406": {
    "source": "591中古屋",
@@ -257946,7 +258447,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20706909": {
    "source": "591中古屋",
@@ -258505,7 +259007,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20709626": {
    "source": "591中古屋",
@@ -259061,7 +259564,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20718559": {
    "source": "591中古屋",
@@ -259608,7 +260112,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20720885": {
    "source": "591中古屋",
@@ -260181,7 +260686,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20721483": {
    "source": "591中古屋",
@@ -260751,7 +261257,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20727482": {
    "source": "591中古屋",
@@ -261332,7 +261839,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20729890": {
    "source": "591中古屋",
@@ -261917,7 +262425,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20737215": {
    "source": "591中古屋",
@@ -262502,7 +263011,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20746354": {
    "source": "591中古屋",
@@ -263073,7 +263583,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20746449": {
    "source": "591中古屋",
@@ -263643,7 +264154,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20746720": {
    "source": "591中古屋",
@@ -264213,7 +264725,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20748883": {
    "source": "591中古屋",
@@ -264784,7 +265297,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20751706": {
    "source": "591中古屋",
@@ -265072,7 +265586,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20751718": {
    "source": "591中古屋",
@@ -265642,7 +266157,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20752295": {
    "source": "591中古屋",
@@ -266183,7 +266699,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20752829": {
    "source": "591中古屋",
@@ -266472,7 +266989,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20753539": {
    "source": "591中古屋",
@@ -267080,7 +267598,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20755819": {
    "source": "591中古屋",
@@ -267618,7 +268137,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20756166": {
    "source": "591中古屋",
@@ -268201,7 +268721,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20757851": {
    "source": "591中古屋",
@@ -268487,7 +269008,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20762322": {
    "source": "591中古屋",
@@ -269032,7 +269554,8 @@
     "updated": "2026-09-28"
    },
    "active": false,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140943": {
    "source": "591新建案",
@@ -269216,7 +269739,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140944": {
    "source": "591新建案",
@@ -269503,7 +270027,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-134048": {
    "source": "591新建案",
@@ -269803,7 +270328,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-140259": {
    "source": "591新建案",
@@ -270149,7 +270675,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-139994": {
    "source": "591新建案",
@@ -270418,7 +270945,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-138262": {
    "source": "591新建案",
@@ -270602,7 +271130,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-137390": {
    "source": "591新建案",
@@ -271101,7 +271630,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141087": {
    "source": "591新建案",
@@ -271362,7 +271892,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-132666": {
    "source": "591新建案",
@@ -271846,7 +272377,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141959": {
    "source": "591新建案",
@@ -272332,7 +272864,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-141411": {
    "source": "591新建案",
@@ -272645,7 +273178,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-127145": {
    "source": "591新建案",
@@ -273154,7 +273688,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-136330": {
    "source": "591新建案",
@@ -273576,7 +274111,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-128828": {
    "source": "591新建案",
@@ -274104,7 +274640,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-116335": {
    "source": "591新建案",
@@ -274566,7 +275103,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-134019": {
    "source": "591新建案",
@@ -275078,7 +275616,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-128452": {
    "source": "591新建案",
@@ -275441,7 +275980,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-124456": {
    "source": "591新建案",
@@ -275853,7 +276393,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129916": {
    "source": "591新建案",
@@ -276361,7 +276902,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-131980": {
    "source": "591新建案",
@@ -276742,7 +277284,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-130748": {
    "source": "591新建案",
@@ -277191,7 +277734,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-129285": {
    "source": "591新建案",
@@ -277663,7 +278207,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-104359": {
    "source": "591新建案",
@@ -277905,7 +278450,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-132851": {
    "source": "591新建案",
@@ -278408,7 +278954,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126895": {
    "source": "591新建案",
@@ -278776,7 +279323,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-128220": {
    "source": "591新建案",
@@ -279232,7 +279780,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-126388": {
    "source": "591新建案",
@@ -279747,7 +280296,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-123057": {
    "source": "591新建案",
@@ -280242,7 +280792,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114409": {
    "source": "591新建案",
@@ -280685,7 +281236,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119503": {
    "source": "591新建案",
@@ -281181,7 +281733,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119997": {
    "source": "591新建案",
@@ -281594,7 +282147,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114066": {
    "source": "591新建案",
@@ -282129,7 +282683,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114798": {
    "source": "591新建案",
@@ -282606,7 +283161,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-114803": {
    "source": "591新建案",
@@ -283134,7 +283690,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-112571": {
    "source": "591新建案",
@@ -283663,7 +284220,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-119357": {
    "source": "591新建案",
@@ -284175,7 +284733,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-105004": {
    "source": "591新建案",
@@ -284590,7 +285149,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-105295": {
    "source": "591新建案",
@@ -285016,7 +285576,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "new-104459": {
    "source": "591新建案",
@@ -285453,7 +286014,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sinyi-8425NM": {
    "source": "信義房屋",
@@ -285746,7 +286308,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sinyi-8879TN": {
    "source": "信義房屋",
@@ -285944,7 +286507,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-007e2e355188725": {
    "source": "樂屋網",
@@ -286268,7 +286832,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0380c5356274201": {
    "source": "樂屋網",
@@ -286552,7 +287117,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-01b3cb35515733e": {
    "source": "樂屋網",
@@ -286876,7 +287442,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0a37ca355242025": {
    "source": "樂屋網",
@@ -287200,7 +287767,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-05bbbf355264492": {
    "source": "樂屋網",
@@ -287524,7 +288092,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-08229835515609b": {
    "source": "樂屋網",
@@ -287848,7 +288417,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-03cd93354675369": {
    "source": "樂屋網",
@@ -288172,7 +288742,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0d37c1350675219": {
    "source": "樂屋網",
@@ -288479,7 +289050,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-03d0ac332461400": {
    "source": "樂屋網",
@@ -288801,7 +289373,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0aabbd34065988b": {
    "source": "樂屋網",
@@ -289085,7 +289658,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-07bce0328435962": {
    "source": "樂屋網",
@@ -289407,7 +289981,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0e156d34243794a": {
    "source": "樂屋網",
@@ -289579,7 +290154,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-06bec0332456686": {
    "source": "樂屋網",
@@ -289903,7 +290479,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0cc20a344978997": {
    "source": "樂屋網",
@@ -290227,7 +290804,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-05232233243623b": {
    "source": "樂屋網",
@@ -290551,7 +291129,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0a0b80331490820": {
    "source": "樂屋網",
@@ -290881,7 +291460,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-004a9b35170856f": {
    "source": "樂屋網",
@@ -291180,7 +291760,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0aa607314990079": {
    "source": "樂屋網",
@@ -291472,7 +292053,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0bd7a7347367285": {
    "source": "樂屋網",
@@ -291801,7 +292383,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0b7abc345936445": {
    "source": "樂屋網",
@@ -292130,7 +292713,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-05828c33601137e": {
    "source": "樂屋網",
@@ -292459,7 +293043,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-01626b352000373": {
    "source": "樂屋網",
@@ -292758,7 +293343,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-039b3d35311866d": {
    "source": "樂屋網",
@@ -293087,7 +293673,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0a6c14351939544": {
    "source": "樂屋網",
@@ -293417,7 +294004,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-016138337140116": {
    "source": "樂屋網",
@@ -293747,7 +294335,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-0e8d2a33615005a": {
    "source": "樂屋網",
@@ -294071,7 +294660,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-05961233195143a": {
    "source": "樂屋網",
@@ -294393,7 +294983,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-092ed7354587190": {
    "source": "樂屋網",
@@ -294690,7 +295281,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "rakuya-098fbe332452977": {
    "source": "樂屋網",
@@ -295020,7 +295612,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": false
+   "is_new": false,
+   "baseline": true
   },
   "sale-20759327": {
    "source": "591中古屋",
@@ -295607,7 +296200,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20790466": {
    "source": "591中古屋",
@@ -296156,7 +296750,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20703677": {
    "source": "591中古屋",
@@ -296702,7 +297297,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20943892": {
    "source": "591中古屋",
@@ -297245,7 +297841,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20738862": {
    "source": "591中古屋",
@@ -297791,7 +298388,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20892815": {
    "source": "591中古屋",
@@ -298346,7 +298944,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20834767": {
    "source": "591中古屋",
@@ -298889,7 +299488,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20886944": {
    "source": "591中古屋",
@@ -299487,7 +300087,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20807978": {
    "source": "591中古屋",
@@ -299972,7 +300573,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20788171": {
    "source": "591中古屋",
@@ -300555,7 +301157,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20879786": {
    "source": "591中古屋",
@@ -301032,7 +301635,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20954347": {
    "source": "591中古屋",
@@ -301575,7 +302179,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20807198": {
    "source": "591中古屋",
@@ -302161,7 +302766,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20811715": {
    "source": "591中古屋",
@@ -302706,7 +303312,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20865683": {
    "source": "591中古屋",
@@ -303263,7 +303870,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20928257": {
    "source": "591中古屋",
@@ -303816,7 +304424,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20742772": {
    "source": "591中古屋",
@@ -304371,7 +304980,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20767469": {
    "source": "591中古屋",
@@ -304935,7 +305545,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20735009": {
    "source": "591中古屋",
@@ -305228,7 +305839,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20756527": {
    "source": "591中古屋",
@@ -305532,7 +306144,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20903922": {
    "source": "591中古屋",
@@ -306085,7 +306698,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "sale-20859960": {
    "source": "591中古屋",
@@ -306640,7 +307254,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "hb-VS03903": {
    "source": "住商不動產",
@@ -306933,7 +307548,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "hb-QS34928": {
    "source": "住商不動產",
@@ -307256,7 +307872,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "hb-s9813HY": {
    "source": "住商不動產",
@@ -307579,7 +308196,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "hb-c2011909": {
    "source": "住商不動產",
@@ -307909,7 +308527,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "hb-c2082682": {
    "source": "住商不動產",
@@ -308232,7 +308851,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "hb-s9673QV": {
    "source": "住商不動產",
@@ -308527,7 +309147,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   },
   "rakuya-0eabef35371023a": {
    "source": "樂屋網",
@@ -308819,7 +309440,8 @@
     "updated": "2026-09-28"
    },
    "active": true,
-   "is_new": true
+   "is_new": true,
+   "baseline": true
   }
  },
  "runs": [

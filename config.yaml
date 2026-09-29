@@ -153,7 +153,7 @@ realprice:
 # ---------------------------------------------------------
 notify:
   email: true
-  send_when_empty: false   # 沒有新物件時是否仍寄信
+  send_when_empty: true    # 沒有新物件或降價時也寄信（信裡會附目前的物件總數）
   max_items_in_email: 30
 
 # 儀表板網址（設定好 GitHub Pages 後填上，信件裡會附連結）

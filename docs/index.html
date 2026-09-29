@@ -45,6 +45,9 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:16px}
 .stat{background:var(--surface);padding:12px 16px}
+.sbtn{border:0;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.sbtn:hover span{color:var(--accent);text-decoration:underline}
+.sbtn[aria-pressed="true"]{box-shadow:inset 0 -3px 0 var(--accent)}
 .stat b{display:block;font:500 24px/1.2 "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
 .stat span{color:var(--muted);font-size:12px;letter-spacing:.04em}
 .stat.new b{color:var(--accent)} .stat.drop b{color:var(--good)}
@@ -162,8 +165,8 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 
   <div class="demo" id="demo" hidden>目前顯示的是範例資料。部署到 GitHub 並執行一次後，這裡會換成你的物件。</div>
   <div class="stats">
-    <div class="stat new"><b id="sNew">–</b><span>本次新物件</span></div>
-    <div class="stat drop"><b id="sDrop">–</b><span>降價</span></div>
+    <button type="button" class="stat new sbtn" data-status="new"><b id="sNew">–</b><span>近 7 天新物件</span></button>
+    <button type="button" class="stat drop sbtn" data-status="drop"><b id="sDrop">–</b><span>降價中</span></button>
     <div class="stat"><b id="sActive">–</b><span>目前在架（符合條件）</span></div>
     <div class="stat"><b id="sAll">–</b><span>累計追蹤</span></div>
   </div>
@@ -179,7 +182,10 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
       <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="dist">離圓心近→遠</option><option value="prem">低於行情優先</option>
     </select>
     <input type="search" id="fText" placeholder="搜尋標題、社區、地址">
-    <label class="chk"><input type="checkbox" id="fNew"> 只看新物件</label>
+    <select id="fStatus" aria-label="新物件／降價">
+      <option value="">全部物件</option><option value="new">只看新物件（7 天內）</option>
+      <option value="drop">只看降價</option><option value="either">新物件或降價</option>
+    </select>
     <label class="chk"><input type="checkbox" id="fActive" checked> 只看在架</label>
     <span class="count" id="count"></span>
   </div>
@@ -454,7 +460,7 @@ function drawMap(list){
     m.addTo(LAYER); MARKERS[it.id] = m; pts.push([it.lat, it.lng]);
     if (it.id === HL) { m.setZIndexOffset(1000); const p = markerOf(it.id); if (p) p.classList.add("sel"); }
   }
-  const key = [$("fSearch").value, $("fSource").value, $("fText").value, $("fNew").checked, $("fActive").checked].join("|");
+  const key = [$("fSearch").value, $("fSource").value, $("fText").value, $("fStatus").value, $("fActive").checked].join("|");
   setTimeout(() => {
     MAP.invalidateSize();
     if (PENDING) { const it = list.find(x => x.id === PENDING); PENDING = null; if (it) return locate(it.id); }
@@ -527,11 +533,15 @@ document.addEventListener("mouseover", e => {
 });
 document.addEventListener("mouseleave", e => { if (e.target.id === "mapList") document.querySelectorAll(".pin.big").forEach(p => p.classList.remove("big")); }, true);
 
+function statusOk(it){
+  const v = $("fStatus").value, drop = it.is_drop || (it.prev_price && it.price && it.prev_price > it.price);
+  return !v || (v === "new" && it.is_new) || (v === "drop" && drop) || (v === "either" && (it.is_new || drop));
+}
 function render(){
   const q = $("fText").value.trim(), s = $("fSearch").value, src = $("fSource").value;
   let list = DATA.items.filter(it =>
     (!s || it.search === s) && (!src || it.source === src) &&
-    (!$("fNew").checked || it.is_new) && (!$("fActive").checked || it.active) &&
+    statusOk(it) && (!$("fActive").checked || it.active) &&
     (!q || [it.title,it.community,it.address,it.district].join(" ").includes(q)));
   const by = $("fSort").value, big = 1e9;
   const key = {dist: it => it.distance_km ?? big, main: it => -(it.main_ping ?? 0), prem: it => it.market?.premium ?? big, new: it => (it.is_new ? "1" : "0") + (it.prev_price ? "1" : "0") + (it.first_seen || ""), price: it => it.price ?? big, unit: it => it.unit_price ?? big, ping: it => -(it.ping ?? 0)}[by];
@@ -539,6 +549,7 @@ function render(){
   if (VIEW === "map") drawMap(list);
   else $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">沒有符合的物件</div>';
   $("count").textContent = `顯示 ${list.length} 筆`;
+  document.querySelectorAll(".sbtn").forEach(b => b.setAttribute("aria-pressed", $("fStatus").value === b.dataset.status));
 }
 
 function boot(data, demo){
@@ -547,13 +558,18 @@ function boot(data, demo){
   const last = (data.runs || []).slice(-1)[0] || {};
   $("updated").textContent = `最後更新：${data.updated}（台北時間）`;
   $("sNew").textContent = data.items.filter(i => i.is_new).length;
-  $("sDrop").textContent = data.items.filter(i => i.prev_price && i.active).length;
+  $("sDrop").textContent = data.items.filter(i => i.active && (i.is_drop || (i.prev_price && i.price && i.prev_price > i.price))).length;
   $("sActive").textContent = data.items.filter(i => i.active).length;
   $("sAll").textContent = data.items.length;
   if ((last.warnings || []).length) { $("warn").hidden = false; $("warn").innerHTML = last.warnings.map(w => "⚠ " + esc(w)).join("<br>"); }
   for (const s of data.searches || []) $("fSearch").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
   for (const s of [...new Set(data.items.map(i => i.source))].sort()) $("fSource").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
-  ["fText","fSearch","fSource","fSort","fNew","fActive"].forEach(id => $(id).addEventListener("input", render));
+  ["fText","fSearch","fSource","fSort","fStatus","fActive"].forEach(id => $(id).addEventListener("input", render));
+  // 點上方的「近 7 天新物件」「降價中」直接篩選，再點一次取消
+  document.querySelectorAll(".sbtn").forEach(b => b.addEventListener("click", () => {
+    $("fStatus").value = $("fStatus").value === b.dataset.status ? "" : b.dataset.status;
+    render();
+  }));
   $("vList").onclick = () => setView("list"); $("vMap").onclick = () => setView("map");
   renderCriteria();
   render();

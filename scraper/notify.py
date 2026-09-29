@@ -64,10 +64,13 @@ def _card(it: dict, badge: str) -> str:
 </td></tr>"""
 
 
-def build_email(new_items, drops, warnings, dashboard_url, max_items=30) -> tuple[str, str]:
-    subject = f"🏠 房房小助手：{len(new_items)} 筆新物件"
-    if drops:
-        subject += f"、{len(drops)} 筆降價"
+def build_email(new_items, drops, warnings, dashboard_url, max_items=30, summary=None) -> tuple[str, str]:
+    if new_items or drops:
+        subject = f"🏠 房房小助手：{len(new_items)} 筆新物件"
+        if drops:
+            subject += f"、{len(drops)} 筆降價"
+    else:
+        subject = "🏠 房房小助手：本次沒有新物件或降價"
     rows = "".join(_card(it, "NEW") for it in new_items[:max_items])
     rows += "".join(_card(it, "降價") for it in drops[:max_items])
     more = ""
@@ -78,9 +81,12 @@ def build_email(new_items, drops, warnings, dashboard_url, max_items=30) -> tupl
         warn = ('<div style="background:#fff4e5;padding:10px;border-radius:6px;font-size:13px">⚠ '
                 + "<br>⚠ ".join(html.escape(w) for w in warnings) + "</div>")
     link = (f'<p><a href="{html.escape(dashboard_url)}">打開儀表板 →</a></p>' if dashboard_url else "")
+    if summary:
+        link = (f'<p style="font-size:14px;color:#333">目前符合條件 <b>{summary["active"]}</b> 筆・'
+                f'近 7 天新物件 <b>{summary["week_new"]}</b> 筆・降價中 <b>{summary["drops"]}</b> 筆</p>') + link
     body = f"""<div style="max-width:640px;font-family:sans-serif">
 <h2 style="margin:0 0 8px">本週符合條件的物件</h2>{warn}{link}
-<table cellspacing="0" cellpadding="0" style="width:100%">{rows or '<tr><td>這次沒有新物件。</td></tr>'}</table>
+<table cellspacing="0" cellpadding="0" style="width:100%">{rows or '<tr><td style="font-family:sans-serif;padding:12px 0">這次執行沒有新上架或降價的物件，可以到儀表板看全部物件。</td></tr>'}</table>
 {more}<p style="font-size:12px;color:#999">此信由 GitHub Actions 自動寄出</p></div>"""
     return subject, body
 

@@ -38,6 +38,7 @@ by = {i["id"]: i for i in d["items"]}
 assert "sale-3" not in by and "sale-5" not in by
 assert by["sale-4"]["is_new"] and not by["sale-2"]["is_new"]
 assert by["sale-1"]["prev_price"] == 2500 and by["sale-1"]["price_history"][-1][1] == 2400
+assert by["sale-1"]["is_drop"] and not by["sale-2"]["is_drop"] and by["sale-4"]["new_this_run"]
 assert by["new-1"]["active"] and by["new-1"]["unit_price"] == 85
 assert len(sent) == 2 and "已啟動" in sent[0][0] and "1 筆新物件、1 筆降價" in sent[1][0], [s for s,_ in sent]
 Path("tests/sample_email.html").write_text(sent[1][1], "utf-8")
