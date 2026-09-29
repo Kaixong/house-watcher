@@ -111,7 +111,7 @@ def _dump_debug(page, n, log):
         classes = page.evaluate("""() => [...new Set([...document.querySelectorAll('[class]')]
             .flatMap(e => [...e.classList]).filter(c => /item|list|house|ware/i.test(c)))].slice(0, 40)""")
         log(f"    相關 class：{classes}")
-        (d / f"sale_{n}.html").write_text(page.content(), "utf-8")
+        # 只存截圖，不存整份網頁原始碼（原始碼裡含有網站自己的金鑰等資料，不該放進公開 repo）
         page.screenshot(path=str(d / f"sale_{n}.png"), full_page=False)
     except Exception as e:  # noqa: BLE001
         log(f"    （除錯資料儲存失敗：{e}）")
