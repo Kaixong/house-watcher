@@ -109,9 +109,16 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 @media (max-width:520px){ #mapList .card .lk:not(.primary):not([data-locate]):not([data-mk]){display:none} }
 .tomap{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:40;background:var(--accent);color:var(--surface);border:0;border-radius:99px;padding:11px 18px;font:500 15px/1 "Noto Sans TC",system-ui,sans-serif;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer}
 .card.hl{outline:2px solid var(--accent);outline-offset:2px}
-.pin{transition:transform .15s}
-.pin.big{transform:scale(1.5)}
-.pin.sel{transform:scale(1.9);box-shadow:0 0 0 3px #fff,0 0 0 5px #b3261e}
+.pin{position:relative}
+/* 滑鼠移到清單時：點本身不變大，只加一圈細框 */
+.pin.big{box-shadow:0 0 0 2px #1d2320}
+/* 選中的物件：點維持原大小，外面加一個「中空」的紅色圓圈並慢慢擴散；圓圈是透明的，不會遮住旁邊的點 */
+.pin.sel{box-shadow:0 0 0 2px #b3261e}
+.pin.sel::before,.pin.sel::after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;
+  border:2.5px solid #b3261e;border-radius:50%;pointer-events:none;background:transparent}
+.pin.sel::after{animation:pinPulse 1.8s ease-out infinite}
+@keyframes pinPulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.8);opacity:0}}
+@media (prefers-reduced-motion: reduce){ .pin.sel::after{animation:none;display:none} }
 #mapWrap .legend{gap:16px}
 .leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.5;margin:10px 12px}
 .leaflet-popup-content a{color:#2f3e8f}
