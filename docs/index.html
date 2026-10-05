@@ -112,13 +112,12 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .pin{position:relative}
 /* 滑鼠移到清單時：點本身不變大，只加一圈細框 */
 .pin.big{box-shadow:0 0 0 2px #1d2320}
-/* 選中的物件：點維持原大小，外面加一個「中空」的紅色圓圈並慢慢擴散；圓圈是透明的，不會遮住旁邊的點 */
-.pin.sel{box-shadow:0 0 0 2px #b3261e}
-.pin.sel::before,.pin.sel::after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;
-  border:2.5px solid #b3261e;border-radius:50%;pointer-events:none;background:transparent}
-.pin.sel::after{animation:pinPulse 1.8s ease-out infinite}
-@keyframes pinPulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.8);opacity:0}}
-@media (prefers-reduced-motion: reduce){ .pin.sel::after{animation:none;display:none} }
+/* 選中的物件：用 box-shadow 畫圈（一定與圖標同心），緊貼圖標：白色細縫＋紅色外框，外面再一圈淡紅色往外擴散 */
+.pin.sel{box-shadow:0 0 0 1.5px #fff,0 0 0 4px #b3261e;animation:pinPulse 1.8s ease-out infinite}
+@keyframes pinPulse{
+  0%{box-shadow:0 0 0 1.5px #fff,0 0 0 4px #b3261e,0 0 0 4px rgba(179,38,30,.55)}
+  100%{box-shadow:0 0 0 1.5px #fff,0 0 0 4px #b3261e,0 0 0 11px rgba(179,38,30,0)}}
+@media (prefers-reduced-motion: reduce){ .pin.sel{animation:none} }
 #mapWrap .legend{gap:16px}
 .leaflet-popup-content{font-family:inherit;font-size:13px;line-height:1.5;margin:10px 12px}
 .leaflet-popup-content a{color:#2f3e8f}
