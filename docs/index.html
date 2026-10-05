@@ -135,6 +135,7 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .kpi span{font-size:12px;color:var(--muted)}
 .chart{position:relative}
 .chart svg{display:block;width:100%;height:auto}
+@media (max-width:640px){ .chart{overflow-x:auto} .chart svg{width:640px;max-width:none} }
 .chart .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12px;padding:6px 8px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-110%)}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:14px;height:2px;vertical-align:middle;margin-right:5px}
@@ -312,8 +313,8 @@ function lineChart(series, refPrice){
   if (!labels.length) return '<p class="note">成交筆數不足，無法畫出走勢。</p>';
   const vals = series.flatMap(s => s.pts.map(p => p[1])).concat(refPrice ? [refPrice] : []);
   let lo = Math.min(...vals), hi = Math.max(...vals);
-  const pad = Math.max((hi - lo) * 0.15, 2); lo = Math.floor((lo - pad) / 5) * 5; hi = Math.ceil((hi + pad) / 5) * 5;
-  const W = 700, H = 260, L = 48, R = 28, T = 14, B = 34;
+  const pad = Math.max((hi - lo) * 0.2, 3); lo = Math.floor((lo - pad) / 5) * 5; hi = Math.ceil((hi + pad) / 5) * 5;
+  const W = 700, H = 280, L = 48, R = 28, T = 24, B = 40;
   const x = i => labels.length === 1 ? (L + W - R) / 2 : L + i * (W - L - R) / (labels.length - 1);
   const y = v => T + (hi - v) * (H - T - B) / (hi - lo);
   const step = (hi - lo) / 4;
@@ -329,17 +330,25 @@ function lineChart(series, refPrice){
   if (refPrice) g += `<line x1="${L}" x2="${W - R}" y1="${y(refPrice)}" y2="${y(refPrice)}" stroke="var(--price)" stroke-width="1.5" stroke-dasharray="5 4"/>` +
     `<text x="${L + 6}" y="${y(refPrice) - 6}" text-anchor="start" font-size="11" fill="var(--price)">此物件開價 ${refPrice}</text>`;
   const pts = [];
-  for (const s of series) {
+  series.forEach((s, si) => {
     const P = s.pts.map(p => ({x: x(labels.indexOf(p[0])), y: y(p[1]), lb: p[0], v: p[1], n: p[2], s: s.name, c: s.color}));
-    if (!P.length) continue;
+    if (!P.length) return;
     g += `<polyline fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round" points="${P.map(p => p.x + "," + p.y).join(" ")}"/>`;
     for (const p of P) g += s.marker === "sq"
       ? `<rect x="${p.x - 4}" y="${p.y - 4}" width="8" height="8" rx="1.5" fill="${s.color}" stroke="var(--surface)" stroke-width="2"/>`
       : `<circle cx="${p.x}" cy="${p.y}" r="4.5" fill="${s.color}" stroke="var(--surface)" stroke-width="2"/>`;
-    const e = P[P.length - 1];
-    g += `<text x="${Math.min(e.x + 8, W - R - 4)}" y="${e.y - 8}" font-size="11" fill="var(--ink)" text-anchor="${e.x > W - 80 ? "end" : "start"}">${e.v}</text>`;
+    // 每個點都標上價格。同一季兩條線都有點時，價格高的標在上方、低的標在下方，避免重疊
+    const other = series[1 - si] ? Object.fromEntries(series[1 - si].pts.map(q => [q[0], q[1]])) : {};
+    for (const p of P) {
+      const anchor = p.x < L + 14 ? "start" : p.x > W - R - 14 ? "end" : "middle";
+      const o = other[p.lb];
+      const below = o != null ? (p.v < o || (p.v === o && si === 1)) : false;
+      const ty = below ? p.y + 17 : p.y - 9;
+      g += `<text x="${p.x}" y="${ty}" font-size="10.5" font-weight="500" text-anchor="${anchor}" fill="${s.color}"
+        stroke="var(--surface)" stroke-width="3" paint-order="stroke" style="font-variant-numeric:tabular-nums">${p.v}</text>`;
+    }
     pts.push(...P);
-  }
+  });
   window.__pts = pts;
   return `<div class="chart" id="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="每季成交單價中位數走勢">${g}
     <rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="hit"/></svg><div class="tip" id="tip" hidden></div></div>`;
@@ -382,7 +391,7 @@ function openMarket(id){
       ${kpi(n && (n.median_12m ?? n.median_all) ? (n.median_12m ?? n.median_all) + " 萬/坪" : null, n ? `附近${n.median_12m ? "近一年" : ""}中位數（${n.median_12m ? n.n_12m : n.n} 筆）` : "附近：無成交資料")}
     </div>
     <div><div class="legend">${series.map(s => `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join("")}${it.unit_price ? '<span><i style="background:var(--price)"></i>此物件開價</span>' : ""}</div>
-      ${lineChart(series, it.unit_price)}<div class="note">每季成交單價中位數（萬/坪，已扣除車位）。游標移到點上可看筆數。</div></div>
+      ${lineChart(series, it.unit_price)}<div class="note">每個點是一季（三個月）的成交單價中位數（萬/坪，已扣除車位）。點上的數字就是該季價格，游標移到點上可看成交筆數。手機上可以左右滑動圖表。</div></div>
     ${tabs.length ? `<div class="tabs" role="tablist">${tabs.map((t, i) => `<button class="tab" role="tab" data-tab="${t[0]}" aria-selected="${i === 0}">${t[1]}</button>`).join("")}</div><div id="dealBox"></div>` : ""}
     <div class="links">${links(it).replace(/<button[^>]*data-mk[^>]*>.*?<\/button>/, "")}</div>
     <div class="note">資料來源：同社區＝591 整理的實價登錄（逐筆與內政部資料核對，「✓ 已核對」代表內政部有同日同總價的紀錄；「查無」多半是特殊交易被排除或 591 社區對應有誤）；附近類似＝內政部不動產成交案件實際資訊（，${esc(n ? n.scope : "")}，同型態、坪數 ±35%）。行情僅供參考，實際價格請以現場與專業估價為準。</div>

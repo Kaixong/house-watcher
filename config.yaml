@@ -59,6 +59,10 @@ searches:
           lat: 24.971624
           lng: 121.251663
           radius_km: 2
+        - name: 平鎮車站       # 台鐵平鎮臨時站（新富一街、環南路地下道旁，2026/10/3 啟用）
+          lat: 24.943131
+          lng: 121.215009
+          radius_km: 2
 
   - name: 中壢桃園新建案
     type: newhouse
