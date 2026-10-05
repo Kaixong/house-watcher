@@ -8,7 +8,10 @@ with sync_playwright() as p:
     pg.evaluate("MAP.setView(MARKERS[HL].getLatLng(), 16)"); pg.wait_for_timeout(1800)
     pg.evaluate("document.querySelector('.leaflet-popup-close-button')?.click()"); pg.wait_for_timeout(500)
     pg.locator("#map").screenshot(path="shot_map.png")
-    pg.wait_for_timeout(700); pg.locator("#map").screenshot(path="shot_map2.png")
+    box = pg.evaluate("(() => { const r = document.querySelector('.pin.sel').getBoundingClientRect(); return [r.x, r.y, r.width, r.height] })()")
+    x, y, w, h = box; cx, cy = x + w / 2, y + h / 2
+    pg.screenshot(path="shot_map2.png", clip={"x": cx - 60, "y": cy - 60, "width": 120, "height": 120}, scale="device")
+    print("pin box", box)
     print("errors:", errs, "sel:", pg.locator(".pin.sel").count())
     b.close()
 srv.kill()
