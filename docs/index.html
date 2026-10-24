@@ -57,6 +57,13 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
 .bar input[type=search]{flex:1 1 180px}
 .chk{display:inline-flex;align-items:center;gap:5px;font-size:14px;color:var(--muted);cursor:pointer}
 .count{color:var(--muted);font-size:13px;margin-left:auto}
+.show{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:-6px 0 16px;border:0;padding:0}
+.show legend{float:left;font-size:13px;color:var(--muted);margin-right:2px}
+.show .sep{width:1px;align-self:stretch;background:var(--line);margin:2px 2px}
+.tg{display:inline-flex;align-items:center;gap:5px;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:99px;padding:5px 12px;cursor:pointer;user-select:none}
+.tg input{margin:0;accent-color:var(--accent)}
+.tg:has(input:checked){border-color:var(--accent);background:var(--accent-soft);color:var(--ink)}
+.tg:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
 .card.off{opacity:.55}
@@ -189,13 +196,20 @@ h1{font:700 28px/1.2 "Noto Serif TC",serif;margin:0;letter-spacing:.02em}
       <option value="unit">單價低→高</option><option value="ping">坪數大→小</option><option value="main">主建坪數大→小</option><option value="dist">離圓心近→遠</option><option value="prem">低於行情優先</option>
     </select>
     <input type="search" id="fText" placeholder="搜尋標題、社區、地址">
-    <select id="fStatus" aria-label="新物件／降價">
-      <option value="">全部物件</option><option value="new">只看新物件（7 天內）</option>
-      <option value="drop">只看降價</option><option value="either">新物件或降價</option>
-    </select>
     <label class="chk"><input type="checkbox" id="fActive" checked> 只看在架</label>
     <span class="count" id="count"></span>
   </div>
+  <fieldset class="show" id="fShow">
+    <legend>顯示：</legend>
+    <label class="tg"><input type="checkbox" id="fAll" checked> 全選</label>
+    <span class="sep" aria-hidden="true"></span>
+    <label class="tg"><input type="checkbox" data-g="type" value="build" checked> 新建案</label>
+    <label class="tg"><input type="checkbox" data-g="type" value="used" checked> 中古屋</label>
+    <span class="sep" aria-hidden="true"></span>
+    <label class="tg"><input type="checkbox" data-g="st" value="new" checked> 新物件（7 天內）</label>
+    <label class="tg"><input type="checkbox" data-g="st" value="drop" checked> 降價</label>
+    <label class="tg"><input type="checkbox" data-g="st" value="other" checked> 其他物件</label>
+  </fieldset>
   <div id="mapWrap" hidden><div class="msplit"><div id="map"></div><div id="mapList" aria-live="polite"></div></div>
     <div class="legend" style="margin:-8px 0 16px">
       <span><span class="pin" style="display:inline-block;background:#1d7a45;vertical-align:middle;margin-right:5px"></span>比行情便宜</span>
@@ -475,7 +489,7 @@ function drawMap(list){
     m.addTo(LAYER); MARKERS[it.id] = m; pts.push([it.lat, it.lng]);
     if (it.id === HL) { m.setZIndexOffset(1000); const p = markerOf(it.id); if (p) p.classList.add("sel"); }
   }
-  const key = [$("fSearch").value, $("fSource").value, $("fText").value, $("fStatus").value, $("fActive").checked].join("|");
+  const key = [$("fSearch").value, $("fSource").value, $("fText").value, showKey(), $("fActive").checked].join("|");
   setTimeout(() => {
     MAP.invalidateSize();
     if (PENDING) { const it = list.find(x => x.id === PENDING); PENDING = null; if (it) return locate(it.id); }
@@ -548,9 +562,19 @@ document.addEventListener("mouseover", e => {
 });
 document.addEventListener("mouseleave", e => { if (e.target.id === "mapList") document.querySelectorAll(".pin.big").forEach(p => p.classList.remove("big")); }, true);
 
+// 「顯示」勾選：類型（新建案／中古屋）與狀態（新物件／降價／其他）各自取聯集，兩組再取交集
+const SHOW_BOXES = () => [...document.querySelectorAll("#fShow input[data-g]")];
+function checked(g){ return new Set(SHOW_BOXES().filter(b => b.dataset.g === g && b.checked).map(b => b.value)); }
+function showKey(){ return SHOW_BOXES().map(b => b.checked ? 1 : 0).join(""); }
+function syncAll(){
+  const n = SHOW_BOXES().filter(b => b.checked).length;
+  $("fAll").checked = n === SHOW_BOXES().length; $("fAll").indeterminate = n > 0 && !$("fAll").checked;
+}
 function statusOk(it){
-  const v = $("fStatus").value, drop = it.is_drop || (it.prev_price && it.price && it.prev_price > it.price);
-  return !v || (v === "new" && it.is_new) || (v === "drop" && drop) || (v === "either" && (it.is_new || drop));
+  const types = checked("type"), sts = checked("st");
+  const drop = it.is_drop || (it.prev_price && it.price && it.prev_price > it.price);
+  const type = it.source === "591新建案" ? "build" : "used";
+  return types.has(type) && ((it.is_new && sts.has("new")) || (drop && sts.has("drop")) || (!it.is_new && !drop && sts.has("other")));
 }
 function render(){
   const q = $("fText").value.trim(), s = $("fSearch").value, src = $("fSource").value;
@@ -564,7 +588,8 @@ function render(){
   if (VIEW === "map") drawMap(list);
   else $("grid").innerHTML = list.length ? list.map(card).join("") : '<div class="empty">沒有符合的物件</div>';
   $("count").textContent = `顯示 ${list.length} 筆`;
-  document.querySelectorAll(".sbtn").forEach(b => b.setAttribute("aria-pressed", $("fStatus").value === b.dataset.status));
+  const sts = checked("st");
+  document.querySelectorAll(".sbtn").forEach(b => b.setAttribute("aria-pressed", sts.size === 1 && sts.has(b.dataset.status)));
 }
 
 function boot(data, demo){
@@ -579,11 +604,14 @@ function boot(data, demo){
   if ((last.warnings || []).length) { $("warn").hidden = false; $("warn").innerHTML = last.warnings.map(w => "⚠ " + esc(w)).join("<br>"); }
   for (const s of data.searches || []) $("fSearch").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
   for (const s of [...new Set(data.items.map(i => i.source))].sort()) $("fSource").insertAdjacentHTML("beforeend", `<option>${esc(s)}</option>`);
-  ["fText","fSearch","fSource","fSort","fStatus","fActive"].forEach(id => $(id).addEventListener("input", render));
-  // 點上方的「近 7 天新物件」「降價中」直接篩選，再點一次取消
+  ["fText","fSearch","fSource","fSort","fActive"].forEach(id => $(id).addEventListener("input", render));
+  $("fAll").addEventListener("change", () => { SHOW_BOXES().forEach(b => b.checked = $("fAll").checked); syncAll(); render(); });
+  SHOW_BOXES().forEach(b => b.addEventListener("change", () => { syncAll(); render(); }));
+  // 點上方的「近 7 天新物件」「降價中」直接篩選（只勾該狀態），再點一次恢復全部
   document.querySelectorAll(".sbtn").forEach(b => b.addEventListener("click", () => {
-    $("fStatus").value = $("fStatus").value === b.dataset.status ? "" : b.dataset.status;
-    render();
+    const only = b.getAttribute("aria-pressed") !== "true";
+    SHOW_BOXES().forEach(x => { if (x.dataset.g === "st") x.checked = !only || x.value === b.dataset.status; });
+    syncAll(); render();
   }));
   $("vList").onclick = () => setView("list"); $("vMap").onclick = () => setView("map");
   renderCriteria();
